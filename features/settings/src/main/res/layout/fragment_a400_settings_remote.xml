@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_setting_remote_title"
+        style="@style/AppTheme.TextTitlePrimary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_layout_130"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/margin_layout_48"
+        android:text="@string/setting_remote_connection"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/tv_setting_title_divider"
+        style="@style/AppTheme.LineDropShadow"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_setting_remote_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_remote_allow_connection"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_setting_remote_title">
+
+        <TextView
+            android:id="@+id/iv_setting_remote_allow_connection_title"
+            style="@style/AppTheme.TextTitleHeadLine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="@dimen/margin_layout_40"
+            android:layout_toStartOf="@+id/sw_setting_remote_allow_connection"
+            android:text="@string/setting_remote_allow_remote_connection_title"
+            android:textColor="?attr/theme_color_body_primary" />
+
+        <TextView
+            android:id="@+id/iv_setting_remote_allow_connection_content"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="680dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_setting_remote_allow_connection_title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_toStartOf="@+id/sw_setting_remote_allow_connection"
+            android:text="@string/setting_remote_allow_remote_connection_content" />
+
+        <fabscreen.platform.core.ui.common.A400SwitchCompat
+            android:id="@+id/sw_setting_remote_allow_connection"
+            android:layout_width="124dp"
+            android:layout_height="68dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_layout_48"
+            android:thumb="@drawable/shape_a400_switch_thumb"
+            app:track="@drawable/selector_a400_switch_track" />
+
+        <View
+            android:id="@+id/tv_setting_content_divider_1"
+            style="@style/AppTheme.LineDropShadow"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_layout_40" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_remote_safe_mode"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:layout_constraintTop_toBottomOf="@+id/rl_setting_remote_allow_connection">
+
+        <TextView
+            android:id="@+id/iv_setting_remote_safe_mode_title"
+            style="@style/AppTheme.TextTitleHeadLine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="@dimen/margin_layout_40"
+            android:layout_toStartOf="@+id/sw_setting_remote_safe_mode"
+            android:text="@string/setting_remote_safe_mode_title"
+            android:textColor="?attr/theme_color_body_primary" />
+
+
+        <TextView
+            android:id="@+id/iv_setting_remote_safe_mode_content"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="680dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_setting_remote_safe_mode_title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/setting_remote_safe_mode_content" />
+
+        <fabscreen.platform.core.ui.common.A400SwitchCompat
+            android:id="@+id/sw_setting_remote_safe_mode"
+            android:layout_width="124dp"
+            android:layout_height="68dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_layout_48"
+            android:thumb="@drawable/shape_a400_switch_thumb"
+            app:track="@drawable/selector_a400_switch_track" />
+
+        <View
+            android:id="@+id/tv_setting_content_divider_2"
+            style="@style/AppTheme.LineDropShadow"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_layout_40" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/iv_setting_remote_connection_verification"
+        style="@style/AppTheme.TextTitleHeadLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="@string/setting_remote_connection_verification"
+        android:textColor="?attr/theme_color_body_primary"
+        app:layout_constraintBottom_toBottomOf="@id/lr_setting_remote_connection_verification"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lr_setting_remote_connection_verification" />
+
+
+    <RelativeLayout
+        android:id="@+id/lr_setting_remote_connection_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_28"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/img_next_job_background"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_setting_remote_safe_mode">
+
+        <TextView
+            android:id="@+id/tv_setting_remote_connection_verification"
+            style="@style/AppTheme.TextTitleHeadLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:drawableRight="@drawable/ic_drop_down_arrow"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/sp_setting_remote_connection_verification"-->
+    <!--        style="@style/AppTheme.TextTitleHeadLine"-->
+    <!--        android:layout_width="280dp"-->
+    <!--        android:layout_height="68dp"-->
+    <!--        android:layout_marginTop="@dimen/margin_layout_40"-->
+    <!--        android:layout_marginEnd="48dp"-->
+    <!--        android:entries="@array/setting_remote_connection_verification_mode"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/rl_setting_remote_safe_mode" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

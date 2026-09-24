@@ -1,0 +1,15 @@
+<resources>
+    <string name="extruder_temperature">%d/%d°C</string>
+    <string name="wizard">ウィザード</string>
+    <string name="introduce">本ウィザードでは主に次の 4 つの手順を含む、プリント前の基本的な準備（約 20 ～ 30 分）をご案内します。</string>
+    <string name="heating_check">ヒートベッドレベリング</string>
+    <string name="z_offset_calibration">Z 軸オフセットキャリブレーション</string>
+    <string name="xy_Offset_calibration">XY軸オフセットキャリブレーション</string>
+    <string name="offset_calibration_check">オフセットキャリブレーション確認</string>
+    <string name="heating_tips">こちらのアイコンは表面が高温になっている意味です。</string>
+    <string name="guide_success_content">制作を始めましょう！</string>
+    <string name="guide_success_title">ウィザード完了</string>
+    <string name="j1_guide_safety_glass_title">安全上の注意</string>
+    <string name="j1_guide_safety_glass_one">PEI ガラス板の取り扱いにご注意ください。</string>
+    <string name="j1_guide_safety_glass_two">ヒートベッドが 40℃ 以上に加熱されている場合、 PEI ガラス板とヒートベッドに直接触れないようにしてください。</string>
+</resources>

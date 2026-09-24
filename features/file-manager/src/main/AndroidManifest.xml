@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fabscreen.features.filemanager">
+
+    <application>
+        <activity android:name=".j1Platform.BrowseJ1Activity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity android:name=".a400platform.BrowseA400Activity"
+            android:theme="@style/AppTheme.Activity" />
+    </application>
+
+</manifest>

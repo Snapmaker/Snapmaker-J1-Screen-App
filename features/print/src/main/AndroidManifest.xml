@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fabscreen.features.print">
+
+    <application>
+        <activity
+            android:name=".j1platform.PrintJ1Activity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".print.PrintActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".a400platform.PrintA400Activity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".a400platform.A400LaserSetZModeSelectActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".j1platform.PrintJ1AdjustmentContainerActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+    </application>
+</manifest>

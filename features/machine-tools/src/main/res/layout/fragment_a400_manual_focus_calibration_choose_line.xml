@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/a400_progress_top_bar" />
+
+    <View
+        android:id="@+id/v_ruler_bg"
+        android:layout_width="0dp"
+        android:layout_height="372dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="48dp"
+        android:background="#090909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress" />
+
+    <fabscreen.platform.core.ui.view.RulerView
+        android:id="@+id/rv_line_chooser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/v_ruler_bg"
+        app:layout_constraintEnd_toEndOf="@id/v_ruler_bg"
+        app:layout_constraintStart_toStartOf="@id/v_ruler_bg"
+        app:layout_constraintTop_toTopOf="@id/v_ruler_bg"
+        app:rv_backgroundColor="@color/transparent"
+        app:rv_currentValue="0"
+        app:rv_indicatorColor="#1A41F5"
+        app:rv_longScaleColor="#FFFFFF"
+        app:rv_longScaleWidth="6dp"
+        app:rv_maxValue="5"
+        app:rv_minValue="-5"
+        app:rv_shortScaleColor="#FFFFFF"
+        app:rv_shortScaleWidth="6dp"
+        app:rv_unit="0.5"
+        app:rv_unitSpacing="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slide to choose the best engraved line"
+        android:textColor="#6E6E6E"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_line_chooser" />
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/AppTheme.Button.BlueButton"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/all_save"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_quit"
+        style="@style/AppTheme.Button.DefaultButton"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/all_quit"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

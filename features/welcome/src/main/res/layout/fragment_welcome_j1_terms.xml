@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/j1_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_layout_16"
+        android:layout_marginTop="@dimen/margin_layout_48"
+        android:layout_marginRight="@dimen/margin_layout_16"
+        android:layout_marginBottom="@dimen/margin_layout_16"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_welcome_j1_terms_title"
+            style="@style/AppTheme.TextTitleSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_24"
+            android:textColor="?attr/theme_color_title_primary"
+            android:textSize="?attr/theme_font_size_title1"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl_welcome_terms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_welcome_j1_terms_title"
+            android:layout_marginStart="@dimen/margin_layout_16"
+            android:layout_marginTop="@dimen/margin_layout_8"
+            android:layout_marginEnd="@dimen/margin_layout_16"
+            android:layout_marginBottom="76dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin_layout_5"
+                    android:scrollbarSize="2dp"
+                    android:scrollbarThumbVertical="@drawable/all_drawable_scrollbar_thumb_vertical"
+                    android:scrollbarTrackVertical="@drawable/all_drawable_scrollbar_track_vertical">
+
+                    <TextView
+                        style="@style/AppTheme.TextBody2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_layout_5"
+                        android:lineSpacingMultiplier="1.2"
+                        android:singleLine="false"
+                        android:text="@string/j1_settings_terms_content"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/palette_grey_french" />
+
+                </ScrollView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_welcome_terms_agree"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_bg_section_detail_normal"
+            android:paddingLeft="11dp">
+
+            <CheckBox
+                android:id="@+id/cb_welcome_terms_accept"
+                style="@style/AppTheme.CheckBox"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_layout_10"
+                android:layout_marginEnd="@dimen/margin_layout_5" />
+
+            <TextView
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/cb_welcome_terms_accept"
+                android:text="@string/j1_terms_and_conditions_tip"
+                android:textAlignment="textStart"
+                android:textColor="@color/palette_grey_french" />
+
+            <Button
+                android:id="@+id/btn_next"
+                style="@style/AppTheme.PrimaryButton"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_layout_12"
+                android:text="@string/all_next" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_welcome_j1_terms_pop_up"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/default_theme_dark_mask"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="560dp"
+            android:layout_height="280dp"
+            android:background="@drawable/all_dialog_round_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_welcome_j1_term_pop_up_title"
+                style="@style/AppTheme.TextTitleSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_layout_24"
+                android:text="@string/j1_user_experience_improvement_program_title" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/v_main_divider"
+                android:layout_below="@id/tv_welcome_j1_term_pop_up_title"
+                android:layout_marginLeft="@dimen/margin_layout_16"
+                android:layout_marginTop="@dimen/margin_layout_8"
+                android:layout_marginRight="@dimen/margin_layout_16"
+                android:layout_marginBottom="@dimen/margin_layout_8">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin_layout_5"
+                    android:scrollbarSize="2dp"
+                    android:scrollbarThumbVertical="@drawable/all_drawable_scrollbar_thumb_vertical"
+                    android:scrollbarTrackVertical="@drawable/all_drawable_scrollbar_track_vertical">
+
+                    <TextView
+                        style="@style/AppTheme.TextExplain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2"
+                        android:paddingStart="@dimen/margin_layout_16"
+                        android:paddingEnd="@dimen/margin_layout_16"
+                        android:text="@string/j1_settings_user_experience_program_content"
+                        android:textColor="@color/palette_grey_french" />
+
+                </ScrollView>
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/v_main_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60dp"
+                android:background="?attr/theme_dialog_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/tv_welcome_j1_wifi_skip"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/all_skip"
+                    android:textColor="@color/palette_grey_french"
+                    android:textSize="?attr/theme_font_size_body1" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="?attr/theme_dialog_line_color" />
+
+                <TextView
+                    android:id="@+id/tv_welcome_j1_confirm"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/j1_user_experience_improvement_program_confirm"
+                    android:textColor="@color/palette_orange_pizazz"
+                    android:textSize="?attr/theme_font_size_body1" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

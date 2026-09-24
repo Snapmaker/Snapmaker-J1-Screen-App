@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="32dp"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/iv_signal"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_bg_round_wifi"
+            android:contentDescription="@string/placeholder"
+            android:padding="6dp"
+            android:src="@drawable/ic_ap_normal" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:progress="50"
+            android:visibility="invisible"
+            app:indicatorColor="@color/palette_grey_french"
+            app:indicatorSize="20dp"
+            app:trackColor="@color/transparent"
+            app:trackCornerRadius="1dp"
+            app:trackThickness="2dp"
+            tools:visibility="visible" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_ssid"
+        style="@style/AppTheme.TextBody2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_8"
+        android:layout_weight="1"
+        tools:text="Snapmaker Wi-Fi" />
+
+    <ImageView
+        android:id="@+id/iv_ap_encrypt"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        tools:src="@drawable/ic_ap_lock" />
+</LinearLayout>

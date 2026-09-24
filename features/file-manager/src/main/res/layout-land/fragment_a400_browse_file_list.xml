@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <!--  top bar for browse  -->
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_browse_file_back"
+            android:layout_width="?attr/theme_icon_tools_button"
+            android:layout_height="?attr/theme_icon_tools_button"
+            android:background="@drawable/icon_back_68x68" />
+
+        <TextView
+            android:id="@+id/btn_browse_file_back_title"
+            style="@style/AppTheme.TextTitleSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_browse_file_list_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginEnd="@dimen/margin_layout_48"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+        <TextView
+            android:id="@+id/tv_browse_file_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/theme_file_manege_item_line_color" />
+
+        <Button
+            android:id="@+id/btn_top_bar_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/icon_back_normal_80x80" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tl_browse_file_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btn_top_bar_back"
+            app:tabIndicatorColor="?attr/theme_file_manege_item_txt_select_color"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="3dp"
+            app:tabMinWidth="97dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="?attr/theme_file_manege_item_txt_select_color"
+            app:tabTextAppearance="@style/TabLayTheme"
+            app:tabTextColor="?attr/theme_file_manege_item_txt_color" />
+
+        <TextView
+            android:id="@+id/btn_browse_file_list_top_folder"
+            style="@style/TabLayTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/btn_top_bar_back"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_browse_file_list_sort_option"
+            android:layout_width="?attr/theme_icon_tools_button"
+            android:layout_height="?attr/theme_icon_tools_button"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/btn_browse_file_list_edit_mode"
+            android:background="@drawable/icon_screen_bg_normal" />
+
+        <Button
+            android:id="@+id/btn_browse_file_list_edit_mode"
+            android:layout_width="?attr/theme_icon_tools_button"
+            android:layout_height="?attr/theme_icon_tools_button"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/browse_j1_edit_background" />
+
+    </RelativeLayout>
+
+
+    <!--  Local File List  -->
+    <RelativeLayout
+        android:id="@+id/rl_browse_file_local_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_browse_file_list_top_bar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_browse_local_file_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="?attr/theme_file_manege_item_name_left"
+            android:layout_marginEnd="?attr/theme_file_manege_item_name_left"
+            android:layout_marginBottom="?attr/theme_file_manege_item_name_top"
+            tools:listitem="@layout/item_j1_browse_file" />
+
+        <!--   File List Empty view   -->
+        <LinearLayout
+            android:id="@+id/ll_browse_external_file_list_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_layout_16"
+            android:layout_marginTop="@dimen/margin_layout_12"
+            android:layout_marginRight="@dimen/margin_layout_16"
+            android:layout_marginBottom="@dimen/margin_layout_16"
+            android:background="?attr/theme_file_manege_empty_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_browse_external_file_list_empty"
+                android:layout_width="?attr/theme_file_manege_empty_pic_width"
+                android:layout_height="?attr/theme_file_manege_empty_pic_width"
+                android:layout_marginBottom="?attr/theme_file_manege_empty_logo_margin"
+                android:src="@drawable/pic_file_normal_160x160" />
+
+            <TextView
+                android:id="@+id/tv_browse_external_file_list_empty_title"
+                style="@style/AppTheme.TextTitleSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_browse_external_file_list_empty"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="?attr/theme_file_manege_empty_title_margin"
+                android:text="USB Flash Drive Not Recognized"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_browse_external_file_list_empty_content"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6dp"
+                android:textAlignment="center"
+                android:textColor="?attr/theme_file_manege_item_tip_content_color" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_browse_bottom_operation_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_layout_48"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ly_browse_bottom_operation_bar"
+            android:layout_width="388dp"
+            android:layout_height="68dp"
+            android:background="@drawable/a400_bg_rounded_rectangle_grey_mine_background_s"
+            >
+
+            <Button
+                android:id="@+id/btn_browse_move"
+                style="@style/AppTheme.PrimaryButton"
+                android:layout_width="194dp"
+                android:layout_height="68dp"
+                android:background="@drawable/a400_select_bg_rounded_rectangle_grey_mine_background_s"
+                android:text="Copy to Local"
+                android:textColor="@color/select_a400_btn_white_txt"
+                android:textSize="?attr/theme_font_size_body2" />
+
+            <Button
+                android:id="@+id/btn_browse_delete"
+                style="@style/AppTheme.PrimaryButton"
+                android:layout_width="194dp"
+                android:layout_height="68dp"
+                android:background="@drawable/a400_select_bg_rounded_rectangle_grey_mine_background_s"
+                android:text="@string/all_delete"
+                android:textColor="@color/select_a400_btn_white_txt"
+                android:textSize="?attr/theme_font_size_body2" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_browse_cancel"
+            style="@style/AppTheme.PrimaryButton"
+            android:layout_width="158dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="@dimen/margin_24dp"
+            android:layout_toEndOf="@+id/ly_browse_bottom_operation_bar"
+            android:background="@drawable/a400_select_bg_rounded_rectangle_grey_mine_background_s"
+            android:text="@string/all_cancel"
+            android:textColor="@color/select_a400_btn_white_txt"
+            android:textSize="?attr/theme_font_size_body2" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

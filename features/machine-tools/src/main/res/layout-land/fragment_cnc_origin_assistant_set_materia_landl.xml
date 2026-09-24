@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <include
+        layout="@layout/widget_top_bar_a400_calibration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/view_cnc_origin_assistant_set_material_guide"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/margin_layout_48"
+        android:paddingRight="@dimen/margin_layout_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rl_cnc_origin_assistant_set_material_length"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+        <ImageView
+            android:id="@+id/iv_origin_assistant_set_material"
+            android:layout_width="wrap_content"
+            android:layout_height="369dp"
+            android:layout_marginTop="@dimen/margin_layout_32"
+            android:background="@drawable/pic_cnc_origin_assistant_material_settings_360x240"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            style="@style/AppTheme.TextExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_origin_assistant_set_material"
+            android:layout_marginTop="27dp"
+            android:text="@string/a400_cnc_origin_assistant_length_title"
+            android:textColor="@color/palette_grey_dim" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_cnc_origin_assistant_set_material_length"
+        android:layout_width="705dp"
+        android:layout_height="0dp"
+        android:background="@color/palette_grey_nero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+
+        <!--    Length    -->
+        <TextView
+            android:id="@+id/tv_cnc_origin_assistant_set_material_length_desc"
+            style="@style/AppTheme.TextBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="68dp"
+            android:text="@string/a400_cnc_origin_set_material_length"
+            android:textAlignment="textStart"
+            android:textColor="@color/palette_white_pure" />
+
+        <EditText
+            android:id="@+id/et_cnc_origin_assistant_set_material_length"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_below="@id/tv_cnc_origin_assistant_set_material_length_desc"
+            android:layout_alignStart="@id/tv_cnc_origin_assistant_set_material_length_desc"
+            android:layout_marginTop="@dimen/margin_layout_24"
+            android:layout_marginEnd="229dp"
+            android:background="@drawable/bg_snap_black_round"
+            android:hint="@string/all_0_00"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/margin_layout_32"
+            android:textColor="@color/palette_white_pure"
+            android:textSize="24sp" />
+
+        <TextView
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/et_cnc_origin_assistant_set_material_length"
+            android:layout_alignRight="@+id/et_cnc_origin_assistant_set_material_length"
+            android:layout_alignBottom="@+id/et_cnc_origin_assistant_set_material_length"
+            android:layout_marginRight="27dp"
+            android:gravity="center"
+            android:text="mm"
+            android:textColor="@color/palette_grey_dim" />
+
+        <TextView
+            android:id="@+id/tv_cnc_origin_assistant_set_material_length_tip"
+            style="@style/AppTheme.TextExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_cnc_origin_assistant_set_material_length"
+            android:layout_alignStart="@id/et_cnc_origin_assistant_set_material_length"
+            android:layout_marginTop="@dimen/margin_layout_5"
+            android:text="@string/placeholder"
+            android:textAlignment="textStart"
+            android:textColor="@color/palette_red_monza"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_cnc_origin_assistant_set_material_diameter_desc"
+            style="@style/AppTheme.TextBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_cnc_origin_assistant_set_material_length"
+            android:layout_alignStart="@id/et_cnc_origin_assistant_set_material_diameter"
+            android:layout_marginTop="@dimen/margin_layout_48"
+            android:text="@string/a400_cnc_origin_set_material_diameter"
+            android:textAlignment="textStart"
+            android:textColor="@color/palette_white_pure" />
+
+        <EditText
+            android:id="@+id/et_cnc_origin_assistant_set_material_diameter"
+            style="@style/AppTheme.EditText.DefaultEditText"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_below="@id/tv_cnc_origin_assistant_set_material_diameter_desc"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="229dp"
+            android:background="@drawable/bg_snap_black_round"
+            android:hint="@string/all_0_00"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/margin_layout_32"
+            android:textColor="@color/palette_white_pure"
+            android:textSize="24sp" />
+
+        <TextView
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/et_cnc_origin_assistant_set_material_diameter"
+            android:layout_alignRight="@+id/et_cnc_origin_assistant_set_material_diameter"
+            android:layout_alignBottom="@+id/et_cnc_origin_assistant_set_material_diameter"
+            android:layout_marginRight="27dp"
+            android:gravity="center"
+            android:text="mm"
+            android:textColor="@color/palette_grey_dim" />
+
+        <!--        android:layout_alignStart="@id/tv_cnc_origin_assistant_set_material_length_desc"-->
+        <TextView
+            android:id="@+id/tv_cnc_origin_assistant_set_material_diameter_tip"
+            style="@style/AppTheme.TextExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_cnc_origin_assistant_set_material_diameter"
+            android:layout_alignStart="@id/et_cnc_origin_assistant_set_material_diameter"
+            android:layout_marginTop="@dimen/margin_layout_5"
+            android:text="@string/placeholder"
+            android:textAlignment="textStart"
+            android:textColor="@color/palette_red_monza"
+            android:visibility="gone" />
+
+        <View
+            style="@style/AppTheme.LineDropShadow"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/btn_cnc_origin_assistant_set_material_next"
+            android:layout_marginBottom="36dp" />
+
+        <Button
+            android:id="@+id/btn_cnc_origin_assistant_set_material_next"
+            style="@style/AppTheme.PrimaryButton"
+            android:layout_width="230dp"
+            android:layout_height="92dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/margin_layout_48"
+            android:layout_marginBottom="@dimen/margin_layout_48"
+            android:text="@string/all_next" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

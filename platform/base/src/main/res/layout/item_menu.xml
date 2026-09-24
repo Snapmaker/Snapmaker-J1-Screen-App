@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="?attr/theme_item_menu_width"
+    android:layout_height="?attr/theme_item_menu_height">
+
+    <!--    android:layout_width="?attr/theme_item_menu_width"-->
+    <!--    android:layout_height="?attr/theme_item_menu_height">-->
+    <Button
+        android:id="@+id/btn_menu_item"
+        style="@style/AppTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/theme_item_menu_bg" />
+
+    <ImageView
+        android:id="@+id/iv_menu_item_selected"
+        android:layout_width="?attr/theme_icon_tools_decorate"
+        android:layout_height="?attr/theme_icon_tools_decorate"
+        android:layout_alignStart="@id/btn_menu_item"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_layout_16"
+        android:contentDescription="@string/placeholder"
+        android:scaleType="fitCenter"
+        android:src="?attr/theme_icon_tick"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_menu_item_name"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@drawable/select_menu"
+        android:layout_marginStart="@dimen/margin_layout_12"
+        android:layout_marginEnd="@dimen/margin_layout_5"
+        android:layout_toEndOf="@id/iv_menu_item_selected"
+        android:lineSpacingMultiplier="1.2"
+        android:singleLine="false"
+        android:textAlignment="textStart" />
+
+    <View
+        android:id="@+id/v_menu_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_layout_16"
+        android:layout_marginRight="@dimen/margin_layout_16"
+        android:background="?attr/theme_file_manege_menu_line_color"/>
+
+</RelativeLayout>

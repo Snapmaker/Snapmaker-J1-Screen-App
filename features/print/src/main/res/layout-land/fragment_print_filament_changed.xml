@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_theme_dark_mask"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_layout_40"
+        android:layout_marginEnd="@dimen/margin_layout_40"
+        android:layout_marginTop="@dimen/margin_layout_20"
+        android:layout_marginBottom="@dimen/margin_layout_20"
+        android:background="@color/default_theme_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <ImageView
+            android:id="@+id/iv_print_filament_changed"
+            android:layout_width="280dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="@dimen/margin_layout_40"
+            android:src="@drawable/demo_filament_changed_pic"
+            android:contentDescription="@string/placeholder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_print_filament_changed_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_layout_10"
+            android:textSize="@dimen/font_size_h3"
+            android:text="{挤出机}物料已用尽"
+            android:textColor="@color/default_theme_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_print_filament_changed" />
+
+        <TextView
+            android:id="@+id/tv_print_filament_changed_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_layout_10"
+            android:textSize="@dimen/font_size_h4"
+            android:text="检测到{挤出机}未装载物料。\n请插入新物料后，后点击装载按钮"
+            android:textColor="@color/default_theme_desc1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_print_filament_changed_title" />
+
+        <TextView
+            android:id="@+id/tv_print_filament_changed_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_layout_20"
+            android:textSize="@dimen/font_size_h3"
+            android:text=""
+            android:textColor="@color/default_theme_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_print_filament_changed" />
+
+        <RelativeLayout
+            android:id="@+id/view_print_filament_changed_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_layout_40"
+            android:layout_marginEnd="@dimen/margin_layout_40"
+            android:layout_marginBottom="@dimen/margin_layout_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/btn_print_filament_changed_hide"
+                style="@style/AppTheme.Button.StopButton"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/height_button_80"
+                android:layout_marginEnd="@dimen/margin_layout_40"
+                android:textSize="@dimen/font_size_h3"
+                android:layout_toStartOf="@id/btn_print_filament_changed_load"
+                android:text="隐藏提示" />
+
+            <Button
+                android:id="@+id/btn_print_filament_changed_retry"
+                style="@style/AppTheme.Button.StopButton"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/height_button_80"
+                android:layout_marginEnd="@dimen/margin_layout_40"
+                android:visibility="gone"
+                android:textSize="@dimen/font_size_h3"
+                android:layout_toStartOf="@id/btn_print_filament_changed_load"
+                android:text="重试" />
+
+            <Button
+                android:id="@+id/btn_print_filament_changed_load"
+                style="@style/AppTheme.Button.BlueButton"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/height_button_80"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/margin_layout_20"
+                android:text="装载物料"
+                android:textSize="@dimen/font_size_h3" />
+
+            <Button
+                android:id="@+id/btn_print_filament_changed_complete"
+                style="@style/AppTheme.Button.BlueButton"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/height_button_80"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/margin_layout_20"
+                android:visibility="gone"
+                android:text="完成"
+                android:textSize="@dimen/font_size_h3" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- definition of all standard ui components -->
+    <dimen name="size_button_45">45dp</dimen>
+    <dimen name="height_button_45">45dp</dimen>
+    <dimen name="radius_button_45">22.5dp</dimen>
+    <dimen name="radius_button_92">46dp</dimen>
+
+    <dimen name="size_button_64">64dp</dimen>
+    <dimen name="height_button_64">64dp</dimen>
+    <dimen name="radius_button_64">32dp</dimen>
+    <dimen name="size_button_68">68dp</dimen>
+
+    <dimen name="size_button_70">70dp</dimen>
+    <dimen name="height_button_70">70dp</dimen>
+    <dimen name="radius_button_70">7dp</dimen>
+
+    <dimen name="height_button_108">108dp</dimen>
+    <dimen name="height_button_60">60dp</dimen>
+
+    <dimen name="size_button_80">80dp</dimen>
+    <dimen name="height_button_80">80dp</dimen>
+
+    <dimen name="size_button_86">86dp</dimen>
+    <dimen name="height_button_86">86dp</dimen>
+
+    <dimen name="height_edit_text_45">45dp</dimen>
+
+    <dimen name="margin_layout_2h">2.5dp</dimen>
+    <dimen name="margin_layout_5">5dp</dimen>
+    <dimen name="margin_layout_10">10dp</dimen>
+    <dimen name="margin_layout_14">14dp</dimen>
+    <dimen name="margin_layout_40">40dp</dimen>
+    <dimen name="margin_layout_50">50dp</dimen>
+    <dimen name="margin_layout_60">60dp</dimen>
+    <dimen name="margin_layout_130">130dp</dimen>
+
+    <dimen name="padding_5">5dp</dimen>
+
+    <dimen name="radius_4">4dp</dimen>
+    <dimen name="radius_8">8dp</dimen>
+
+    <dimen name="separator">1dp</dimen>
+
+    <!-- font size -->
+    <dimen name="font_size_h0">70sp</dimen>
+    <dimen name="font_size_h1">50sp</dimen>
+    <dimen name="font_size_h2">32sp</dimen>
+    <dimen name="font_size_h3">20sp</dimen>
+    <dimen name="font_size_h4">18sp</dimen>
+    <dimen name="font_size_h5">16sp</dimen>
+    <dimen name="font_size_h6">12sp</dimen>
+    <dimen name="font_size_h7">9sp</dimen>
+
+    <!-- buttons -->
+    <dimen name="radius_blue_button">@dimen/radius_button_45</dimen>
+    <dimen name="height_segmented_button">36dp</dimen>
+    <dimen name="radius_button_111">111dp</dimen>
+
+    <!-- APP specific -->
+    <dimen name="height_top_bar">50dp</dimen>
+    <dimen name="height_bottom_bar">70dp</dimen>
+
+    <!-- list item -->
+    <dimen name="height_list_60">60dp</dimen>
+    <dimen name="height_list_40">40dp</dimen>
+    <dimen name="height_list_divider">5dp</dimen>
+    <dimen name="height_list_218">218dp</dimen>
+    <dimen name="height_list_140">140dp</dimen>
+    <dimen name="height_list_154">154dp</dimen>
+    <dimen name="height_list_127">127dp</dimen>
+    <dimen name="height_list_113">113dp</dimen>
+    <dimen name="height_list_58">58dp</dimen>
+    <dimen name="height_list_72">72dp</dimen>
+    <dimen name="height_list_105">105dp</dimen>
+    <dimen name="height_list_106">106dp</dimen>
+
+    <!--dialog-->
+    <dimen name="height_dialog_pic_112">112dp</dimen>
+    <dimen name="width_dialog_pic_112">112dp</dimen>
+    <dimen name="width_dialog_400">400</dimen>
+    <dimen name="width_dialog_580">580</dimen>
+    <dimen name="width_dialog_780">780</dimen>
+    <dimen name="width_dialog_1184">1184</dimen>
+    <dimen name="height_dialog_280">280dp</dimen>
+    <dimen name="height_dialog_160">160dp</dimen>
+
+    <!-- common margins for layout  -->
+    <dimen name="margin_80dp">80dp</dimen>
+    <dimen name="margin_64dp">64dp</dimen>
+    <dimen name="margin_48dp">48dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+
+    <!--  font sizes  -->
+    <dimen name="font_size_88sp">88sp</dimen>
+    <dimen name="font_size_72sp">72sp</dimen>
+    <dimen name="font_size_48sp">48sp</dimen>
+    <dimen name="font_size_40sp">40sp</dimen>
+    <dimen name="font_size_36sp">36sp</dimen>
+    <dimen name="font_size_34sp">34sp</dimen>
+    <dimen name="font_size_32sp">32sp</dimen>
+    <dimen name="font_size_28sp">28sp</dimen>
+    <dimen name="font_size_24sp">24sp</dimen>
+    <dimen name="font_size_20sp">20sp</dimen>
+    <dimen name="font_size_18sp">18sp</dimen>
+    <dimen name="font_size_16sp">16sp</dimen>
+    <dimen name="font_size_14sp">14sp</dimen>
+
+    <!--  img width and height-->
+    <dimen name="img_height_188dp">188dp</dimen>
+    <dimen name="img_width_204dp">204dp</dimen>
+    <dimen name="img_width_148dp">148dp</dimen>
+    <dimen name="img_height_139dp">139dp</dimen>
+    <dimen name="img_width_231dp">231dp</dimen>
+    <dimen name="img_width_140dp">140dp</dimen>
+
+    <!--  font line height  -->
+    <dimen name="font_line_height_112sp">112sp</dimen>
+    <dimen name="font_line_height_90sp">90sp</dimen>
+    <dimen name="font_line_height_60sp">60sp</dimen>
+    <dimen name="font_line_height_56sp">56sp</dimen>
+    <dimen name="font_line_height_48sp">48sp</dimen>
+    <dimen name="font_line_height_45sp">45sp</dimen>
+    <dimen name="font_line_height_44sp">44sp</dimen>
+    <dimen name="font_line_height_36sp">36sp</dimen>
+    <dimen name="font_line_height_32sp">32sp</dimen>
+    <dimen name="font_line_height_30sp">30sp</dimen>
+    <dimen name="font_line_height_28sp">28sp</dimen>
+    <dimen name="font_line_height_24sp">24sp</dimen>
+    <dimen name="font_line_height_20sp">20sp</dimen>
+    <dimen name="font_line_height_16sp">16sp</dimen>
+
+    <dimen name="margin_layout_2">2dp</dimen>
+    <dimen name="margin_layout_4">4dp</dimen>
+    <dimen name="margin_layout_8">8dp</dimen>
+    <dimen name="margin_layout_12">12dp</dimen>
+    <dimen name="margin_layout_16">16dp</dimen>
+    <dimen name="margin_layout_20">20dp</dimen>
+    <dimen name="margin_layout_24">24dp</dimen>
+    <dimen name="margin_layout_28">28dp</dimen>
+    <dimen name="margin_layout_32">32dp</dimen>
+    <dimen name="margin_layout_37">37dp</dimen>
+    <dimen name="margin_layout_48">48dp</dimen>
+    <dimen name="margin_layout_52">52dp</dimen>
+    <dimen name="margin_layout_56">56dp</dimen>
+    <dimen name="margin_layout_64">64dp</dimen>
+    <dimen name="margin_layout_80">80dp</dimen>
+    <dimen name="margin_layout_96">96dp</dimen>
+    <dimen name="margin_layout_132">132dp</dimen>
+
+    <dimen name="button_height_48dp">48dp</dimen>
+
+    <!--    icons -->
+    <dimen name="icon_size_40">40dp</dimen>
+    <dimen name="icon_size_32">32dp</dimen>
+    <dimen name="icon_size_20">20dp</dimen>
+    <dimen name="icon_size_68">68dp</dimen>
+    <dimen name="icon_size_112">112dp</dimen>
+    <dimen name="icon_size_24">24dp</dimen>
+
+    <!--    list item-->
+    <dimen name="list_item_height52">52dp</dimen>
+    <dimen name="list_item_height100">100dp</dimen>
+</resources>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_a400_setting_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="28dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="48dp">
+
+                <TextView
+                    style="@style/AppTheme.TextTitleHeadLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Machine Name"
+                    android:textColor="#c9c9c9" />
+
+                <TextView
+                    android:id="@+id/tv_machine_name"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="#6e6e6e"
+                    tools:text="AoTeMan" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_a400_edit_name" />
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.LineDropShadow"
+                android:layout_width="match_parent"
+                android:layout_marginStart="48dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_settings_about_model_name"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="48dp">
+
+                <TextView
+                    style="@style/AppTheme.TextTitleHeadLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Machine Model"
+                    android:textColor="#c9c9c9" />
+
+                <TextView
+                    android:id="@+id/tv_machine_model"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="#6e6e6e"
+                    tools:text="Artisan Pro" />
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.LineDropShadow"
+                android:layout_width="match_parent"
+                android:layout_marginStart="48dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="48dp">
+
+                <TextView
+                    style="@style/AppTheme.TextTitleHeadLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Work Area"
+                    android:textColor="#c9c9c9" />
+
+                <TextView
+                    android:id="@+id/tv_work_area"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="#6e6e6e"
+                    tools:text="400 x 400 x 400 mm" />
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.LineDropShadow"
+                android:layout_width="match_parent"
+                android:layout_marginStart="48dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="48dp">
+
+                <TextView
+                    style="@style/AppTheme.TextTitleHeadLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IP Address"
+                    android:textColor="#c9c9c9" />
+
+                <TextView
+                    android:id="@+id/tv_ip_address"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="#6e6e6e"
+                    tools:text="192.168.1.100" />
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.LineDropShadow"
+                android:layout_width="match_parent"
+                android:layout_marginStart="48dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="48dp">
+
+                <TextView
+                    style="@style/AppTheme.TextTitleHeadLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MAC Address"
+                    android:textColor="#c9c9c9" />
+
+                <TextView
+                    android:id="@+id/tv_mac_address"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="#6e6e6e"
+                    tools:text="18-31-BF-07-EA-5E" />
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.LineDropShadow"
+                android:layout_width="match_parent"
+                android:layout_marginStart="48dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="48dp">
+
+                <TextView
+                    style="@style/AppTheme.TextTitleHeadLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Storage"
+                    android:textColor="#c9c9c9" />
+
+                <TextView
+                    android:id="@+id/tv_storage"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="#6e6e6e"
+                    tools:text="200 M/500 M" />
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.LineDropShadow"
+                android:layout_width="match_parent"
+                android:layout_marginStart="48dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_export_logs"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="48dp"
+                android:paddingEnd="28dp">
+
+                <TextView
+                    style="@style/AppTheme.TextTitleHeadLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="System Logs"
+                    android:textColor="#c9c9c9" />
+
+                <TextView
+                    android:id="@+id/tv_log"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="#6e6e6e"
+                    tools:text="Export" />
+
+                <ImageView
+                    android:id="@+id/iv_export"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:rotation="90"
+                    android:src="@drawable/icon_a400_arrow_right"
+                    app:tint="#6e6e6e" />
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.LineDropShadow"
+                android:layout_width="match_parent"
+                android:layout_marginStart="48dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_certification"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="48dp"
+                android:paddingEnd="28dp">
+
+                <TextView
+                    style="@style/AppTheme.TextTitleHeadLine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Compliance Certification"
+                    android:textColor="#c9c9c9" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_a400_arrow_right"
+                    app:tint="#6e6e6e" />
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.LineDropShadow"
+                android:layout_width="match_parent"
+                android:layout_marginStart="48dp" />
+
+            <TextView
+                android:id="@+id/tv_clear_cache"
+                style="@style/AppTheme.DangerZoneText"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="48dp"
+                android:text="Clear Cache" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.library'
+    id 'com.jakewharton.butterknife'
+}
+android {
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    implementation project(":platform:core")
+    implementation project(':platform:lib')
+    implementation project(":platform:base")
+    implementation project(":ijkplayer_java")
+    implementation Libs.INSTANCE.appCompat
+    implementation Libs.INSTANCE.material
+    implementation Libs.INSTANCE.butterknife
+    annotationProcessor Libs.INSTANCE.butterknifeAnnotation
+    implementation Libs.INSTANCE.rxjava
+    implementation Libs.INSTANCE.rxAndroid
+    implementation Libs.INSTANCE.ARouter
+    annotationProcessor Libs.INSTANCE.ARouterAnnotation
+    implementation Libs.INSTANCE.autoDispose
+    implementation Libs.INSTANCE.autoDisposeLifecycle
+    implementation Libs.INSTANCE.autoDisposeArchComponents
+    implementation Libs.INSTANCE.lifecycleJava8
+    implementation Libs.INSTANCE.logger
+    implementation Libs.INSTANCE.localization
+}

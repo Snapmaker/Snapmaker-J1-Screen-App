@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/theme_color_page_background">
+
+<include
+        layout="@layout/widget_top_bar_a400_calibration"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="207dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_a400_calibration_complete"
+            android:layout_width="@dimen/img_width_148dp"
+            android:layout_height="@dimen/img_width_148dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pic_a400_complete_clap" />
+
+        <TextView
+            android:id="@+id/tv_a400_calibration_complete_title"
+            style="@style/AppTheme.TextTitlePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_a400_calibration_complete"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:textStyle="bold"
+            tools:text="Completed" />
+
+        <TextView
+            android:id="@+id/tv_a400_calibration_complete_content"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_a400_calibration_complete_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/palette_grey_dim"
+            tools:text="恭喜，完成了激光平台高度校准" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout3">
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/AppTheme.PrimaryButton"
+            android:layout_width="306dp"
+            android:layout_height="92dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/img_next_job_background"
+            android:text="@string/calibration_complete_continue_calibration" />
+
+        <Button
+            android:id="@+id/btn_back_home"
+            style="@style/AppTheme.PrimaryButton"
+            android:layout_width="306dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="@dimen/margin_layout_24"
+            android:layout_toEndOf="@+id/btn_next"
+            android:text="@string/calibration_complete_home_screen" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

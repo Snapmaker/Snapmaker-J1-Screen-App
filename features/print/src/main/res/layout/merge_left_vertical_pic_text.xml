@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_main_pic"
+        android:layout_width="479dp"
+        android:layout_height="359dp"
+        android:layout_marginStart="@dimen/margin_48dp"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/pic_cnc_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_24"
+        android:textColor="@color/palette_white_pure"
+        app:layout_constraintStart_toStartOf="@id/iv_main_pic"
+        app:layout_constraintTop_toBottomOf="@id/iv_main_pic"
+        tools:text="手动调整激光高度" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/AppTheme.TextExplain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_12"
+        app:layout_constraintEnd_toEndOf="@id/iv_main_pic"
+        app:layout_constraintStart_toStartOf="@id/iv_main_pic"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="将材料放置于激光雕刻和切割平台上。手动控制执行头移动，直至激光光束在材料表面聚合成面积最小的光斑。点击开始作业，机器将会以当前高度作为激光高度。" />
+</merge>

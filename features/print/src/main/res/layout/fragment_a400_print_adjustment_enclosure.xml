@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_door_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="外罩门状态:开启" />
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/gl_vertical"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_percent=".5" />-->
+
+    <fabscreen.platform.core.ui.view.ActionButton
+        android:id="@+id/btn_led_strip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/margin_layout_20"
+        app:ab_foreground="@drawable/enclosure_control_btn_led"
+        app:ab_title="@string/enclosure_led_strip"
+        app:layout_constraintEnd_toStartOf="@id/btn_fan"
+        app:layout_constraintStart_toStartOf="@+id/tv_door_status"
+        app:layout_constraintTop_toBottomOf="@id/tv_door_status" />
+
+    <fabscreen.platform.core.ui.view.ActionButton
+        android:id="@+id/btn_fan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_20"
+        android:layout_marginTop="20dp"
+        app:ab_foreground="@drawable/enclosure_control_btn_fan"
+        app:ab_title="@string/enclosure_cooling_fan"
+        app:layout_constraintEnd_toEndOf="@+id/tv_door_status"
+        app:layout_constraintStart_toEndOf="@id/btn_led_strip"
+        app:layout_constraintTop_toBottomOf="@id/tv_door_status" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

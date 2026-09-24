@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/widget_top_bar_j1_back_only"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_calibration_high_temperature_warning_normal"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/icon_high_temperature_warning_normal_64x64"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_calibration_glass_plate_normal"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/iv_calibration_high_temperature_warning_normal"
+            android:background="@drawable/icon_glass_plate_normal_64x64"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/fg_bg_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/rl_temperature_title"
+            style="@style/AppTheme.TextTitleSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_24dp"
+            android:text="Heating Check"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_temperature_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:id="@+id/point"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/point" />
+
+            <TextView
+                android:id="@+id/guide_j1_nozzle_check_title"
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/point"
+                android:gravity="center"
+                android:lineSpacingExtra="10sp"
+                android:text="Checking nozzles…"
+                android:textColor="?attr/theme_color_body_secondary1" />
+
+            <ImageView
+                android:id="@+id/iv_nozzle_state_left"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/guide_j1_nozzle_check_title"
+                android:gravity="center"
+                android:src="@drawable/icon_nozzle_left_normal_64x64" />
+
+            <TextView
+                android:id="@+id/st_nozzle_state_left"
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/iv_nozzle_state_left"
+                android:gravity="center"
+                android:lineSpacingExtra="10sp"
+                android:text="@string/extruder_temperature"
+                android:textColor="?attr/theme_color_body_secondary1" />
+
+            <ImageView
+                android:id="@+id/iv_nozzle_state_right"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/st_nozzle_state_left"
+                android:gravity="center"
+                android:src="@drawable/icon_nozzle_right_normal_64x64" />
+
+            <TextView
+                android:id="@+id/st_nozzle_state_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/iv_nozzle_state_right"
+                android:gravity="center"
+                android:lineSpacingExtra="10sp"
+                android:text="@string/extruder_temperature"
+                android:textColor="?attr/theme_color_body_secondary1" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/pb_bg_round"
+                android:indeterminateTint="?attr/theme_color_body_secondary1"
+                android:indeterminateTintMode="src_atop" />
+
+            <ImageView
+                android:id="@+id/iv_temperature"
+                android:layout_width="@dimen/margin_layout_32"
+                android:layout_height="@dimen/margin_layout_32"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/checkbox_checked_normal_64x64"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_line2"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_line1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:text="A burning smell might come out if there’s filament in the nozzle."
+            android:textColor="?attr/theme_color_explain_text" />
+
+        <RelativeLayout
+            android:id="@+id/rl_line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_line2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:id="@+id/point_2"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/point" />
+
+            <TextView
+                android:id="@+id/guide_j1_heated_bed_check_title"
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/point_2"
+                android:gravity="center"
+                android:lineSpacingExtra="10sp"
+                android:text="Checking heated bed…"
+                android:textColor="?attr/theme_color_body_secondary1" />
+
+            <ImageView
+                android:id="@+id/iv_heating_bed"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/guide_j1_heated_bed_check_title"
+                android:gravity="center"
+                android:src="@drawable/icon_heated_bed_normal_64x64" />
+
+            <TextView
+                android:id="@+id/st_heated_bed"
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/iv_heating_bed"
+                android:gravity="center"
+                android:lineSpacingExtra="10sp"
+                android:text="@string/extruder_temperature"
+                android:textColor="?attr/theme_color_body_secondary1" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar_2"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="6dp"
+                android:background="@drawable/pb_bg_round"
+                android:indeterminateTint="?attr/theme_color_body_secondary1"
+                android:indeterminateTintMode="src_atop" />
+
+            <ImageView
+                android:id="@+id/iv_temperature_2"
+                android:layout_width="@dimen/margin_layout_32"
+                android:layout_height="@dimen/margin_layout_32"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/checkbox_checked_normal_64x64"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_bg_section_detail_normal" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/AppTheme.PrimaryButton"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="6dp"
+            android:text="Next" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

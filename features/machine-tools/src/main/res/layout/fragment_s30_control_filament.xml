@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_nozzle_left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/all_category_button"
+        android:padding="@dimen/margin_layout_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gl_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fabscreen.platform.core.ui.view.CustomArcSeekBar
+            android:id="@+id/cas_extruder_target_temp_left"
+            style="@style/AppTheme.CustomSeekBarTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="40dp"
+            app:max="300" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_l_hotend_title"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="左喷嘴温度"
+                android:textColor="?attr/theme_color_tab_uncheck" />
+
+            <LinearLayout
+                android:id="@+id/ll_extruder_left_temp_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_l_hotend_title"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cur_temp_l"
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\/" />
+
+                <TextView
+                    android:id="@+id/tv_target_temp_l"
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="100" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all_unit_temperature"
+                    android:textSize="?attr/theme_font_size_title2" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_extruder_left_temp_value"
+                android:layout_centerHorizontal="true"
+                android:text="当前温度/目标温度" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_filament_out_l"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="退"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_e0_heat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始加热" />
+
+            <Button
+                android:id="@+id/btn_filament_in_l"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="进"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_nozzle_right"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/all_category_button"
+        android:padding="@dimen/margin_layout_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fabscreen.platform.core.ui.view.CustomArcSeekBar
+            android:id="@+id/cas_extruder_target_temp_right"
+            style="@style/AppTheme.CustomSeekBarTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="40dp"
+            app:max="300" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_r_hotend_title"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="右喷嘴温度"
+                android:textColor="?attr/theme_color_tab_uncheck" />
+
+            <LinearLayout
+                android:id="@+id/ll_extruder_right_temp_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_r_hotend_title"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cur_temp_r"
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\/" />
+
+                <TextView
+                    android:id="@+id/tv_target_temp_r"
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="100" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all_unit_temperature"
+                    android:textSize="?attr/theme_font_size_title2" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_extruder_right_temp_value"
+                android:layout_centerHorizontal="true"
+                android:text="当前温度/目标温度" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_filament_out_r"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="退"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_e1_heat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始加热" />
+
+            <Button
+                android:id="@+id/btn_filament_in_r"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="进"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_switch_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换到左喷嘴"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_switch_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换到右喷嘴"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fabscreen.platform.core.ui.view.RotateButtonView
+        android:id="@+id/rbv_a400_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_layout_24"
+        android:layout_marginTop="@dimen/margin_layout_16"
+        android:layout_marginEnd="@dimen/margin_layout_48"
+        android:layout_marginBottom="@dimen/margin_layout_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="284dp"
+    android:background="@drawable/dialog_round_grey"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/margin_layout_48"
+    android:paddingBottom="@dimen/margin_layout_48">
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressbar"
+        android:layout_width="102dp"
+        android:layout_height="102dp"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        app:indicatorColor="?attr/theme_color_accent_success"
+        app:indicatorInset="0dp"
+        app:indicatorSize="100dp"
+        app:trackColor="?attr/theme_color_button_gradient_start"
+        app:trackCornerRadius="6dp"
+        app:trackThickness="6dp"
+        tools:progress="1" />
+
+    <!--    <fabscreen.platform.base.view.CircularProgressView-->
+    <!--        android:id="@+id/pb_progress"-->
+    <!--        android:layout_width="96dp"-->
+    <!--        android:layout_height="96dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        app:cpv_backgroundColor="?attr/theme_color_button_gradient_start"-->
+    <!--        app:cpv_fillInColor="#00FFFFFF"-->
+    <!--        app:cpv_frameColor="#00FFFFFF"-->
+    <!--        app:cpv_percentage="0"-->
+    <!--        app:cpv_progressCircleColor="#00FFFFFF"-->
+    <!--        app:cpv_progressColor="?attr/theme_color_accent_success"-->
+    <!--        app:cpv_strokeWidth="6dp" />-->
+
+    <TextView
+        android:id="@+id/tv_progress_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/progressbar"
+        android:layout_alignBottom="@+id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/palette_white_pure"
+        android:textSize="@dimen/font_size_28sp" />
+
+    <TextView
+        android:id="@+id/tv_dialog_loading_tv"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_layout_48"
+        android:text="Operating the file..."
+        android:textColor="@color/palette_white_pure"
+        android:textSize="@dimen/font_size_28sp" />
+
+</RelativeLayout>

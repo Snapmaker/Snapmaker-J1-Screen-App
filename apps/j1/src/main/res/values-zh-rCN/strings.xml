@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">J1</string>
+    <string name="home_content">点击屏幕选择文件</string>
+    <string name="all_j1_can_not_connect">系统无法获取主控信息，请通过 support@snapmaker.com 联系技术支持。</string>
+    <string name="j1_home_start_printing">开始打印</string>
+    <string name="j1_home_tip">点击屏幕选择文件</string>
+    <string name="j1_home_control">控制</string>
+    <string name="j1_home_calibration">校准</string>
+    <string name="j1_home_settings">设置</string>
+
+</resources>

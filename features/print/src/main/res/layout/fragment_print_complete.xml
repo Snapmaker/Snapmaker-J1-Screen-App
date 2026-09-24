@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clickable="true"
+    android:focusable="true">
+
+<!--  TODO: for port mode  -->
+    <RelativeLayout
+        android:id="@+id/view_print_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="@dimen/margin_layout_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_print_base_show"
+            android:layout_width="600dp"
+            android:layout_height="408dp"
+            android:layout_marginTop="200dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/demo_print_platform" />
+
+        <ImageView
+            android:id="@+id/iv_print_file_diagram"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_alignBottom="@+id/iv_print_base_show"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/demo_print_model1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_print_file_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view_print_model"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_print_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/demo_print_complete" />
+
+        <TextView
+            android:id="@+id/tv_print_print_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_print_complete"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_10"
+            android:text="打印完成！"
+            android:textColor="@color/default_theme_title"
+            android:textSize="@dimen/font_size_h2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_print_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_print_print_complete"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_10"
+            android:textColor="@color/default_theme_desc1"
+            android:textSize="@dimen/font_size_h4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_print_file_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_10"
+            android:text="打印时间：20 d 13h 20m"
+            android:textColor="@color/default_theme_desc1"
+            android:textSize="@dimen/font_size_h4" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

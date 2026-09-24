@@ -1,0 +1,603 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="BaseTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--  Default Theme -->
+    <style name="AppTheme" parent="BaseTheme">
+        <!--   Color Palette   -->
+        <item name="theme_color_primary">@color/palette_orange_pizazz</item>
+        <!--   Auxiliary color -->
+        <item name="theme_color_accent_error">@color/palette_red_sunset</item>
+        <item name="theme_color_accent_hint">@color/palette_blue_dodger</item>
+        <item name="theme_color_accent_success">@color/palette_green_mountain_meadow</item>
+        <item name="theme_color_accent_warning">@color/palette_orange_safety_deep</item>
+        <item name="theme_color_accent_heating">@color/palette_yellow_gold</item>
+
+        <!--   Neutral colors  -->
+        <item name="theme_color_page_background">@color/palette_black_pearl</item>
+        <item name="theme_color_black_mask">@color/palette_black_pearl</item>
+        <item name="theme_color_disabled">@color/palette_grey_mid</item>
+        <item name="theme_color_divider">@color/palette_grey_mid</item>
+        <item name="theme_color_explain_text">@color/palette_grey_storm</item>
+        <item name="theme_color_body_secondary1">@color/palette_grey_french</item>
+        <item name="theme_color_body_secondary2">@color/palette_grey_santa</item>
+        <item name="theme_color_body_secondary">@color/palette_grey_dim</item>
+        <item name="theme_color_body_explain">@color/palette_grey_storm</item>
+        <item name="theme_color_title_primary">@color/palette_white_athens</item>
+        <item name="theme_color_title_secondary">@color/palette_white_athens</item>
+        <item name="theme_color_body_primary">@color/palette_white_athens</item>
+        <item name="theme_color_tab_check">@color/palette_white_athens</item>
+        <item name="theme_color_tab_uncheck">@color/palette_grey_santa</item>
+        <item name="theme_color_switch_checked">@color/palette_orange_pizazz</item>
+        <item name="theme_color_switch_uncheck">@color/palette_grey_santa</item>
+        <item name="theme_color_section_detail_background">@color/palette_grey_nero</item>
+
+        <!--   Gradient colors  -->
+        <item name="theme_color_normal_button_gradient_start">@color/palette_orange_safety</item>
+        <item name="theme_color_normal_button_gradient_end">@color/palette_orange_web</item>
+        <item name="theme_color_pressed_button_gradient_start">@color/palette_orange_international
+        </item>
+        <item name="theme_color_pressed_button_gradient_end">@color/palette_orange_pizazz_dark
+        </item>
+        <item name="theme_color_card_view_gradient_start">@color/palette_grey_dark</item>
+        <item name="theme_color_card_view_gradient_end">@color/palette_black_rock</item>
+        <item name="theme_color_button_gradient_start">@color/palette_grey_payne</item>
+        <item name="theme_color_button_gradient_end">@color/palette_grey_mid</item>
+
+        <!--    Font    -->
+        <item name="theme_font_size_display">@dimen/font_size_72sp</item>
+        <item name="theme_font_size_large_title">@dimen/font_size_36sp</item>
+        <item name="theme_font_size_title1">@dimen/font_size_24sp</item>
+        <item name="theme_font_size_title2">@dimen/font_size_20sp</item>
+        <item name="theme_font_size_headline">@dimen/font_size_20sp</item>
+        <item name="theme_font_size_body1">@dimen/font_size_18sp</item>
+        <item name="theme_font_size_body2">@dimen/font_size_16sp</item>
+        <item name="theme_font_size_explain">@dimen/font_size_14sp</item>
+
+        <item name="theme_font_line_height_display">@dimen/font_line_height_60sp</item>
+        <item name="theme_font_line_height_large_title">@dimen/font_line_height_45sp</item>
+        <item name="theme_font_line_height_title1">@dimen/font_line_height_32sp</item>
+        <item name="theme_font_line_height_title2">@dimen/font_line_height_30sp</item>
+        <item name="theme_font_line_height_headline">@dimen/font_line_height_30sp</item>
+        <item name="theme_font_line_height_body1">@dimen/font_line_height_28sp</item>
+        <item name="theme_font_line_height_body2">@dimen/font_line_height_24sp</item>
+        <item name="theme_font_line_height_explain">@dimen/font_line_height_20sp</item>
+
+        <item name="theme_navigation_bar_height">@dimen/margin_layout_48</item>
+        <item name="theme_page_margins">@dimen/margin_layout_16</item>
+
+        <!--    Spacing    -->
+        <item name="theme_spacing1">@dimen/margin_layout_2</item>
+        <item name="theme_spacing2">@dimen/margin_layout_4</item>
+        <item name="theme_spacing3">@dimen/margin_layout_8</item>
+        <item name="theme_spacing4">@dimen/margin_layout_12</item>
+        <item name="theme_spacing5">@dimen/margin_layout_16</item>
+        <item name="theme_spacing6">@dimen/margin_layout_20</item>
+        <item name="theme_spacing7">@dimen/margin_layout_24</item>
+        <item name="theme_spacing8">@dimen/margin_layout_28</item>
+        <item name="theme_spacing9">@dimen/margin_layout_48</item>
+        <item name="theme_spacing10">@dimen/img_height_188dp</item>
+        <item name="theme_spacing11">@dimen/margin_layout_37</item>
+        <item name="theme_spacing12">@dimen/img_height_188dp</item>
+        <item name="theme_spacing13">@dimen/img_width_204dp</item>
+        <item name="theme_spacing14">@dimen/img_height_139dp</item>
+        <item name="theme_spacing15">@dimen/img_width_231dp</item>
+        <item name="theme_spacing16">@dimen/margin_layout_60</item>
+        <item name="theme_spacing17">@dimen/margin_layout_40</item>
+        <item name="theme_spacing18">@dimen/img_width_140dp</item>
+
+        <!-- Button radius-->
+        <item name="theme_btn_radius">@dimen/radius_button_111</item>
+
+        <!-- dialog -->
+        <item name="theme_dialog_content_marginLeft">@dimen/margin_layout_64</item>
+        <item name="theme_dialog_content_marginRight">@dimen/margin_layout_64</item>
+        <item name="theme_dialog_content_marginTop">@dimen/margin_layout_64</item>
+        <item name="theme_dialog_content_marginBottom">@dimen/margin_layout_48</item>
+        <item name="theme_dialog_btn_height">@dimen/height_button_108</item>
+        <item name="theme_dialog_title_and_content_margin">@dimen/margin_layout_24</item>
+        <item name="theme_dialog_pic_width">@dimen/height_dialog_pic_112</item>
+        <item name="theme_dialog_pic_height">@dimen/height_dialog_pic_112</item>
+        <item name="theme_dialog_bg_radius">@dimen/margin_layout_16</item>
+        <item name="theme_dialog_line_color">@color/palette_grey_dim</item>
+        <item name="theme_dialog_small_width">@dimen/width_dialog_580</item>
+        <item name="theme_dialog_middle_width">@dimen/width_dialog_580</item>
+        <item name="theme_dialog_pic_marginBottom">@dimen/margin_layout_12</item>
+        <item name="theme_dialog_min_height">@dimen/height_dialog_160</item>
+
+        <!-- file management-->
+        <item name="theme_file_manege_item_height">@dimen/height_list_218</item>
+        <item name="theme_file_manege_item_pic_height">@dimen/height_list_154</item>
+        <item name="theme_file_manege_check_box_height">@dimen/margin_layout_32</item>
+        <item name="theme_file_manege_check_box_margin">@dimen/margin_layout_8</item>
+        <item name="theme_file_manege_empty_pic_width">@dimen/height_list_58</item>
+        <item name="theme_file_manege_empty_pic_height">@dimen/margin_layout_8</item>
+        <item name="theme_file_manege_item_name_color">@color/palette_grey_start</item>
+        <item name="theme_file_manege_item_name_left">@dimen/margin_layout_48</item>
+        <item name="theme_file_manege_empty_bg">@drawable/all_button_round_orange</item>
+        <item name="theme_file_manege_item_name_top">@dimen/margin_layout_32</item>
+        <item name="theme_file_manege_item_txt_size">@dimen/font_size_16sp</item>
+        <item name="theme_file_manege_item_txt_select_color">@color/palette_blue_ribbon</item>
+        <item name="theme_file_manege_item_txt_color">@color/palette_grey_dim</item>
+        <item name="theme_file_manege_item_line_color">@color/palette_grey_nero</item>
+        <item name="theme_file_manege_item_tip_content_color">@color/palette_grey_dim</item>
+        <item name="theme_file_manege_menu_check_icon">@drawable/all_button_round_orange</item>
+        <item name="theme_file_manege_bar_height">@dimen/button_height_48dp</item>
+        <item name="theme_file_manege_empty_logo_margin">@dimen/margin_layout_12</item>
+        <item name="theme_file_manege_empty_title_margin">@dimen/margin_layout_4</item>
+        <item name="theme_file_manege_item_bg_color">@color/palette_black_rock</item>
+        <item name="theme_file_manege_menu_line_color">@color/palette_grey_mid</item>
+
+        <!--  Icon size  -->
+        <item name="theme_icon_tools_button">@dimen/icon_size_40</item>
+        <item name="theme_icon_tools_decorate">@dimen/icon_size_32</item>
+        <item name="theme_item_menu_height">@dimen/font_line_height_60sp</item>
+        <item name="theme_item_menu_width">230dp</item>
+        <item name="theme_item_menu_bg">@drawable/all_button_round_orange</item>
+        <item name="theme_item_menu_bg_color">@color/palette_grey_nero</item>
+
+        <item name="theme_icon_functions_large">@dimen/icon_size_40</item>
+        <item name="theme_icon_functions_medium">@dimen/icon_size_20</item>
+        <item name="theme_icon_functions_small">@dimen/icon_size_20</item>
+
+        <!--  Icon resources -->
+        <item name="theme_icon_tick">@drawable/ic_j1_tick</item>
+
+        <!--  list item-->
+        <item name="theme_list_item_height">@dimen/list_item_height52</item>
+        <item name="theme_language_item_select_color">@color/palette_black_rock</item>
+
+        <!--   DELETE   -->
+        <item name="theme_color_primary_gradient_start">@color/palette_orange_web</item>
+        <item name="theme_color_primary_gradient_end">@color/palette_orange_safety</item>
+        <item name="theme_color_accent_info">@color/palette_blue_dodger</item>
+        <item name="theme_color_card_view_background">@color/palette_black_rock</item>
+        <item name="theme_color_default_widget_disabled">@color/palette_grey_mid</item>
+        <item name="theme_color_primary_button_text">@color/palette_white_athens</item>
+
+        <item name="theme_color_secondary_button_text">@color/palette_grey_french</item>
+        <item name="theme_color_secondary_button">@color/palette_white_athens</item>
+        <item name="theme_color_secondary_button_press">@color/palette_grey_french</item>
+        <item name="theme_color_secondary_button_disabled">@color/palette_grey_mid</item>
+    </style>
+
+    <!--    Font    -->
+
+    <!--    illustrations-->
+
+    <!--    button-->
+
+
+    <style name="AppTheme.Activity" parent="AppTheme" />
+
+    <style name="AppTheme.Activity.ScreenSaver" parent="AppTheme.Activity">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.DialogActivity" parent="Theme.AppCompat.Dialog">
+
+    </style>
+
+    <style name="AppTheme.DangerZoneText">
+        <item name="android:textColor">?attr/theme_color_accent_error</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <style name="AppTheme.SwitchButton">
+        <item name="android:thumb">@drawable/selector_j1_switch_thumb</item>
+        <item name="switchMinWidth">52dp</item>
+        <item name="track">@drawable/shape_j1_switch_track</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.SectionDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/palette_grey_mid</item>
+    </style>
+
+    <style name="AppTheme.LineDropShadow">
+        <item name="android:background">@drawable/line_a400_drop_shadow</item>
+        <item name="android:layout_height">4dp</item>
+    </style>
+
+    <style name="AppTheme.SegmentedButtonGroup">
+        <item name="sbg_borderColor">?attr/theme_color_body_secondary</item>
+        <item name="sbg_borderSize">1px</item>
+        <item name="sbg_radius">4dp</item>
+        <item name="sbg_backgroundColor">@color/default_theme_primary</item>
+        <item name="sbg_selectorColor">@color/custom_grey_700</item>
+        <!--        <item name="sbg_selectorTextColor">@color/default_theme_secondary</item>-->
+    </style>
+
+    <style name="AppTheme.Dialog.Fullscreen" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:theme">@style/AppTheme</item>
+        <item name="theme_color_secondary_button_text">@color/palette_grey_french</item>
+        <item name="theme_color_secondary_button">@color/palette_white_athens</item>
+        <item name="theme_color_secondary_button_press">@color/palette_grey_french</item>
+        <item name="theme_color_secondary_button_disabled">@color/palette_grey_mid</item>
+
+        <!--    Font Size    -->
+        <item name="theme_font_size_title1">@dimen/font_size_24sp</item>
+        <item name="theme_font_size_title2">@dimen/font_size_20sp</item>
+        <item name="theme_font_size_headline">@dimen/font_size_20sp</item>
+        <item name="theme_font_size_body1">@dimen/font_size_18sp</item>
+        <item name="theme_font_size_body2">@dimen/font_size_16sp</item>
+        <item name="android:windowMinWidthMajor">70%</item>
+        <item name="android:windowMinWidthMinor">70%</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="baseTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:theme">@style/AppTheme</item>
+        <!--    Font Size    -->
+        <item name="theme_font_size_title1">@dimen/font_size_24sp</item>
+        <item name="theme_font_size_title2">@dimen/font_size_20sp</item>
+        <item name="theme_font_size_headline">@dimen/font_size_20sp</item>
+        <item name="theme_font_size_body1">@dimen/font_size_18sp</item>
+        <item name="theme_font_size_body2">@dimen/font_size_16sp</item>
+
+    </style>
+
+    <!--  Text  -->
+
+    <style name="AppTheme.TextTitleDisplay" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/theme_color_title_primary</item>
+        <item name="android:textSize">?attr/theme_font_size_display</item>
+    </style>
+
+    <style name="AppTheme.TextLargeTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/theme_color_title_primary</item>
+        <item name="android:textSize">?attr/theme_font_size_large_title</item>
+    </style>
+
+    <style name="AppTheme.TextExplain" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/theme_color_title_primary</item>
+        <item name="android:textSize">?attr/theme_font_size_explain</item>
+    </style>
+
+    <style name="AppTheme.TextTitleHeadLine" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/theme_color_title_primary</item>
+        <item name="android:textSize">?attr/theme_font_size_headline</item>
+    </style>
+
+    <style name="AppTheme.TextTitlePrimary" parent="baseTextView">
+        <item name="android:textColor">?attr/theme_color_title_primary</item>
+        <item name="android:textSize">?attr/theme_font_size_title1</item>
+    </style>
+
+    <style name="AppTheme.TextTitleSecondary" parent="baseTextView">
+        <item name="android:textColor">?attr/theme_color_title_secondary</item>
+        <item name="android:textSize">?attr/theme_font_size_title2</item>
+    </style>
+
+    <style name="AppTheme.TextBody1" parent="baseTextView">
+        <item name="android:textColor">?attr/theme_color_body_primary</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <style name="AppTheme.TextBody2" parent="baseTextView">
+        <item name="android:textColor">?attr/theme_color_body_secondary</item>
+        <item name="android:textSize">?attr/theme_font_size_body2</item>
+    </style>
+
+    <style name="AppTheme.TextBody3" parent="baseTextView">
+        <item name="android:textColor">?attr/theme_color_explain_text</item>
+        <item name="android:textSize">?attr/theme_font_size_explain</item>
+    </style>
+
+    <style name="AppTheme.TextBody4" parent="baseTextView">
+        <item name="android:textColor">?attr/theme_color_body_secondary1</item>
+        <item name="android:textSize">?attr/theme_font_size_body2</item>
+    </style>
+
+    <style name="AppTheme.TextBody5" parent="baseTextView">
+        <item name="android:textColor">?attr/theme_color_body_secondary1</item>
+        <item name="android:textSize">?attr/theme_font_size_body2</item>
+        <item name="android:layout_marginLeft">?attr/theme_spacing3</item>
+    </style>
+
+    <style name="AppTheme.TextBody6" parent="baseTextView">
+        <item name="android:textColor">?attr/theme_color_title_primary</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <style name="AppTheme.ClickableText" parent="AppTheme.TextBody1"></style>
+
+    <!--  Buttons  -->
+
+    <!-- default button: blue border rounded button -->
+    <style name="AppTheme.Button.DefaultButton" parent="AppTheme.Button">
+        <item name="android:background">@drawable/all_button_round_default</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/custom_grey_0</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <style name="AppTheme.Button.DefaultButtonLarge" parent="AppTheme.Button">
+        <item name="android:background">@drawable/all_button_round_default</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/custom_grey_0</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+
+    <style name="AppTheme.PrimaryButton" parent="AppTheme.Button">
+        <item name="android:layout_height">?attr/theme_primary_button_height</item>
+        <item name="android:background">@drawable/all_button_round_primary</item>
+        <item name="android:textColor">?attr/theme_color_primary_button_text</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <style name="AppTheme.SecondaryButton" parent="AppTheme.Button">
+        <item name="android:layout_height">?attr/theme_primary_button_height</item>
+        <item name="android:background">@drawable/selector_a400_bg_secondary_button</item>
+        <item name="android:textColor">@color/selector_secondary_button_text</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <style name="AppTheme.SecondaryButtonRed" parent="AppTheme.Button">
+        <item name="android:layout_height">?attr/theme_primary_button_height</item>
+        <item name="android:background">@drawable/selector_a400_bg_secondary_button_red</item>
+        <item name="android:textColor">@color/selector_secondary_button_text_red</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <style name="AppTheme.WhiteButton" parent="AppTheme.Button">
+        <item name="android:layout_height">92dp</item>
+        <item name="android:background">@drawable/a400_select_language_bg</item>
+        <item name="android:textColor">@color/a400_select_language_txt_color</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <!-- blue button: Example Change the original generation 2 to generation 3 -->
+    <style name="AppTheme.Button.BlueButton" parent="AppTheme.Button">
+        <item name="android:background">@drawable/all_button_round_primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">?attr/theme_color_body_primary</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <style name="AppTheme.Button.BlueButtonLarge" parent="AppTheme.Button">
+        <item name="android:background">@drawable/all_button_large_round_primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">?attr/theme_color_body_primary</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <style name="AppTheme.Button.WhiteButtonLarge" parent="AppTheme.Button">
+        <item name="android:background">@drawable/all_button_white_large_round_primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">?attr/theme_color_body_primary</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <style name="AppTheme.Button.OrangeButton" parent="AppTheme.Button">
+        <item name="background">@drawable/all_button_round_primary</item>
+        <item name="android:textColor">?attr/theme_color_primary_button_text</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <!-- basic button theme -->
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- stop button: grey rounded button with red text -->
+    <style name="AppTheme.Button.StopButton" parent="AppTheme.Button">
+        <item name="android:background">@drawable/all_stop_button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">?attr/theme_color_accent_error</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <!-- Square Blue -->
+    <style name="AppTheme.Button.SquareBlue" parent="AppTheme.Button">
+        <item name="android:background">@drawable/all_button_large_round_primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/custom_grey_0</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <!-- Square Grey -->
+    <style name="AppTheme.Button.SquareGrey" parent="AppTheme.Button">
+        <item name="android:background">@drawable/all_button_square_grey</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/custom_grey_0</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <!-- Square Red -->
+    <style name="AppTheme.Button.SquareRed" parent="AppTheme.Button">
+        <item name="android:background">@drawable/all_button_square_red</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/custom_grey_0</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+    </style>
+
+    <!-- default editText: blue bottom line editText-->
+    <style name="AppTheme.EditText.DefaultEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/all_edit_text</item>
+        <item name="android:colorAccent">@color/default_theme_secondary</item>
+        <item name="android:textCursorDrawable">@drawable/all_edit_text_cursor</item>
+        <item name="android:textColorHighlight">@color/default_theme_secondary</item>
+        <!-- TODO : need to identify select handle shape-->
+        <item name="android:textSelectHandle">@color/default_theme_secondary</item>
+        <item name="android:textSelectHandleLeft">@color/default_theme_secondary</item>
+        <item name="android:textSelectHandleRight">@color/default_theme_secondary</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+        <item name="android:textColor">@color/default_theme_title</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="AppTheme.EditText.GuideEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/guide_edit_text</item>
+        <item name="android:colorAccent">@color/default_theme_secondary</item>
+        <item name="android:textCursorDrawable">@drawable/all_edit_text_cursor</item>
+        <item name="android:textColorHighlight">@color/default_theme_secondary</item>
+        <!-- TODO : need to identify select handle shape-->
+        <item name="android:textSelectHandle">@color/default_theme_secondary</item>
+        <item name="android:textSelectHandleLeft">@color/default_theme_secondary</item>
+        <item name="android:textSelectHandleRight">@color/default_theme_secondary</item>
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+        <item name="android:textColor">@color/default_theme_title</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <!-- default switch: blue switch -->
+    <style name="AppTheme.Switch.BlueSwitch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="colorAccent">@color/default_theme_secondary</item>
+
+        <item name="colorPrimary">@color/default_theme_secondary</item>
+
+        <item name="colorControlActivated">@color/default_theme_secondary</item>
+
+        <item name="colorSwitchThumbNormal">@color/default_theme_desc2</item>
+
+        <item name="android:colorForeground">@color/default_theme_desc2</item>
+    </style>
+
+    <style name="AppTheme.CheckBox.DefaultCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlActivated">?attr/theme_color_primary</item>
+        <item name="android:colorControlNormal">?attr/theme_color_primary</item>
+    </style>
+
+    <style name="AppTheme.TextView.WarningTextView" parent="baseTextView">
+        <item name="android:layout_marginStart">@dimen/margin_layout_40</item>
+        <item name="android:layout_marginEnd">@dimen/margin_layout_40</item>
+        <item name="android:background">@drawable/all_text_view_warning_default</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/grey_500</item>
+        <item name="android:textSize">@dimen/font_size_h6</item>
+        <item name="android:padding">@dimen/padding_5</item>
+    </style>
+
+    <style name="AppTheme.ContentLoadingProgressBar">
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="AppTheme.RulerView">
+        <item name="rv_backgroundColor">@color/transparent</item>
+        <item name="rv_indicatorColor">@color/default_theme_secondary</item>
+        <item name="rv_longScaleColor">@color/custom_grey_400</item>
+        <item name="rv_longScaleHeight">80dp</item>
+        <item name="rv_longScaleWidth">3dp</item>
+        <item name="rv_markerTextColor">@color/custom_grey_400</item>
+        <item name="rv_markerTextMargin">@dimen/margin_layout_5</item>
+        <item name="rv_markerTextSize">14sp</item>
+        <item name="rv_shortScaleColor">@color/custom_grey_400</item>
+        <item name="rv_shortScaleHeight">50dp</item>
+        <item name="rv_shortScaleWidth">3dp</item>
+        <item name="rv_unitSpacing">10dp</item>
+    </style>
+
+    <style name="AppTheme.VerticalRulerView">
+        <item name="rv_backgroundColor">@color/transparent</item>
+        <item name="rv_indicatorColor">@color/default_theme_secondary</item>
+        <item name="rv_longScaleColor">@color/custom_grey_400</item>
+        <item name="rv_longScaleHeight">3dp</item>
+        <item name="rv_longScaleWidth">80dp</item>
+        <item name="rv_markerTextColor">@color/custom_grey_400</item>
+        <item name="rv_markerTextMargin">@dimen/margin_layout_5</item>
+        <item name="rv_markerTextSize">14sp</item>
+        <item name="rv_shortScaleColor">@color/custom_grey_400</item>
+        <item name="rv_shortScaleHeight">3dp</item>
+        <item name="rv_shortScaleWidth">50dp</item>
+        <item name="rv_unitSpacing">10dp</item>
+    </style>
+
+    <style name="AppTheme.CustomSeekBarTheme">
+        <item name="arcColor">?attr/theme_color_divider</item>
+        <item name="arcWidth">20dp</item>
+        <item name="progressColor">?attr/theme_color_primary</item>
+        <item name="progressWidth">20dp</item>
+        <item name="rotation">180</item>
+        <item name="roundEdge">true</item>
+        <item name="startAngle">30</item>
+        <item name="sweepAngle">300</item>
+        <item name="touchInside">false</item>
+    </style>
+
+    <style name="AppTheme.DefaultProgressButton">
+        <item name="android:textSize">?attr/theme_font_size_body1</item>
+        <item name="android:textColor">@color/custom_grey_0</item>
+        <item name="textAllCaps">false</item>
+        <item name="pb_progressBackground">@drawable/all_button_round_default_normal</item>
+        <item name="pb_progressMargin">1dp</item>
+        <item name="pb_radius">@dimen/radius_button_45</item>
+    </style>
+
+    <style name="AppTheme.DefaultPageIndicator">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="tabBackground">@drawable/all_page_indicator</item>
+        <item name="tabGravity">center</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabRippleColor">@color/transparent</item>
+    </style>
+
+
+    <style name="DialogTheme" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ToastTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="DialogTheme1" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="DialogContentMarginTheme">
+        <item name="android:layout_marginLeft">?attr/theme_dialog_content_marginLeft</item>
+        <item name="android:layout_marginRight">?attr/theme_dialog_content_marginRight</item>
+        <item name="android:layout_marginTop">?attr/theme_dialog_content_marginTop</item>
+        <item name="android:layout_marginBottom">?attr/theme_dialog_content_marginBottom</item>
+    </style>
+
+    <style name="TabLayTheme">
+        <item name="android:textSize">@dimen/font_size_28sp</item>
+        <item name="android:textColor">@color/palette_blue_ribbon</item>
+    </style>
+
+    <style name="AppTheme.CheckBox">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/select_a400_check_box</item>
+    </style>
+
+    <style name="AppTheme.CircularCheckBox">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/select_j1_check_box</item>
+    </style>
+</resources>

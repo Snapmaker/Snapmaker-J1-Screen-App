@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_home_bg"
+    android:orientation="horizontal">
+
+    <fabscreen.platform.core.ui.view.VideoPlayerIJK
+        android:id="@+id/iv_home_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--  TODO: Top info bar may design as a widget.  -->
+    <RelativeLayout
+        android:id="@+id/rl_j1_home_top_info_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="@dimen/margin_layout_16"
+        android:layout_marginEnd="@dimen/margin_layout_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_j1_home_top_info_bar_left_extruder"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/iv_j1_home_icon_extruder_left"
+                android:layout_width="@dimen/margin_layout_32"
+                android:layout_height="@dimen/margin_layout_32"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_nozzle_left_normal_64x64" />
+
+            <TextView
+                android:id="@+id/tv_j1_home_left_extruder_diameter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/iv_j1_home_icon_extruder_left"
+                android:text="@string/all_0"
+                android:textColor="@color/palette_grey_storm" />
+
+            <TextView
+                android:id="@+id/tv_j1_home_left_extruder_diameter_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/tv_j1_home_left_extruder_diameter"
+                android:text="@string/all_unit_mm"
+                android:textAlignment="center"
+                android:textColor="@color/palette_grey_storm" />
+
+            <TextView
+                android:id="@+id/tv_j1_home_left_extruder_temp"
+                android:layout_width="26dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/tv_j1_home_left_extruder_diameter_unit"
+                android:gravity="right"
+                android:text="@string/all_0"
+                android:textColor="@color/palette_grey_storm" />
+
+            <TextView
+                android:id="@+id/tv_j1_home_left_extruder_temp_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/tv_j1_home_left_extruder_temp"
+                android:text="@string/all_unit_temperature"
+                android:textColor="@color/palette_grey_storm" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_j1_home_top_info_bar_right_extruder"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_layout_28"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/rl_j1_home_top_info_bar_left_extruder">
+
+            <ImageView
+                android:id="@+id/iv_j1_home_icon_extruder_right"
+                android:layout_width="@dimen/margin_layout_32"
+                android:layout_height="@dimen/margin_layout_32"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_nozzle_right_normal_64x64" />
+
+            <TextView
+                android:id="@+id/tv_j1_home_right_extruder_diameter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/iv_j1_home_icon_extruder_right"
+                android:text="@string/all_0"
+                android:textColor="@color/palette_grey_storm" />
+
+            <TextView
+                android:id="@+id/tv_j1_home_right_extruder_diameter_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/tv_j1_home_right_extruder_diameter"
+                android:text="@string/all_unit_mm"
+                android:textAlignment="center"
+                android:textColor="@color/palette_grey_storm" />
+
+            <TextView
+                android:id="@+id/tv_j1_home_right_extruder_temp"
+                android:layout_width="26dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/tv_j1_home_right_extruder_diameter_unit"
+                android:gravity="right"
+                android:text="@string/all_0"
+                android:textColor="@color/palette_grey_storm" />
+
+            <TextView
+                android:id="@+id/tv_j1_home_right_extruder_temp_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/tv_j1_home_right_extruder_temp"
+                android:text="@string/all_unit_temperature"
+                android:textColor="@color/palette_grey_storm" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_j1_home_top_info_bar_heated_bed"
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_layout_28"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/rl_j1_home_top_info_bar_right_extruder">
+
+            <ImageView
+                android:id="@+id/iv_j1_home_icon_heated_bed"
+                android:layout_width="@dimen/margin_layout_32"
+                android:layout_height="@dimen/margin_layout_32"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_heated_bed_normal_64x64" />
+
+            <TextView
+                android:id="@+id/tv_j1_home_heated_bed_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/iv_j1_home_icon_heated_bed"
+                android:text="@string/all_0"
+                android:textColor="@color/palette_grey_storm" />
+
+            <TextView
+                android:id="@+id/tv_j1_home_heated_bed_temp_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/tv_j1_home_heated_bed_temp"
+                android:text="@string/all_unit_temperature"
+                android:textColor="@color/palette_grey_storm" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/iv_j1_home_wifi"
+                android:layout_width="@dimen/margin_layout_32"
+                android:layout_height="@dimen/margin_layout_32"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_layout_8"
+                android:layout_toStartOf="@id/iv_j1_home_devices" />
+
+            <ImageView
+                android:id="@+id/iv_j1_home_devices"
+                android:layout_width="@dimen/icon_size_40"
+                android:layout_height="@dimen/icon_size_40"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_home_devices"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_j1_home_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/ll_j1_home_bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_j1_home_top_info_bar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_j1_home_jade_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@string/font_roboto_condensed"
+                android:text="@string/j1_home_start_printing"
+                android:textAlignment="center"
+                android:textColor="#FF8A00"
+                android:textSize="52sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_j1_home_quick_start_desc"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_j1_home_jade_one"
+                android:layout_centerHorizontal="true"
+                android:text="@string/j1_home_tip"
+                android:textAlignment="center"
+                android:textSize="?attr/theme_font_size_title1" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_j1_home_quick_start"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/ll_j1_home_bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_j1_home_top_info_bar" />
+
+    <TextView
+        style="@style/AppTheme.TextBody2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_layout_16"
+        android:text="@string/home_content"
+        android:textColor="?attr/theme_color_body_secondary2"
+        app:layout_constraintBottom_toTopOf="@id/ll_j1_home_bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_j1_home_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="@dimen/margin_layout_16"
+        android:layout_marginEnd="@dimen/margin_layout_16"
+        android:layout_marginBottom="@dimen/margin_layout_16"
+        android:background="@drawable/pic_home_bottom_bar_bg"
+        android:divider="@drawable/all_vertically_divider"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_j1_home_bottom_navigation_control"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_j1_home_bottom_navigation_control"
+                android:layout_width="@dimen/margin_layout_32"
+                android:layout_height="@dimen/margin_layout_32"
+                android:src="@drawable/select_home_control_icon_bg" />
+
+            <TextView
+                android:id="@+id/tv_j1_home_bottom_navigation_control"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_layout_4"
+                android:text="@string/j1_home_control"
+                android:textColor="@color/select_btn_grey_txt" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_layout_12"
+            android:layout_marginBottom="@dimen/margin_layout_12"
+            android:background="?attr/theme_color_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_j1_home_bottom_navigation_calibration"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_j1_home_bottom_navigation_calibration"
+                android:layout_width="@dimen/margin_layout_32"
+                android:layout_height="@dimen/margin_layout_32"
+                android:src="@drawable/select_home_calibration_icon_bg" />
+
+            <TextView
+                android:id="@+id/tv_j1_home_bottom_navigation_calibration"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_layout_4"
+                android:text="@string/j1_home_calibration"
+                android:textColor="@color/select_btn_grey_txt" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_layout_12"
+            android:layout_marginBottom="@dimen/margin_layout_12"
+            android:background="?attr/theme_color_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_j1_home_bottom_navigation_settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_j1_home_bottom_navigation_settings"
+                android:layout_width="@dimen/margin_layout_32"
+                android:layout_height="@dimen/margin_layout_32"
+                android:src="@drawable/select_home_setting_icon_bg" />
+
+            <TextView
+                android:id="@+id/tv_j1_home_bottom_navigation_settings"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_layout_4"
+                android:text="@string/j1_home_settings"
+                android:textColor="@color/select_btn_grey_txt" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

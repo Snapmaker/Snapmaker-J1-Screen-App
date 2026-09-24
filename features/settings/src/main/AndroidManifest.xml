@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fabscreen.features.settings">
+
+    <application>
+        <activity
+            android:name=".j1.J1SettingsActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".a400.A400SettingsActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".a400.moduleassistant.replacemodule.A400ReplaceModuleActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".a400.update.A400UpdateSuccessActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".j1.J1UpdateSuccessActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".a400.moduleassistant.replacehotend.ReplaceHotendActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".a400.update.UpdateModulesActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".a400.update.A400UpdateInProgressActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".j1.J1UpdateInProgressActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".a400.recoverymode.A400RecoveryModeActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".j1.recoverymode.J1RecoveryModeActivity"
+            android:theme="@style/AppTheme.Activity" />
+    </application>
+</manifest>

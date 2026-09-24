@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ly_calibration_right_select"
+    android:layout_width="580dp"
+    android:layout_height="match_parent"
+    android:background="@color/palette_black_snapmaker">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="48dp"
+            android:text="@string/all_choose_a_mode"
+            android:textColor="?attr/theme_color_title_primary"
+            android:textSize="?attr/theme_font_size_title2"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tv_air_purifier_error_power_off_calibration_right_select_exit"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/ic_close"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_h2" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_calibration_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/palette_grey_nero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_sections"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toTopOf="@+id/li_calibration_right_select"
+        app:layout_constraintTop_toBottomOf="@+id/v_calibration_line"
+        tools:listitem="@layout/button_calibration_right_section" />
+
+    <LinearLayout
+        android:id="@+id/li_calibration_right_select"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginBottom="@dimen/margin_layout_48"
+        android:paddingLeft="@dimen/margin_layout_48"
+        android:paddingRight="@dimen/margin_layout_48"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/bt_calibration_right_select_cancel"
+            style="@style/AppTheme.TextBody1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_layout_24"
+            android:layout_weight="1"
+            android:background="@drawable/img_next_job_background"
+            android:text="@string/all_cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/palette_white_silver"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_calibration_right_select_determine"
+            style="@style/AppTheme.PrimaryButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/all_confirm"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

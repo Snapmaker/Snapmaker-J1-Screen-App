@@ -1,0 +1,113 @@
+package fabscreen.platform.core.ui.presenter;
+
+
+import android.view.View;
+
+import com.orhanobut.logger.Logger;
+
+import java.util.concurrent.TimeUnit;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import fabscreen.platform.lib.LogHelper;
+import fabscreen.platform.base.instantiation.ServiceContainer;
+import fabscreen.platform.base.model.system.MachineStatusManager;
+import fabscreen.platform.base.service.IMachine;
+import fabscreen.platform.core.R2;
+import fabscreen.platform.core.ui.view.ActionButton;
+import io.reactivex.Observable;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.subjects.BehaviorSubject;
+
+public class LoadFilamentWidgetPresenter extends BasePresenter {
+    private static final String TAG = LoadFilamentWidgetPresenter.class.getSimpleName();
+
+    @BindView(R2.id.btn_widget_load_filament_unload)
+    ActionButton mBtnFilamentUnload;
+    @BindView(R2.id.btn_widget_load_filament_load)
+    ActionButton mBtnFilamentLoad;
+
+    private BehaviorSubject<Boolean> mIsLoadingSubject = BehaviorSubject.createDefault(false);
+    private BehaviorSubject<Boolean> mIsTemperatureEnoughSubject = BehaviorSubject.createDefault(false);
+
+    public LoadFilamentWidgetPresenter(CompositeDisposable compositeDisposable) {
+        super(compositeDisposable);
+    }
+
+    public void bind(View view) {
+        ButterKnife.bind(this, view);
+    }
+
+    public void connect() {
+        Disposable sub = getReadyToLoadObservable().subscribe(isReady -> {
+            mBtnFilamentUnload.setEnabled(isReady);
+            mBtnFilamentLoad.setEnabled(isReady);
+        });
+        addDisposable(sub);
+
+        sub = MachineStatusManager.getMachineInfoHolder().getObservable()
+                .throttleLast(1000, TimeUnit.MILLISECONDS)
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(machineStatus -> {
+                    // Enable filament buttons until print head temperature up to target temperature
+                    boolean ok = (machineStatus.leftNozzleTemperature >= 175
+                            && machineStatus.leftNozzleTemperature + 5 >= machineStatus.leftNozzleTargetTemperature);
+                    mIsTemperatureEnoughSubject.onNext(ok);
+                });
+        addDisposable(sub);
+    }
+
+    public Observable<Boolean> getReadyToLoadObservable() {
+        return Observable.combineLatest(
+                mIsLoadingSubject,
+                mIsTemperatureEnoughSubject.distinctUntilChanged(),
+                (isMoving, enough) -> !isMoving && enough);
+    }
+
+    public Observable<Boolean> getIsLoadingObservable() {
+        return mIsLoadingSubject;
+    }
+
+    @OnClick(R2.id.btn_widget_load_filament_load)
+    void onClickLoadFilament() {
+        Logger.i("Loading filament...");
+        mIsLoadingSubject.onNext(true);
+        mBtnFilamentLoad.setActivated(true);
+
+        Disposable sub = ServiceContainer.getInstance().getService(IMachine.class).getFDMController().requestActivatedExtrusion(0, 60, 200, 0, 0)
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(success -> {
+                    mIsLoadingSubject.onNext(false);
+                    mBtnFilamentLoad.setActivated(false);
+                    Logger.d("Filament loaded.");
+                }, e -> {
+                    LogHelper.log(e);
+                    mIsLoadingSubject.onNext(false);
+                    mBtnFilamentLoad.setActivated(false);
+                });
+        addDisposable(sub);
+    }
+
+    @OnClick(R2.id.btn_widget_load_filament_unload)
+    void onClickUnloadFilament() {
+        Logger.i("Unloading filament...");
+        mIsLoadingSubject.onNext(true);
+        mBtnFilamentUnload.setActivated(true);
+
+        Disposable sub = ServiceContainer.getInstance().getService(IMachine.class).getFDMController().requestActivatedExtrusion(0, 6, 200, 60, 150)
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(success -> {
+                    mIsLoadingSubject.onNext(false);
+                    mBtnFilamentUnload.setActivated(false);
+                    Logger.d("Filament unloaded.");
+                }, e -> {
+                    LogHelper.log(e);
+                    mIsLoadingSubject.onNext(false);
+                    mBtnFilamentUnload.setActivated(false);
+                });
+        addDisposable(sub);
+    }
+}

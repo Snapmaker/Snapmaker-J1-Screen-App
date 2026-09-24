@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1c28"
+    android:orientation="vertical">
+
+    <include layout="@layout/j1_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_bg_section_detail_normal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/AppTheme.TextTitleSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_layout_24"
+            android:textStyle="bold"
+            android:text="@string/j1_settings_glass_platform_thickness"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_j1_settings_platform_height"
+            android:layout_width="320dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="@dimen/margin_layout_20"
+            android:background="@drawable/shape_bg_j1_input"
+            android:maxLength="10"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/margin_layout_16"
+            android:paddingRight="@dimen/margin_layout_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_j1_settings_platform_height_desc"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/j1_settings_glass_platform_thickness_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_j1_settings_platform_height"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/view_bottom_container"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_bg_section_detail_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_j1_settings_platform_height_save"
+            style="@style/AppTheme.PrimaryButton"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="@dimen/margin_12dp"
+            android:text="@string/all_save"
+            app:layout_constraintBottom_toBottomOf="@id/view_bottom_container"
+            app:layout_constraintEnd_toEndOf="@id/view_bottom_container"
+            app:layout_constraintTop_toTopOf="@id/view_bottom_container" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

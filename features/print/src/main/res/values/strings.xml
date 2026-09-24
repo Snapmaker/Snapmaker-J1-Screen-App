@@ -1,0 +1,149 @@
+<resources>
+    <string name="automatic_thickness_measurement_title">Auto Measurement</string>
+    <string name="automatic_thickness_measurement_content">The machien will automatically measure the material thickness and adjust the laser height.</string>
+    <string name="enter_material_thickness_title">Input Thickness</string>
+    <string name="enter_material_thickness_content">Input the material thickness. Then, the machine will adjust the laser height.</string>
+    <string name="bonding_material_surface_title">Calibration Plate-Assisted</string>
+    <string name="bonding_material_surface_content">Lower the toolhead against the calibration plate. Then, the machine will adjust the laser height.</string>
+    <string name="manual_focus_title">Manual Focus</string>
+    <string name="manual_focus_content">Manually adjust the laser height. The machine use the current height of the toolhead to start the job.</string>
+
+    <string name="print_filament_runout_load_filament">Load Filament</string>
+    <string name="print_filament_runout_wait_for_loading">请拔出耗材并将其重新插入至执行头，稍等片刻直至您感受到耗材已被咬合并传输时松手。</string>
+    <string name="print_filament_runout_start_loading">Extruding the filament...</string>
+    <string name="print_remaining_time">Remaining Time: </string>
+    <string name="all_left_nozzle_temp">Left Nozzle Temp.</string>
+    <string name="all_right_nozzle_temp">Right Nozzle Temp.</string>
+    <string name="print_heated_bed_temp">Heated Bed Temp.</string>
+    <string name="print_laser_power">Laser Power</string>
+    <string name="print_cnc">Spindle Speed</string>
+    <string name="print_spindle_speed">Spindle Speed/RPM</string>
+    <string name="print_back_main">Home Screen</string>
+
+    <string name="print_heating_nozzle">Heating the nozzle...</string>
+    <string name="print_warning_filament_run_out_extruder_content">%s is not loaded.\nTo continue printing, tap <b>Load Filament</b>.</string>
+    <string name="print_insert_filament_title">Insert Filament</string>
+    <string name="print_pull_out_filament_title">Pull out Filament</string>
+    <string name="print_insert_filament_content">Manually insert the new filament into the filament guide tube until you can feel the filament is gripped and being pulled in.</string>
+    <string name="print_pull_out_filament_content">Manullay pull out the filament and insert it into the filament guide tube again until you can feel the filament is gripped and being pulled in.</string>
+
+    <string name="calibration_select_mode_title">Select a Mode</string>
+    <string name="calibration_base_mode">Basic Mode</string>
+    <string name="calibration_advanced_mode">Advanced Mode</string>
+    <string name="print_base_mode">You need to move the toolhead to where the work origin will be, and tap Run Boundary to check the work area of the current position. </string>
+    <string name="print_advanced_mode">You need to separately set origin in each orientation, and their combination will be the work origin. You can tap Run Boundary to check the work area in the X and Y orientations.</string>
+    <string name="print_stop_printing">Stop Printing</string>
+    <string name="print_pause_printing">Pause Printing</string>
+    <string name="print_confirmation_content">Are you sure you want to %s?</string>
+    <string name="print_cnc_job_preparation">CNC Job Preparation</string>
+    <string name="print_set_work_origin">Set Work Origin %s</string>
+    <string name="print_set_coord_origin">Set %s Origin</string>
+    <string name="print_job_preparation_set_coord_message">Fix the material to the CNC carving platform. Manually move the toolhead to the position that you want to set as the work origin. The CNC job will start with the defined origin. You can tap Run Boundary to check the work area of the current position.</string>
+    <string name="print_job_preparation_set_coord_xy_message">Manually move the toolhead to the position that you want to set as the work origin. The laser job will start with the defined origin. You can tap Run Boundary to check the work area of the current position.</string>
+    <string name="print_laser_job_preparation">Laser Job Preparation</string>
+    <string name="print_laser_calibration_plate_assisted_subtitle">Calibration Plate-Assisted</string>
+    <string name="print_laser_calibration_plate_assisted_message">Place the material on the laser engraving and cutting platform, and then put the laser calibration plate on top of the material. Manually lower the toolhead towards the calibration plate’s surface until you feel slight resistance when you pull out the calibration plate. Tap Next, and the machine will adjust the laser height automatically.</string>
+    <string name="print_laser_manual_focus_subtitle">Manually Adjust Laser Height</string>
+    <string name="print_laser_manual_focus_content">Manually move the toolhead until the laser beam is focused into the smallest spot possible. Tap Start Job, and the machine will use the current height as the laser height.</string>
+    <string name="print_adjust_laser_height">Adjust Laser Height%s</string>
+    <string name="print_automatic_thickness_measurement">Automatic Thickness Measurement</string>
+    <string name="print_automatic_thickness_measurement_message">Place the material on the laser engraving and cutting platform. Based on the work origin and work area, the machine will calculate the material’s position. Then, the machien will move the toolhead to measure the material’s thickness, based on which the machine adjusts the laser height.\n\nConditions that might cause thickness measurement failure:\nThe material thickness is over 50 mm;\nThe material texture is transparent, or the material surface is glossy or specular;\nThe material color is red or black;\nThe material is hollow.</string>
+    <string name="print_laser_input_material_thickness">Input Material Thickness</string>
+    <string name="print_laser_input_material_thickness_subtitle">Material Thickness</string>
+    <string name="print_laser_input_material_thickness_input_hint">Input Material Thickness</string>
+    <string name="print_laser_input_material_thickness_message">Measure and enter the material thickness. Then, place the material on the laser engraving and cutting platform. The machine will adjust the laser height accordingly.</string>
+    <string name="a400_print_print_setting_left_z_offset">Left Z Offset</string>
+    <string name="a400_print_print_setting_right_z_offset">Right Z Offset</string>
+    <string name="a400_print_print_setting_part_cooling_fan">Part-cooling Fan</string>
+    <string name="a400_print_print_setting_part_work_speed">Work Speed</string>
+    <string name="a400_print_print_setting_left_flow_rate">Flow Rate (L)</string>
+    <string name="a400_print_print_setting_right_flow_rate">Flow Rate (R)</string>
+    <string name="print_setting_up">Up</string>
+    <string name="print_setting_down">Down</string>
+    <string name="a400_print_enclosure_open">The Enclosure door is opened, so the %s has been stopped.</string>
+    <string name="a400_print_enclosure_operation_trigger">The Enclosure door is opened, so the job has been paused. Please close the door before you resume the job.</string>
+
+    <!--  a400-->
+    <string name="a400_cnc_four_axis_content">If you have set the work origin using Origin Assistant, as long as the dimensions of the material remain unchanged, you can skip this step and start the job right away.</string>
+    <string name="a400_stop_work_title">Are you sure you want to %s?</string>
+    <string name="a400_laser_print_four_axis_input_diameter_title">Input Diameter (Default for 1.6W)</string>
+    <string name="a400_laser_print_four_axis_input_diameter_contennt">Input the material thickness. Then, the machine will adjust the laser height.</string>
+    <string name="a400_laser_print_four_axis_touchmaterial_title">Touch Material (Default for 10W)</string>
+    <string name="a400_laser_print_four_axis_touchmaterial_contnent">Lower the toolhead against the material surface.  Then, the machine will adjust the laser height.</string>
+    <string name="a400_laser_print_four_axis_manual_focus_title">Manual Focus</string>
+    <string name="a400_laser_print_four_axis_manual_focus_content">Manually adjust the laser height. The machine use the current height of the toolhead to start the job.</string>
+    <string name="a400_laser_print_four_axis_input_diameter_subtitle">Input Diameter</string>
+    <string name="a400_laser_print_four_axis_touchmaterial_subtitle">Touch Material</string>
+    <string name="a400_laser_print_four_axis_material_diameter_title">Input Material Diameter</string>
+    <string name="a400_laser_print_four_axis_material_diameter_contnent">Measure and input the material’s diameter. Then, fix the material to the 3-jaw chuck. The machine will adjust the laser height based on the material diameter.</string>
+    <string name="a400_laser_print_four_axis_material_diameter_subtitle">Material Diameter</string>
+    <string name="a400_print_laser_Manually_Adjust_Laser_Height_title">Manually Adjust Laser Height</string>
+    <string name="a400_print_laser_Manually_Adjust_Laser_Height_content">Fix the material to the 3-jaw chuck. Adjust the height of the toolhead until the laser beam is focused into the smallest spot on the material surface. Tap Next, and the machine will use the current height as the laser height.</string>
+    <string name="a400_print_laser_touch_material_surface_title">Touch Material Surface</string>
+    <string name="a400_print_laser_touch_material_surface_content">Fix the material to the 3-jaw chuck. Lower the toolhead against the material’s top surface. Based on the given focal length, the machine will adjust the laser height.</string>
+    <string name="a400_print_cnc_print_xyzb_title">Set XYB Origin</string>
+    <string name="a400_print_cnc_print_xyzb_content">Manually move the toolhead to the position that you want to set as the work origin. The laser job will start with the defined origin. You can tap Run Boundary to check the work area of the current position.</string>
+
+
+    <!--  seems like it's used by j1  -->
+    <string name="print_work_speed">Work Speed</string>
+    <string name="print_pause">Pause</string>
+    <string name="print_resume">Resume</string>
+    <string name="print_stop">Stop</string>
+    <string name="print_stop_one_extruder">Stop One Extruder</string>
+    <string name="print_complete">Complete</string>
+    <string name="print_print_again">Print Again</string>
+    <!--  J1-->
+    <string name="j1_how_to_load_filament_step_1">Step 1: Remove the top panel.</string>
+    <string name="j1_how_to_load_filament_step_2">Step 2: Hang the filament onto the filament holder, and feed the filament into the filament entry until it protrudes from the other end of the tube.</string>
+    <string name="j1_how_to_load_filament_step_3">Step 3: Push the toggle backward and hold; then insert the filament into the extruder until you feel resistance (taking the left extruder for example).</string>
+    <string name="j1_how_to_load_filament_step_4">Step 4: Set a target temperature and tap <b>Heat</b>.</string>
+    <string name="j1_how_to_load_filament_step_5">Step 5: Tap <b>Load</b>(the extruder will automatically move to an appropriate position to start loading, if necessary). </string>
+    <string name="j1_how_to_load_filament_step_6">Step 6: When the filament oozes out of the nozzle, tap <b>Stop Loading</b>.</string>
+    <string name="j1_how_to_load_filament_step_7">Step 7: Insert the guide tube into the extruder and then snap it into the tube clip. Finally, reinstall the top panel.</string>
+
+    <!-- Print-->
+    <string name="j1_print_adjust">Adjust</string>
+    <string name="print_print_mode_standard">Default Mode</string>
+    <string name="print_print_mode_back_up">Backup Mode</string>
+    <string name="print_print_mode_clone">Copy Mode</string>
+    <string name="print_print_mode_mirror">Mirror Mode</string>
+    <string name="j1_print_remove_print_tip">To prevent burns, don\'t remove the print until the bed cools below 40℃.</string>
+    <string name="j1_print_remove_print_low_temperature_tip">The bed has cooled down. You can remove the print now.</string>
+    <string name="j1_print_pause_job_msg">Are you sure to pause the job?</string>
+    <string name="print_extruder_left">Left</string>
+    <string name="print_extruder_right">Right</string>
+    <string name="j1_print_stop_extruder">Choose the extruder to stop.</string>
+    <string name="j1_print_stop_job_msg">Are you sure to stop the job?</string>
+    <string name="j1_print_adjust_extruder">Extruder</string>
+    <string name="j1_print_adjust_heated_bed">Heated Bed</string>
+    <string name="j1_print_adjust_z_offset">Z Offset</string>
+    <string name="j1_print_adjust_work_speed">Work Speed</string>
+    <string name="j1_print_adjust_flow_rate">Flow Rate</string>
+    <string name="j1_print_adjust_backup_mode">Backup Mode</string>
+    <string name="j1_print_adjust_fan_speed">Fan Speed</string>
+    <string name="j1_print_adjust_lighting">Lighting</string>
+    <string name="j1_print_adjust_performance">Performance</string>
+    <string name="j1_print_left_extruder_stop">Extruder-L Stopped</string>
+    <string name="j1_print_right_extruder_stop">Extruder-R Stopped</string>
+
+
+    <!-- Print Setting-->
+    <string name="j1_print_setting_stop_loading">Stop Loading</string>
+    <string name="j1_print_setting_stop_unloading">Stop Unloading</string>
+    <string name="ji_print_setting_extruder_left">Left</string>
+    <string name="ji_print_setting_extruder_right">Right</string>
+    <string name="print_adjustment_move_machine_msg">The extruders will now move into a position that allows you to load or unload the filament.</string>
+    <string name="print_j1_fan_speed_l">L:%3d%%</string>
+    <string name="print_j1_fan_speed_r">R:%3d%%</string>
+    <string name="j1_print_pausing">Pausing…</string>
+    <string name="j1_print_resuming">Resuming…</string>
+    <string name="j1_print_adjust_print_performance_silent">Silent</string>
+    <string name="j1_print_adjus_print_performance_default">Default</string>
+    <string name="j1_print_adjust_print_performance_fast">Fast</string>
+    <string name="j1_print_adjust_noise_print_performance_desc">Silent</string>
+    <string name="j1_print_adjust_print_performance_default_desc">Default</string>
+    <string name="j1_print_adjust_print_performance_fast_desc">Fast</string>
+
+
+</resources>

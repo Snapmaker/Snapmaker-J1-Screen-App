@@ -1,0 +1,518 @@
+<resources>
+
+    <!--  A400  -->
+    <string name="calibration_thickness_measurement_title">Thickness Measurement Calibration</string>
+    <string name="calibration_thickness_measurement_title_abbreviation">Thickness M.Calibration</string>
+    <string name="calibration_thickness_measurement_content">The machine will calibrate the thickness measurement system automatically with the calibration target. Redo this calibration after you have reassembled the machine, replaced the toolhead or if you find the thickness measurement is inaccurate.</string>
+    <string name="calibration_platfrom_height_title">Platform Height Calibration</string>
+    <string name="calibration_central_axis_title">Central Axis Calibration</string>
+    <string name="calibration_central_axis_content">For 4-axis machining, you need to locate the central axis of the Rotary Module using a cylinder material. Completing this calibration allows you to start a laser job properly via inputting the material’s diameter.</string>
+    <string name="calibration_platfrom_height_content">Calibrate the height of the platform with the laser calibration plate so that you can start a laser job via inputting the material’s thickness.</string>
+    <string name="calibration_camera_calibration_title">Camera Calibration</string>
+    <string name="calibration_camera_calibration_content">To use Camera Capture in Snapmaker Luban, you need to calibrate the camera. Recalibration is required after you have reassembled the machine or replaced the toolhead.</string>
+    <string name="calibration_manual_focus_calibration_title">Manual Focus Calibration</string>
+    <string name="calibration_manual_focus_calibration_desc">The Laser Module will engrave a few scale lines at different heights. You need to choose the best engraved line to calibrate the focal length.</string>
+
+    <string name="calibration_manual_tool_setting_title">Manual Tool Setting</string>
+    <string name="calibration_manual_tool_setting_content">Set the work origin by manually controlling the toolhead.</string>
+    <string name="calibration_manual_tool_setting_advanced_mode_content">Set the work origin by manually controlling the toolhead. You need to move the toolhead to where the work origin will be.</string>
+    <string name="calibration_bit_assistant_title">Bit Assistant</string>
+    <string name="calibration_bit_assistant_content">Bit Assistant guides you to manipulate the original bit and the new bit to touch the same spot on the material. The machine will work out the Z offset and automatically locate the new work origin. Before proceeding with Bit Assistant, do not detach the original bit.</string>
+
+    <string name="calibration_A400_XY_material">Material:%s</string>
+
+    <string name="all_material_PLA">PLA</string>
+    <string name="all_material_PETG">PETG</string>
+    <string name="all_material_ABS">ABS</string>
+    <string name="calibration_a400_xy_mode_custom">Custom</string>
+    <string name="all_material_CUSTOM">Custom Material</string>
+
+    <string name="calibration_leveling_xy_selection_left_temperature_title">Nozzle L: Printing Temp.</string>
+    <string name="calibration_leveling_xy_selection_right_temperature_title">Nozzle R: Printing Temp.</string>
+    <string name="calibration_leveling_xy_selection_left_stand_by_temperature_title">Nozzle L: Standby Temp. </string>
+    <string name="calibration_leveling_xy_selection_right_stand_by_temperature_title">Nozzle R: Standby Temp.</string>
+    <string name="calibration_leveling_xy_selection_heated_bed_temperature_title">Heated Bed Temp.</string>
+
+    <string name="calibration_heated_bed_leveing_auto_content">The toolhead will automatically probe and obtain data for specific points on the heated bed to adjust the movement of the two nozzles accordingly during printing.</string>
+    <string name="calibration_heated_bed_leveing_manual_content">Manually control the toolhead to probe and obtain data for specific points on the heated bed. The movement of the two nozzles will be adjusted accordingly during printing.</string>
+
+    <string name="calibration_heated_bed_leveling_content_1">Heat Heated Bed and Nozzle (1/2)</string>
+    <string name="calibration_heated_bed_leveling_content_2">Calibrate Calibration Points (2/2)</string>
+    <string name="calibration_z_leveling_title">Z Offset Calibration</string>
+    <string name="calibration_xy_leveling_title">XY Offset Calibration</string>
+
+
+    <string name="calibration_z_leveling_sensor_calibration_manual_calibrating_content">Manually lower the right nozzle of the toolhead against the 3D printing platform’s surface with the calibration card until you feel slight resistance when you pull out the calibration card, and it should be wrinkled when you push it forward.</string>
+    <string name="all_heft">L</string>
+    <string name="all_right">R</string>
+    <string name="a400_calibration_headted_bed_leveing_gide">Calibrating...%1$d / %2$d</string>
+    <string name="a400_calibration_headted_bed_leveing_time">Estimated time %d s. \%%d s left.</string>
+    <string name="a400_calibration_headted_bed_leveing_wait_time">Estimated time  s.  s left.</string>
+
+
+    <string name="calibration_cnc_manual_tool">Manual Tool Setting</string>
+    <string name="calibration_cnc_manual_tool_content">You need to move the toolhead to where the work origin will be.</string>
+    <string name="calibration_cnc_manual_tool_advanced_mode_content">You need to separately set origin in each orientation, and their combination will be the wor...</string>
+    <string name="calibration_cnc_tool_change">Bit Assistant</string>
+    <string name="cnc_tool_change_assistant_content">您可以使用换刀助手来进行 Z 原点的设置</string>
+    <string name="cnc_tool_change_assistant_content_">Bit Assistant guides you to manipulate the original bit and the new bit to touch the same spot on the material. The machine will work out the Z offset and automatically locate the new work origin. Before proceeding with Bit Assistant, do not detach the original bit.</string>
+    <string name="calibration_cnc_origin_assistant_content">For 4-axis machining, you can use Origin Assistant to promptly set work origin, which will be stored in the system. So in future carving sessions, as long as the dimensions of the material remain unchanged, you can select your files and start right away.</string>
+
+
+    <string name="calibration_auto_content"> The toolhead will automatically probe and obtain data for specific points (%s) on the 3D printing platform to adjust the movement of the two nozzles accordingly during printing.</string>
+    <string name="calibration_manual_content">Manually control the toolhead to probe and obtain data for specific points (%s) on the 3D printing platform. The movement of the two nozzles will be adjusted accordingly during printing.</string>
+
+
+    <string name="yes_all_done">Yes, all done</string>
+    <string name="move_show">The machine is moving...</string>
+    <string name="move_show_content">Please wait a few seconds.\nIf any emergency occurs, press the Emergency Stop Button immediately.</string>
+
+    <string name="calibration_complete_continue_calibration">Continue Calibration</string>
+    <string name="calibration_complete_home_screen">Home Screen</string>
+
+
+    <string-array name="grid_types">
+        <item>3 x 3</item>
+        <item>5 x 5</item>
+        <item>9 x 9</item>
+    </string-array>
+
+
+    <string name="control_laser_open">The laser will be turned on at 1% power. Ensure that you wear the laser safety goggles or close the Enclosure door.</string>
+    <string name="control_cnc_open_title">The spindle of the CNC Module will start working</string>
+    <string name="control_cnc_open">Ensure that you wear the CNC safety goggles or close the Enclosure door.</string>
+
+    <string name="printing_toast">The machine is %s...</string>
+    <string name="printing_toast_3dp_print">printing</string>
+    <string name="printing_toast_other">working</string>
+    <string name="all_left_nozzle_temp">Left Nozzle Temp.</string>
+    <string name="all_right_nozzle_temp">Right Nozzle Temp.</string>
+    <string name="print_warning_filament_run_out_extruder_content">%s is not loaded.\nTo continue printing, tap <b>Load</b> Filament.</string>
+    <string name="print_filament_runout_load_filament">Load Filament</string>
+    <string name="print_heating_nozzle">Heating the nozzle...</string>
+    <string name="print_pull_out_filament_title">Pull out Filament</string>
+    <string name="print_pull_out_filament_content">Manullay pull out the filament and insert it into the filament guide tube again until you can feel the filament is gripped and being pulled in.</string>
+    <string name="print_insert_filament_title">Insert Filament</string>
+    <string name="print_insert_filament_content">Manually insert the new filament into the filament guide tube until you can feel the filament is gripped and being pulled in.</string>
+    <string name="print_filament_runout_start_loading">挤出耗材中，过程耗时数秒，请耐心稍候......</string>
+    <string name="calibration_leveling_bed_heating">Heating the heated bed and nozzle...</string>
+    <string name="calibration_leveling_bed_heating_nozzle_temp_title">Left Nozzle Temp：</string>
+    <string name="calibration_leveling_bed_heating_Heated_bed_title">Heated Bed Temp：</string>
+    <string name="calibration_leveling_bed_heating_temperature">/%3d℃</string>
+    <string name="a400_leveling_bed_calibration_heat_bed">Estimated time %d s. %d s left.</string>
+
+    <string name="calibration_camera_calibration_info_content">Fix a piece of blank and white A4 paper to the center of the laser engraving and cutting platform. The machine will cut a square on the paper to calibrate the camera.</string>
+    <string name="calibration_camera_calibration_10w_title">Camera Calibration</string>
+    <string name="calibration_platform_height_calibration_10w_title">Platform Height Calibration</string>
+    <string name="calibration_complete_thk_measure">Congrats! You have completed the Thickness Measurement Calibration.</string>
+
+    <string name="calibration_platform_height_calibration_10w_content">Place the laser calibration plate on the laser engraving and cutting platform. Manually lower the toolhead towards the calibration plate’s surface until you feel slight resistance when you pull out the calibration plate. Then, tap <b>Save</b>.</string>
+    <string name="calibration_platform_height_calibration_10w_complete_title">Completed</string>
+    <string name="calibration_platform_height_calibration_10w_complete_content">Congrats! You have completed the Platform Height Calibration.</string>
+    <string name="calibration_camera_calibration_10w_2_title">Camera Calibration</string>
+    <string name="calibration_camera_calibration_10w_content">Fix Calibration Material (1/2)</string>
+    <string name="calibration_camera_calibration_10w_2_content">Auto Calibration (2/2)</string>
+    <string name="calibration_camera_calibration_10w_second_title">Fix Calibration Material</string>
+    <string name="calibration_thickness_measure_4_1_title">Thickness Measurement Calibration</string>
+    <string name="calibration_thickness_measure_4_1_content">Auto Calibration (3/3)</string>
+    <string name="calibration_thickness_measure_calibrating">Calibrating...</string>
+    <string name="calibration_thickness_measure_verifying">Verifying...</string>
+    <string name="calibration_thickness_measure_failed">Calibration Failed</string>
+    <string name="calibration_thickness_measure_failed_content">Thickness Measurement Calibration failed. Please retry or quit.</string>
+    <string name="calibration_thickness_measure_title">Thickness Measurement Calibration</string>
+    <string name="calibration_thickness_measure_second_title">Measure Platform Height </string>
+    <string name="calibration_thickness_measure_content">Measure Platform Height (1/3)</string>
+    <string name="calibration_thickness_measure_3_1_title">Thickness Measurement Calibration</string>
+    <string name="calibration_thickness_measure_3_1_content">Place Focus Target (2/3)</string>
+    <string name="calibration_thickness_measure_3_1_second_title">Place Calibration Plate</string>
+    <string name="calibration_thickness_measure_3_1_second_content">Place the laser calibration plate on the center of the platform and make sure the red dot falls on its surface.</string>
+    <string name="calibration_camera_calibration_10w_second_content">Fix a piece of blank and white A4 paper to the center of the laser engraving and cutting platform. The machine will cut a square on the paper to calibrate the camera.</string>
+    <string name="calibration_laser_on_reminder">Ensure that all operators and bystanders correctly wear the laser safety goggles and the Enclosure door is closed.</string>
+
+    <string name="a400_cnc_tri_axial_guide_accept"><Data><![CDATA[I‘ve read the <font color="#FFFFFF"><b>Quick Start Guide</b></font> thoroughly and fixed the material accordingly.]]></Data></string>
+    <string name="a400_cnc_four_axial_guide_accept"><Data><![CDATA[I‘ve read the <b><font color="#FFFFFF">Quick Start Guide of the Rotary Module</font></b> thoroughly and fixed the material accordingly.]]></Data></string>
+
+    <string name="manual_tool_message_title">Set XYZ Origin</string>
+    <string name="manual_tool_message">Manually move the toolhead to the position that you want to set as the work origin. The CNC job will start with the defined origin. You can tap Run Boundary to check the work area of the current position.</string>
+    <string name="manual_tool_title">Manual Tool Setting</string>
+    <string name="manual_tool_subheading">Set Work Origin (1/1)</string>
+    <string name="chang_tool_message">Change the bit to a new one with the open-end wrenches. Make sure the new bit is secured tightly.</string>
+    <string name="calibration_leveling_xy_adjust">Slide to choose the best pair of lines</string>
+    <string name="calibration_leveling_xy_adjust_content">(in which the line on the top is most horizontally centered on the line on the bottom)</string>
+    <string name="calibration_a400_leveling_xy_title">XY Offset Calibration</string>
+    <string name="calibration_a400_leveling_xy_content_x">Calibrate X Offset (2/6)</string>
+    <string name="calibration_a400_leveling_xy_content_x_4">Calibrate X Offset (2/4)</string>
+    <string name="calibration_a400_leveling_xy_print_models_content">Print Calibration Models (1/6)</string>
+    <string name="calibration_a400_leveling_xy_x_value_confirm_dialog_title">Save X Offset</string>
+    <string name="calibration_a400_leveling_xy_x_value_confirm_dialog_content">Current X offset will be saved as the two nozzles’ X offset.</string>
+    <string name="calibration_a400_leveling_xy_content_y">Calibrate Y Offset (3/6)</string>
+    <string name="calibration_a400_leveling_xy_content_y_4">Calibrate Y Offset (3/4)</string>
+    <string name="calibration_a400_leveling_xy_prepare_check">Prepare for Calibration Check (4/6)</string>
+    <string name="calibration_a400_leveling_xy_y_value_confirm_dialog_title">Save Y Offset</string>
+    <string name="calibration_a400_leveling_xy_y_value_confirm_dialog_content">Current Y offset will be saved as the two nozzles’ Y offset.</string>
+    <string name="calibration_a400_leveling_xy_prepare_check_content">The machine will print a built-in model to check the result of the calibration. Clean the build plate before proceeding.</string>
+    <string name="calibration_a400_leveling_xy_print_check_mode">Print Check Model (5/6)</string>
+    <string name="calibration_a400_leveling_xy_observe_check_model">Observe Check Model (6/6)</string>
+    <string name="calibration_a400_leveling_xy_observe_check_model_content">Observe if the check model is printed properly to decide whether you need to recalibrate or not.</string>
+    <string name="calibartion_a400_leveling_xy_recalibrate">Recalibrate</string>
+    <string name="calibration_complete_dual_extruder_xy">Congrats! You have completed the XY Offset Calibration.</string>
+    <string name="calibration_complete_platform_height">Congrats! You have completed the Platform Height Calibration.</string>
+    <string name="calibartion_a400_camera_doing">Calibrating...</string>
+    <string name="calibration_complete_camera_cali">Congrats! You have completed the Camera Calibration.</string>
+    <string name="calibration_cnc_manual_tool_start_job">Start Job</string>
+    <string name="calibration_cnc_manual_tool_success">Completed</string>
+    <string name="calibration_cnc_change_tool_success">Completed</string>
+    <string name="calibration_cnc_manual_tool_success_msg">Congrats! You have completed the Manual Tool Setting.</string>
+    <string name="calibration_cnc_change_tool_success_msg">Congrats! You have completed the Bit Assistant.</string>
+    <string name="calibration_cnc_tool_change_first_steps">Touch Material (1/3)</string>
+    <string name="calibration_cnc_tool_change_second_steps">Change Bit (2/3)</string>
+    <string name="calibration_cnc_tool_change_third_steps">Touch Material (3/3)</string>
+    <string name="calibration_cnc_tool_change_first_steps_content_title">Touch Material</string>
+    <string name="calibration_cnc_tool_change_first_steps_content">Manipulate the toolhead to touch any spot on the material’s surface with the calibration card until you feel slight resistance when you pull out the calibration card, and it should be wrinkled when you push it forward.</string>
+    <string name="calibration_cnc_tool_change_third_steps_content">Manipulate the new bit to touch the same chosen spot by adjusting the Z Offset with the calibration card until you feel slight resistance when you pull out the calibration card, and it should be wrinkled when you push it forward.</string>
+    <string name="print_stop_printing">Stop Printing</string>
+    <string name="print_confirmation_content">Are you sure you want to %s?</string>
+    <string name="print_xy_offset_calibration_title">XY Offset Calibration</string>
+    <string name="print_xy_offset_calibration_subtitle">Print Check Model (5/6)</string>
+    <string name="print_print_calibration_models">Print Calibration Models (1/6)</string>
+    <string name="print_print_calibration_models_4">Print Calibration Models (1/4)</string>
+    <string name="guide_a400_camera_calibration_1_2_subtitle">Fix Calibration Material</string>
+    <string name="guide_a400_camera_calibration_1_2_msg">Prepare a piece of blank and white A4 paper. Follow the Quick Start Guide to fix it to the center of the laser engraving and cutting platform. The machine will cut a square on the paper to calibrate the camera.</string>
+    <string name="open_laser_titie">Laser Will Be Turned On</string>
+    <string name="guide_a400_cnc_1_4_subtitle">Safety Goggles (1/4)</string>
+    <string name="guide_a400_cnc_2_4_subtitle">Fix Material (2/4)</string>
+    <string name="guide_a400_cnc_3_4_subtitle">Attach Bit (3/4)</string>
+    <string name="guide_a400_cnc_4_4_subtitle">Tools Screen (4/4)</string>
+    <string name="guide_a400_cnc_1_4_msg">To ensure safety, make sure that you and all bystanders wear the CNC safety goggles correctly every time before setting up for a job and wear them throughout the machining process.</string>
+    <string name="guide_a400_cnc_2_4_four_axial_msg"><![CDATA[Before starting a job, you need to follow the <b>Quick Start Guide of the Rotary Module</b> to fix the provided cylinder material onto the 3-jaw chuck. You can attach the tailstock to improve stability if needed.]]> </string>
+    <string name="guide_a400_cnc_2_4_tri_axial_msg"><![CDATA[Before starting a job, you need to follow the <b>Quick Start Guide</b> to fix the provided material onto the CNC carving and cutting platform using the clamping kits.]]></string>
+    <string name="guide_a400_cnc_3_4_four_axial_msg"><![CDATA[Before starting a job, you need to follow the <b>Quick Start Guide</b> of the Rotary Module to insert the the bit into the ER11 collet and then twist it onto the toolhead using the two provided wrenches. ]]></string>
+    <string name="guide_a400_cnc_3_4_tri_axial_msg"><![CDATA[Before starting a job, you need to follow the <b>Quick Start Guide</b> to insert the the bit into the ER11 collet and then twist it onto the toolhead using the two provided wrenches.]]> </string>
+    <string name="guide_a400_cnc_4_4_four_axial_msg"><![CDATA[You can go <b>toHome Screen> Tools > Origin Assistant</b> to set the work origin promptly under the guidance of the screen. <br> <br> You can go to Home <b>Screen > Tools > Bit Assistant</b> to change bit promptly under the guidance of the screen. <br> <br>You can go to <b>Home Screen > Tools > Manual Tool Setting</b> to set the work origin manually under the guidance of the screen.]]></string>
+    <string name="guide_a400_cnc_4_4_tri_axial_msg"><![CDATA[You can go to <b>Home Screen > Tools > Manual Tool Setting</b> to set the work origin manually under the guidance of the screen. <br> <br> You can go to <b>Home Screen > Tools > Bit Assistant</b> to change bit promptly under the guidance of the screen.]]></string>
+    <string name="guide_a400_cnc_initial_setup_guidance">CNC Initial Setup Guidance</string>
+    <string name="guide_a400_load_filament">Load Filament</string>
+    <string name="guide_a400_load_filament_msg">The screen will guide you to load the filament.</string>
+    <string name="guide_a400_double_extruder_step_1_2_subtitle">Load Left Nozzle (1/2)</string>
+    <string name="guide_a400_double_extruder_step_2_2_subtitle">Load Right Nozzle (2/2)</string>
+    <string name="guide_a400_double_extruder_step_1_2_msg">
+        1. Hang the black PLA filament that comes with the machine onto the left filament holder, and feed the filament into the left guide tube until it reaches the other end.
+        \n2. Insert the filament into the left filament entry on the Dual Extrusion Module until you can feel the filament is gripped and being pulled in.
+        \n3. Insert the guide tube into the left filament entry.
+    </string>
+    <string name="guide_a400_double_extruder_step_2_2_msg">
+        1. Hang the white PLA filament that comes with the machine onto the right filament holder, and feed the filament into the right guide tube until it reaches the other end.
+        \n2. Insert the filament into the right filament entry on the Dual Extrusion Module until you can feel the filament is gripped and being pulled in.
+        \n3. Insert the guide tube into the right filament entry.
+    </string>
+    <string name="guide_a400_heating_the_left_nozzle">Heating the left nozzle...</string>
+    <string name="guide_a400_extruding_the_filament">Extruding the filament...</string>
+    <string name="guide_a400_extruding_the_filament_tips">Please wait a few seconds.</string>
+    <string name="guide_a400_nozzle_left_load_confirm_dialog_title">Left Nozzle Loaded</string>
+    <string name="guide_a400_nozzle_left_load_confirm_dialog_content">
+        Observe if any filament is coming out of the left nozzle.
+        \nIf yes, then the filament is loaded and you can tap Continue.
+        \nIf not, tap Load Filament to load again.
+    </string>
+    <string name="guide_a400_nozzle_right_load_confirm_dialog_title">Right Nozzle Loaded</string>
+    <string name="guide_a400_nozzle_right_load_confirm_dialog_content">
+        Observe if any filament is coming out of the right nozzle.
+        \nIf yes, then the filament is loaded and you can tap Done to move on.
+        \nIf not, tap Load Filament to load again.
+    </string>
+    <string name="guide_a400_moving">Moving...</string>
+    <string name="guide_a400_double_extruder_step_2_title"><![CDATA[Z Offset Calibration & Heated Bed Leveling]]></string>
+    <string name="guide_a400_double_extruder_step_2_msg">The machine will automatically calibrate the Z offset and level the heated bed. It is expected to take {TBD} minutes.</string>
+    <string name="guide_a400_double_extruder_step_1_2_title">Z Offset Calibration</string>
+    <string name="guide_a400_double_extruder_step_1_for_1_3">Calibrate Left Nozzle (1/2)</string>
+    <string name="guide_a400_double_extruder_step_1_for_2_3_subtitle">Calibrate Right Nozzle (2/2)</string>
+    <string name="guide_a400_double_extruder_step_3_title">XY Offset Calibration</string>
+    <string name="guide_a400_double_extruder_step_3_msg">The screen will guide you to calibrate the XY offset.</string>
+    <string name="guide_a400_recalibrate_msg">The calibration models will be printed again. Clean the build plate before you proceed.。</string>
+    <string name="all_cnc_turn_off">Turn Off</string>
+    <string name="all_cnc_turn_on">Turn On</string>
+    <string name="a400_leveling_z_calibration_l">Automatically calibrating the left nozzle....</string>
+    <string name="a400_levenling_z_manual_content">Manually lower the left nozzle of the toolhead against the 3D printing platform’s surface with the calibration card until you feel slight resistance when you pull out the calibration card, and it should be wrinkled when you push it forward.</string>
+    <string name="a400_leveling_z_calibration_manual_save_l">Save Height of Nozzle L </string>
+    <string name="a400_leveling_z_calibration_manual_save_r">Save Height of Nozzle R </string>
+    <string name="a400_leveling_z_calibration_manual_save_l_content">Save the Z height of the current position as the left nozzle’s initial printing height.</string>
+    <string name="a400_leveling_z_calibration_manual_save_r_content">Save the Z height of the current position as the right nozzle’s initial printing height.</string>
+    <string name="a400_go_home">回 HOME</string>
+
+    <!--****************A400**************************-->
+    <!--  A400 General  -->
+    <string name="calibraiton_a400_procedure_start_confirm_dialog_title">%s Will Start</string>
+    <string name="calibraiton_a400_procedure_start_confirm_dialog_content_3dp">Clean the build plate and nozzles before you tap <b>Next</b>.</string>
+    <string name="calibraiton_a400_procedure_start_confirm_dialog_content_laser">Clean the laser engraving and cutting platform before you tap <b>Next</b>.</string>
+
+
+    <!-- extruder calibration-->
+    <string name="calibration_auto_mode">Auto Mode</string>
+    <string name="calibration_manual_mode">Manual Mode</string>
+    <string name="calibration_base_mode">Basic Mode</string>
+    <string name="calibration_advanced_mode">Advanced Mode</string>
+    <string name="calibration_sensor_travel_calibration">Sensor Calibration</string>
+    <string name="calibration_Z_sensor_calibration">Sensor Calibration</string>
+    <string name="calibration_A400_Z_manual_mode_content">Manually control the left and right nozzle to touch the calibration card respectively to obtain the current Z offset so that the two nozzles can work at the right and same height when printing.</string>
+    <string name="calibration_A400_XY_manual_mode_content">The machine will print one calibration model for X and Y orientation each. You need to find the best pair of lines in the printed models to calibrate the offsets of the two nozzles in the X and Y orientations.</string>
+    <string name="calibration_A400_Z_zuto_mode_content">The left and right nozzle will automatically touch the 3D printing platform in turn to calibrate the Z offset so that the two nozzles can work at the right and same height when printing.</string>
+    <string name="calibration_A400_Z_sensor_mode_content">Calibrate the sensor’s travel distance. If you find the result of Auto Mode is inaccurate, you need to do Sensor Calibration.</string>
+    <string name="calibration_heated_z_leveing_auto_content">The left and right nozzle will automatically touch the build plate in turn to calibrate the Z offset.</string>
+    <string name="calibration_heated_z_leveing_manual_content">Calibrate the Z offset by manually controlling the left and right nozzle.</string>
+    <string name="calibration_heated_z_leveing_sensor_travel_calibration_content">If you find the result of Auto Mode is inaccurate, you need to do Sensor Calibration.</string>
+
+    <string name="calibration_headted_z_leveing_auto_left">Automatically calibrating the left nozzle....</string>
+    <string name="calibration_headted_z_leveing_auto_right">Automatically calibrating the right nozzle....</string>
+    <string name="calibration_headted_z_leveing_sensor_height">Auto Calibration of Nozzle %s (%d/%d)</string>
+    <string name="calibration_headted_z_leveing_z_offset">Manual Calibration of Nozzle %s (%d/%d)</string>
+    <string name="calibration_z_leveling_sensor_submit_nozzle_l_title">Submit Height of Nozzle L</string>
+    <string name="calibration_z_leveling_sensor_submit_nozzle_r_title">Submit Height of Nozzle R</string>
+    <string name="calibration_z_leveling_sensor_submit_nozzle_r_content">Submit the Z height of the current position as the right nozzle’s initial printing height.</string>
+    <string name="calibration_z_leveling_sensor_submit_nozzle_l_content">Submit the Z offset of the current position as the left nozzle’s initial printing height.</string>
+    <string name="a400_calibration_manual_calibration_of_nozzle_r_title">Manual Calibration of Nozzle R</string>
+    <string name="a400_calibration_manual_calibration_of_nozzle_r_content">Manually lower the right nozzle of the toolhead against the 3D printing platform’s surface with the calibration card until you feel slight resistance when you pull out the calibration card, and it should be wrinkled when you push it forward.</string>
+    <string name="a400_calibration_manual_calibration_of_nozzle_l_title">Manual Calibration of Nozzle L</string>
+    <string name="a400_calibration_manual_calibration_of_nozzle_l_content">Manually lower the left nozzle of the toolhead against the3D printing platform’s surface with the calibration card until you feel slight resistance when you pull out the calibration card, and it should be wrinkled when you push it forward.</string>
+    <string name="a400_extruder_z_offset_completed_titile">Completed</string>
+    <string name="a400_extruder_z_offset_completed_content">Congrats! You have completed the Z Offset Calibration.</string>
+
+    <!-- heated bed calibration-->
+    <string name="calibration_heated_bed_leveling_title">Heated Bed Leveling</string>
+    <string name="calibration_heated_bed_leveling_sub_title">Calibrate Point %s</string>
+    <string name="calibration_heated_bed_leveling_completed_title">Completed</string>
+    <string name="calibration_heated_bed_leveling_completed_content">Congrats! You have completed the Heated Bed Leveling.</string>
+    <string name="calibration_heated_bed_calibration_point">Calibration Points</string>
+    <string name="calibration_heated_bed_heated_bed_temp">Heated Bed Temp</string>
+
+    <!--CNC four axis Origin Assistant-->
+    <string name="a400_cnc_origin_assistant_length_title">Measure and input the material’s length and diameter.</string>
+    <string name="calibration_cnc_origin_assistant">Origin Assistant</string>
+    <string name="a400_cnc_origin_set_material_title">Set Material(1/9)</string>
+    <string name="a400_cnc_origin_set_material_length">Length</string>
+    <string name="a400_cnc_origin_set_material_diameter">Diameter</string>
+    <string name="a400_cnc_origin_fix_material_title">Fix Material (2/9)</string>
+    <string name="a400_cnc_origin_fix_material_content">Secure the material to the 3-jaw chuck, leaving no gap between their contact surfaces.</string>
+    <string name="a400_cnc_origin_fix_material_waring">Warning: Do not install the tailstock now, or the bit will bump into the tailstock.</string>
+    <string name="a400_cnc_origin_select_bit_title">Select Bit (3/9)</string>
+    <string name="a400_cnc_origin_operation_instruction_title">Operation Instruction (4/9)</string>
+    <string name="a400_cnc_origin_open_glass_msg">Before proceeding with the Origin Assistant, ensure that you wear the CNC safety goggles.</string>
+    <string name="a400_cnc_origin_custom_bit_msg">Measure and enter the bit’s length and diameter.</string>
+    <string name="a400_cnc_origin_origin_assistant_go_home">Home...</string>
+    <string name="a400_cnc_origin_origin_assistant_set_x1_tip">The toolhead is moving to near X1…</string>
+    <string name="a400_cnc_origin_origin_assistant_set_x2_tip">The toolhead is moving to near X2…</string>
+    <string name="a400_cnc_origin_origin_assistant_set_y_tip">The toolhead is moving to near Y…</string>
+    <string name="a400_cnc_origin_origin_assistant_set_z_tip">The toolhead is moving to near Z…</string>
+    <string name="a400_cnc_origin_origin_assistant_set_x1_msg">Move the bit to the position shown on the screen, touching the material with the bit’s shank rather than its tip. Then tap Set X1.</string>
+    <string name="a400_cnc_origin_origin_assistant_set_x2_msg">Move the bit to the position shown on the screen, touching the material with the bit’s shank rather than its tip. Then tap Set X2.</string>
+    <string name="a400_cnc_origin_origin_assistant_set_y_msg">Move the bit to the position shown on the screen, touching the material with the bit’s shank rather than its tip. Then tap Set Y.</string>
+    <string name="a400_cnc_origin_origin_assistant_set_z_msg">Move the bit to the position shown on the screen. Then tap Set Z.</string>
+    <string name="a400_cnc_origin_origin_assistant_set_b_msg">Rotate the material to the position you want. Then tap Set B.</string>
+    <string name="a400_cnc_origin_origin_assistant_set_x1_subtitle">Set X1 (5/9)</string>
+    <string name="a400_cnc_origin_origin_assistant_set_x2_subtitle">Set X2 (6/9)</string>
+    <string name="a400_cnc_origin_origin_assistant_set_y_subtitle">Set Y (7/9)</string>
+    <string name="a400_cnc_origin_origin_assistant_set_z_subtitle">Set Z (8/9)</string>
+    <string name="a400_cnc_origin_origin_assistant_set_b_subtitle">Set B (9/9)</string>
+    <!-- control-->
+    <!-- Air purigier-->
+    <string name="a400_control_air_purigier_turn_on_title">Turn On</string>
+    <string name="a400_control_air_purigier_turn_off_title">Turn Off</string>
+    <string name="a400_control_air_purigier_setttings">Air Purifier Settings</string>
+    <string name="a400_control_air_purifier_settings_laser_and_cut_title">Laser Engraving and Cutting Job</string>
+    <string name="a400_control_air_purifier_settings_auto_power_on_title">Auto Power On</string>
+    <string name="a400_control_air_purifier_settings_auto_power_off_title">Auto Power Off</string>
+    <string name="a400_control_air_purifier_settings_3dp_job_title">3D Printing Job</string>
+    <string name="a400_control_air_purifier_settings_cnc_job_title">CNC Carving Job</string>
+    <string name="a400_control_air_purifier_settings_timer_title">Timer</string>
+    <string name="a400_control_air_purifier_settings_timer_close_title">close</string>
+    <string name="a400_control_air_purifier_settings_timer_one_title">one minute</string>
+    <string name="a400_control_air_purifier_settings_timer_three_title">three minute</string>
+    <string name="a400_control_air_purifier_settings_timer_five_title">five minute</string>
+    <string name="a400_control_air_purifier_settings_timer_eight_title">eight minute</string>
+    <string name="a400_control_air_purifier_settings_timer_ten_title">ten minute</string>
+    <string name="a400_control_air_purifier_settings_timer_thirty_title">thirty minute</string>
+    <string name="a400_control_air_purifier_settings_setting_fail_msg">Setting fail</string>
+    <!-- enclosure-->
+    <string name="a400_control_enclosure_setttings">Enclosure Settings</string>
+    <string name="a400_control_enclosure_door_detection">Door Detection</string>
+    <string name="a400_control_enclosure_temp_monitor">RH/Temp.Monitor</string>
+    <string name="a400_control_enclosure_temp">Temp</string>
+    <string name="a400_control_enclosure_rh">RH</string>
+    <string name="a400_control_filament_dryer_dry">Dry</string>
+    <string name="a400_control_filament_dryer_stop_dry">Stop Drying</string>
+    <string name="not_powered">Not powered</string>
+    <string name="a400_control_move">Move</string>
+    <string name="a400_control_filament">Filament</string>
+    <string name="a400_control_heated_bed">Heated Bed</string>
+    <string name="a400_control_enclosure">Enclosure</string>
+    <string name="a400_control_air_purifier">Air Purifier</string>
+    <string name="a400_control_filament_dryer">Filament Dryer</string>
+    <string name="a400_control_laser">Laser</string>
+    <string name="a400_control_spindle">Spindle</string>
+    <string name="a400_laser_central_axis_calibration_material_cylinder_material">Cylinder Material</string>
+    <string name="all_material_diameter">Diameter</string>
+    <string name="a400_calibration_central_axis_title">Set Material Diameter</string>
+    <string name="a400_calibration_central_axis_content">Measure and input the material’s diameter. Then, fix the material to the 3-jaw chuck. </string>
+    <string name="a400_central_axis_calibration">Central Axis Calibration</string>
+    <string name="a400_set_material_diameter_1_2">Set Material Diameter (1/2)</string>
+    <string name="a400_touch_material_2_2">Touch Material (2/2)</string>
+    <string name="a400_calibration_axis_touch_material_title">Touch Material</string>
+    <string name="a400_calibration_axis_touch_material_content">Fix the material to the 3-jaw chuck. Manually lower the toolhead against the material’s top surface with the calibration card until you feel slight resistance when you pull out the calibration card, and it should be wrinkled when you push it forward.</string>
+    <string name="a400_control_there_matrix_title">3 × 3</string>
+    <string name="a400_control_five_matrix_title">5 × 5</string>
+    <string name="a400_control_nine_matrix_title">9 × 9</string>
+
+
+
+    <!-- ***************************J1***************************************-->
+    <string name="preparation">preparation</string>
+
+    <string name="calibration_J1_XY_offset_calibration_content">你需要分别在打印的 X 轴和 Y 轴校准模型中手动选择最佳线组，以校准左、右打印头在 X 轴和 Y 轴方向的偏移量。</string>
+
+    <string name="leveling_bed_calibration_left_point_content">Turn the front-left thumbwheel under the heated bed to adjust the Z offset of the left toolhead at the left point, and calibrate it with the calibration card.</string>
+    <string name="leveling_bed_calibration_datum_title">Calibrate Datum Point</string>
+    <string name="leveling_bed_calibration_datum_content">Place the calibration card between the left toolhead and the heated bed, and tap Next. Then, adjust the Z offset until you feel slight resistance when pulling out the calibration card, and it should be wrinkled when you push it forward.</string>
+
+    <string name="leveling_bed_calibration_right_point_content">Turn the front-right thumbwheel under the heated bed to adjust the Z offset of the left toolhead at the right point, and calibrate it with the calibration card.</string>
+
+    <string name="leveling_Z_calibration_L_title">Calibrate Z Offset-Toolhead L</string>
+    <string name="leveling_Z_calibration_L_content">Place the calibration card between the nozzle and the heated bed, and tap Next. Then, adjust the Z offset until you feel slight resistance when pulling out the calibration card, and it should be wrinkled when you push it forward.</string>
+    <string name="leveling_Z_calibration_R_title">Calibrate Z Offset-Toolhead R</string>
+    <string name="leveling_Z_calibration_R_content">Turn the thumbwheel of the right toolhead to adjust the Z offset, and calibrate it with the calibration card.</string>
+
+    <string name="calibration_success_content">Install the PEI glass plate back on the heated bed if there will be no more calibrations next.</string>
+    <string name="calibration_z_success_content">Tighten the two screws, and install the PEI glass plate back on the heated bed if there will be no more calibrations next. </string>
+    <string name="calibration_success_title">Successful</string>
+
+    <string name="remove_glass">Remove the PEI glass plate and place it in a safe area.</string>
+    <string name="installed_glass">Make sure the PEI glass plate is installed on the heated bed.</string>
+    <string name="clean_nozzles">Clean the nozzles until there is no residue left.</string>
+    <string name="tip_4">After the nozzles are heated, clean the nozzles until there is no residue left.</string>
+    <string name="check_glass">Have you removed the PEI glass plate and cleaned the nozzles?</string>
+
+    <string name="tips_success">Success</string>
+    <string name="tips_x_error">X Offset</string>
+    <string name="tips_y_error">Y Offset</string>
+    <string name="tips_z_error">Z Offset</string>
+
+    <string name="extruder_temperature">%d/%d°C</string>
+
+    <string name="calibration_j1_assist_mode">Assist Mode</string>
+
+    <string name="control_swith_extruder">Switching nozzle...</string>
+
+    <string name="j1_calibration_install_glass_plate_title">Install PEI Glass Plate</string>
+    <string name="j1_calibration_install_glass_plate_high_temperature_content">The current bed temperature is %d℃. It’s suggested that you operate the glass plate after the bed cools down under 40℃.</string>
+    <string name="j1_calibration_nozzle_clean_nozzle_title">Clean Nozzles</string>
+    <string name="j1_calibration_nozzle_clean_nozzle_content">Clean the outer surface and the tip of both nozzles with the brush until there is no residue.</string>
+    <string name="j1_calibration_check_xy_offest_content">Try breaking off the four outer squares from the check model. If the four squares can all be broken off, then the XY Offset Calibration is successful. If not, you need to do the calibration again.</string>
+
+    <!--calibration-->
+    <string name="j1_calibration_remove_glass_plate_title">Remove PEI Glass Plate</string>
+    <string name="j1_calibration_remove_glass_plate_content">Remove the PEI glass plate and place it in a safe area. If it’s already removed, tap <b>Next</b>.</string>
+    <string name="j1_calibration_remove_glass_plate_high_temperature_content">The current bed temperature is %d℃. Please wait until the bed cools down under 40℃ before operating the PEI glass plate.</string>
+    <string name="j1_calibration_moving">Moving...</string>
+    <string name="j1_calibration_quit_msg">The current data will not be saved. Are you sure to quit?</string>
+    <string name="j1_calibration_clean_nozzles_title">Clean Nozzles</string>
+    <string name="j1_calibration_clean_nozzles_msg">Clean the outer surface of both nozzles with the wire brush. Make sure there is no residue and tap <b>Next</b>.\n\n<b>Note</b>: Slight filament oozing in later processes will not affect the calibration result.</string>
+    <string name="j1_calibration_restore_machine_title">Restore Machine</string>
+    <string name="j1_calibration_restore_machine_glass_content"><b>If there will be no more calibration next</b>, clean the heated bed surface and install the PEI glass plate back onto the bed.</string>
+    <string name="j1_calibration_calibrated_successfully">Calibrated Successfully</string>
+    <string name="j1_calibration_fail_to_obtain_data">The machine failed to obtain the data. You can clean the nozzle and retry.</string>
+
+    <!--Heated Bed Leveling-->
+    <string name="calibration_heated_bed_leveing_title">Heated Bed Leveling</string>
+    <string name="calibration_J1_heated_bed_leveing_auxiliary_content">The left extruder will touch the heated bed at three different points in sequence. To level the bed, you need to adjust the Z offset at two of these points under the instruction.</string>
+    <string name="j1_calibration_nozzle_bed_heating_title">Heat Nozzles and Bed</string>
+    <string name="j1_calibration_nozzle_bed_heating_content">For the subsequent nozzle cleaning and calibration, the machine is heating the nozzles and the bed...</string>
+    <string name="j1_calibration_nozzle_bed_heated_content">The nozzles and the bed have been heated. Tap <b>Next</b> to proceed.</string>
+    <string name="leveling_bed_calibration_left_point_title">Calibrate Left Point</string>
+    <string name="leveling_bed_calibration_auxiliary_left_point_content">Rotate the left leveling wheel under the bed to move the orange bar to the midpoint. If you don’t see any orange bar, keep rotating as prompted.</string>
+    <string name="leveling_bed_calibration_right_point_title">Calibrate Right Point</string>
+    <string name="leveling_bed_calibration_auxiliary_right_point_content">Rotate the right leveling wheel under the bed to move the orange bar to the midpoint. If you don’t see any orange bar, keep rotating as prompted.</string>
+
+
+    <!--Z Offset Calibration-->
+    <string name="calibration_Z_offset_calibration_title">Z Offset Calibration</string>
+    <string name="calibration_J1_Z_offset_calibration_content">The two extruders will touch the heated bed in sequence, and you need to calibrate the Z offset of the right extruder to ensure that the two extruders work at the right and same height.</string>
+    <string name="j1_calibration_restore_machine_glass_and_extruder_content">Tighten the two screws on the right extruder.\n\n<b>If there will be no more calibration next</b>, clean the heated bed surface and install the PEI glass plate back onto the bed.</string>
+    <string name="j1_calibration_restore_extruder_content">Tighten the two screws on the right extruder.</string>
+    <string name="j1_calibration_Z_offset_calibration_loosen_screws_title">Loosen Screws</string>
+    <string name="j1_calibration_Z_offset_calibration_loosen_screws_content">Loosen the two screws on the right extruder by one turn with the H2.0 hex key, and tap <b>Next</b>.</string>
+    <string name="leveling_Z_calibration_auxiliary_title">Calibrate Z Offset</string>
+    <string name="leveling_Z_calibration_auxiliary_content">Rotate the thumb wheel of the right extruder to move the orange bar to the midpoint. If you don’t see any orange bar, keep rotating as prompted.</string>
+
+    <!--XY Offset Calibration-->
+    <string name="calibration_XY_offset_calibration_title">XY Offset Calibration</string>
+    <string name="calibration_J1_XY_offset_auxiliary_calibration_content">The two extruders will touch the heated bed in sequence to obtain and calibrate their offsets in the X and Y orientations automatically.</string>
+    <string name="leveling_XY_calibration_title">Calibrate XY Offset</string>
+    <string name="leveling_XY_calibration_running_content">The machine is obtaining the data and calibrating automatically...</string>
+    <string name="leveling_XY_calibration_success_content">The X and Y offsets of the two extruders have been calibrated.</string>
+
+    <!-- Calibration Check-->
+    <string name="calibration_calibration_check_title">Offset Calibration Check</string>
+    <string name="calibration_J1_calibration_check_content">The machine will print a built-in model with both extruders. By observing the model with the prompts on the Touchscreen, you can check if the offset calibrations are successful.</string>
+    <string name="j1_calibration_calibration_check_pei_glass_plate_check_title">PEI Glass Plate Check</string>
+    <string name="j1_calibration_calibration_check_pei_glass_plate_check_title_content">Make sure the PEI glass plate has been installed onto the heated bed.</string>
+    <string name="j1_calibration_calibration_check_load_filament_title">Load Filament</string>
+    <string name="j1_calibration_calibration_check_load_filament_contnent">Tap <b>Go to Load</b> to load two PLA filaments of  distinct colors (like orange and white) into the extruders. \n\nIf the filaments are already loaded, tap <b>Print</b>.</string>
+    <string name="j1_calibration_calibration_check_go_to_load">Go to Load</string>
+    <string name="j1_calibration_calibration_check_print_check_model">Print Check Model</string>
+    <string name="j1_calibration_calibration_check_check_z_offset_calibration">Check Z Offset Calibration</string>
+    <string name="j1_calibration_check_z_offest_content">If the surfaces of differently colored areas are flush with each other, then the Z Offset Calibration is successful. If not, you need to do the calibration again.\n\nTap <b>Next</b> to check the XY Offset Calibration results.</string>
+    <string name="j1_calibration_calibration_check_check_xy_offset_calibration_title">Check XY Offset Calibration</string>
+    <string name="j1_calibration_calibration_check_check_xy_offset_calibration_content">Remove the model from the PEI glass plate, and try breaking off the outer squares from the model. If the four squares can all be broken off (not necessarily completely), then the XY Offset Calibration is successful. If not, you need to do the calibration again.</string>
+    <string name="j1_print_adjust">Adjust</string>
+
+    <string name="j1_how_to_load_filament_step_1">Step 1: Remove the top panel.</string>
+    <string name="j1_how_to_load_filament_step_2">Step 2: Hang the filament onto the filament holder, and feed the filament into the filament entry until it protrudes from the other end of the tube.</string>
+    <string name="j1_how_to_load_filament_step_3">Step 3: Push the toggle backward and hold; then insert the filament into the extruder until you feel resistance (taking the left extruder for example).</string>
+    <string name="j1_how_to_load_filament_step_4">Step 4: Set a target temperature and tap <b>Heat</b>.</string>
+    <string name="j1_how_to_load_filament_step_5">Step 5: Tap <b>Load</b> (the extruder will automatically move to an appropriate position to start loading, if necessary). </string>
+    <string name="j1_how_to_load_filament_step_6">Step 6: When the filament oozes out of the nozzle, tap <b>Stop Loading</b>.</string>
+    <string name="j1_how_to_load_filament_step_7">Step 7: Insert the guide tube into the extruder and then snap it into the tube clip. Finally, reinstall the top panel.</string>
+
+    <!-- Control-->
+    <string name="j1_control_extruder_title">Extruder</string>
+    <string name="j1_control_extruder_left">Left</string>
+    <string name="j1_control_extruder_right">Right</string>
+    <string name="j1_control_extruder_stop_loading">Stop Loading</string>
+    <string name="j1_control_extruder_stop_unloading">Stop Unloading</string>
+
+    <string name="j1_control_move_title">Move</string>
+    <string name="j1_control_move_left">L</string>
+    <string name="j1_control_move_right">R</string>
+    <string name="j1_control_move_z_offset">Z Offset</string>
+
+    <string name="j1_control_heated_bed_title">Heated Bed</string>
+    <string name="j1_control_heated_bed_on">On</string>
+    <string name="j1_control_heated_bed_off">Off</string>
+
+    <string name="j1_control_motor_title">Motor</string>
+    <string name="j1_control_heated_bed_subtitle">Motor Switch</string>
+
+    <string name="j1_control_lighting_title">Lighting</string>
+    <string name="j1_control_lighting_subtitle">Lighting</string>
+
+    <string name="calibration_j1_erroe">The machine failed to obtain the data. You can clean the nozzle and retry.</string>
+    <string name="all_wizard_data_missing">Wizard Data Missing</string>
+    <string name="all_wizard_data_missing_content">You need to go through the Wizard to get your machine prepared for printing.</string>
+    <string name="all_wizard_data_missing_check">Go to Wizard</string>
+    <string name="calibration_failed_title">Calibration Failed</string>
+    <string name="calibration_failed_content">Please check if the axes can move properly and if the nozzles are clean. The machine will go home first.</string>
+
+    <string name="j1_control_load_filament_before_msg">The extruders will now move into a position that allows you to load or unload the filament.</string>
+
+    <string name="j1_calibration_vibration_intro_desc">To improve the printing quality when the vibration compensation is enabled, you can calibrate the compensation frequency according to the prompts on the Touchscreen.</string>
+    <string name="j1_calibration_vibration_print_model_title">Print Calibration Model</string>
+    <string name="j1_calibration_vibration_choose_best_area_title">Choose the Best Area</string>
+    <string name="j1_calibration_vibration_choose_x_best_area_title">Choose for X Model</string>
+    <string name="j1_calibration_vibration_choose_y_best_area_title">Choose for Y Model</string>
+    <string name="j1_calibration_vibration_choose_area_intro_content">
+        1. Observe the marked areas as illustrated on the X and Y sides of the model.
+        \n2. Find the one with the most unapparent vertical ripples on each side.
+        \n3. Tap <b>Next</b> to select on the Touchscreen.
+    </string>
+    <string name="j1_calibration_vibration_choose_best_area_content">If the vertical ripples of two areas are similarly unapparent and both more unapparent than others, you can choose either.</string>
+    <string name="j1_calibration_start_but_vibration_compensation_off_dialog_content">Vibration Compensation will be automatically enabled in the calibration. Are you sure to start?</string>
+</resources>
+

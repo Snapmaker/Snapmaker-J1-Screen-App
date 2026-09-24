@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/margin_layout_32">
+
+    <fabscreen.platform.core.ui.view.A400CoordinatesPanel
+        android:id="@+id/acp_coordinate_type"
+        android:layout_width="539dp"
+        android:layout_height="423dp"
+        android:layout_marginLeft="@dimen/margin_layout_48"
+        android:layout_marginRight="44dp" />
+
+    <!--  work coordinates -->
+
+    <fabscreen.platform.core.ui.view.A400XYZBControlPanel
+        android:id="@+id/xyzb_calibration_control"
+        android:layout_width="609dp"
+        android:layout_height="423dp"
+        android:layout_toRightOf="@+id/acp_coordinate_type" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/acp_coordinate_type"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="176dp"
+        android:background="?attr/theme_color_page_background" />
+
+</RelativeLayout>

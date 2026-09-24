@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/top_bar_background">
+
+    <Button
+        android:id="@+id/top_bar_back"
+        android:layout_width="@dimen/height_top_bar"
+        android:layout_height="@dimen/height_top_bar"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/top_bar_back_background"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/top_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="calibration 校准"
+        android:textColor="@color/top_bar_title"
+        android:textSize="@dimen/font_size_h4" />
+
+    <fabscreen.platform.core.ui.view.GuideProgressBar
+        android:id="@+id/view_guide_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+

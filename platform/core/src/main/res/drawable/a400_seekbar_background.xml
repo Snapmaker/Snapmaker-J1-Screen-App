@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center_vertical">
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/palette_black_snapmaker" />
+            <corners android:radius="83dp" />
+        </shape>
+    </item>
+    <item android:gravity="center_vertical" >
+        <scale android:scaleWidth="100%">
+            <selector>
+                <item android:state_enabled="false">
+                    <shape android:shape="rectangle" >
+                        <solid android:color="@color/palette_grey_mine_shaft" />
+                        <corners android:radius="89dp" />
+                        <padding android:top="10dp" android:bottom="10dp"/>
+                    </shape>
+                </item>
+
+                <item>
+                    <shape android:shape="rectangle">
+                        <solid android:color="@color/palette_grey_mine_shaft" />
+                        <size android:height="64dp" />
+                        <corners android:radius="80dp" />
+                        <padding android:top="10dp" android:bottom="10dp"/>
+                    </shape>
+                </item>
+
+            </selector>
+        </scale>
+    </item>
+</layer-list>

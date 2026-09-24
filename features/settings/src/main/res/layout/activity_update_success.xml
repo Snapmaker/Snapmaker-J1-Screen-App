@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090909">
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="142dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="100"
+        app:indicatorColor="#62C864"
+        app:indicatorSize="404dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="#00000000"
+        app:trackCornerRadius="10dp"
+        app:trackThickness="10dp" />
+
+    <View
+        android:layout_width="366dp"
+        android:layout_height="366dp"
+        android:background="@drawable/shape_a400_progress_inner_circle"
+        app:layout_constraintBottom_toBottomOf="@id/progress"
+        app:layout_constraintEnd_toEndOf="@id/progress"
+        app:layout_constraintStart_toStartOf="@id/progress"
+        app:layout_constraintTop_toTopOf="@id/progress" />
+
+    <TextView
+        android:id="@+id/tv_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100%"
+        android:textColor="@color/palette_white_pure"
+        android:textSize="@dimen/font_size_72sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/progress"
+        app:layout_constraintEnd_toEndOf="@id/progress"
+        app:layout_constraintStart_toStartOf="@id/progress"
+        app:layout_constraintTop_toTopOf="@id/progress" />
+
+    <Button
+        android:id="@+id/btn_take_action"
+        style="@style/AppTheme.PrimaryButton"
+        android:layout_width="326dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Restart Now" />
+
+    <TextView
+        android:id="@+id/tv_updated_title"
+        style="@style/AppTheme.TextTitleHeadLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="66dp"
+        android:text="Hardware Updated (Restart to apply)"
+        app:layout_constraintStart_toEndOf="@id/progress"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/sv_updated"
+        android:layout_width="437dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape_a400_bg_vertical_gradient_round_rect"
+        app:layout_constraintStart_toStartOf="@id/tv_updated_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_updated_title">
+
+        <LinearLayout
+            android:id="@+id/ll_updated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="24dp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_update_when_plug_in"
+        style="@style/AppTheme.TextTitleHeadLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="54dp"
+        android:text="Will update when plugged in"
+        app:layout_constraintStart_toEndOf="@id/progress"
+        app:layout_constraintTop_toBottomOf="@id/sv_updated" />
+
+    <ScrollView
+        android:id="@+id/sv_update_when_plugged_in"
+        android:layout_width="437dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape_a400_bg_vertical_gradient_round_rect"
+        app:layout_constraintStart_toStartOf="@id/tv_updated_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_update_when_plug_in">
+
+        <LinearLayout
+            android:id="@+id/ll_update_when_plugged_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="24dp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_updated_title_startup"
+        style="@style/AppTheme.TextTitleHeadLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="192dp"
+        android:text="Hardware Updated"
+        app:layout_constraintStart_toEndOf="@id/progress"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/sv_updated_startup"
+        android:layout_width="437dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape_a400_bg_vertical_gradient_round_rect"
+        app:layout_constraintStart_toStartOf="@id/tv_updated_title_startup"
+        app:layout_constraintTop_toBottomOf="@id/tv_updated_title_startup">
+
+        <LinearLayout
+            android:id="@+id/ll_updated_startup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="24dp" />
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="tv_updated_title,sv_updated,tv_update_when_plug_in,sv_update_when_plugged_in"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_startup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="tv_updated_title_startup,sv_updated_startup" />
+</androidx.constraintlayout.widget.ConstraintLayout>

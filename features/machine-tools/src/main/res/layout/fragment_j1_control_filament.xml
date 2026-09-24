@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/theme_color_page_background">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_nozzle_left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gl_vertical"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_l_hotend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_8">
+
+            <TextView
+                android:id="@+id/tv_l_hotend_title"
+                style="@style/AppTheme.TextExplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/j1_control_extruder_left"
+                android:textColor="?attr/theme_color_title_primary" />
+
+            <LinearLayout
+                android:id="@+id/ll_extruder_left_temp_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_l_hotend_title"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cur_temp_l"
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\/"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_target_temp_l"
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="@string/all_unit_temperature"
+                    android:textSize="?attr/theme_font_size_title2" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <fabscreen.platform.core.ui.view.CustomArcSeekBar
+            android:id="@+id/cas_extruder_target_temp_left"
+            style="@style/AppTheme.CustomSeekBarTheme"
+            android:layout_width="167dp"
+            android:layout_height="167dp"
+            android:layout_below="@+id/rl_l_hotend"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="20dp"
+            app:max="300" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cas_extruder_target_temp_left"
+            android:layout_alignBottom="@+id/cas_extruder_target_temp_left"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_l_heat"
+                android:layout_width="@dimen/size_button_80"
+                android:layout_height="@dimen/size_button_80"
+                android:background="@drawable/pic_progress_bg"
+                android:text="On"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_bg_section_detail_normal"
+            android:divider="?attr/theme_dialog_line_color"
+            android:dividerPadding="@dimen/margin_layout_12"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/tv_filament_in_l"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_layout_52"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/all_unload"
+                android:textColor="@drawable/btn_print_operation"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_filament_out_l"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_layout_52"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/all_load"
+                android:textColor="@drawable/btn_print_operation"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_filament_movement_l"
+            style="@style/AppTheme.TextBody1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_layout_52"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_bg_section_detail_normal"
+            android:gravity="center"
+            android:textColor="@drawable/btn_print_operation"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_filament_nozzle_removal_l"
+            style="@style/AppTheme.TextBody1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_layout_52"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_bg_section_detail_normal"
+            android:gravity="center"
+            android:text="将喷嘴移出"
+            android:textColor="@drawable/btn_print_operation"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_nozzle_right"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_r_hotend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_8">
+
+            <TextView
+                android:id="@+id/tv_r_hotend_title"
+                style="@style/AppTheme.TextExplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/j1_control_extruder_right"
+                android:textColor="?attr/theme_color_title_primary" />
+
+            <LinearLayout
+                android:id="@+id/ll_extruder_right_temp_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_r_hotend_title"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cur_temp_r"
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\/"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_target_temp_r"
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="@string/all_unit_temperature"
+                    android:textSize="?attr/theme_font_size_title2" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <fabscreen.platform.core.ui.view.CustomArcSeekBar
+            android:id="@+id/cas_extruder_target_temp_right"
+            style="@style/AppTheme.CustomSeekBarTheme"
+            android:layout_width="167dp"
+            android:layout_height="167dp"
+            android:layout_below="@+id/rl_r_hotend"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="20dp"
+            app:max="300" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cas_extruder_target_temp_right"
+            android:layout_alignBottom="@+id/cas_extruder_target_temp_right"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_r_heat"
+                android:layout_width="@dimen/size_button_80"
+                android:layout_height="@dimen/size_button_80"
+                android:background="@drawable/pic_progress_bg"
+                android:text="On"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_bg_section_detail_normal"
+            android:divider="?attr/theme_dialog_line_color"
+            android:dividerPadding="@dimen/margin_layout_12"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/tv_filament_in_r"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_layout_52"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/all_unload"
+                android:textColor="@drawable/btn_print_operation"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_filament_out_r"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_layout_52"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/all_load"
+                android:textColor="@drawable/btn_print_operation"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_filament_movement_r"
+            style="@style/AppTheme.TextBody1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_layout_52"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_bg_section_detail_normal"
+            android:gravity="center"
+            android:textColor="@drawable/btn_print_operation"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_filament_nozzle_removal_r"
+            style="@style/AppTheme.TextBody1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_layout_52"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_bg_section_detail_normal"
+            android:gravity="center"
+            android:text="将喷嘴移出"
+            android:textColor="@drawable/btn_print_operation"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

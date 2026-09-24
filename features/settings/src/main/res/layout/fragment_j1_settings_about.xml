@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/theme_list_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/j1_setting_about_machine_name" />
+
+            <TextView
+                android:id="@+id/tv_machine_name"
+                style="@style/AppTheme.TextExplain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="?attr/theme_color_explain_text"
+                tools:text="AoTeMan" />
+
+            <ImageView
+                android:layout_width="?attr/theme_icon_tools_button"
+                android:layout_height="?attr/theme_icon_tools_button"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_edit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_settings_about_model_name"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/theme_list_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/j1_setting_about_machine_model" />
+
+            <TextView
+                android:id="@+id/tv_machine_model"
+                style="@style/AppTheme.TextExplain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="?attr/theme_color_explain_text"
+                tools:text="J1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/theme_list_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/j1_setting_about_build_volume" />
+
+            <TextView
+                android:id="@+id/tv_work_area"
+                style="@style/AppTheme.TextExplain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="?attr/theme_color_explain_text"
+                tools:text="345 x 357 x 334 mm" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/theme_list_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/j1_setting_about_ip_address" />
+
+            <TextView
+                android:id="@+id/tv_ip_address"
+                style="@style/AppTheme.TextExplain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="?attr/theme_color_explain_text"
+                tools:text="192.168.1.100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/theme_list_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/j1_setting_about_mac_address" />
+
+            <TextView
+                android:id="@+id/tv_mac_address"
+                style="@style/AppTheme.TextExplain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="?attr/theme_color_explain_text"
+                tools:text="18-31-BF-07-EA-5E" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/theme_list_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/j1_setting_about_storage" />
+
+            <TextView
+                android:id="@+id/tv_storage"
+                style="@style/AppTheme.TextExplain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="?attr/theme_color_explain_text"
+                tools:text="200 M/500 M" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_export_logs"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/theme_list_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/j1_setting_sys_logs" />
+
+            <TextView
+                android:id="@+id/tv_log"
+                style="@style/AppTheme.TextExplain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="?attr/theme_color_explain_text"
+                android:text="@string/s30_logs_export" />
+
+            <ImageView
+                android:id="@+id/iv_export"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_j1_arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_certification"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/theme_list_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/j1_setting_about_compliance_certification" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_j1_arrow_right" />
+        </LinearLayout>
+
+        <View
+            style="@style/AppTheme.SectionDivider"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_marginBottom="@dimen/margin_8dp" />
+
+        <TextView
+            android:id="@+id/tv_clear_cache"
+            style="@style/AppTheme.DangerZoneText"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/theme_list_item_height"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:text="@string/j1_setting_about_clear_cache" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/view_calibration_right_select"
+        android:layout_width="581dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_a400_calibration_leveling_election_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="42dp"
+        android:text="自定义"
+        android:textColor="?attr/theme_color_explain_text"
+        android:textSize="?attr/theme_font_size_title2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_calibration_leveling_xy_selection_left_printing_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="74dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_a400_calibration_leveling_election_title">
+
+        <TextView
+            android:id="@+id/tv_calibration_leveling_xy_selection_left_printing_temperature_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/calibration_leveling_xy_selection_left_temperature_title"
+            android:textAlignment="textStart"
+            android:textColor="?attr/theme_color_body_primary"
+            android:textSize="?attr/theme_font_size_body2"/>
+
+        <EditText
+            android:id="@+id/et_calibration_leveling_xy_selection_left_printing_temperature_title"
+            android:layout_width="278dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_calibration_leveling_xy_selection_left_printing_temperature_title"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_calibration_leveling_xy_selection_right_printing_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="74dp"
+        app:layout_constraintStart_toEndOf="@id/rl_calibration_leveling_xy_selection_left_printing_temperature"
+        app:layout_constraintTop_toBottomOf="@id/tv_a400_calibration_leveling_election_title">
+
+        <TextView
+            android:id="@+id/tv_calibration_leveling_xy_selection_right_printing_temperature_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/calibration_leveling_xy_selection_right_temperature_title"
+            android:textAlignment="textStart"
+            android:textColor="?attr/theme_color_body_primary"
+            android:textSize="?attr/theme_font_size_body2"/>
+
+        <EditText
+            android:id="@+id/et_calibration_leveling_xy_selection_right_printing_temperature"
+            android:layout_width="278dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_calibration_leveling_xy_selection_right_printing_temperature_title"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_calibration_leveling_xy_selection_left_standby_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_calibration_leveling_xy_selection_left_printing_temperature">
+
+        <TextView
+            android:id="@+id/tv_calibration_leveling_xy_selection_left_standby_temperature_title_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/calibration_leveling_xy_selection_left_stand_by_temperature_title" />
+
+        <EditText
+            android:id="@+id/et_calibration_leveling_xy_selection_left_standby_temperature"
+            android:layout_width="278dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_calibration_leveling_xy_selection_left_standby_temperature_title_"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_calibration_leveling_xy_selection_right_standby_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/rl_calibration_leveling_xy_selection_left_standby_temperature"
+        app:layout_constraintTop_toBottomOf="@+id/rl_calibration_leveling_xy_selection_right_printing_temperature">
+
+        <TextView
+            android:id="@+id/tv_calibration_leveling_xy_selection_right_standby_temperature_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/calibration_leveling_xy_selection_right_stand_by_temperature_title"
+            android:textAlignment="textStart"
+            android:textColor="?attr/theme_color_body_primary"
+            android:textSize="?attr/theme_font_size_body2"/>
+
+        <EditText
+            android:id="@+id/et_calibration_leveling_xy_selection_right_standby_temperature_"
+            android:layout_width="278dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_calibration_leveling_xy_selection_right_standby_temperature_title"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_calibration_leveling_xy_selection_bed_printing_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_calibration_leveling_xy_selection_left_standby_temperature">
+
+        <TextView
+            android:id="@+id/tv_calibration_leveling_xy_selection_bed_printing_temperature_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/calibration_leveling_xy_selection_heated_bed_temperature_title"
+            android:textAlignment="textStart"
+            android:textColor="?attr/theme_color_body_primary"
+            android:textSize="?attr/theme_font_size_body2"/>
+
+        <EditText
+            android:id="@+id/et_calibration_leveling_xy_selection_bed_printing_temperature"
+            android:layout_width="278dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_calibration_leveling_xy_selection_bed_printing_temperature_title"
+            android:inputType="number" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

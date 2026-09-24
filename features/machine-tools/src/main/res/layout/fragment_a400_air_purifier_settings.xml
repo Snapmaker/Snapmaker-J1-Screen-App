@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090909"
+    android:orientation="vertical">
+
+    <include layout="@layout/a400_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_layout_48"
+            android:layout_marginRight="@dimen/margin_layout_48"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/a400_control_air_purifier_settings_laser_and_cut_title" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/palette_grey_mine_shaft" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_marginTop="9dp">
+
+                <TextView
+                    android:id="@+id/tv_auto_power_on_label0"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/a400_control_air_purifier_settings_auto_power_on_title"
+                    android:textColor="@color/palette_white_pure" />
+
+                <fabscreen.platform.core.ui.common.A400SwitchCompat
+                    android:id="@+id/switch_laser_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:thumb="@drawable/shape_a400_switch_thumb"
+                    app:track="@drawable/selector_a400_switch_track" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp">
+
+                <TextView
+                    android:id="@+id/tv_auto_power_off_label0"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/a400_control_air_purifier_settings_auto_power_off_title"
+                    android:textColor="@color/palette_white_pure" />
+
+                <LinearLayout
+                    android:id="@+id/ll_laser_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/switch_laser_off"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_laser_timer_title"
+                        style="@style/AppTheme.TextBody1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_layout_24"
+                        android:layout_toLeftOf="@+id/rl_laser_timer"
+                        android:text="@string/a400_control_air_purifier_settings_timer_title"
+                        android:textColor="@color/palette_grey_dim" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_laser_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="68dp"
+                        android:background="@drawable/bg_air_purigier_timer"
+                        android:paddingLeft="31dp"
+                        android:paddingRight="20dp">
+
+                        <TextView
+                            android:id="@+id/tv_timer_value"
+                            style="@style/AppTheme.TextBody1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/a400_control_air_purifier_settings_timer_three_title"
+                            android:textColor="@color/palette_white_pure" />
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/tv_timer_value"
+                            android:background="@drawable/ic_down_arrow_96x96" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <fabscreen.platform.core.ui.common.A400SwitchCompat
+                    android:id="@+id/switch_laser_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:thumb="@drawable/shape_a400_switch_thumb"
+                    app:track="@drawable/selector_a400_switch_track" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_auto_power_off_laser_time_delay"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_auto_power_off_laser_time_delay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="关闭延时"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp" />
+
+                <Spinner
+                    android:id="@+id/sp_auto_power_off_laser_time_delay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/tv_auto_power_off_laser_time_delay" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/a400_control_air_purifier_settings_3dp_job_title" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#2E2E2E" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_marginTop="9dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_auto_power_on_label1"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/a400_control_air_purifier_settings_auto_power_on_title"
+                    android:textColor="@color/palette_white_pure" />
+
+                <fabscreen.platform.core.ui.common.A400SwitchCompat
+                    android:id="@+id/switch_3dp_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:thumb="@drawable/shape_a400_switch_thumb"
+                    app:track="@drawable/selector_a400_switch_track" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_auto_power_off_label1"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/a400_control_air_purifier_settings_auto_power_off_title"
+                    android:textColor="@color/palette_white_pure" />
+
+                <LinearLayout
+                    android:id="@+id/ll_3dp_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/switch_3dp_off"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_3dp_timer_title"
+                        style="@style/AppTheme.TextBody1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_layout_24"
+                        android:layout_toLeftOf="@+id/rl_3dp_timer"
+                        android:text="@string/a400_control_air_purifier_settings_timer_title"
+                        android:textColor="@color/palette_grey_dim" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_3dp_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="68dp"
+                        android:background="@drawable/bg_air_purigier_timer"
+                        android:paddingLeft="31dp"
+                        android:paddingRight="20dp">
+
+                        <TextView
+                            android:id="@+id/tv_3dp_value"
+                            style="@style/AppTheme.TextBody1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/a400_control_air_purifier_settings_timer_three_title"
+                            android:textColor="@color/palette_white_pure" />
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/tv_3dp_value"
+                            android:background="@drawable/ic_down_arrow_96x96" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <fabscreen.platform.core.ui.common.A400SwitchCompat
+                    android:id="@+id/switch_3dp_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:thumb="@drawable/shape_a400_switch_thumb"
+                    app:track="@drawable/selector_a400_switch_track" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_auto_power_off_fdm_time_delay"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_auto_power_off_fdm_time_delay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="关闭延时"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp" />
+
+                <Spinner
+                    android:id="@+id/sp_auto_power_off_fdm_time_delay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/tv_auto_power_off_fdm_time_delay" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/a400_control_air_purifier_settings_cnc_job_title" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/palette_grey_mine_shaft" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_marginTop="9dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_auto_power_on_label2"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/a400_control_air_purifier_settings_auto_power_on_title"
+                    android:textColor="@color/palette_white_pure" />
+
+                <fabscreen.platform.core.ui.common.A400SwitchCompat
+                    android:id="@+id/switch_cnc_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:thumb="@drawable/shape_a400_switch_thumb"
+                    app:track="@drawable/selector_a400_switch_track" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_auto_power_off_label2"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/a400_control_air_purifier_settings_auto_power_off_title"
+                    android:textColor="@color/palette_white_pure" />
+
+                <LinearLayout
+                    android:id="@+id/ll_cnc_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/switch_cnc_off"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_cnc_timer_title"
+                        style="@style/AppTheme.TextBody1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_layout_24"
+                        android:layout_toLeftOf="@+id/rl_cnc_timer"
+                        android:text="@string/a400_control_air_purifier_settings_timer_title"
+                        android:textColor="@color/palette_grey_dim" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_cnc_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="68dp"
+                        android:background="@drawable/bg_air_purigier_timer"
+                        android:paddingLeft="31dp"
+                        android:paddingRight="20dp">
+
+                        <TextView
+                            android:id="@+id/tv_cnc_value"
+                            style="@style/AppTheme.TextBody1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/a400_control_air_purifier_settings_timer_three_title"
+                            android:textColor="@color/palette_white_pure" />
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/tv_cnc_value"
+                            android:background="@drawable/ic_down_arrow_96x96" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <fabscreen.platform.core.ui.common.A400SwitchCompat
+                    android:id="@+id/switch_cnc_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:thumb="@drawable/shape_a400_switch_thumb"
+                    app:track="@drawable/selector_a400_switch_track" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_auto_power_off_cnc_time_delay"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_auto_power_off_cnc_time_delay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="关闭延时"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp" />
+
+                <Spinner
+                    android:id="@+id/sp_auto_power_off_cnc_time_delay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/tv_auto_power_off_cnc_time_delay" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

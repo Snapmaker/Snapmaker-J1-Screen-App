@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="184dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_detail_data_name"
+        style="@style/AppTheme.TextBody3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all_3d_printing" />
+
+    <TextView
+        style="@style/AppTheme.TextBody4"
+        android:layout_marginTop="?attr/theme_spacing2"
+        android:id="@+id/tv_detail_data_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_detail_data_name"/>
+
+</RelativeLayout>

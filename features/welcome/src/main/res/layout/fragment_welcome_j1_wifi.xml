@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/j1_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_welcome_j1_wifi_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_10"
+        android:layout_marginEnd="@dimen/margin_layout_16"
+        android:text="Skip"
+        android:textAlignment="textStart"
+        android:textColor="@color/palette_orange_pizazz"
+        android:textSize="@dimen/font_size_18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_layout_16"
+        android:layout_marginTop="@dimen/margin_layout_48"
+        android:layout_marginRight="@dimen/margin_layout_16"
+        android:layout_marginBottom="@dimen/margin_layout_16"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_wifi_title"
+            style="@style/AppTheme.TextTitleSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_24"
+            android:text="Wi-Fi"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_wifi_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_layout_16"
+            android:visibility="invisible"
+            app:thumbTint="@color/palette_orange_pizazz"
+            app:thumbTintMode="src_in" />
+
+        <TextView
+            android:id="@+id/tv_wifi_sencond_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_wifi_title"
+            android:layout_marginLeft="@dimen/margin_layout_16"
+            android:layout_marginTop="@dimen/margin_layout_8"
+            android:text="Networks"
+            android:textColor="@color/palette_grey_storm"
+            android:textSize="@dimen/font_size_14sp" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress_welcome_wifi"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/tv_wifi_title"
+            android:layout_marginLeft="@dimen/margin_layout_8"
+            android:layout_marginTop="@dimen/margin_layout_8"
+            android:layout_toRightOf="@+id/tv_wifi_sencond_title"
+            android:indeterminate="true"
+            app:indicatorColor="@color/palette_grey_french"
+            app:indicatorSize="16dp"
+            app:trackColor="@color/transparent"
+            app:trackThickness="2dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_ap_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_wifi_sencond_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/margin_layout_16"
+            android:layout_marginTop="@dimen/margin_layout_8"
+            android:layout_marginEnd="@dimen/margin_layout_16"
+            android:overScrollMode="never"
+            tools:listitem="@layout/item_j1_wifi_ap" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

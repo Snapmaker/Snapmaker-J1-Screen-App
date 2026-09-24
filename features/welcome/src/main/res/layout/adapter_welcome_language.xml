@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_welcome_language"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/tv_welcome_language_name"
+        style="@style/AppTheme.TextBody2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_12"
+        android:layout_marginBottom="@dimen/margin_layout_12"
+        android:textColor="@color/select_dialog_yellow_txt" />
+
+    <ImageView
+        android:id="@+id/iv_welcome_language_selected"
+        android:layout_width="?attr/theme_icon_tools_decorate"
+        android:layout_height="?attr/theme_icon_tools_decorate"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:src="@drawable/icon_welcome_language_selected"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_welcome_language_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_welcome_language_name"
+        android:background="?attr/theme_dialog_line_color" />
+
+</RelativeLayout>

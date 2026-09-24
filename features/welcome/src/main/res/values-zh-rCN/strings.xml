@@ -1,0 +1,44 @@
+<resources>
+    <string name="setting_language_chinese">简体中文</string>
+    <string name="setting_language_english">English</string>
+    <string name="setting_language_deutsch">德语</string>
+    <string name="setting_language_Français">法语</string>
+    <string name="setting_language_japanese">日语</string>
+
+    <string name="setting_center_clanguage_chinese">Chinese</string>
+    <string name="setting_center_clanguage_english">English</string>
+    <string name="setting_center_clanguage_deutsch">Deutsch</string>
+    <string name="setting_center_clanguage_Français">Français</string>
+    <string name="setting_center_clanguage_japanese">日本語</string>
+
+    <string name="j1_terms_and_conditions_tip">我已阅读并接受所有使用条款。</string>
+    <string name="j1_user_experience_improvement_program_title">用户体验改进计划</string>
+    <string name="j1_user_experience_improvement_program_confirm">我愿意加入！</string>
+    <string name="j1_welcome_set_name_title">命名你的 Snapmaker</string>
+    <string name="j1_welcome_dailog_skip_wifi_content">跳过网络设置可能会限制部分功能的使用，之后仍可在<b>设置</b>中进行设置。你确定要跳过吗？</string>
+    <string name="j1_setup_completed_title">设置完成</string>
+    <string name="j1_setup_completed_content">你已成功完成机器的初始设置。</string>
+    <string name="j1_settings_user_experience_program_content">亲爱的 Snapmaker 用户，
+\nSnapmaker 始终致力于提供超越用户期望的产品与服务。为帮助我们更好地了解、满足你的需求，提高产品质量和服务，Snapmaker 诚邀你参与我们的用户体验改进计划。若你同意参与用户体验改进计划，即表示你已仔细阅读并完全同意本协议（未成年人请在监护人的陪同下阅读）。 随着产品的改进，Snapmaker 可能会不定时更新本协议。如有任何变更，我们将在产品或相关页面的显着位置通知你。若你不接受此类变更，你有权随时选择退出 Snapmaker 用户体验改进计划。若你继续参与该计划，即表示你同意此类变更。
+
+\n\n<b>信息收集</b>
+\n一旦你同意加入用户体验改进计划，Snapmaker 将定期收集经过匿名化处理的设备信息及使用信息，收集该类信息的目的是帮助改进我们的产品和服务。
+在用户体验改进计划中，Snapmaker 仅收集你的以下信息：
+	    \n1. 机器的操作系统和固件版本
+		\n2. 偏好设置
+	    \n3. G 代码文件的内容细节和打印参数
+		\n4. 与机器交互时的特定行为数据（如点击、滑动、添加、删除等）
+
+\n\n<b>信息使用</b>
+\nSnapmaker 承诺遵守相关法律法规，并仅会将收集到的信息用于改进产品和服务。我们完全尊重你的隐私，并将严格依据隐私协议处理你在用户体验计划中提供的信息。我们将使用 Google Analytics（Google Analytics 遵守《通用数据保护条例》）。受制于 IP 匿名化限制，我们不会且无法单独获取或者跟踪你的 IP 地址、数据等信息。
+
+\n\n<b>退出计划</b>
+\n你可以随时在<b>设置</b> > <b>使用条款</b>界面加入或退出 Snapmaker 用户体验改进计划。当你退出该计划后，我们将不再收集【信息收集】章节中提到的任何信息。  </string>
+
+    <!--  ****************A400************** -->
+    <string name="a400_hello_read_and_agree">我已阅读并同意</string>
+    <string name="a400_hello_terms_and_conditions"><u>使用条款</u></string>
+    <string name="a400_welcome_name_title">命名你的  Artisan</string>
+    <string name="a400_welcome_wifi_chose_a_network">选择网络</string>
+    <string name="a400_welcome_choose_language">选择语言</string>
+</resources>

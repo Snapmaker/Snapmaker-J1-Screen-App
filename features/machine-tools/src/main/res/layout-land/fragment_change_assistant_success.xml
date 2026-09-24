@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/widget_top_bar_exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_a400_calibration_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar" />
+
+    <TextView
+        android:id="@+id/tv_a400_calibration_complete_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恭喜，完成了换刀"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_a400_calibration_complete" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/AppTheme.Button.SquareGrey"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/size_button_45"
+        android:layout_margin="@dimen/margin_layout_20"
+        android:text="返回首页"
+        app:layout_constraintEnd_toStartOf="@id/tv_a400_calibration_complete_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_a400_calibration_complete_title" />
+
+    <Button
+        android:id="@+id/btn_go_to_work"
+        style="@style/AppTheme.Button.BlueButton"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/size_button_45"
+        android:layout_margin="@dimen/margin_layout_20"
+        android:text="开始加工"
+        app:layout_constraintStart_toEndOf="@id/tv_a400_calibration_complete_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_a400_calibration_complete_title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

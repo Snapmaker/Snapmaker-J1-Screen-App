@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/theme_color_card_view_gradient_start">
+
+    <include
+        layout="@layout/widget_top_bar_a400_calibration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_a400_leveling_xy_adjust"
+        android:layout_width="578dp"
+        android:layout_height="434dp"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginTop="@dimen/margin_layout_28"
+        android:src="@drawable/pic_guide_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar" />
+
+    <TextView
+        android:id="@+id/tv_a400_leveling_xy_adjust_content"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginEnd="@dimen/margin_layout_48"
+        android:textColor="@color/palette_grey_dim"
+        app:layout_constraintBottom_toBottomOf="@id/iv_a400_leveling_xy_adjust"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_a400_leveling_xy_adjust"
+        app:layout_constraintTop_toTopOf="@id/iv_a400_leveling_xy_adjust" />
+
+    <TextView
+        style="@style/AppTheme.LineDropShadow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/margin_layout_28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_a400_leveling_xy_adjust" />
+
+    <Button
+        android:id="@+id/btn_a400_leveling_xy_no_check"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_marginLeft="@dimen/margin_layout_48"
+        android:layout_marginBottom="@dimen/margin_layout_48"
+        android:background="@drawable/img_next_job_background"
+        android:text="@string/all_skip"
+        android:textAllCaps="false"
+        android:textColor="@color/palette_white_silver"
+        android:textSize="@dimen/font_size_28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/AppTheme.Button.BlueButton"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_margin="@dimen/margin_layout_48"
+        android:text="@string/all_start_checking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

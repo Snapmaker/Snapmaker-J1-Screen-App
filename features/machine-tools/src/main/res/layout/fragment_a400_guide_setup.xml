@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/AppTheme.TextTitleSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="68dp"
+        android:textColor="@color/palette_white_pure"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="更换模组" />
+
+    <TextView
+        android:id="@+id/tv_sub_title"
+        style="@style/AppTheme.TextExplain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/palette_white_pure"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="左挡块安装(1/3)" />
+
+    <ImageView
+        android:id="@+id/iv_guide_problem"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="@dimen/margin_layout_8"
+        android:layout_marginTop="@dimen/margin_layout_4"
+        android:src="@drawable/pic_detailed_description"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/tv_sub_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_sub_title" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:progress="1"
+        app:indicatorColor="@color/palette_white_silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_title"
+        app:trackColor="@color/palette_grey_nero"
+        tools:max="3" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:background="@drawable/ic_close"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@id/progress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_demonstrate"
+        android:layout_width="578dp"
+        android:layout_height="434dp"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/pic_guide_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/iv_demonstrate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_demonstrate"
+        app:layout_constraintTop_toTopOf="@id/iv_demonstrate">
+
+        <TextView
+            android:id="@+id/tv_demonstrate_desc"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_layout_48"
+            android:layout_marginEnd="@dimen/margin_layout_48"
+            android:text="在接下来的步骤中，屏幕将会引导你进行挡块的安装" />
+
+        <CheckBox
+            android:id="@+id/cb_demonstrate"
+            style="@style/AppTheme.CheckBox"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_below="@+id/tv_demonstrate_desc"
+            android:layout_marginStart="30dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_demonstrate_guide"
+            style="@style/AppTheme.TextExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_demonstrate_desc"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/cb_demonstrate"
+            android:text="我已详细阅读快速入门指南并依照指引固定刀具。"
+            android:textColor="@color/palette_white_silver"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_start_or_next"
+        style="@style/AppTheme.PrimaryButton"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="@dimen/margin_layout_48"
+        android:layout_marginBottom="@dimen/margin_layout_48"
+        android:text="开始"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/view_cali_points"
+        android:layout_width="479dp"
+        android:layout_height="485dp"
+        android:layout_marginTop="@dimen/margin_layout_32"
+        android:background="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress" />
+
+    <LinearLayout
+        android:id="@+id/lin_a400_guide_self_inspection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="257dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="371dp"
+            android:layout_height="310dp"
+            android:src="@drawable/pic_a400_self_inspection" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="125dp"
+            android:text="自检中..."
+            android:textColor="@color/palette_white_pure"
+            android:textSize="@dimen/font_size_28sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cali_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="校准中... 14/49"
+        android:textColor="@color/palette_white_pure"
+        android:textSize="@dimen/font_size_24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_cali_points" />
+
+    <TextView
+        android:id="@+id/tv_time_estimation"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_12"
+        android:text="整个流程将耗时约 30 分钟，请在 20 分钟后回来"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_cali_desc" />
+
+    <Button
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:text="@string/all_skip"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

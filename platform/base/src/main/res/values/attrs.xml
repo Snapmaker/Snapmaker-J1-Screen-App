@@ -1,0 +1,361 @@
+<resources>
+
+    <declare-styleable name="RulerView">
+        <attr name="rv_backgroundColor" format="color" />
+
+        <attr name="rv_longScaleHeight" format="reference|dimension" />
+        <attr name="rv_longScaleWidth" format="reference|dimension" />
+        <attr name="rv_longScaleColor" format="reference|color" />
+
+        <attr name="rv_shortScaleHeight" format="reference|dimension" />
+        <attr name="rv_shortScaleWidth" format="reference|dimension" />
+        <attr name="rv_shortScaleColor" format="reference|color" />
+
+        <attr name="rv_markerTextMargin" format="reference|dimension" />
+        <attr name="rv_markerTextSize" format="reference|dimension" />
+        <attr name="rv_markerTextColor" format="reference|color" />
+
+        <attr name="rv_indicatorColor" format="reference|color" />
+
+        <attr name="rv_minValue" format="float" />
+        <attr name="rv_maxValue" format="float" />
+        <attr name="rv_currentValue" format="float" />
+        <attr name="rv_unit" format="float" />
+        <attr name="rv_unitSpacing" format="reference|dimension" />
+        <attr name="rv_unitCountPerDivision" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="cpv_strokeWidth" format="reference|dimension" />
+        <attr name="cpv_outer_strokeWidth" format="reference|dimension" />
+        <attr name="cpv_backgroundColor" format="reference|color" />
+        <attr name="cpv_progressColor" format="reference|color" />
+        <attr name="cpv_fillInColor" format="reference|color" />
+        <attr name="cpv_frameColor" format="reference|color" />
+        <attr name="cpv_progressCircleColor" format="reference|color" />
+        <attr name="cpv_percentage" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="GradientCircularProgressBar">
+        <attr name="gcpb_indicator_width" format="reference|dimension" />
+        <attr name="gcpb_start_color" format="reference|color" />
+        <attr name="gcpb_end_color" format="reference|color" />
+        <attr name="gcpb_progress" format="integer" />
+        <attr name="gcpb_max_progress" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="BubbleLayout">
+        <attr name="background_color" format="color" />
+        <attr name="shadow_color" format="color" />
+        <attr name="shadow_size" format="dimension" />
+        <attr name="radius" format="dimension" />
+        <attr name="direction" format="enum">
+            <enum name="left" value="1" />
+            <enum name="top" value="2" />
+            <enum name="right" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+        <attr name="offset" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ActionButton">
+        <attr name="ab_title" format="reference|string" />
+        <attr name="ab_titleScaleX" format="reference|float" />
+        <attr name="ab_text" format="reference|string" />
+        <attr name="ab_foreground" format="reference" />
+        <attr name="ab_size" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+            <enum name="nano" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SquareActionButton">
+        <attr name="sab_title" format="reference|string" />
+        <attr name="sab_text" format="reference|string" />
+        <attr name="sab_foreground" format="reference" />
+        <attr name="sab_size" format="enum">
+            <enum name="normal" value="0" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressButton">
+        <attr name="pb_progressStartColor" format="reference|color" />
+        <attr name="pb_progressEndColor" format="reference|color" />
+        <attr name="pb_background" format="reference" />
+        <attr name="pb_progressBackground" format="reference" />
+        <attr name="pb_progress" format="integer" />
+        <attr name="pb_radius" format="dimension" />
+        <attr name="pb_minProgress" format="integer" />
+        <attr name="pb_maxProgress" format="integer" />
+        <attr name="pb_progressMargin" format="reference|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PrecisionBar">
+        <attr name="pb_minimum_range_value" format="integer" />
+        <attr name="pb_maximum_range_value" format="integer" />
+        <attr name="pb_minimum_available_value" format="integer" />
+        <attr name="pb_maximum_available_value" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalPrecisionIndicator">
+        <attr name="hpi_minValue" format="reference|float" />
+        <attr name="hpi_maxValue" format="reference|float" />
+        <attr name="hpi_value" format="reference|float" />
+        <attr name="hpi_indicator_color" format="reference|color" />
+        <attr name="hpi_valid_range" format="reference|float" />
+    </declare-styleable>
+
+    <declare-styleable name="ChessboardView">
+        <attr name="cv_rows" format="reference|integer" />
+        <attr name="cv_colums" format="reference|integer" />
+        <attr name="cv_chessboard_line_thickness" format="reference|float" />
+        <attr name="cv_chessboard_margin" format="reference|float" />
+        <attr name="cv_pawn_diameter" format="reference|float" />
+        <attr name="cv_check_diameter" format="reference|float" />
+        <attr name="cv_chessboard_line_color" format="reference|color" />
+        <attr name="cv_unprocessed_pieces_color" format="reference|color" />
+        <attr name="cv_processing_pieces_start_color" format="reference|color" />
+        <attr name="cv_processing_pieces_end_color" format="reference|color" />
+        <attr name="cv_processing_pieces_background_color" format="reference|color" />
+        <attr name="cv_processed_line_color" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomArcSeekBar">
+        <attr name="thumb" format="reference|integer" />
+        <attr name="max" format="reference|integer" />
+        <attr name="min" format="reference|integer" />
+        <attr name="progress" format="reference|integer" />
+        <attr name="progressWidth" format="reference|dimension" />
+        <attr name="arcWidth" format="reference|dimension" />
+        <attr name="startAngle" format="reference|integer" />
+        <attr name="sweepAngle" format="reference|integer" />
+        <attr name="rotation" format="reference|integer" />
+        <attr name="roundEdge" format="reference|boolean" />
+        <attr name="touchInside" format="reference|boolean" />
+        <attr name="clockwise" format="reference|boolean" />
+        <attr name="enabled" format="reference|boolean" />
+        <attr name="arcStartColor" format="reference|color" />
+        <attr name="arcEndColor" format="reference|color" />
+        <attr name="progressStartColor" format="reference|color" />
+        <attr name="progressEndColor" format="reference|color" />
+        <attr name="noHeatingStartColor" format="reference|color" />
+        <attr name="noHeatingEndColor" format="reference|color" />
+        <attr name="arcColor" format="reference|color" />
+        <attr name="progressColor" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingRulerView">
+        <attr name="srv_longScaleHeight" format="reference|dimension" />
+        <attr name="srv_shortScaleHeight" format="reference|dimension" />
+        <attr name="srv_strokeWidth" format="reference|dimension" />
+        <attr name="srv_scaleWidth" format="reference|dimension" />
+        <attr name="srv_scaleColor" format="reference|color" />
+        <attr name="srv_unitSpacing" format="reference|dimension" />
+        <attr name="srv_unitCountPerDivision" format="integer" />
+        <attr name="srv_minValue" format="integer" />
+        <attr name="srv_maxValue" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RotateButtonView">
+        <attr name="srv_includedAngle" format="reference|dimension" />
+        <attr name="srv_outerRingColor" format="reference|color" />
+        <attr name="srv_outerRingFilletRadian" format="reference|dimension" />
+        <attr name="srv_outerRingWidth" format="reference|dimension" />
+        <attr name="srv_padding" format="reference|dimension" />
+        <attr name="srv_innerRingPadding" format="reference|dimension" />
+        <attr name="srv_innerRingBackground" format="reference|color" />
+        <attr name="srv_innerRingColorFirst" format="reference|color" />
+        <attr name="srv_innerRingColorSecond" format="reference|color" />
+        <attr name="srv_innerRingLength" format="reference|dimension" />
+        <attr name="srv_innerRingWidth" format="reference|dimension" />
+        <attr name="srv_innerRingRadian" format="reference|dimension" />
+        <attr name="srv_innerRingNumber" format="reference|integer" />
+        <attr name="srv_textSize" format="reference|dimension" />
+        <attr name="srv_textColor" format="reference|color" />
+        <attr name="srv_textUnitType" format="reference|string" />
+        <attr name="srv_arrowColor" format="reference|color" />
+        <attr name="srv_arrowClickColor" format="reference|color" />
+        <attr name="srv_arrowSize" format="reference|dimension" />
+        <attr name="srv_arrowMagnification" format="reference|float" />
+        <attr name="srv_drawSecondColorStatus" format="reference|boolean" />
+
+
+    </declare-styleable>
+
+    <!--  Color Sheet attributes  -->
+    <attr name="theme_color_primary" format="color" />
+
+    <attr name="theme_color_primary_gradient_start" format="color" />
+    <attr name="theme_color_primary_gradient_end" format="color" />
+
+    <attr name="theme_color_accent_info" format="color" />
+    <attr name="theme_color_accent_warning" format="color" />
+    <attr name="theme_color_accent_heating" format="color" />
+    <attr name="theme_color_accent_hint" format="color" />
+    <attr name="theme_color_accent_error" format="color" />
+    <attr name="theme_color_accent_success" format="color" />
+
+
+    <attr name="theme_color_page_background" format="color" />
+    <attr name="theme_color_black_mask" format="color" />
+    <attr name="theme_color_disabled" format="color" />
+    <attr name="theme_color_divider" format="color" />
+    <attr name="theme_color_explain_text" format="color" />
+    <attr name="theme_color_body_secondary1" format="color" />
+    <attr name="theme_color_body_secondary2" format="color" />
+    <attr name="theme_color_tab_check" format="color" />
+    <attr name="theme_color_tab_uncheck" format="color" />
+    <attr name="theme_color_card_view_background" format="color" />
+    <attr name="theme_color_card_view_gradient_start" format="color" />
+    <attr name="theme_color_card_view_gradient_end" format="color" />
+    <attr name="theme_color_normal_button_gradient_start" format="color" />
+    <attr name="theme_color_normal_button_gradient_end" format="color" />
+    <attr name="theme_color_pressed_button_gradient_start" format="color" />
+    <attr name="theme_color_pressed_button_gradient_end" format="color" />
+    <attr name="theme_color_button_gradient_start" format="color" />
+    <attr name="theme_color_button_gradient_end" format="color" />
+    <attr name="theme_color_default_widget_disabled" format="color" />
+    <attr name="theme_color_switch_checked" format="color" />
+    <attr name="theme_color_switch_uncheck" format="color" />
+    <attr name="theme_color_section_detail_background" format="color" />
+
+
+    <attr name="theme_color_title_primary" format="color" />
+    <attr name="theme_color_title_secondary" format="color" />
+    <attr name="theme_color_body_primary" format="color" />
+    <attr name="theme_color_body_secondary" format="color" />
+    <attr name="theme_color_body_explain" format="color" />
+
+    <attr name="theme_color_clickable_text" format="color" />
+    <attr name="theme_color_clickable_text_pressed" format="color" />
+
+    <attr name="theme_color_primary_button_text" format="color" />
+
+    <attr name="theme_color_secondary_button_text" format="color" />
+    <attr name="theme_color_secondary_button" format="color" />
+    <attr name="theme_color_secondary_button_press" format="color" />
+    <attr name="theme_color_secondary_button_disabled" format="color" />
+
+
+    <!--  font size sheet  -->
+    <attr name="theme_font_size_h1" format="dimension" />
+    <attr name="theme_font_size_h2" format="dimension" />
+    <attr name="theme_font_size_h3" format="dimension" />
+    <attr name="theme_font_size_h4" format="dimension" />
+    <attr name="theme_font_size_h5" format="dimension" />
+    <attr name="theme_font_size_h6" format="dimension" />
+
+
+    <attr name="theme_font_size_title1" format="dimension" />
+    <attr name="theme_font_size_title2" format="dimension" />
+    <attr name="theme_font_size_headline" format="dimension" />
+    <attr name="theme_font_size_body1" format="dimension" />
+    <attr name="theme_font_size_body2" format="dimension" />
+    <attr name="theme_font_size_display" format="dimension" />
+    <attr name="theme_font_size_large_title" format="dimension" />
+    <attr name="theme_font_size_explain" format="dimension" />
+
+
+    <attr name="theme_font_line_height_display" format="dimension" />
+    <attr name="theme_font_line_height_large_title" format="dimension" />
+    <attr name="theme_font_line_height_title1" format="dimension" />
+    <attr name="theme_font_line_height_title2" format="dimension" />
+    <attr name="theme_font_line_height_headline" format="dimension" />
+    <attr name="theme_font_line_height_body1" format="dimension" />
+    <attr name="theme_font_line_height_body2" format="dimension" />
+    <attr name="theme_font_line_height_explain" format="dimension" />
+
+    <attr name="theme_navigation_bar_height" format="dimension" />
+    <attr name="theme_page_margins" format="dimension" />
+
+
+    <attr name="theme_spacing1" format="dimension" />
+    <attr name="theme_spacing2" format="dimension" />
+    <attr name="theme_spacing3" format="dimension" />
+    <attr name="theme_spacing4" format="dimension" />
+    <attr name="theme_spacing5" format="dimension" />
+    <attr name="theme_spacing6" format="dimension" />
+    <attr name="theme_spacing7" format="dimension" />
+    <attr name="theme_spacing8" format="dimension" />
+    <attr name="theme_spacing9" format="dimension" />
+    <attr name="theme_spacing10" format="dimension" />
+    <attr name="theme_spacing11" format="dimension" />
+    <attr name="theme_spacing12" format="dimension" />
+    <attr name="theme_spacing13" format="dimension" />
+    <attr name="theme_spacing14" format="dimension" />
+    <attr name="theme_spacing15" format="dimension" />
+    <attr name="theme_spacing16" format="dimension" />
+    <attr name="theme_spacing17" format="dimension" />
+    <attr name="theme_spacing18" format="dimension" />
+
+    <!-- Button radius-->
+    <attr name="theme_btn_radius" format="dimension" />
+
+    <!-- dialog-->
+    <attr name="theme_dialog_content_marginLeft" format="dimension" />
+    <attr name="theme_dialog_content_marginRight" format="dimension" />
+    <attr name="theme_dialog_content_marginTop" format="dimension" />
+    <attr name="theme_dialog_content_marginBottom" format="dimension" />
+    <attr name="theme_dialog_title_and_content_margin" format="dimension" />
+    <attr name="theme_dialog_btn_height" format="dimension" />
+    <attr name="theme_dialog_pic_width" format="dimension" />
+    <attr name="theme_dialog_pic_height" format="dimension" />
+    <attr name="theme_dialog_small_width" format="dimension" />
+    <attr name="theme_dialog_middle_width" format="dimension" />
+    <attr name="theme_dialog_bg_radius" format="dimension" />
+    <attr name="theme_dialog_pic_marginBottom" format="dimension" />
+    <attr name="theme_dialog_line_color" format="color" />
+    <attr name="theme_dialog_min_height" format="dimension" />
+    <attr name="theme_dialog_large_width" format="dimension" />
+
+    <!--file manage-->
+    <attr name="theme_file_manege_item_height" format="dimension" />
+    <attr name="theme_file_manege_item_pic_height" format="dimension" />
+    <attr name="theme_file_manege_item_name_color" format="color" />
+    <attr name="theme_file_manege_item_name_left" format="dimension" />
+    <attr name="theme_file_manege_item_name_top" format="dimension" />
+    <attr name="theme_file_manege_check_box_height" format="dimension" />
+    <attr name="theme_file_manege_check_box_margin" format="dimension" />
+    <attr name="theme_file_manege_empty_pic_height" format="dimension" />
+    <attr name="theme_file_manege_empty_pic_width" format="dimension" />
+    <attr name="theme_file_manege_empty_bg" format="reference" />
+    <attr name="theme_file_manege_item_txt_size" format="dimension" />
+    <attr name="theme_file_manege_item_txt_select_color" format="color" />
+    <attr name="theme_file_manege_item_txt_color" format="color" />
+    <attr name="theme_file_manege_item_line_color" format="color" />
+    <attr name="theme_file_manege_item_tip_content_color" format="color" />
+    <attr name="theme_file_manege_menu_check_icon" format="reference" />
+    <attr name="theme_file_manege_bar_height" format="dimension" />
+    <attr name="theme_file_manege_empty_logo_margin" format="dimension" />
+    <attr name="theme_file_manege_empty_title_margin" format="dimension" />
+    <attr name="theme_file_manege_item_bg_color" format="color" />
+    <attr name="theme_file_manege_menu_line_color" format="color" />
+
+
+    <!--    Icons -->
+    <attr name="theme_icon_tools_button" format="dimension" />
+    <attr name="theme_icon_tools_decorate" format="dimension" />
+    <attr name="theme_item_menu_height" format="dimension" />
+    <attr name="theme_item_menu_width" format="dimension" />
+    <attr name="theme_item_menu_bg" format="reference" />
+    <attr name="theme_icon_functions_small" format="dimension" />
+    <attr name="theme_icon_functions_medium" format="dimension" />
+    <attr name="theme_icon_functions_large" format="dimension" />
+    <attr name="theme_icon_tick" format="reference" />
+    <attr name="theme_item_menu_bg_color" format="color" />
+
+    <!--    list item height-->
+    <attr name="theme_list_item_height" format="dimension" />
+    <attr name="theme_language_item_select_color" format="color" />
+
+
+    <!--  WIP  -->
+
+    <attr name="theme_margin_widget_side" format="dimension" />
+
+    <attr name="theme_margin_page_edge" format="dimension" />
+
+    <attr name="theme_primary_button_height" format="dimension" />
+
+</resources>

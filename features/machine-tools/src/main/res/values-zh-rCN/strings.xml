@@ -1,0 +1,425 @@
+<resources>
+
+    <!--  A400 General  -->
+    <string name="calibraiton_a400_procedure_start_confirm_dialog_title">%s即将开始</string>
+    <string name="calibraiton_a400_procedure_start_confirm_dialog_content_3dp">请清理打印平台和喷嘴，然后点击<b>下一步</b>。</string>
+    <string name="calibraiton_a400_procedure_start_confirm_dialog_content_laser">请清理激光雕刻和切割平台，然后点击<b>下一步</b>。</string>
+
+    <string name="calibration_J1_XY_offset_calibration_content">你需要分别在打印的 X 轴和 Y 轴校准模型中手动选择最佳线组，以校准左、右打印头在 X 轴和 Y 轴方向的偏移量。</string>
+    <string name="check_glass">你是否已取下 PEI 玻璃平台、已清洁喷嘴？</string>
+    <string name="yes_all_done">是的，均已完成</string>
+    <string name="move_show">机器移动中...</string>
+    <string name="move_show_content">请稍候片刻。
+若出现紧急情况，请立即按下急停开关。</string>
+    <string name="calibration_j1_assist_mode">辅助模式</string>
+    <string name="control_laser_open">激光即将以 1% 功率开启，请佩戴激光护目镜或关闭外罩。</string>
+    <string name="control_cnc_open_title">主轴即将开启</string>
+    <string name="control_cnc_open">请佩戴 CNC 护目镜或关闭外罩。</string>
+    <string name="control_swith_extruder">喷嘴切换中...</string>
+    <string name="printing_toast">机器正在%s中...</string>
+    <string name="printing_toast_3dp_print">打印</string>
+    <string name="printing_toast_other">加工</string>
+    <string name="print_warning_filament_run_out_extruder_content">%s未装载耗材。\n请点击<b>装料</b>以继续打印。</string>
+    <string name="print_filament_runout_load_filament">Load Filament</string>
+    <string name="print_heating_nozzle">喷嘴加热中...</string>
+    <string name="print_pull_out_filament_title">Pull out Filament</string>
+    <string name="print_pull_out_filament_content">Manullay pull out the filament and insert it into the filament guide tube again until you can feel the filament is gripped and being pulled in.</string>
+    <string name="print_insert_filament_title">Insert Filament</string>
+    <string name="print_insert_filament_content">Manually insert the new filament into the filament guide tube until you can feel the filament is gripped and being pulled in.</string>
+    <string name="print_filament_runout_start_loading">挤出耗材中，过程耗时数秒，请耐心稍候......</string>
+
+    <string name="calibration_heated_bed_leveing_auto_content">机器自动探测热床的平整度，机器会依据结果自动补偿到打印中</string>
+    <string name="calibration_heated_bed_leveing_manual_content">通过手动移动机器的方式测量得到热床的平整度，机器会依据结果自动补偿到打印中</string>
+
+    <string name="calibration_success_content">若后续不进行其他校准，请将 PEI 玻璃平台装回热床之上。</string>
+    <string name="calibration_z_success_content">将之前拧松的螺丝再次锁紧；若后续不进行其他校准，请将 PEI 玻璃平台装回热床之上。</string>
+    <string name="calibration_success_title">校准成功</string>
+
+    <string name="calibration_leveling_xy_selection_left_temperature_title">左喷嘴打印温度</string>
+    <string name="calibration_leveling_xy_selection_right_temperature_title">右喷嘴打印温度</string>
+    <string name="calibration_leveling_xy_selection_left_stand_by_temperature_title">左喷嘴待机温度</string>
+    <string name="calibration_leveling_xy_selection_right_stand_by_temperature_title">右喷嘴待机温度</string>
+    <string name="calibration_leveling_xy_selection_heated_bed_temperature_title">热床温度</string>
+
+    <string name="calibration_sensor_travel_calibration">传感器行程校准</string>
+
+    <string name="a400_calibration_headted_bed_leveing_gide">校准中....%1$d/%2$d</string>
+    <string name="a400_calibration_headted_bed_leveing_time">预计需要 {%d s}，请在 {%d s} 后回来</string>
+    <string name="a400_calibration_headted_bed_leveing_wait_time">预计需要 {xxs}，请在 {xxs} 后回来</string>
+    <string name="calibration_auto_content">自动探测并获取特定 3D 打印平台调平点（%s）的数据，并根据测量结果在打印中进行自动补偿。</string>
+    <string name="calibration_manual_content">通过手动控制执行头来探测并获取 3D 打印平台特定调平点（%s）的数据，机器将根据测量结果在打印中进行自动补偿。</string>
+    <string name="calibration_leveling_bed_heating">热床和喷嘴加热中...</string>
+    <string name="calibration_leveling_bed_heating_nozzle_temp_title">喷嘴温度：</string>
+    <string name="calibration_leveling_bed_heating_Heated_bed_title">热床温度：</string>
+    <string name="calibration_leveling_bed_heating_temperature">/%3d℃</string>
+    <string name="a400_leveling_bed_calibration_heat_bed">预计需要 %d s，请在%ds后回来</string>
+    <string name="j1_calibration_nozzle_clean_nozzle_title">清洁喷嘴</string>
+    <string name="j1_calibration_nozzle_clean_nozzle_content">清洁喷嘴的外表面和尖头处，确保无残留物。</string>
+    <string name="j1_calibration_check_xy_offest_content">尝试掰动验证模型外侧的四个方块。若四个方块均可被掰下，则 XY 轴偏移校准成功。若不能全部掰下，则需重新进行校准。</string>
+    <string name="a400_cnc_tri_axial_guide_accept"><Data><![CDATA[我已详细阅读<font color="#FFFFFF"><b>快速入门指南</b></font>并依照指引固定刀具。]]></Data></string>
+    <string name="a400_cnc_four_axial_guide_accept"><Data><![CDATA[我已详细阅读<font color="#FFFFFF"><b>旋转模组快速入门指南</b></font>并依照指引固定材料。]]></Data></string>
+    <string name="calibration_camera_calibration_title">摄像头校准</string>
+    <string name="calibration_camera_calibration_content">完成本校准后方可使用 Snapmaker Luban 中的摄像捕捉功能。拆装机器或更换执行头后需要进行本校准。</string>
+    <string name="calibration_camera_calibration_info_content">将一张空白 A4 纸固定于激光雕刻和切割平台中央。机器会在纸上切割出一个正方形以校准摄像头。</string>
+    <string name="calibration_camera_calibration_10w_title">摄像头校准</string>
+    <string name="calibration_camera_calibration_10w_content">固定校准材料（1/2）</string>
+    <string name="calibration_camera_calibration_10w_second_title">Fix Calibration Material</string>
+    <string name="calibration_camera_calibration_10w_second_content">将一张空白 A4 纸固定于激光雕刻和切割平台中央。机器会在纸上切割出一个正方形以校准摄像头。</string>
+    <string name="calibration_laser_on_reminder">请确保操作者和旁观者均正确佩戴激光护目镜，并保持外罩门关闭。</string>
+    <string name="calibration_platform_height_calibration_10w_title">平台高度校准</string>
+    <string name="calibration_platform_height_calibration_10w_content">将激光校准板放置于激光雕刻和切割平台上。手动控制执行头下降以贴合校准板表面，直到你拉动校准板时能感受到轻微阻力，然后点击<b>保存</b>。</string>
+    <string name="calibration_thickness_measure_title">材料厚度测量校准</string>
+    <string name="calibration_thickness_measure_3_1_title">材料厚度测量校准</string>
+    <string name="calibration_thickness_measure_3_1_content">放置对焦板（2/3）</string>
+    <string name="calibration_thickness_measure_3_1_second_title">放置校准板</string>
+    <string name="calibration_thickness_measure_3_1_second_content">将激光校准板放置在平台中央，使红色光斑落在激光校准板表面。</string>
+    <string name="calibration_thickness_measure_4_1_title">材料厚度测量校准</string>
+    <string name="calibration_thickness_measure_4_1_content">自动校准（3/3）</string>
+    <string name="calibration_thickness_measure_calibrating">校准中...</string>
+    <string name="calibration_thickness_measure_verifying">校验中...</string>
+    <string name="calibration_thickness_measure_failed">校准失败</string>
+    <string name="calibration_thickness_measure_failed_content">材料厚度测量校准失败，请重试或退出校准。</string>
+    <string name="calibration_thickness_measure_second_title">校准平台高度</string>
+    <string name="calibration_thickness_measure_content">校准平台高度（1/3）</string>
+    <string name="calibration_platfrom_height_title">平台高度校准</string>
+    <string name="calibration_thickness_measurement_title">材料厚度测量校准</string>
+    <string name="calibration_thickness_measurement_title_abbreviation">材料厚度测量校准</string>
+    <string name="calibration_platfrom_height_content">使用激光校准板来校准工作平台高度，以确保后续可以顺利通过输入材料厚度来进行激光作业。</string>
+    <string name="calibration_platform_height_calibration_10w_complete_title">校准成功</string>
+    <string name="calibration_platform_height_calibration_10w_complete_content">恭喜！你已完成平台高度校准。</string>
+    <string name="calibration_thickness_measurement_content">机器将通过激光校准板对材料厚度测量功能进行自动校准。在拆装机器、更换执行头后或材料厚度测量结果不准确时，需要进行本校准。</string>
+
+    <string name="manual_tool_message_title">设置 XYZ 原点</string>
+    <string name="manual_tool_message">手动控制执行头移动到目标工作原点位置，CNC 作业将会以此位置为原点开始加工。你可以点击跑边框来验证当前位置对应的工作区域。</string>
+    <string name="manual_tool_title">手动对刀</string>
+    <string name="manual_tool_subheading">设置工作原点（1/1）</string>
+    <string name="cnc_tool_change_assistant_content_">通过分别用原刀具和新刀具触碰材料表面的同一点，机器将自动计算出 Z 轴偏移量并确定新的工作原点位置。使用换刀助手前，请勿拆下原刀具。</string>
+    <string name="chang_tool_message">使用开口扳手更换刀具，并确保新刀具已锁紧。</string>
+    <string name="calibration_leveling_xy_adjust">滑动以选择最佳线组</string>
+    <string name="calibration_leveling_xy_adjust_content">（上层线条最靠近底层线条的正中央）</string>
+    <string name="calibration_complete_continue_calibration">继续校准</string>
+    <string name="calibration_complete_home_screen">返回主界面</string>
+    <string name="calibration_complete_thk_measure">恭喜！你已完成材料厚度测量校准。</string>
+    <string name="calibration_a400_leveling_xy_title">双喷嘴相对位置校准</string>
+    <string name="calibration_a400_leveling_xy_content_x">校准 X 方向 (2/6)</string>
+    <string name="calibration_a400_leveling_xy_content_x_4">校准 X 方向 (2/4)</string>
+    <string name="calibration_a400_leveling_xy_x_value_confirm_dialog_title">保存 X 轴偏移量 </string>
+    <string name="calibration_a400_leveling_xy_x_value_confirm_dialog_content">保存当前偏移量为喷嘴的 X 轴方向偏移量。</string>
+    <string name="calibration_a400_leveling_xy_print_models_content">打印校准图样 (1/6)</string>
+    <string name="calibration_a400_leveling_xy_content_y">校准 Y 方向 (3/6)</string>
+    <string name="calibration_a400_leveling_xy_content_y_4">校准 Y 方向 (3/4)</string>
+    <string name="calibration_a400_leveling_xy_y_value_confirm_dialog_title">保存 Y 轴偏移量 </string>
+    <string name="calibration_a400_leveling_xy_y_value_confirm_dialog_content">保存当前偏移量为喷嘴的 Y 轴方向偏移量。</string>
+    <string name="calibration_a400_leveling_xy_prepare_check">校验准备 (4/6)</string>
+    <string name="calibration_a400_leveling_xy_prepare_check_content">机器将打印内置校验模型以验证校准结果。请在开始前清理打印平台。</string>
+    <string name="calibration_a400_leveling_xy_print_check_mode">打印校验模型 (5/6)</string>
+    <string name="calibration_a400_leveling_xy_observe_check_model">确认校验结果 (6/6)</string>
+    <string name="calibration_a400_leveling_xy_observe_check_model_content">确认校验模型打印效果是否理想，以决定是否需要重新校准。</string>
+    <string name="calibartion_a400_leveling_xy_recalibrate">重新校准</string>
+    <string name="calibration_complete_dual_extruder_xy">恭喜！你已完成 XY 轴偏移校准。</string>
+    <string name="calibration_complete_platform_height">恭喜，完成了激光平台高度校准</string>
+    <string name="calibartion_a400_camera_doing">校准中...</string>
+    <string name="calibration_complete_camera_cali">恭喜！你已完成摄像头校准。</string>
+    <string name="calibration_cnc_manual_tool">手动对刀</string>
+    <string name="calibration_cnc_tool_change">换刀助手</string>
+    <string name="calibration_cnc_manual_tool_content">你需要移动执行头到目标工作原点位置。</string>
+    <string name="calibration_cnc_manual_tool_advanced_mode_content">你可以分别为 X、Y、Z 轴设置原点，其坐标组合即为工作原点。</string>
+    <string name="calibration_cnc_manual_tool_start_job">开始作业</string>
+    <string name="calibration_cnc_manual_tool_success">对刀成功</string>
+    <string name="calibration_cnc_change_tool_success">换刀成功</string>
+    <string name="calibration_cnc_manual_tool_success_msg">恭喜！你已完成手动对刀。</string>
+    <string name="calibration_cnc_change_tool_success_msg">恭喜！你已完成换刀。</string>
+    <string name="calibration_cnc_tool_change_first_steps">贴合材料表面（1/3）</string>
+    <string name="calibration_cnc_tool_change_second_steps">更换刀具（2/3)</string>
+    <string name="calibration_cnc_tool_change_third_steps">贴合材料表面（3/3）</string>
+    <string name="calibration_cnc_tool_change_first_steps_content_title">贴合材料表面</string>
+    <string name="calibration_cnc_tool_change_first_steps_content">手动控制执行头移动，并使用校准卡片辅助刀尖贴合材料表面任意一点，直到你拉动校准卡片时能感受到轻微阻力，推动时能看到卡片起褶皱。</string>
+    <string name="calibration_cnc_tool_change_third_steps_content">手动调整 Z 轴偏移量，借助校准卡片使刀尖贴合材料表面的同一点，直到你拉动校准卡片时能感受到轻微阻力，推动时能看到卡片起褶皱。</string>
+    <string name="print_stop_printing">停止打印</string>
+    <string name="print_confirmation_content">你确定要%s吗？</string>
+    <string name="print_xy_offset_calibration_title">XY 轴偏移校准</string>
+    <string name="print_xy_offset_calibration_subtitle">打印校验模型 (5/6)</string>
+    <string name="print_print_calibration_models">打印校准模型 (1/6)</string>
+    <string name="print_print_calibration_models_4">打印校准模型 (1/4)</string>
+    <string name="guide_a400_camera_calibration_1_2_subtitle">固定校准材料</string>
+    <string name="guide_a400_camera_calibration_1_2_msg">准备一张空白 A4 纸，然后依照快速入门指南的指引将其固定于激光雕刻和切割平台中央。机器会在纸上切割出一个正方形以校准摄像头。</string>
+    <string name="open_laser_titie">激光即将开启</string>
+    <string name="calibration_camera_calibration_10w_2_content">自动校准（2/2）</string>
+    <string name="guide_a400_cnc_1_4_subtitle">护目镜（1/4）</string>
+    <string name="guide_a400_cnc_2_4_subtitle">固定材料(2/4)</string>
+    <string name="guide_a400_cnc_3_4_subtitle">固定刀具(3/4)</string>
+    <string name="guide_a400_cnc_4_4_subtitle">工具页 (4/4)</string>
+    <string name="guide_a400_cnc_1_4_msg">为确保安全，每次开始 CNC 作业准备前以及作业全程中，你和所有旁观者均需正确佩戴 CNC 护目镜。</string>
+    <string name="guide_a400_cnc_2_4_four_axial_msg"><![CDATA[开始四轴作业前，你需要依照旋转模组<b>旋转模组快速入门指南</b>的指引，将附赠的圆柱形材料固定于三爪卡盘。必要时可以安装尾座，以增强稳定性]]></string>
+    <string name="guide_a400_cnc_2_4_tri_axial_msg"><![CDATA[开始作业前，你需要依照<b>快速入门指南</b>的指引，使用夹具将附赠的材料固定于 CNC 雕刻和切割平台上。]]></string>
+    <string name="guide_a400_cnc_3_4_four_axial_msg"><![CDATA[开始作业前，你需要依照<b>旋转模组快速入门指南</b>的指引，将刀具插入 ER11 夹头，然后使用开口扳手将其旋紧固定至执行头上 。]]></string>
+    <string name="guide_a400_cnc_3_4_tri_axial_msg"><![CDATA[开始作业前，你需要依照<b>快速入门指南</b>的指引，将刀具插入 ER11 夹头，然后使用开口扳手将其旋紧固定至执行头上 。]]></string>
+    <string name="guide_a400_cnc_4_4_four_axial_msg"><![CDATA[在主界面，点击<b>工具 > 对刀助手</b>，可以在屏幕的引导下快速设置工作原点。 <br><br>在主界面，点击<b>工具 > 换刀助手</b>，可以在屏幕的引导下快速更换刀具。<br><br> 在主界面，点击<b>工具 > 手动对刀</b>，可以在屏幕的引导下手动设置工作原点。]]></string>
+    <string name="guide_a400_cnc_4_4_tri_axial_msg"><![CDATA[在主界面，点击<b>工具 > 手动对刀</b>，可以在屏幕的引导下手动设置工作原点。 <br><br>在主界面，点击<b>工具 > 换刀助手</b>，可以在屏幕的引导下快速更换刀具。]]></string>
+    <string name="guide_a400_cnc_initial_setup_guidance">CNC 初始设置指引</string>
+    <string name="guide_a400_load_filament">装料</string>
+    <string name="guide_a400_load_filament_msg">接下来，屏幕将会引导你进行装料。</string>
+    <string name="guide_a400_double_extruder_step_1_2_subtitle">左喷嘴装料（1/2）</string>
+    <string name="guide_a400_double_extruder_step_2_2_subtitle">右喷嘴装料（2/2）</string>
+    <string name="guide_a400_double_extruder_step_1_2_msg">请将附赠的灰色 PLA 耗材插入左导料管，直至你感受耗材已被咬合且开始传送，即可松手。</string>
+    <string name="guide_a400_double_extruder_step_2_2_msg">请将随机附带的灰色 PLA 耗材插入右导料管，直至你感受耗材已被咬合且开始传送，即可松手。</string>
+    <string name="guide_a400_heating_the_left_nozzle">左喷嘴加热中...</string>
+    <string name="guide_a400_extruding_the_filament">挤出耗材中...</string>
+    <string name="guide_a400_moving">移动中...</string>
+    <string name="guide_a400_double_extruder_step_2_title"><![CDATA[Z 轴偏移校准 & 热床调平]]></string>
+    <string name="guide_a400_double_extruder_step_2_msg">接下来，机器将会自动进行 Z 轴偏移校准和热床调平，预计需要 {待定} 分钟。</string>
+    <string name="guide_a400_double_extruder_step_1_2_title">Z 轴偏移校准</string>
+    <string name="guide_a400_double_extruder_step_1_for_1_3">校准左喷嘴（1/2）</string>
+    <string name="guide_a400_double_extruder_step_1_for_2_3_subtitle">校准右喷嘴（2/2）</string>
+    <string name="guide_a400_double_extruder_step_3_title">XY 轴偏移校准</string>
+    <string name="guide_a400_double_extruder_step_3_msg">接下来，屏幕将会引导你进行 XY 轴偏移校准。</string>
+    <string name="guide_a400_recalibrate_msg">即将重新打印校准模型，请在开始前清理打印平台。</string>
+    <string name="all_cnc_turn_off">关闭主轴</string>
+    <string name="all_cnc_turn_on">开启主轴</string>
+    <string name="a400_leveling_z_calibration_l">自动校准左喷嘴中....</string>
+    <string name="a400_levenling_z_manual_content">手动控制执行头下降，并使用校准卡片辅助左喷嘴贴合平台表面，直到你拉动卡片时能感受到轻微阻力，推动时能看到卡片起褶皱。</string>
+    <string name="a400_leveling_z_calibration_manual_save_l">保存左喷嘴高度</string>
+    <string name="a400_leveling_z_calibration_manual_save_r">保存右喷嘴高度</string>
+    <string name="a400_leveling_z_calibration_manual_save_l_content">保存当前位置的 Z 轴坐标作为左喷嘴的起始打印高度。</string>
+    <string name="a400_leveling_z_calibration_manual_save_r_content">保存当前位置的 Z 轴坐标作为右喷嘴的起始打印高度。</string>
+    <string name="a400_go_home">回 HOME</string>
+    <string name="calibration_manual_tool_setting_title">手动对刀</string>
+    <string name="calibration_manual_tool_setting_content">通过手动控制执行头来设置工作原点。</string>
+    <string name="calibration_manual_tool_setting_advanced_mode_content">通过手动控制执行头来设置工作原点。你可以分别为 X、Y、Z 轴设置原点，其坐标组合即为工作原点。</string>
+
+    <!-- ***************************J1***************************************-->
+
+    <!--calibration-->
+    <string name="j1_calibration_remove_glass_plate_title">取出 PEI 玻璃平台</string>
+    <string name="j1_calibration_remove_glass_plate_content">取出 PEI 玻璃平台，并将其放置在安全区域内。若已取出，点击<b>下一步</b>。</string>
+    <string name="j1_calibration_remove_glass_plate_high_temperature_content"> 当前热床温度为 %d℃。建议等待热床降温至 40℃ 以下后，再移动玻璃平台。</string>
+    <string name="j1_calibration_moving">移动中...</string>
+    <string name="j1_calibration_quit_msg">系统不会保存本次操作数据，你确定要退出吗？</string>
+    <string name="j1_calibration_clean_nozzles_title">清洁喷嘴</string>
+    <string name="j1_calibration_clean_nozzles_msg">使用钢丝刷清洁两侧喷嘴的外表面。确认无残留物后，点击<b>下一步</b>。\n\n<b>注意</b>：在之后的步骤中，若有少量耗材流出，不会影响校准结果。</string>
+    <string name="j1_calibration_restore_machine_title">复原机器</string>
+    <string name="j1_calibration_restore_machine_glass_content"><b>若后续不进行其他校准</b>，请清洁热床表面，然后将 PEI 玻璃平台装回热床上。</string>
+    <string name="j1_calibration_restore_machine_glass_and_extruder_content">锁紧右打印头上的两颗螺丝。\n\n<b>若后续不进行其他校准</b>，请清洁热床表面，然后将 PEI 玻璃平台装回热床上。</string>
+    <string name="j1_calibration_restore_extruder_content">锁紧右打印头上的两颗螺丝。</string>
+    <string name="j1_calibration_calibrated_successfully">校准成功 </string>
+    <string name="j1_calibration_fail_to_obtain_data">机器获取数据失败，可在清洁喷嘴后重试。</string>
+
+    <!--Heated Bed Leveling-->
+    <string name="calibration_heated_bed_leveing_title">热床调平</string>
+    <string name="calibration_J1_heated_bed_leveing_auxiliary_content">左打印头将依次触碰热床表面的三个点。你需要按照指引，校准左打印头在其中两个点处的 Z 轴偏移量，以调平热床。</string>
+    <string name="j1_calibration_nozzle_bed_heating_title">加热喷嘴和热床</string>
+    <string name="j1_calibration_nozzle_bed_heating_content">为便于后续清洁喷嘴及完成校准，机器正在加热喷嘴和热床...</string>
+    <string name="j1_calibration_nozzle_bed_heated_content">喷嘴和热床已加热完毕，可点击<b>下一步</b>。</string>
+    <string name="leveling_bed_calibration_left_point_title">校准左调平点</string>
+    <string name="leveling_bed_calibration_auxiliary_left_point_content">旋转位于热床底部左侧的调平轮，直至橙色光条移动至居中位置。若未看到光条，请根据提示继续旋转调平轮。</string>
+    <string name="leveling_bed_calibration_right_point_title">校准右调平点</string>
+    <string name="leveling_bed_calibration_auxiliary_right_point_content">旋转位于热床底部右侧的调平轮，直至橙色光条移动至居中位置。若未看到光条，请根据提示继续旋转调平轮。</string>
+
+    <!--Z Offset Calibration-->
+    <string name="calibration_Z_offset_calibration_title">Z 轴偏移校准</string>
+    <string name="calibration_J1_Z_offset_calibration_content">左、右打印头将依次触碰热床。你需要按照指引，校准右打印头的 Z 轴偏移量，以确保左、右打印头能够在正确且一致的高度进行打印。</string>
+    <string name="j1_calibration_Z_offset_calibration_loosen_screws_title">拧松螺丝</string>
+    <string name="j1_calibration_Z_offset_calibration_loosen_screws_content">使用 H2.0 L 型扳手，将右打印头上的两颗螺丝拧松一圈，然后点击<b>下一步</b>。</string>
+    <string name="leveling_Z_calibration_auxiliary_title">校准 Z 轴偏移量</string>
+    <string name="leveling_Z_calibration_auxiliary_content">旋转位于右打印头内侧的拇指轮，直至橙色光条移动至居中位置。若未看到光条，请根据提示继续旋转拇指轮。</string>
+
+    <!--XY Offset Calibration-->
+    <string name="calibration_XY_offset_calibration_title">XY 轴偏移校准</string>
+    <string name="calibration_J1_XY_offset_auxiliary_calibration_content">左、右打印头将依次触碰热床，自动获取并校准它们在 X 轴和 Y 轴方向的偏移量。</string>
+    <string name="leveling_XY_calibration_title">校准 XY 轴偏移量</string>
+    <string name="leveling_XY_calibration_running_content">机器正在自动获取数据并进行校准...</string>
+    <string name="leveling_XY_calibration_success_content">已校准左、右打印头在 X 轴和 Y 轴方向的偏移量。</string>
+
+    <!-- Calibration Check-->
+    <string name="calibration_calibration_check_title">偏移校准验证</string>
+    <string name="calibration_J1_calibration_check_content">机器将用两侧打印头打印一个内置的验证模型。根据触控屏上的提示，你可以观察验证模型，从而判断各项偏移校准是否成功。</string>
+    <string name="j1_calibration_calibration_check_pei_glass_plate_check_title">PEI 玻璃平台检查</string>
+    <string name="j1_calibration_calibration_check_pei_glass_plate_check_title_content">请确认 PEI 玻璃平台已安装在热床上。</string>
+    <string name="j1_calibration_calibration_check_load_filament_title">装料</string>
+    <string name="j1_calibration_calibration_check_load_filament_contnent">点击<b>去装料</b>，在左、右打印头中装载颜色对比明显的 PLA 耗材（如白色和橙色）。\n\n若已装料，可直接点击<b>打印</b>。</string>
+    <string name="j1_calibration_calibration_check_go_to_load">去装料</string>
+    <string name="j1_calibration_calibration_check_print_check_model">打印验证模型</string>
+    <string name="j1_calibration_calibration_check_check_z_offset_calibration">验证 Z 轴偏移校准结果</string>
+    <string name="j1_calibration_check_z_offest_content">若颜色不同的区域表面互相齐平，则 Z 轴偏移校准成功。若不齐平，则需重新进行校准。\n\n验证完毕后，点击<b>下一步</b>，验证 XY 轴偏移校准结果。</string>
+    <string name="j1_calibration_calibration_check_check_xy_offset_calibration_title">验证 XY 轴偏移校准结果</string>
+    <string name="j1_calibration_calibration_check_check_xy_offset_calibration_content">从 PEI 玻璃平台上取出模型，并尝试掰动模型外侧的方块。若四个方块均可被掰动（不必彻底折断），则 XY 轴偏移校准成功。若不能全部掰动，则需重新进行校准。</string>
+    <string name="j1_print_adjust">调整参数</string>
+
+    <string name="j1_how_to_load_filament_step_1">步骤一：取下顶板。</string>
+    <string name="j1_how_to_load_filament_step_2">步骤二：将耗材挂在料架上，然后将耗材插入进料口，直至其从另一端伸出。</string>
+    <string name="j1_how_to_load_filament_step_3">步骤三：将滑钮向后推并按住，然后将耗材插入打印头，直至感觉到阻力（以左打印头为例）。</string>
+    <string name="j1_how_to_load_filament_step_4">步骤四：设置目标温度，然后点击<b>加热</b>。</string>
+    <string name="j1_how_to_load_filament_step_5">步骤五：点击<b>进料</b>（必要时，打印头会先行移动至便于进料的位置）。</string>
+    <string name="j1_how_to_load_filament_step_6">步骤六：当耗材从喷嘴中流出后，点击<b>停止进料</b>。</string>
+    <string name="j1_how_to_load_filament_step_7">步骤七：将导料管插入打印头，再卡入导料管夹。最后，重新固定顶板。</string>
+
+    <!-- Control-->
+    <string name="j1_control_extruder_title">打印头</string>
+    <string name="j1_control_extruder_left">左打印头</string>
+    <string name="j1_control_extruder_right">右打印头</string>
+    <string name="j1_control_extruder_stop_loading">停止进料</string>
+    <string name="j1_control_extruder_stop_unloading">停止退料</string>
+
+    <string name="j1_control_move_title">移动</string>
+    <string name="j1_control_move_left">左</string>
+    <string name="j1_control_move_right">右</string>
+    <string name="j1_control_move_z_offset">Z 轴偏移量</string>
+
+    <string name="j1_control_heated_bed_title">热床</string>
+    <string name="j1_control_heated_bed_on">开启</string>
+    <string name="j1_control_heated_bed_off">关闭</string>
+
+    <string name="j1_control_motor_title">电机</string>
+    <string name="j1_control_heated_bed_subtitle">电机</string>
+
+    <string name="j1_control_lighting_title">灯光</string>
+    <string name="j1_control_lighting_subtitle">灯光</string>
+
+
+    <string name="calibration_j1_erroe">机器获取数据失败，可在清洁喷嘴后重试。</string>
+    <string name="all_wizard_data_missing">向导数据缺失</string>
+    <string name="all_wizard_data_missing_content">你需要先完成向导，机器才可正常工作。</string>
+    <string name="all_wizard_data_missing_check">前往向导</string>
+    <string name="calibration_failed_title">校准失败</string>
+    <string name="calibration_failed_content">请检查轴能否正常移动，以及喷嘴是否干净。机器将先返回原位。</string>
+
+    <!--****************A400**************************-->
+    <string name="calibration_A400_XY_manual_mode_content">The machine will print one calibration model for X and Y orientation each. You need to find the best pair of lines in the printed models to calibrate the offsets of the two nozzles in the X and Y orientations.</string>
+    <!-- extruder calibration-->
+    <string name="calibration_auto_mode">自动模式</string>
+    <string name="calibration_manual_mode">手动模式</string>
+    <string name="calibration_base_mode">基础模式</string>
+    <string name="calibration_advanced_mode">高级模式</string>
+    <string name="calibration_Z_sensor_calibration">传感器校准</string>
+    <string name="calibration_A400_Z_manual_mode_content">手动控制左、右喷嘴轮流触碰校准卡片表面，来获取当前的 Z 轴偏移量，从而确保两个喷嘴能够在正确且一致的高度进行打印。</string>
+    <string name="calibration_A400_Z_zuto_mode_content">左、右喷嘴依次自动触碰 3D 打印平台，以校准 Z 轴偏移量，从而确保两个喷嘴能够在正确且一致的高度进行打印。</string>
+    <string name="calibration_A400_Z_sensor_mode_content">用于校准传感器行程。自动模式校准结果不准确时，需要进行本校准。</string>
+    <string name="calibration_heated_z_leveing_auto_content">通过传感器间接校准初始打印高度</string>
+    <string name="calibration_heated_z_leveing_manual_content">通过手动方式直接校准初始打印高度</string>
+    <string name="calibration_heated_z_leveing_sensor_travel_calibration_content">用于校准传感器触发行程的校准，当自动模式校准不准确时使用该功能校准传感器</string>
+    <string name="calibration_z_leveling_sensor_submit_nozzle_l_title">提交左喷嘴高度</string>
+    <string name="calibration_z_leveling_sensor_submit_nozzle_r_title">提交右喷嘴高度</string>
+    <string name="calibration_z_leveling_sensor_submit_nozzle_r_content">提交当前位置的 Z 轴坐标作为右喷嘴的起始打印高度。</string>
+    <string name="calibration_z_leveling_sensor_submit_nozzle_l_content">S提交当前位置的 Z 轴坐标作为左喷嘴的起始打印高度。</string>
+    <string name="a400_calibration_manual_calibration_of_nozzle_r_title">手动校准右喷嘴</string>
+    <string name="a400_calibration_manual_calibration_of_nozzle_r_content">手动控制执行头下降，并使用校准卡片辅助右喷嘴贴合 3D 打印平台表面，直到你拉动卡片时能感受到轻微阻力，推动时能看到卡片起褶皱。</string>
+    <string name="a400_calibration_manual_calibration_of_nozzle_l_title">手动校准左喷嘴</string>
+    <string name="a400_calibration_manual_calibration_of_nozzle_l_content">手动控制执行头下降，并使用校准卡片辅助左喷嘴贴合 3D 打印平台表面，直到你拉动卡片时能感受到轻微阻力，推动时能看到卡片起褶皱。</string>
+    <string name="calibration_headted_z_leveing_auto_left">自动校准左喷嘴中....</string>
+    <string name="calibration_headted_z_leveing_auto_right">自动校准右喷嘴中....</string>
+    <string name="calibration_headted_z_leveing_sensor_height">自动校准%s喷嘴（%d/%d）</string>
+    <string name="calibration_headted_z_leveing_z_offset">手动校准%s喷嘴（%d/%d）</string>
+    <string name="all_heft">左</string>
+    <string name="all_right">右</string>
+    <string name="a400_extruder_z_offset_completed_titile">校准成功</string>
+    <string name="a400_extruder_z_offset_completed_content">恭喜！你已完成 Z 轴偏移校准。</string>
+
+    <!-- heated bed calibration-->
+    <string name="calibration_heated_bed_leveling_title">热床调平</string>
+    <string name="calibration_heated_bed_leveling_sub_title">校准调平点%s</string>
+    <string name="calibration_heated_bed_leveling_completed_title">调平成功</string>
+    <string name="calibration_heated_bed_leveling_completed_content">恭喜！你已完成热床调平。</string>
+    <string name="calibration_heated_bed_calibration_point">调平点</string>
+    <string name="calibration_heated_bed_heated_bed_temp">热床温度</string>
+
+    <!--CNC four axis Origin Assistant-->
+    <string name="a400_cnc_origin_assistant_length_title">测量并输入材料的长度和直径。</string>
+    <string name="calibration_cnc_origin_assistant">对刀助手</string>
+    <string name="a400_cnc_origin_set_material_title">设置材料（1/9）</string>
+    <string name="a400_cnc_origin_set_material_length">长度</string>
+    <string name="a400_cnc_origin_set_material_diameter">直径</string>
+    <string name="a400_cnc_origin_fix_material_title">Fix Material (2/9)</string>
+    <string name="a400_cnc_origin_fix_material_content">将材料固定至三爪卡盘，并确保其接触面完全贴合。</string>
+    <string name="a400_cnc_origin_fix_material_waring">警告：在此步骤中，请勿安装尾座，否则刀具将与尾座发生碰撞。</string>
+    <string name="a400_cnc_origin_select_bit_title">选择刀具（3/9）</string>
+    <string name="a400_cnc_origin_operation_instruction_title">操作说明（4/9）</string>
+    <string name="a400_cnc_origin_open_glass_msg">开始对刀前，请确保你已佩戴 CNC 护目镜。</string>
+    <string name="a400_cnc_origin_custom_bit_msg">测量并输入刀具的长度和直径。</string>
+    <string name="a400_cnc_origin_origin_assistant_go_home">回Home...</string>
+    <string name="a400_cnc_origin_origin_assistant_set_x1_tip">执行头正移动至靠近 X1 处…</string>
+    <string name="a400_cnc_origin_origin_assistant_set_x2_tip">执行头正移动至靠近 X2 处…</string>
+    <string name="a400_cnc_origin_origin_assistant_set_y_tip">执行头正移动至靠近 Y 处…</string>
+    <string name="a400_cnc_origin_origin_assistant_set_z_tip">执行头正移动至靠近 Z 处…</string>
+    <string name="a400_cnc_origin_origin_assistant_set_x1_msg">手动控制刀具移动至图示位置，确保使用刀柄部分接触材料。然后点击设置 X1。</string>
+    <string name="a400_cnc_origin_origin_assistant_set_x2_msg">手动控制刀具移动至图示位置，确保使用刀柄部分接触材料。然后点击设置 X2。</string>
+    <string name="a400_cnc_origin_origin_assistant_set_y_msg">手动控制刀具移动至图示位置，确保使用刀柄部分接触材料。然后点击设置 Y。</string>
+    <string name="a400_cnc_origin_origin_assistant_set_z_msg">手动控制刀具移动至图示位置，然后点击设置 Z。</string>
+    <string name="a400_cnc_origin_origin_assistant_set_b_msg">转动材料至目标位置，然后点击设置 B。</string>
+    <string name="a400_cnc_origin_origin_assistant_set_x1_subtitle">设置 X1（5/9）</string>
+    <string name="a400_cnc_origin_origin_assistant_set_x2_subtitle">设置 X2（6/9）</string>
+    <string name="a400_cnc_origin_origin_assistant_set_y_subtitle">设置 Y （7/9）</string>
+    <string name="a400_cnc_origin_origin_assistant_set_z_subtitle">设置 Z（8/9）</string>
+    <string name="a400_cnc_origin_origin_assistant_set_b_subtitle">设置 B（9/9）</string>
+    <string name="calibration_cnc_origin_assistant_content">进行四轴加工时，你可以借助对刀助手快速设置工作原点，机器将自动保存对应数据。后续加工时，若材料参数无变更，可以直接选择文件开始雕刻。</string>
+    <string name="calibration_central_axis_title">中轴线校准</string>
+    <string name="calibration_central_axis_content">进行四轴加工前，需使用圆柱形材料来校准旋转模组中轴线所在位置。完成本校准后，后续加工时可以通过输入材料直径进行正确作业。</string>
+    <string name="a400_laser_central_axis_calibration_material_cylinder_material">圆柱材料</string>
+    <string name="all_material_diameter">材料直径</string>
+    <string name="a400_calibration_central_axis_title">输入材料直径</string>
+    <string name="a400_calibration_central_axis_content">测量并输入材料直径，然后将材料固定到三爪卡盘中。</string>
+    <string name="a400_central_axis_calibration">中轴线校准</string>
+    <string name="a400_set_material_diameter_1_2">输入材料直径（1/2）</string>
+    <string name="a400_touch_material_2_2">贴合材料表面（2/2） </string>
+    <string name="a400_calibration_axis_touch_material_title">贴合材料表面</string>
+    <string name="a400_calibration_axis_touch_material_content">将材料固定到三爪卡盘中。手动控制执行头下降，并使用校准卡片辅助其贴合材料上表面，直到你拉动校准卡片时能感受到轻微阻力，推动时能看到卡片起褶皱。</string>
+
+    <!-- control-->
+    <!-- Air purigier-->
+    <string name="a400_control_air_purigier_turn_on_title">开启净化器</string>
+    <string name="a400_control_air_purigier_turn_off_title">关闭净化器</string>
+    <string name="a400_control_air_purigier_setttings">空气净化器设置</string>
+    <string name="a400_control_air_purifier_settings_laser_and_cut_title">激光雕刻和切割作业</string>
+    <string name="a400_control_air_purifier_settings_auto_power_on_title">自动开启</string>
+    <string name="a400_control_air_purifier_settings_auto_power_off_title">自动关闭</string>
+    <string name="a400_control_air_purifier_settings_3dp_job_title">3D 打印作业</string>
+    <string name="a400_control_air_purifier_settings_cnc_job_title">CNC 雕刻和切割作业</string>
+    <string name="a400_control_air_purifier_settings_timer_title">延时</string>
+    <string name="a400_control_air_purifier_settings_timer_close_title">立即关闭</string>
+    <string name="a400_control_air_purifier_settings_timer_one_title">1分钟</string>
+    <string name="a400_control_air_purifier_settings_timer_three_title">3分钟</string>
+    <string name="a400_control_air_purifier_settings_timer_five_title">5分钟</string>
+    <string name="a400_control_air_purifier_settings_timer_eight_title">8分钟</string>
+    <string name="a400_control_air_purifier_settings_timer_ten_title">10分钟</string>
+    <string name="a400_control_air_purifier_settings_timer_thirty_title">30分钟</string>
+    <string name="a400_control_air_purifier_settings_setting_fail_msg">设置失败</string>
+    <!-- enclosure-->
+    <string name="a400_control_enclosure_setttings">外罩设置</string>
+    <string name="a400_control_enclosure_door_detection">开关门检测</string>
+    <string name="a400_control_enclosure_temp_monitor">温湿度监控</string>
+    <string name="a400_control_enclosure_temp">温度</string>
+    <string name="a400_control_enclosure_rh">湿度</string>
+    <string name="a400_control_filament_dryer_dry">开始烘干</string>
+    <string name="a400_control_filament_dryer_stop_dry">停止烘干</string>
+    <string name="not_powered">未通电</string>
+    <string name="a400_control_move">移动</string>
+    <string name="a400_control_filament">耗材</string>
+    <string name="a400_control_heated_bed">热床</string>
+    <string name="a400_control_enclosure">外罩</string>
+    <string name="a400_control_air_purifier">空气净化器</string>
+    <string name="a400_control_laser">激光</string>
+    <string name="a400_control_spindle">主轴</string>
+    <string name="a400_control_filament_dryer">耗材干燥箱</string>
+    <string name="a400_control_there_matrix_title">3 × 3</string>
+    <string name="a400_control_five_matrix_title">5 × 5</string>
+    <string name="a400_control_nine_matrix_title">9 × 9</string>
+
+    <!-- double extruder guide-->
+    <string name="guide_a400_nozzle_left_load_confirm_dialog_title">左喷嘴已装料</string>
+    <string name="guide_a400_nozzle_left_load_confirm_dialog_content">观察有无耗材从左喷嘴挤出。\n若有，则装料成功，点击继续。\n若无，点击装料以重试。</string>
+    <string name="guide_a400_nozzle_right_load_confirm_dialog_title">右喷嘴已装料</string>
+    <string name="guide_a400_nozzle_right_load_confirm_dialog_content">观察有无耗材从右喷嘴挤出。\n若有，则装料成功，点击完成。\n若无，点击装料以重试。</string>
+    <string name="j1_control_load_filament_before_msg">打印头稍后将移动至合适位置，便于你进料或退料。</string>
+
+    <string name="j1_calibration_vibration_intro_desc">根据触控屏上的指引，你可以校准补偿频率，以提升开启抑制补偿后的模型打印质量。</string>
+    <string name="j1_calibration_vibration_print_model_title">打印校准模型</string>
+    <string name="j1_calibration_vibration_choose_best_area_title">选择最佳区域</string>
+    <string name="j1_calibration_vibration_choose_x_best_area_title">选择最佳区域—X 面</string>
+    <string name="j1_calibration_vibration_choose_y_best_area_title">选择最佳区域—Y 面</string>
+    <string name="j1_calibration_vibration_choose_area_intro_content">1. 观察模型 X 面和 Y 面的框选区域；
+        \n2. 分别找出竖向振纹最不明显的一层；
+        \n3. 点击<b>下一步</b>，在触控屏上进行选择。
+    </string>
+    <string name="j1_calibration_vibration_choose_best_area_content">若某两个区域的竖向振纹均比其他区域的振纹更不明显，且难分上下，任选其中之一即可。</string>
+    <string name="j1_calibration_start_but_vibration_compensation_off_dialog_content">进入该校准后，机器将自动开启振动补偿功能。你确定要开始校准吗？</string>
+
+</resources>

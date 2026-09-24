@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="extruder_temperature">%d/%d°C</string>
+    <string name="wizard">Wizard</string>
+    <string name="introduce">We will guide you through the basic preparations for the machine to start printing, including four main steps as follows (about 20–30 min).</string>
+    <string name="heating_check">Heating Check</string>
+    <string name="z_offset_calibration">Z Offset Calibration</string>
+    <string name="xy_Offset_calibration">XY Offset Calibration</string>
+    <string name="offset_calibration_check">Offset Calibration Check</string>
+    <string name="heating_tips">When you see this icon, be careful of hot surfaces.</string>
+    <string name="guide_success_content">Now you can start making!</string>
+    <string name="guide_success_title">Wizard Completed</string>
+    <string name="guide_a400_thickness_m_calibration">Thickness M. Calibration</string>
+    <string name="guide_a400_camera_calibration">Camera Calibration</string>
+    <string name="guide_a400_setup_completed">Setup Completed</string>
+    <string name="guide_a400_10w_laser_msg">Next, you need to proceed with the following processes to initialize the 10W Laser Module.</string>
+    <string name="guide_a400_thickness_measurement_calibration_msg">The screen will guide you to calibrate the thickness measurement.。</string>
+    <string name="guide_a400_camera_calibration_msg">The screen will guide you to calibrate the camera.</string>
+    <string name="guide_a400_safety_goggles">Safety Goggles</string>
+    <string name="guide_a400_fix_material">Fix Material</string>
+    <string name="guide_a400_attach_bit">Attach Bit</string>
+    <string name="guide_a400_tools_screen">Tools Screen</string>
+    <string name="guide_a400_cnc_msg">Next, the following guidance will walk you through the initial setup for CNC job.</string>
+    <string name="guide_a400_setup_guidance_completed">Setup Guidance Completed</string>
+    <string name="guide_a400_laser_10w_success_title">Completed</string>
+    <string name="guide_a400_laser_10w_success_msg">Congrats! You have completed all initialization processes.</string>
+    <string name="guide_a400_start_creating">Start Creating</string>
+    <string name="a400_guide_step_1">Load Filament</string>
+    <string name="a400_guide_step_2"><![CDATA[Z Offset Calibration & Heated Bed Leveling]]></string>
+    <string name="a400_guide_step_3">XY Offset Calibration</string>
+    <string name="guide_a400_double_extruder_msg">Next, you need to proceed with the following processes to initialize the Dual Extrusion Module.</string>
+    <string name="guide_a400_double_extruder_suc_msg">Congrats! You have completed all initialization processes.</string>
+    <string name="guide_a400_double_extruder_step_1_suc_title">Filament Loaded</string>
+    <string name="guide_a400_double_extruder_step_1_suc_msg"><![CDATA[Tap Continue to proceed with Z Offset Calibration & Heated Bed Leveling.]]></string>
+    <string name="guide_a400_double_extruder_step_2_suc_title"><![CDATA[Clibration & Leveling Completed]]></string>
+    <string name="guide_a400_double_extruder_step_2_suc_msg">Tap Continue to proceed with XY Offset Calibration.</string>
+    <string name="guide_a400_laser_10w_step_1_suc_title">Calibration Completed</string>
+    <string name="guide_a400_laser_10w_step_1_suc_msg">Tap Continue to proceed with Camera Calibration.</string>
+    <string name="j1_guide_safety_glass_title">Safety Notes</string>
+    <string name="j1_guide_safety_glass_one">Handle the PEI glass plate with care.</string>
+    <string name="j1_guide_safety_glass_two">Avoid direct touch with the PEI glass plate and the bed when the bed is heated over 40℃.</string>
+
+    <string name="j1_dialog_guide_moving">Moving...</string>
+
+    <string name="j1_guide_install_fan_instructions_intro_title">Fix Print Cooling Fan</string>
+    <string name="j1_guide_install_fan_instructions_intro_content">Tap <b>Go to Install</b> to install screws to further fix the print cooling fan.
+        \nIf you\’ve installed the screws or not purchased the Print Cooling Fan Upgrade Kit, tap <b>Skip</b>.</string>
+    <string name="j1_guide_install_fan_instructions_intro_go_to_install">Go to Install</string>
+    <string name="j1_guide_install_fan_instructions_install_screws_title">Install Screws</string>
+
+    <string name="j1_guide_install_fan_instructions_install_screws_step1">1. Install two M3 × 10 screws to the illustrated positions with the pink H2.0 hex key.</string>
+    <string name="j1_guide_install_fan_instructions_install_screws_step2">2. Tap <b>Next</b>.</string>
+    <string name="j1_guide_install_fan_instructions_install_screws_note"><b>Note</b>: The motor has been temporarily turned off. </string>
+    <string name="j1_guide_install_fan_instructions_prepare_for_homing_title">Prepare for Homing</string>
+    <string name="j1_guide_install_fan_instructions_prepare_for_homing_content">
+        1. Clear away any external things inside the machine and keep your body away.
+        \n2. Tap <b>Next</b>. The machine will start homing.
+    </string>
+
+</resources>

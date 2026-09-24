@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+
+    <fabscreen.platform.base.view.debugtool.DebugButton
+        android:id="@+id/debug_button"
+        style="@style/AppTheme.Button.BlueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DebugMode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_green_screen"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <include
+        layout="@layout/activity_a400_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--        <androidx.appcompat.widget.SwitchCompat-->
+    <!--            android:id="@+id/switch_debug_mode"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Mock Mode"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/ll_machine_status"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/switch_debug_mode"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/switch_debug_mode"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/switch_debug_mode">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_series_id"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:text="seriesId:1"-->
+    <!--            android:textColor="#0f0"-->
+    <!--            android:textSize="14sp"-->
+    <!--            app:layout_constraintStart_toEndOf="@id/tv_model_id"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_marginStart="@dimen/margin_layout_20"-->
+    <!--            android:id="@+id/tv_model_id"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="modelId:1"-->
+    <!--            android:textColor="#0f0"-->
+    <!--            android:textSize="14sp"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_serial_rw"-->
+    <!--        android:layout_width="500dp"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:textColor="#0f0"-->
+    <!--        android:textSize="12sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/ll_machine_status" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_status_3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="undefined:1"-->
+    <!--        android:textColor="#0f0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/tv_model_id" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:text="undefined:1"-->
+    <!--        android:textColor="#0f0"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tv_status_3"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/tv_status_3" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ll_j1_print_adjustment_print_performance"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_layout_16"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_j1_print_performance_title"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_48"
+            android:text="@string/j1_print_adjust_performance" />
+
+        <TextView
+            android:id="@+id/tv_j1_print_performance_status"
+            style="@style/AppTheme.TextLargeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_j1_print_performance_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_12"
+            android:text="@string/j1_print_adjust_print_performance_fast"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="328dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_j1_print_performance_status"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_28">
+
+            <LinearLayout
+                android:id="@+id/ll_j1_print_adjustment_print_performance_widget"
+                android:layout_width="328dp"
+                android:layout_height="52dp"
+                android:background="@drawable/pic_tab_horizontal_center_656x104"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_j1_print_performance_silent_pic"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_speed_silent_normal_64x64" />
+
+                <ImageView
+                    android:id="@+id/iv_j1_print_performance_default_pic"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_speed_normal_checked_64x64" />
+
+                <ImageView
+                    android:id="@+id/iv_j1_print_performance_fast_pic"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_speed_fast_normal_64x64" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_j1_print_adjustment_print_performance_widget"
+                android:layout_marginTop="@dimen/margin_layout_8"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_j1_print_performance_silent_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/j1_print_adjust_noise_print_performance_desc"
+                    android:textColor="@color/palette_grey_storm"
+                    android:textSize="@dimen/font_size_14sp" />
+
+                <TextView
+                    android:id="@+id/tv_j1_print_performance_default_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/j1_print_adjust_print_performance_default_desc"
+                    android:textColor="@color/palette_grey_storm"
+                    android:textSize="@dimen/font_size_14sp" />
+
+                <TextView
+                    android:id="@+id/tv_j1_print_performance_fast_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/j1_print_adjust_print_performance_fast_desc"
+                    android:textColor="@color/palette_grey_storm"
+                    android:textSize="@dimen/font_size_14sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

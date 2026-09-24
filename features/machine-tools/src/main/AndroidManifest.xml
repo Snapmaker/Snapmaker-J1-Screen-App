@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fabscreen.features.machinetools">
+
+    <application>
+        <activity
+            android:name=".control.a400.A400ControlActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".calibration.j1Platform.J1CalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".calibration.a400platform.A400CalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.s20.laser._10w.camera.Laser10wCameraCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.platform.base.view.ToastActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/DialogTheme" />
+        <activity
+            android:name="fabscreen.platform.base.view.SuperToastActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ToastTheme" />
+        <activity
+            android:name=".calibration.s20.laser._10w.Laser10wThicknessMeasureCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.a400platform.laser.w_10.platformHeight.A400Calibration10WLaserPlatformHeightCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity android:name=".calibration.a400platform.laser.w_10.thicknessMeasurement.ThicknessMeasureCalibrationActivity" />
+
+        <activity
+            android:name=".calibration.s20._30._cnc.setorigin.CncSetOriginActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.s20._30._cnc.changeassistant.CncChangeAssistantActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.a400platform.cnc.originAssistant.CncOriginAssistantActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.j1Platform.levelingBed.LevelingBedAuxiliaryCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.j1Platform.levelingBed.LevelingBedCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.j1Platform.LevelingXY.LevelingXYCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".calibration.j1Platform.LevelingXY.LevelingXYAuxiliaryCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.j1Platform.levelingZ.LevelingZCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".calibration.j1Platform.levelingZ.LevelingZAuxiliaryCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.a400platform.fdm.doubleExtruder.levelingXY.A400LevelingXYCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".setup.singledual.blocksetup.BlockSetupActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".setup.singledual.loadfilament.LoadFilamentActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".setup.singledual.calibration.SetupZCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".setup.singledual.calibration.SetupXYCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".setup.singlesingle.bedleveling.SingleSingleBedLevelingActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".setup.singlesingle.loadfilament.SingleSingleLoadFilamentActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".setup.laser.tenw.SetupIntroActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".calibration.a400platform.laser.FourAxisLaserCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.a400platform.fdm.doubleExtruder.levelingBed.A400LevelingBedCalibrationModeSelectActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.a400platform.fdm.doubleExtruder.levelingBed.auto.A400LevelingBedCalibrationAutoActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+
+        <activity
+            android:name=".calibration.a400platform.fdm.doubleExtruder.levelingBed.manual.A400LevelingBedCalibrationManualActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".calibration.a400platform.fdm.doubleExtruder.levelingZ.A400LevelingZCalibrationModeSelectActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".calibration.a400platform.fdm.doubleExtruder.levelingZ.sensor.A400LevelingZCalibrationSensorActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".calibration.a400platform.fdm.doubleExtruder.levelingZ.auto.A400LevelingZCalibrationAutoActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".calibration.a400platform.fdm.doubleExtruder.levelingZ.manual.A400LevelingZCalibrationManualActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.a400platform.fdm.doubleExtruder.levelingXY.A400LevelingXYCalibrationModeSelectActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".setup.cnc.A400CNCSetupActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.a400platform.cnc.manualTool.A400ManualToolModeSelectActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.a400platform.cnc.manualTool.advanced.A400CncManualToolAdvancedActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.a400platform.cnc.manualTool.basic.A400CncManualToolBasicActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.a400platform.cnc.toolchange.A400CncToolChangeAssistantActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.a400platform.laser.w_10.cameraCalibration.A400CameraCalibration10wActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".calibration.a400platform.laser.w_1_6.A400LaserManualFocusCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.j1Platform.calibrationCheck.CalibrationCheckCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".calibration.a400platform.laser.w_1_6.rotary.CalibrationCentralAxisActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".calibration.a400platform.CalibrationCompleteActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".calibration.a400platform.laser.w_1_6.rotary.A400CentralAxisCalibrationMaterialSelectActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name=".calibration.j1Platform.vibrationcalibration.VibrationCalibrationActivity"
+            android:theme="@style/AppTheme.Activity" />
+    </application>
+</manifest>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/theme_color_page_background">
+
+    <include
+        layout="@layout/widget_top_bar_a400_calibration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/auto_thickness_measure_calibration_22_image"
+        android:layout_width="578dp"
+        android:layout_height="434dp"
+        android:layout_marginTop="@dimen/margin_layout_64"
+        android:src="@drawable/pic_a400_calibration_thickness_measure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar" />
+
+    <TextView
+        android:id="@+id/auto_thickness_measure_calibration_22_content"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:text="@string/settings_laser_1st_calibration_point"
+        android:textColor="@color/palette_white_pure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auto_thickness_measure_calibration_22_image" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

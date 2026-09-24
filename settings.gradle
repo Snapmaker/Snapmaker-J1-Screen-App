@@ -1,0 +1,19 @@
+include ':apps:j1'
+
+// libraries
+include ':platform:base'
+include ':platform:lib'
+include ':platform:core'
+
+// features
+include ':features:settings'
+include ':features:machine-tools'
+include ':features:remote'
+include ':features:print'
+include ':features:guide'
+include ':features:file-manager'
+include ':features:add-ons'
+include ':features:home'
+include ':features:welcome'
+
+include ':ijkplayer_java'

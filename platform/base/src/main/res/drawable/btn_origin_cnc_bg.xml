@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+
+    <corners android:radius="@dimen/margin_48dp"/>
+    <solid android:color="?attr/theme_color_card_view_gradient_start" />
+</shape>

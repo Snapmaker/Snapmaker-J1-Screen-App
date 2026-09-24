@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#090909">
+
+    <ImageView
+        android:id="@+id/iv_clap"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="124dp"
+        android:src="@drawable/pic_a400_complete_clap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Module Replaced"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/font_size_40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_clap" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/a400_replace_module_complete_module_need_calibrate_desc"
+        android:textColor="#6E6E6E"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <Button
+        android:id="@+id/btn_calibrate"
+        style="@style/AppTheme.Button.BlueButton"
+        android:layout_width="306dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="@dimen/margin_12dp"
+        android:layout_marginBottom="@dimen/margin_48dp"
+        android:text="Calibrate Module"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical" />
+
+    <Button
+        android:id="@+id/btn_skip"
+        style="@style/AppTheme.SecondaryButton"
+        android:layout_width="306dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="@dimen/margin_12dp"
+        android:layout_marginBottom="@dimen/margin_48dp"
+        android:text="Skip Calibration"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gl_vertical" />
+
+    <ScrollView
+        android:id="@+id/sv_need_calibration"
+        android:layout_width="wrap_content"
+        android:layout_height="163dp"
+        android:background="@drawable/shape_a400_bg_vertical_gradient_round_rect"
+        android:minWidth="437dp"
+        android:layout_marginTop="38dp"
+        android:scrollbarThumbVertical="@drawable/shape_a400_scroll_bar_thumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc">
+
+        <LinearLayout
+            android:id="@+id/ll_need_calibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="85dp"
+            android:paddingVertical="30dp" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

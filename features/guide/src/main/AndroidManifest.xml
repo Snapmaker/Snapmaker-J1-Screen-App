@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fabscreen.features.guide">
+
+    <application>
+        <activity
+            android:name=".a400.A400GuideMilestoneActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".j1.J1GuideActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name=".s20.laser._10w.Guide10wLaserActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+    </application>
+</manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:layout_marginBottom="24dp"
+    android:background="@drawable/shape_a400_bg_machine_info"
+    android:paddingVertical="48dp">
+
+    <TextView
+        android:id="@+id/tv_linear_title"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="48dp"
+        android:drawableStart="@drawable/shape_a400_module_indicator"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:text="Linear Module X"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+        android:id="@+id/miiv_linear_limit_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="76dp"
+        android:layout_marginTop="24dp" />
+</merge>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingTop="48dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp">
+
+    <View
+        android:id="@+id/v_content_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/file_detail_gradient_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_show_image"
+        android:layout_width="180dp"
+        android:layout_height="204dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/v_content_bg"
+        app:layout_constraintTop_toTopOf="@id/v_content_bg" />
+
+    <TextView
+        android:id="@+id/tv_j1_guide_recover_machine_title"
+        style="@style/AppTheme.TextTitlePrimary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/j1_guide_install_fan_instructions_prepare_for_homing_title"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/v_content_bg"
+        app:layout_constraintStart_toEndOf="@+id/iv_show_image"
+        app:layout_constraintTop_toTopOf="@id/v_content_bg" />
+
+    <TextView
+        android:id="@+id/tv_j1_guide_recover_machine_content"
+        style="@style/AppTheme.TextBody2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/j1_guide_install_fan_instructions_prepare_for_homing_content"
+        android:textColor="?attr/theme_color_body_secondary1"
+        app:layout_constraintTop_toBottomOf="@id/tv_j1_guide_recover_machine_title"
+        app:layout_constraintStart_toEndOf="@id/iv_show_image"
+        app:layout_constraintEnd_toEndOf="@id/v_content_bg"/>
+
+    <FrameLayout
+        android:id="@+id/fl_bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        android:paddingStart="12dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="@id/v_content_bg"
+        app:layout_constraintEnd_toEndOf="@id/v_content_bg"
+        app:layout_constraintStart_toStartOf="@id/v_content_bg">
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/AppTheme.PrimaryButton"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:text="@string/all_next" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

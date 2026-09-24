@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/all_dialog_round_background"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="?attr/theme_spacing5"
+        android:layout_marginTop="?attr/theme_spacing3"
+        android:layout_marginEnd="?attr/theme_spacing5"
+        android:layout_marginBottom="?attr/theme_spacing3" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_layout_8"
+        android:src="@drawable/icon_close_normal_80x80" />
+
+</RelativeLayout>

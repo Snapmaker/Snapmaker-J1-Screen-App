@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="?attr/theme_color_switch_checked" android:state_selected="true" />
+    <item android:color="?attr/theme_color_switch_uncheck" android:state_selected="false" />
+
+</selector>

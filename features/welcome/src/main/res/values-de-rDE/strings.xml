@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<resources>
+    <string name="j1_terms_and_conditions_tip">Ich habe alle allgemeinen Geschäftsbedingungen gelesen und akzeptiere sie.</string>
+    <string name="j1_user_experience_improvement_program_title">Programm zur Verbesserung der Benutzererfahrung</string>
+    <string name="j1_user_experience_improvement_program_confirm">Ja, ich bin dabei!</string>
+    <string name="j1_welcome_set_name_title">Gebe deinem Snapmaker einen Namen</string>
+    <string name="j1_welcome_dailog_skip_wifi_content">Das Überspringen der WLAN-Verbindungseinrichtung kann einige Funktionen einschränken; Du kannst dies auch zu einem späteren Zeitpunkt in den <b>Einstellungen</b> nachholen. Bist du sicher, dass du diesen Schritt überspringen willst?</string>
+    <string name="j1_setup_completed_title">Einrichtung abgeschlossen</string>
+    <string name="j1_setup_completed_content">Du hast die Ersteinrichtung erfolgreich abgeschlossen.</string>
+    <string name="j1_settings_user_experience_program_content">&quot;Liebe Nutzer von Snapmaker,
+\nProdukte bereitzustellen, welche die Erwartungen der Benutzer übertreffen, war schon immer das Ziel von Snapmaker. Um uns dabei zu unterstützen, Ihre Bedürfnisse optimal zu erfüllen und die Produktqualität und Dienstleistungen zu verbessern, lädt Snapmaker Sie herzlich dazu ein, an unserem Programm zur Verbesserung der Benutzererfahrung (kurz UEIP) teilzunehmen, und bittet Sie, die folgende Erklärung zu lesen. Die Zustimmung zur Teilnahme an unserem UEIP bedeutet, dass Sie diese Erklärung sorgfältig gelesen haben und ihr vollständig zustimmen (Minderjährige sollten diese im Beisein ihrer Erziehungsberechtigten lesen). Snapmaker weist sie darauf hin, dass diese Erklärung im Zuge der Produktverbesserung von Zeit zu Zeit geändert werden kann. Bei Änderungen werden wir diese an prominenter Stelle auf den Produkten oder relevanten Seiten anzeigen, um Sie darüber zu informieren. Wenn Sie die Änderungen nicht akzeptieren, haben Sie das Recht, sich jederzeit vom UEIP abzumelden; ein Verbleib im Programm wird als Zustimmung zu solchen Änderungen angesehen.
+
+\n\n<b>Informationserfassung</b>
+\nSobald Sie Ihre Zustimmung zur Teilnahme am Programm gegeben haben, werden Informationen über Ihr Gerät und darüber wie Sie es verwenden, anonym und regelmäßig gesammelt und an Snapmaker gesendet, und dazu verwendet, unsere Produkte und Dienstleistungen zu verbessern.
+Die am Programm teilnehmenden Nutzer übermitteln lediglich folgende Daten an Snapmaker:
+\n1. Das Betriebssystem und die Firmware-Version des Geräts
+\n2. Einstellungspräferenzen
+\n3. Details zu G-Code-Dateien und Druckparametern
+\n4. Spezifische Verhaltensdaten bei Interaktionen mit dem Gerät (wie Tippen, Wischen, Hinzufügen, Löschen usw.)
+
+\n\nDie gesammelten Informationen im Programm beziehen sich nicht auf Ihre persönliche Identität, einschließlich Name, Geschlecht, Alter, Adresse, Telefonnummer, Benutzername, Passwort etc.
+
+\n\n<b>Informationsnutzung</b>
+\nSnapmaker verspricht hiermit, dass wir uns an die einschlägigen Gesetze und Vorschriften halten und die gesammelten Informationen nur zur Verbesserung von Produkten und Dienstleistungen verwenden werden. Wir respektieren Ihre Privatsphäre voll und ganz und die vom Snapmaker-Programm zur Verbesserung der Benutzerfreundlichkeit gesammelten Informationen werden in Übereinstimmung mit unserer Datenschutzrichtlinie behandelt. Wir verwenden Google Analytics (Google Analytics entspricht der Datenschutz-Grundverordnung). Aufgrund der IP-Anonymisierungsfunktion werden und können wir Ihre IP-Adresse, Daten usw. nicht unabhängig erfassen oder verfolgen.
+
+\n\n<b>Abmeldung vom Programm</b>
+\nSie können dem Programm zur Verbesserung der Benutzerfreundlichkeit von Snapmaker jederzeit im Menü <b>Einstellungen</b> > <b>Nutzungsbedingungen</b> beitreten oder die Teilnahme beenden. Nachdem Sie sich von diesem Programm abgemeldet haben, erfassen wir keine Daten mehr, die im Abschnitt „Informationserfassung“ erwähnt werden.&quot;</string>
+</resources>

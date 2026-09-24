@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_calibration_mode"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_button_108"
+    android:background="@color/palette_black_snapmaker"
+    android:gravity="center_vertical">
+
+    <View
+        android:id="@+id/view_calibration_mode"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:background="@color/palette_blue_ribbon" />
+
+
+    <ImageView
+        android:id="@+id/view_calibration_mode_logo"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_layout_12"
+        android:layout_marginEnd="@dimen/margin_layout_4"
+        android:layout_toRightOf="@+id/view_calibration_mode" />
+
+    <TextView
+        android:id="@+id/tv_calibration_mode_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/view_calibration_mode_logo"
+        android:text="手动模式"
+        android:textColor="@color/palette_white_pure"
+        android:textSize="@dimen/font_size_28sp" />
+
+</RelativeLayout>

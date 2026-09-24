@@ -1,0 +1,142 @@
+<resources>
+    <string name="automatic_thickness_measurement_title">自动测量厚度</string>
+    <string name="automatic_thickness_measurement_content">机器将自动测量材料厚度，然后调整激光高度。此模式不适用于镂空、透明、红色等材料。</string>
+    <string name="enter_material_thickness_title">输入材料厚度</string>
+    <string name="enter_material_thickness_content">机器将会依据输入的材料厚度，自动调整激光高度。</string>
+    <string name="bonding_material_surface_title">校准板辅助</string>
+    <string name="bonding_material_surface_content">你需要手动控制执行头贴合材料表面，机器将会结合焦距调整激光高度。</string>
+    <string name="manual_focus_title">手动对焦</string>
+    <string name="manual_focus_content">你需要手动控制执行头下降，直至形成最小光斑，机器将会以当前高度作为激光高度。</string>
+
+    <string name="print_filament_runout_load_filament">Load Filament</string>
+    <string name="print_filament_runout_wait_for_loading">请拔出耗材并将其重新插入至执行头，稍等片刻直至您感受到耗材已被咬合并传输时松手。</string>
+    <string name="print_filament_runout_start_loading">挤出耗材中...</string>
+    <string name="print_remaining_time">剩余时间：</string>
+    <string name="print_heated_bed_temp">热床温度</string>
+    <string name="print_laser_power">激光功率</string>
+    <string name="print_cnc">主轴转速</string>
+    <string name="print_work_speed">工作速度</string>
+    <string name="print_spindle_speed">主轴转速/RPM</string>
+    <string name="print_back_main">返回主界面</string>
+    <string name="print_pause">暂停</string>
+    <string name="print_resume">恢复</string>
+    <string name="print_stop">停止 </string>
+    <string name="print_stop_one_extruder">停止单打印头</string>
+    <string name="print_complete">完成 </string>
+    <string name="print_print_again">再次打印</string>
+
+    <string name="print_heating_nozzle">喷嘴加热中...</string>
+    <string name="print_warning_filament_run_out_extruder_content">%s未装载耗材。\n请点击<b>装料</b>以继续打印。</string>
+    <string name="print_insert_filament_title">插入耗材</string>
+    <string name="print_pull_out_filament_title">插入耗材</string>
+    <string name="print_insert_filament_content">请手动将新耗材插入导料管，直至你感受到耗材已被咬合且开始传送，即可松手。</string>
+    <string name="print_pull_out_filament_content">请拔出耗材并将其重新插入导料管，直至你感受到耗材已被咬合且开始传送，即可松手。</string>
+
+    <string name="print_stop_printing">停止打印</string>
+    <string name="print_pause_printing">暂停打印</string>
+    <string name="print_confirmation_content">你确定要%s吗？</string>
+
+    <string name="calibration_select_mode_title">模式选择</string>
+    <string name="calibration_base_mode">基础模式</string>
+    <string name="calibration_advanced_mode">高级模式</string>
+    <string name="print_base_mode">你需要移动执行头到目标工作原点位置。点击跑边框可验证当前位置对应的工作区域。</string>
+    <string name="print_advanced_mode">你可以分别为 X、Y、Z 轴设置原点，其坐标组合即为工作原点。点击跑边框可验证 X 轴和 Y 轴方向...</string>
+    <string name="print_cnc_job_preparation">准备 CNC 作业</string>
+    <string name="print_set_work_origin">设置工作原点 %s</string>
+    <string name="print_set_coord_origin">设置 %s 原点</string>
+    <string name="print_job_preparation_set_coord_message">将材料固定于 CNC 雕刻平台上。手动控制执行头移动到目标工作原点位置，CNC 作业将会以此位置为原点开始加工。你可以点击跑边框来验证当前位置对应的工作区域。</string>
+    <string name="print_job_preparation_set_coord_xy_message">手动控制执行头移动到目标工作原点位置，激光作业将会以此位置为原点开始加工。你可以点击跑边框来验证当前位置对应的工作区域。</string>
+    <string name="print_laser_job_preparation">准备激光作业</string>
+    <string name="print_laser_calibration_plate_assisted_subtitle">校准板辅助</string>
+    <string name="print_laser_calibration_plate_assisted_message">将材料放置于激光雕刻和切割平台上，然后将激光校准板放置于材料上。手动控制执行头下降以贴合校准板表面，直到你拉动校准板时能感受到轻微阻力。点击下一步，机器将会自动调整激光高度。</string>
+    <string name="print_laser_manual_focus_subtitle">手动调整激光高度</string>
+    <string name="print_laser_manual_focus_content">将材料放置于激光雕刻和切割平台上。手动控制执行头移动，直至激光光束在材料表面聚合成面积最小的光斑。点击开始作业，机器将会以当前高度作为激光高度。</string>
+    <string name="print_adjust_laser_height">调整激光高度%s</string>
+    <string name="print_automatic_thickness_measurement">自动测量材料厚度</string>
+    <string name="print_automatic_thickness_measurement_message">将材料放置于激光雕刻和切割平台上。机器将会依据工作原点和工作区域，自动计算材料位置，然后移动执行头到相应位置测量材料厚度。机器根据测量到的材料厚度，自动调整激光高度。\n\n以下情况可能会导致材料厚度测量失败：\n材料的厚度超过 50mm；\n材料的材质为透明、亮面或镜面；\n材料的颜色为红色或黑色；\n材料的中间有镂空</string>
+    <string name="print_laser_input_material_thickness">输入材料厚度</string>
+    <string name="print_laser_input_material_thickness_subtitle">材料厚度</string>
+    <string name="print_laser_input_material_thickness_input_hint">输入材料厚度</string>
+    <string name="print_laser_input_material_thickness_message">测量并输入材料厚度。测量完毕后，将材料放置于激光雕刻和切割平台上。机器将会依据输入的材料厚度，自动调整激光高度。</string>
+    <string name="a400_print_print_setting_left_z_offset">左Z轴偏移量</string>
+    <string name="a400_print_print_setting_right_z_offset">右Z轴偏移量</string>
+    <string name="a400_print_print_setting_part_cooling_fan">模型冷却风扇</string>
+    <string name="a400_print_print_setting_part_work_speed">工作速度</string>
+    <string name="a400_print_print_setting_left_flow_rate">左喷嘴流量</string>
+    <string name="a400_print_print_setting_right_flow_rate">右喷嘴流量</string>
+    <string name="print_setting_up">上</string>
+    <string name="print_setting_down">下</string>
+
+    <!--  J1-->
+    <string name="j1_how_to_load_filament_step_1">步骤一：取下顶板。</string>
+    <string name="j1_how_to_load_filament_step_2">步骤二：将耗材挂在料架上，然后将耗材插入进料口，直至其从另一端伸出。</string>
+    <string name="j1_how_to_load_filament_step_3">步骤三：将滑钮向后推并按住，然后将耗材插入打印头，直至感觉到阻力（以左打印头为例）。</string>
+    <string name="j1_how_to_load_filament_step_4">步骤四：设置目标温度，然后点击<b>加热</b>。</string>
+    <string name="j1_how_to_load_filament_step_5">步骤五：点击<b>进料</b>（必要时，打印头会先行移动至便于进料的位置）。</string>
+    <string name="j1_how_to_load_filament_step_6">步骤六：当耗材从喷嘴中流出后，点击<b>停止进料</b>。</string>
+    <string name="j1_how_to_load_filament_step_7">步骤七：将导料管插入打印头，再卡入导料管夹。最后，重新固定顶板。</string>
+
+    <!-- Print-->
+    <string name="j1_print_adjust">调整参数</string>
+    <string name="print_print_mode_standard">默认模式</string>
+    <string name="print_print_mode_back_up">备用模式</string>
+    <string name="print_print_mode_clone">复制模式</string>
+    <string name="print_print_mode_mirror">镜像模式</string>
+    <string name="j1_print_remove_print_tip">为避免烫伤，请等待热床降温至 40℃ 以下后再取出模型。</string>
+    <string name="j1_print_remove_print_low_temperature_tip">热床已降温，可取出模型。</string>
+    <string name="j1_print_pause_job_msg">你确定要暂停打印吗？</string>
+    <string name="print_extruder_left">左打印头</string>
+    <string name="print_extruder_right">右打印头</string>
+    <string name="j1_print_stop_extruder">选择要停止的打印头。</string>
+    <string name="j1_print_stop_job_msg">你确定要停止打印吗？</string>
+    <string name="j1_print_adjust_extruder">打印头</string>
+    <string name="j1_print_adjust_heated_bed">热床</string>
+    <string name="j1_print_adjust_z_offset">Z 轴偏移量</string>
+    <string name="j1_print_adjust_work_speed">工作速度</string>
+    <string name="j1_print_adjust_flow_rate">流量</string>
+    <string name="j1_print_adjust_backup_mode">备用模式</string>
+    <string name="j1_print_adjust_fan_speed">风扇速度</string>
+    <string name="j1_print_adjust_lighting">灯光</string>
+    <string name="j1_print_adjust_performance">性能</string>
+    <string name="j1_print_left_extruder_stop">左打印头已停止</string>
+    <string name="j1_print_right_extruder_stop">右打印头已停止</string>
+    <!-- Print Setting-->
+    <string name="j1_print_setting_stop_loading">停止进料</string>
+    <string name="j1_print_setting_stop_unloading">停止退料</string>
+    <string name="print_adjustment_z_offset_tips">当你增大 Z 轴偏移量时，热床会下降相应的距离，反之亦然。</string>
+    <string name="ji_print_setting_extruder_left">左打印头</string>
+    <string name="ji_print_setting_extruder_right">右打印头</string>
+    <string name="print_adjustment_move_machine_msg">打印头稍后将移动至合适位置，便于你进行装料或退料。</string>
+    <string name="print_j1_fan_speed_l">L:%3d%%</string>
+    <string name="print_j1_fan_speed_r">R:%3d%%</string>
+    <string name="j1_print_adjust_print_performance_silent">静音</string>
+    <string name="j1_print_adjus_print_performance_default">默认</string>
+    <string name="j1_print_adjust_print_performance_fast">快速</string>
+    <string name="j1_print_adjust_noise_print_performance_desc">静音</string>
+    <string name="j1_print_adjust_print_performance_default_desc">默认</string>
+    <string name="j1_print_adjust_print_performance_fast_desc">快速</string>
+
+    <!--  a400-->
+    <string name="a400_cnc_four_axis_content">若你已使用对刀助手完成了工作原点的设置，那么在材料尺寸不变的前提下，你可以跳过此步骤直接开始 CNC 作业。</string>
+    <string name="a400_stop_work_title">你确定要%s吗？</string>
+    <string name="a400_laser_print_four_axis_input_diameter_title">输入材料直径（1.6W 激光默认模式）</string>
+    <string name="a400_laser_print_four_axis_input_diameter_contennt">机器将会依据输入的材料直径，自动调整激光高度。</string>
+    <string name="a400_laser_print_four_axis_touchmaterial_title">贴合材料表面（10W 激光默认模式）</string>
+    <string name="a400_laser_print_four_axis_touchmaterial_contnent">你需要手动控制执行头贴合材料上表面，机器将会结合焦距调整激光高度。</string>
+    <string name="a400_laser_print_four_axis_manual_focus_title">手动对焦</string>
+    <string name="a400_laser_print_four_axis_manual_focus_content">你需要手动控制执行头下降，直至形成最小光斑，机器将会以当前高度作为激光高度。</string>
+    <string name="a400_laser_print_four_axis_input_diameter_subtitle">输入材料直径</string>
+    <string name="a400_laser_print_four_axis_touchmaterial_subtitle">贴合材料表面</string>
+    <string name="a400_laser_print_four_axis_material_diameter_title">输入材料直径</string>
+    <string name="a400_laser_print_four_axis_material_diameter_contnent">测量并输入材料直径，然后将材料固定到三爪卡盘中。机器将会依据输入的材料直径，自动调整激光高度。</string>
+    <string name="a400_laser_print_four_axis_material_diameter_subtitle">材料直径</string>
+    <string name="a400_print_laser_Manually_Adjust_Laser_Height_title">手动调整激光高度</string>
+    <string name="a400_print_laser_Manually_Adjust_Laser_Height_content">把材料固定到三爪卡盘中,然后手动控制执行头下降,直至激光光束在材料上表面聚合成面积最小的光班,点击下一步,机器将会以当前高度作为激光高度。</string>
+    <string name="a400_print_laser_touch_material_surface_title">贴合材料表面</string>
+    <string name="a400_print_laser_touch_material_surface_content">将材料固定到三爪卡盘中，然后手动控制执行头下降，直至其贴合材料上表面。机器将结合已知的焦距自动调整激光高度。</string>
+    <string name="a400_print_cnc_print_xyzb_title">设置 XYB 原点</string>
+    <string name="a400_print_cnc_print_xyzb_content">手动控制执行头移动到目标工作原点位置，机器将会以此位置为原点开始激光作业。你可以点击跑边框来验证当前位置对应的工作区域。</string>
+    <string name="a400_print_enclosure_open">外罩门被打开了，因此%s已停止。</string>
+    <string name="j1_print_pausing">暂停中...</string>
+    <string name="j1_print_resuming">恢复中...</string>
+</resources>

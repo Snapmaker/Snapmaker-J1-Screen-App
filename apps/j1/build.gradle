@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    signingConfigs {
+        debug {
+            def keystorePath = System.getenv('KEYSTORE_PATH') ?: project.findProperty('KEYSTORE_PATH') ?: '../../ScreenJ1.keystore'
+            def keystorePassword = System.getenv('KEYSTORE_PASSWORD') ?: project.findProperty('KEYSTORE_PASSWORD')
+            def keyAliasValue = System.getenv('KEY_ALIAS') ?: project.findProperty('KEY_ALIAS') ?: 'key0'
+            def keyPasswordValue = System.getenv('KEY_PASSWORD') ?: project.findProperty('KEY_PASSWORD')
+            storeFile file(keystorePath)
+            storePassword keystorePassword ?: ''
+            keyAlias keyAliasValue
+            keyPassword keyPasswordValue ?: ''
+        }
+
+        release {
+            def keystorePath = System.getenv('KEYSTORE_PATH') ?: project.findProperty('KEYSTORE_PATH') ?: '../../ScreenJ1.keystore'
+            def keystorePassword = System.getenv('KEYSTORE_PASSWORD') ?: project.findProperty('KEYSTORE_PASSWORD')
+            def keyAliasValue = System.getenv('KEY_ALIAS') ?: project.findProperty('KEY_ALIAS') ?: 'key0'
+            def keyPasswordValue = System.getenv('KEY_PASSWORD') ?: project.findProperty('KEY_PASSWORD')
+            storeFile file(keystorePath)
+            storePassword keystorePassword ?: ''
+            keyAlias keyAliasValue
+            keyPassword keyPasswordValue ?: ''
+        }
+    }
+    defaultConfig {
+        versionName "1.10.0"
+    }
+    // apk name def
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            outputFileName = "fabscreen-j1_${variant.versionName}_${output.getFilter(com.android.build.OutputFile.ABI)}_${variant.name}.apk"
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include "x86_64", "armeabi-v7a"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            defaultConfig {
+                buildConfigField "String", "BUILD_RELEASE_DATE", "\"${getBuildReleaseDate()}(UTC)\""
+            }
+        }
+
+        debug {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            defaultConfig {
+                buildConfigField "String", "BUILD_RELEASE_DATE", "\"${getBuildReleaseDate()}(UTC)\""
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project(":platform:lib")
+    implementation project(":platform:core")
+    implementation project(":platform:base")
+    implementation project(":features:settings")
+    implementation project(":features:machine-tools")
+    implementation project(":features:remote")
+    implementation project(":features:print")
+    implementation project(":features:guide")
+    implementation project(":features:file-manager")
+    implementation project(":features:add-ons")
+    implementation project(":features:welcome")
+    implementation project(":features:home")
+    implementation project(":ijkplayer_java")
+    implementation Libs.INSTANCE.junit
+    implementation Libs.INSTANCE.ARouter
+    annotationProcessor Libs.INSTANCE.ARouterAnnotation
+    implementation Libs.INSTANCE.appCompat
+    implementation Libs.INSTANCE.constraintLayout
+    implementation Libs.INSTANCE.material
+    implementation Libs.INSTANCE.rxjava
+    implementation Libs.INSTANCE.rxAndroid
+    implementation Libs.INSTANCE.butterknife
+    annotationProcessor Libs.INSTANCE.butterknifeAnnotation
+    implementation Libs.INSTANCE.autoDispose
+    implementation Libs.INSTANCE.autoDisposeArchComponents
+    implementation Libs.INSTANCE.autoDisposeLifecycle
+    implementation Libs.INSTANCE.okio
+    implementation Libs.INSTANCE.logger
+    implementation Libs.INSTANCE.libaums
+    implementation platform(Libs.INSTANCE.firebaseBOM)
+    implementation Libs.INSTANCE.firebaseAnalytics
+    implementation Libs.INSTANCE.firebaseCrashlytics
+    implementation Libs.INSTANCE.segmentedButton
+    implementation Libs.INSTANCE.retrofitGsonConverter
+    implementation Libs.INSTANCE.localization
+}

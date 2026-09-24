@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/top_bar_title"
+        style="@style/AppTheme.TextTitlePrimary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_layout_130"
+        android:layout_toStartOf="@+id/tv_setting_bar_right"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingStart="@dimen/margin_layout_48"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry"
+        tools:text="设置标题 Settings Title 设置标题 Settings Title 设置标题 Settings Title" />
+
+    <View
+        android:id="@+id/v_divider_drop_shadow"
+        style="@style/AppTheme.LineDropShadow"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/tv_setting_bar_right"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="48dp"
+        android:textColor="@color/palette_blue_ribbon"
+        android:visibility="invisible"
+        tools:text="标题操作标题操作"
+        tools:visibility="visible" />
+
+</RelativeLayout>

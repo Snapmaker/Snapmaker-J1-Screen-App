@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/widget_top_bar_a400_calibration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_toolhead_focus_calibration_10"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_layout_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+        <ImageView
+            android:id="@+id/iv_toolhead_focus_calibration_10_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/pic_laser_toolhead_focus_calibration_10" />
+
+        <TextView
+            android:id="@+id/iv_toolhead_focus_calibration_10_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_toolhead_focus_calibration_10_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="将工作头移动至风嘴刚好触碰到校准卡表面。此时校准卡能刚好在喷嘴和铝栅板之间移动，稍稍会有一些阻力。" />
+
+        <TextView
+            android:id="@+id/iv_toolhead_focus_calibration_10_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_toolhead_focus_calibration_10_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="更多信息"
+            android:textColor="@color/custom_blue_200" />
+
+    </RelativeLayout>
+
+    <fabscreen.platform.core.ui.view.XYZControlPanel
+        android:id="@+id/xyz_panel_touch_platform"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/btn_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rl_toolhead_focus_calibration_10"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar" />
+
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/AppTheme.Button.BlueButton"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/size_button_45"
+        android:layout_margin="@dimen/margin_layout_20"
+        android:text="@string/all_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rl_toolhead_focus_calibration_10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <include
+        layout="@layout/view_calibration_right_select"
+        android:layout_width="581dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_a400_calibration_leveling_bed_selection_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/calibration_auto_mode"
+        android:textColor="?attr/theme_color_explain_text"
+        android:textSize="?attr/theme_font_size_title2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_calibration_leveling_bed_selection_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="74dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_a400_calibration_leveling_bed_selection_title">
+
+        <TextView
+            android:id="@+id/tv_calibration_leveling_bed_selection_grid_title"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/calibration_heated_bed_calibration_point"
+            android:textAlignment="textStart"
+            android:textColor="@color/palette_white_silver" />
+
+        <RelativeLayout
+            android:id="@+id/rl_alibration_leveling_bed"
+            android:layout_width="278dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_calibration_leveling_bed_selection_grid_title"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_calibration_leveining_bed">
+
+            <TextView
+                android:id="@+id/tv_select_type"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin_layout_32"
+                android:textColor="@color/palette_white_pure" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_layout_16"
+                android:background="@drawable/ic_down_arrow_96x96" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_calibration_leveling_bed_selection_temperature"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="74dp"
+        app:layout_constraintStart_toEndOf="@id/rl_calibration_leveling_bed_selection_grid"
+        app:layout_constraintTop_toBottomOf="@id/tv_a400_calibration_leveling_bed_selection_title">
+
+        <TextView
+            android:id="@+id/tv_calibration_leveling_bed_selection_temperature_title"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/calibration_heated_bed_heated_bed_temp"
+            android:textAlignment="textStart"
+            android:textColor="@color/palette_white_silver" />
+
+        <EditText
+            android:id="@+id/et_calibration_leveling_bed_selection_temperature"
+            style="@style/AppTheme.TextBody1"
+            android:layout_width="278dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_calibration_leveling_bed_selection_temperature_title"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_calibration_leveining_bed"
+            android:inputType="number"
+            android:paddingLeft="@dimen/margin_layout_32"
+            android:textColor="@color/palette_white_pure" />
+
+        <TextView
+            style="@style/AppTheme.TextBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/et_calibration_leveling_bed_selection_temperature"
+            android:layout_alignBottom="@+id/et_calibration_leveling_bed_selection_temperature"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_layout_32"
+            android:gravity="center"
+            android:text="@string/all_unit_temperature"
+            android:textColor="@color/palette_grey_dim" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

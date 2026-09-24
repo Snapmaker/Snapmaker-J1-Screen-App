@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<resources>
+    <string name="extruder_temperature">%d/%d°C</string>
+    <string name="wizard">Konfigurations-Assistent</string>
+    <string name="introduce">Wir führen dich durch die grundlegende Vorbereitung des Geräts vor dem Druckbeginn, inklusive der vier folgenden Hauptschritte (ca. 20–30 Minuten).</string>
+    <string name="heating_check">Heiztest</string>
+    <string name="z_offset_calibration">Kalibrierung des Z-Versatzes</string>
+    <string name="xy_Offset_calibration">Kalibrierung des XY-Versatzes</string>
+    <string name="offset_calibration_check">Prüfung der Versatz-Kalibrierung</string>
+
+    <string name="guide_success_content">Du kannst jetzt mit dem Drucken beginnen!</string>
+    <string name="guide_success_title">Konfigurations-Assistent beendet</string>
+    <string name="j1_guide_safety_glass_title">Sicherheitshinweise</string>
+    <string name="j1_guide_safety_glass_one">PEI-Glasplatte vorsichtig handhaben.</string>
+    <string name="j1_guide_safety_glass_two">Vermeide das direkte Berühren der PEI-Glasplatte und des Heizbetts, wenn die Bettemperatur über 40°C beträgt.</string>
+</resources>

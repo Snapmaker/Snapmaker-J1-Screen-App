@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <item
+        android:width="360dp"
+        android:height="109dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#212121" />
+            <corners
+                android:bottomLeftRadius="12dp"
+                android:bottomRightRadius="12dp" />
+        </shape>
+    </item>
+    <item
+        android:width="68dp"
+        android:height="68dp"
+        android:drawable="@drawable/ic_a400_blue_tick"
+        android:gravity="center_vertical|start"
+        android:start="5dp" />
+</layer-list>

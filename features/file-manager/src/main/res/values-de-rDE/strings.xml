@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<resources>
+    <string name="j1_file_usb_flash_drive_not_recognized_title">USB-Stick nicht erkannt</string>
+    <string name="j1_file_empty">Leer</string>
+    <string name="j1_file_usb_flash_drive_not_recognized_content">Bitte stecke den USB-Stick erneut ein oder ersetze ihn.\nMögliche Ursachen:\n1. Das Dateisystem des USB-Sticks ist nicht FAT32.\n2. Der USB-Stick hat eine Fehlfunktion.</string>
+    <string name="j1_file_date_ascending">Datum - Aufsteigend</string>
+    <string name="j1_file_date_descending">Datum - Absteigend
+</string>
+    <string name="j1_file_name_ascending">Name - Aufsteigend
+</string>
+    <string name="j1_file_name_descending">Name - Absteigend
+</string>
+    <string name="file_detail_standard_mode_name">Standardmodus</string>
+    <string name="file_detail_standard_mode_name_content">Das Gerät druckt gemäß den Parametern und dem Druckmodus, den du im Slicer eingestellt hast.</string>
+    <string name="file_detail_copy_mode_name">Kopiermodus</string>
+    <string name="file_detail_copy_mode_name_content">Die beiden Extruder arbeiten simultan, um identische Modelle mit denselben Parametern zu drucken.</string>
+    <string name="file_detail_mirror_mode_name">Spiegelmodus</string>
+    <string name="file_detail_mirror_mode_name_content">Die beiden Extruder arbeiten simultan, um identische, jedoch gespiegelte Modelle mit denselben Parametern zu drucken</string>
+    <string name="file_detail_backup_mode_name">Rückfallmodus</string>
+    <string name="file_detail_backup_mode_name_content">Wenn dem aktiven Extruder das Filament ausgeht, druckt das Gerät mit dem Standby-Extruder weiter.</string>
+    <string name="j1_file_details_filament">Filament</string>
+    <string name="j1_file_details_nozzle_temp">Düsentemperatur</string>
+    <string name="j1_file_details_nozzle_diameter">Düsendurchmesser</string>
+    <string name="j1_file_details_heated_bed_temp">Heizbetttemperatur</string>
+    <string name="j1_file_details_estimated_time">Geschätzte Druckzeit</string>
+    <string name="j1_file_details_disable_dual_extrusion">Der Kopier- oder Spiegelmodus ist für Dual-Extrusionsmodelle deaktiviert.</string>
+    <string name="j1_file_details_disable_dual_extrusion_for_back_up">Der Rückfallmodus ist für Dual-Extrusionsmodelle deaktiviert.</string>
+    <string name="j1_file_details_error_out_of_rang">Der Druckbereich des Modells (einschließlich des Vorextrusionsbereichs) ist zu groß für den Kopier- oder Spiegelmodus.</string>
+    <string name="j1_file_details_i_know">OK</string>
+    <string name="j1_file_details_failed_copy_title">Kopieren fehlgeschlagen</string>
+    <string name="j1_file_details_failed_copy_content">Bitte überprüfe, ob der USB-Stick richtig eingesteckt ist und normal funktioniert.</string>
+    <string name="j1_deldete_success">Erfolgreich gelöscht</string>
+    <string name="j1_copy_success">Erfolgreich kopiert</string>
+    <string name="all_browse_deleting">Löschen...</string>
+    <string name="all_browse_copying_to_usb">Datei auf USB kopieren...</string>
+    <string name="all_browse_copying_to_local">Datei auf auf lokalen Speicher kopieren...</string>
+    <string name="all_browse_copy_to_usb">Auf USB kopieren</string>
+    <string name="all_browse_copy_to_local">Auf lokalen Speicher kopieren</string>
+    <string name="all_browse_usb_not_recognized">USB-Stick nicht erkannt</string>
+    <string name="all_browse_usb_not_recognized_content">Bitte stecke den USB-Stick erneut ein oder ersetze ihn. Mögliche Ursachen: \n
+1. Das Dateisystem des USB-Sticks ist nicht FAT32. \N
+2. Der USB-Stick hat eine Fehlfunktion.</string>
+    <string name="all_browse_empty">Leer</string>
+    <string name="j1_copying_file_msg">%s\n%.2f MB/%.2f MB</string>
+    <string name="j1_update_firmware_mag">Willst du die Firmware aktualisieren?</string>
+    <string name="j1_Failed_to_Parse_File_title">Datei konnte nicht analysiert werden</string>
+    <string name="j1_Failed_to_Parse_File_msg">Bitte überprüfe, ob das Dateiformat oder der Dateiinhalt fehlerhaft sind.
+</string>
+</resources>

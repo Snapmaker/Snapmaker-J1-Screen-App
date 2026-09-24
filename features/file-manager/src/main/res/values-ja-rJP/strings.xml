@@ -1,0 +1,47 @@
+
+<resources>
+    <string name="app_name">J1</string>
+    <string name="j1_file_usb_flash_drive_not_recognized_title">USB メモリが認識されません</string>
+    <string name="j1_file_empty">ファイルがありません</string>
+    <string name="j1_file_usb_flash_drive_not_recognized_content">USB メモリを挿入し直すまたは交換してください。\n考えられる原因：\n1. USB メモリのファイルシステムが FAT32 ではない。\n2. USB メモリの異常。</string>
+    <string name="j1_file_date_ascending">日付 - 昇順</string>
+    <string name="j1_file_date_descending">日付 - 降順</string>
+    <string name="j1_file_name_ascending">ファイル名 - 昇順</string>
+    <string name="j1_file_name_descending">ファイル名 - 降順</string>
+    <string name="file_detail_standard_mode_name">デフォルトモード</string>
+    <string name="file_detail_standard_mode_name_content">スライス時に設定したパラメータとプリントモードに従ってプリントします。</string>
+    <string name="file_detail_copy_mode_name">コピーモード</string>
+    <string name="file_detail_copy_mode_name_content">左右のプリントヘッドが同時に動作し、同じパラメータで同じモデルをプリントします。</string>
+    <string name="file_detail_mirror_mode_name">ミラーモード</string>
+    <string name="file_detail_mirror_mode_name_content">左右のプリントヘッドが同時に動作し、同じパラメータで同じモデルを左右反転してプリントします。</string>
+    <string name="file_detail_backup_mode_name">バックアップモード</string>
+    <string name="file_detail_backup_mode_name_content">使用中のプリントヘッドのフィラメントがなくなると、予備のプリントヘッドでプリントを続行します。</string>
+    <string name="j1_file_details_filament">フィラメント</string>
+    <string name="j1_file_details_nozzle_temp">ノズル温度</string>
+    <string name="j1_file_details_nozzle_diameter">ノズル口径</string>
+    <string name="j1_file_details_heated_bed_temp">ヒートベッドの温度</string>
+    <string name="j1_file_details_estimated_time">推定プリント時間</string>
+    <string name="j1_file_details_disable_dual_extrusion">デュアル押出モデルでは、コピーモード/ミラーモードは使用できません。</string>
+    <string name="j1_file_details_disable_dual_extrusion_for_back_up">デュアル押出モデルでは、バックアップモードは使用できません。</string>
+    <string name="j1_file_details_error_out_of_rang">モデルのプリント領域（予備押出領域を含む）が大きすぎて、コピーモード/ミラーモードを使用できません。</string>
+    <string name="j1_file_details_i_know">OK</string>
+    <string name="j1_file_details_failed_copy_title">コピーに失敗しました</string>
+    <string name="j1_file_details_failed_copy_content">USB メモリが正しく挿入されているか、正常に動作するかを確認してください。</string>
+    <string name="j1_deldete_success">削除完了</string>
+    <string name="j1_copy_success">コピー完了</string>
+    <string name="all_browse_deleting">削除中...</string>
+    <string name="all_browse_copying_to_usb">ファイルをUSBにコピー中...</string>
+    <string name="all_browse_copying_to_local">ファイルをローカルにコピー中...</string>
+    <string name="all_browse_copy_to_usb">USBにコピー</string>
+    <string name="all_browse_copy_to_local">ローカルにコピー</string>
+    <string name="all_browse_usb_not_recognized">USBメモリーが認識できません</string>
+    <string name="all_browse_usb_not_recognized_content">USB メモリを挿入し直すまたは交換してください。\n
+ 考えられる原因：\n
+1. USB メモリのファイルシステムが FAT32 ではない。\n
+2. USB メモリの異常。</string>
+    <string name="all_browse_empty">ファイルがありません</string>
+    <string name="j1_copying_file_msg">%s\n%.2fMB/%.2fMB</string>
+    <string name="j1_update_firmware_mag">ファームウェアをアップデートしますか？</string>
+    <string name="j1_Failed_to_Parse_File_title">ファイルの解析に失敗しました</string>
+    <string name="j1_Failed_to_Parse_File_msg">ファイル形式や内容に誤りがないかをご確認ください。</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/j1_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_layout_16"
+        android:layout_marginEnd="@dimen/margin_layout_16"
+        android:layout_marginBottom="@dimen/margin_layout_16"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/AppTheme.TextTitleSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_24"
+        android:text="Name Your Snapmaker"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        app:layout_constraintStart_toStartOf="@id/view_container"
+        app:layout_constraintTop_toTopOf="@id/view_container" />
+
+    <EditText
+        android:id="@+id/edit_j1_machine_name"
+        android:layout_width="320dp"
+        android:layout_height="52dp"
+        android:background="@drawable/shape_bg_j1_input"
+        android:paddingLeft="@dimen/margin_layout_16"
+        android:paddingRight="@dimen/margin_layout_16"
+        android:maxLength="10"
+        android:layout_marginTop="@dimen/margin_layout_20"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        app:layout_constraintStart_toStartOf="@id/view_container"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <View
+        android:id="@+id/view_bottom_container"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        app:layout_constraintBottom_toBottomOf="@id/view_container"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        app:layout_constraintStart_toStartOf="@id/view_container" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/AppTheme.PrimaryButton"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="@dimen/margin_12dp"
+        android:text="@string/all_save"
+        app:layout_constraintBottom_toBottomOf="@id/view_bottom_container"
+        app:layout_constraintEnd_toEndOf="@id/view_bottom_container"
+        app:layout_constraintTop_toTopOf="@id/view_bottom_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

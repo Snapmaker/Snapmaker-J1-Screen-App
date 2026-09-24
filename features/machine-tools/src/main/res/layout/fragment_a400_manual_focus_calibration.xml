@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/a400_progress_top_bar" />
+
+    <ImageView
+        android:id="@+id/iv_calibration_desc"
+        android:layout_width="479dp"
+        android:layout_height="359dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/grey_600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress" />
+
+    <TextView
+        android:id="@+id/tv_calibration_desc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all_touch_material_title"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@id/iv_calibration_desc"
+        app:layout_constraintTop_toBottomOf="@id/iv_calibration_desc" />
+
+    <View
+        android:id="@+id/v_control_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:background="#212121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_calibration_desc"
+        app:layout_constraintTop_toBottomOf="@id/progress" />
+
+    <RadioGroup
+        android:id="@+id/rg_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_20"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/v_control_bg"
+        app:layout_constraintTop_toTopOf="@id/v_control_bg">
+
+        <RadioButton
+            android:id="@+id/rb_0_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_0_1mm" />
+
+        <RadioButton
+            android:id="@+id/rb_1_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_1mm" />
+
+        <RadioButton
+            android:id="@+id/rb_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_10mm" />
+
+        <RadioButton
+            android:id="@+id/rb_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 mm" />
+    </RadioGroup>
+
+    <fabscreen.platform.core.ui.view.SteeringView
+        android:id="@+id/sv_control_panel_xy"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="@dimen/margin_layout_50"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@id/v_control_bg"
+        app:layout_constraintTop_toBottomOf="@id/rg_step" />
+
+    <Button
+        android:id="@+id/btn_control_panel_z_plus"
+        android:layout_width="@dimen/size_button_80"
+        android:layout_height="@dimen/size_button_80"
+        android:layout_marginBottom="@dimen/margin_layout_20"
+        android:background="@drawable/control_btn_up_background"
+        app:layout_constraintStart_toEndOf="@id/sv_control_panel_xy"
+        app:layout_constraintTop_toTopOf="@id/sv_control_panel_xy" />
+
+    <Button
+        android:id="@+id/btn_control_panel_z_minus"
+        android:layout_width="@dimen/size_button_80"
+        android:layout_height="@dimen/size_button_80"
+        android:layout_marginTop="@dimen/margin_layout_20"
+        android:background="@drawable/control_btn_down_background"
+        app:layout_constraintBottom_toBottomOf="@id/sv_control_panel_xy"
+        app:layout_constraintStart_toStartOf="@id/btn_control_panel_z_plus" />
+
+    <Button
+        android:id="@+id/btn_run_boundary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/control_run_boundary"
+        android:textSize="28sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/v_control_bg"
+        app:layout_constraintStart_toStartOf="@id/v_control_bg" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/AppTheme.Button.BlueButton"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/all_next"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

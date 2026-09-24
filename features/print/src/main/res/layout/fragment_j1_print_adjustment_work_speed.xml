@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_section_detail_normal">
+
+    <RelativeLayout
+        android:id="@+id/rl_j1_print_adjustment"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_control_j1_print_adjustment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_j1_print_adjustment"
+                style="@style/AppTheme.TextExplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/print_work_speed"
+                android:textColor="?attr/theme_color_title_primary" />
+
+            <LinearLayout
+                android:id="@+id/ll_j1_print_adjustment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_j1_print_adjustment"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_layout_4"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_j1_print_adjustment_current"
+                    style="@style/AppTheme.TextTitlePrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    tools:text="100" />
+
+
+                <TextView
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="%"
+                    android:textSize="?attr/theme_font_size_title2" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <fabscreen.platform.core.ui.view.CustomArcSeekBar
+            android:id="@+id/cas_j1_print_adjustment_progress"
+            style="@style/AppTheme.CustomSeekBarTheme"
+            android:layout_width="167dp"
+            android:layout_height="167dp"
+            android:layout_below="@+id/rl_control_j1_print_adjustment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_16"
+            android:padding="20dp"
+            app:max="200" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_gradient_a400_print_model">
+
+    <ImageView
+        android:id="@+id/iv_print_back_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_48dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/ic_print_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_print_back_home"
+        style="@style/AppTheme.TextTitleSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/print_back_main"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/iv_print_back_home"
+        app:layout_constraintStart_toEndOf="@id/iv_print_back_home"
+        app:layout_constraintTop_toTopOf="@id/iv_print_back_home" />
+
+    <View
+        android:id="@+id/v_model_container"
+        android:layout_width="600dp"
+        android:layout_height="408dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_print_back_home" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/pb_print_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:indeterminate="false"
+        app:indicatorColor="#62C864"
+        app:indicatorInset="0dp"
+        app:indicatorSize="102dp"
+        app:layout_constraintEnd_toStartOf="@id/ll_model_info"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/v_model_container"
+        app:layout_constraintTop_toBottomOf="@id/v_model_container"
+        app:trackColor="#6e6e6e"
+        app:trackCornerRadius="3dp"
+        app:trackThickness="6dp"
+        tools:progress="90" />
+
+    <TextView
+        android:id="@+id/tv_a400_print_progress"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/pb_print_progress"
+        app:layout_constraintEnd_toEndOf="@id/pb_print_progress"
+        app:layout_constraintStart_toStartOf="@id/pb_print_progress"
+        app:layout_constraintTop_toTopOf="@id/pb_print_progress"
+        tools:text="90%" />
+
+    <LinearLayout
+        android:id="@+id/ll_model_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/pb_print_progress"
+        app:layout_constraintEnd_toEndOf="@id/v_model_container"
+        app:layout_constraintStart_toEndOf="@id/pb_print_progress"
+        app:layout_constraintTop_toTopOf="@id/pb_print_progress">
+
+        <TextView
+            android:id="@+id/tv_a400_print_filename"
+            style="@style/AppTheme.TextTitleSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxWidth="392dp"
+            android:maxLines="1"
+            android:textStyle="bold"
+            tools:text="Rabbit.gcode" />
+
+        <TextView
+            android:id="@+id/tv_print_remaining_time"
+            style="@style/AppTheme.TextExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#6E6E6E"
+            tools:text="剩余时间：20 d 13h 20m" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_print_base_show"
+        android:layout_width="600dp"
+        android:layout_height="408dp"
+        android:background="@drawable/pic_a400_print_base_show_cnc"
+        app:layout_constraintBottom_toBottomOf="@id/v_model_container"
+        app:layout_constraintEnd_toEndOf="@id/v_model_container"
+        app:layout_constraintStart_toStartOf="@id/v_model_container"
+        app:layout_constraintTop_toTopOf="@id/v_model_container" />
+
+    <ImageView
+        android:id="@+id/iv_print_file_diagram"
+        android:layout_width="378dp"
+        android:layout_height="378dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/demo_print_model1"
+        app:layout_constraintBottom_toBottomOf="@id/v_model_container"
+        app:layout_constraintEnd_toEndOf="@id/v_model_container"
+        app:layout_constraintStart_toStartOf="@id/v_model_container"
+        app:layout_constraintTop_toTopOf="@id/v_model_container" />
+
+    <LinearLayout
+        android:id="@+id/li_print_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="310dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/v_model_container"
+        app:layout_constraintTop_toBottomOf="@+id/iv_print_back_home"
+        tools:minWidth="500dp" />
+
+    <ImageView
+        android:id="@+id/btn_a400_print_pause"
+        android:layout_width="136dp"
+        android:layout_height="136dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/selector_a400_pause_resume"
+        android:padding="34dp"
+        android:src="@drawable/icon_a400_pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/li_print_detail"
+        app:layout_constraintStart_toStartOf="@id/li_print_detail"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/btn_a400_print_resume"
+        android:layout_width="136dp"
+        android:layout_height="136dp"
+        android:background="@drawable/selector_a400_pause_resume"
+        android:padding="34dp"
+        android:src="@drawable/icon_a400_resume"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/btn_a400_print_pause"
+        app:layout_constraintEnd_toEndOf="@id/btn_a400_print_pause"
+        app:layout_constraintStart_toStartOf="@id/btn_a400_print_pause"
+        app:layout_constraintTop_toTopOf="@id/btn_a400_print_pause"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/btn_a400_print_setting"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/img_setting_round_black"
+        android:padding="14dp"
+        android:src="@drawable/icon_setting_68x68"
+        app:layout_constraintBottom_toBottomOf="@id/btn_a400_print_pause"
+        app:layout_constraintEnd_toStartOf="@id/btn_a400_print_pause"
+        app:layout_constraintTop_toTopOf="@id/btn_a400_print_pause" />
+
+    <ImageView
+        android:id="@+id/btn_a400_print_stop"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/img_setting_round_black"
+        android:padding="14dp"
+        android:src="@drawable/icon_a400_stop"
+        app:layout_constraintBottom_toBottomOf="@id/btn_a400_print_pause"
+        app:layout_constraintStart_toEndOf="@id/btn_a400_print_pause"
+        app:layout_constraintTop_toTopOf="@id/btn_a400_print_pause" />
+
+
+    <Button
+        android:id="@+id/btn_wifi"
+        android:layout_width="@dimen/icon_size_68"
+        android:layout_height="@dimen/icon_size_68"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/ic_a400_home_wifi_68x68"
+        app:layout_constraintBottom_toBottomOf="@id/iv_print_back_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_print_back_home" />
+</androidx.constraintlayout.widget.ConstraintLayout>

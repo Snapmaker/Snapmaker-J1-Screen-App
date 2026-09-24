@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/v_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:background="@drawable/shape_bg_section_detail_normal" />
+
+    <RelativeLayout
+        android:id="@+id/rl_j1_z_offset_display"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/v_bg"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_j1_print_z_offset_title"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_10"
+            android:text="@string/j1_print_adjust_z_offset" />
+
+        <ImageView
+            android:id="@+id/iv_z_offset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_j1_print_z_offset_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/placeholder"
+            android:src="@drawable/ic_j1_z_offset" />
+
+        <TextView
+            android:id="@+id/tv_offset_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/iv_z_offset"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/palette_white_athens"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:text="+8.588" />
+
+        <TextView
+            android:id="@+id/tv_j1_print_z_offset_value_mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_z_offset"
+            android:layout_alignBaseline="@id/tv_offset_value"
+            android:layout_toEndOf="@id/tv_offset_value"
+            android:textColor="@color/palette_white_athens"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="mm" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_j1_z_offset_adjustment"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/v_bg"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_z_offset_range"
+            android:layout_width="220dp"
+            android:layout_height="52dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/pic_tab_horizontal_right_440x104"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_range_0_01"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/all_0_0_1mm" />
+
+            <TextView
+                android:id="@+id/tv_range_0_05"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/all_0_05mm" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_z_offset_bed_up"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/ll_z_offset_range"
+            android:layout_marginTop="@dimen/margin_layout_20"
+            android:background="@drawable/selector_j1_round_button_bg"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_j1_z_offset_up" />
+
+        <TextView
+            android:id="@+id/tv_heated_bed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_z_offset_range"
+            android:layout_marginStart="2.5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="2.5dp"
+            android:layout_toStartOf="@id/iv_z_offset_bed_down"
+            android:layout_toEndOf="@id/iv_z_offset_bed_up"
+            android:text="@string/print_heated_bed"
+            android:textColor="#737480"
+            android:textSize="14sp"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/iv_z_offset_bed_down"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/margin_layout_20"
+            android:layout_below="@id/ll_z_offset_range"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/selector_j1_round_button_bg"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_j1_z_offset_down" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

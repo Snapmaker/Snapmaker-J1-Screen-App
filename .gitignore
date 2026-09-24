@@ -1,0 +1,31 @@
+*.iml
+.idea
+.gradle
+/local.properties
+/captures
+.externalNativeBuild
+.cxx
+**/debug/
+**/build/
+**/release/
+
+.DS_Store
+
+*.pyc
+/platform/base/libs/x86_64/
+/platform/base/libs/armeabi-v7a/
+
+# Signing keystores
+*.keystore
+*.jks
+*.p12
+
+# Firebase configuration (contains API keys)
+google-services.json
+
+# Sensitive configuration
+*.env
+keystore.properties
+
+# Log files
+*.log

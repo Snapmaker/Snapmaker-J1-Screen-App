@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_data_monitor"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginBottom="218dp"
+        android:background="@drawable/bg_snap_black_round"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="@dimen/margin_layout_32"
+        android:paddingRight="24dp"
+        android:paddingBottom="@dimen/margin_layout_32"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a400_control_enclosure_temp_monitor"
+            android:textColor="@color/palette_white_pure" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="22dp"
+            android:background="@color/palette_grey_mine_shaft" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/a400_control_enclosure_temp"
+                android:textColor="@color/palette_grey_dim" />
+
+            <TextView
+                android:id="@+id/tv_current_temperature"
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/palette_white_silver" />
+
+            <TextView
+                style="@style/AppTheme.TextExplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_layout_8"
+                android:text="°C"
+                android:textColor="@color/palette_grey_dim" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/a400_control_enclosure_rh"
+                android:textColor="@color/palette_grey_dim" />
+
+            <TextView
+                android:id="@+id/tv_current_humidity"
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/palette_white_silver" />
+
+            <TextView
+                style="@style/AppTheme.TextExplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_layout_8"
+                android:text="%"
+                android:textColor="@color/palette_grey_dim" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="当前干燥时长" />
+
+            <TextView
+                android:id="@+id/tv_cumulative_heating_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="們狀態" />
+
+            <TextView
+                android:id="@+id/tv_door_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_filamanet_dryer_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="@dimen/margin_layout_48"
+        android:background="@drawable/bg_filamanet_dryer_temperature"
+        android:paddingLeft="@dimen/margin_layout_32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_temperature_value"
+            style="@style/AppTheme.TextBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="25°C"
+            android:textColor="@color/palette_white_pure" />
+
+        <ImageView
+            android:id="@+id/iv_temperature_ic"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_temperature_value"
+            android:background="@drawable/ic_down_arrow_136x136" />
+
+    </RelativeLayout>
+
+
+    <fabscreen.platform.core.ui.view.RotateButtonView
+        android:id="@+id/rbv_dry_box_control"
+        android:layout_width="540dp"
+        android:layout_height="540dp"
+        android:layout_marginEnd="@dimen/margin_layout_20"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_goneMarginEnd="@dimen/margin_layout_40"
+        app:srv_textUnitType="h" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rbv_dry_box_control"
+        app:layout_constraintStart_toStartOf="@+id/rbv_dry_box_control"
+        app:layout_constraintTop_toTopOf="@+id/rbv_dry_box_control">
+
+        <TextView
+            android:id="@+id/tv_dry_box_time_title"
+            style="@style/AppTheme.TextExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:text="烘干时间"
+            android:textColor="@color/palette_grey_dim" />
+
+        <TextView
+            android:id="@+id/tv_dry_box_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dry_box_time_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="90dp"
+            android:text="0h 0min"
+            android:textColor="@color/palette_white_pure"
+            android:textSize="84sp" />
+
+        <Button
+            android:id="@+id/btn_dry_box_control_switch"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="228dp"
+            android:layout_height="117dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="90dp"
+            android:background="@drawable/pic_a400_cnc_off_bg"
+            android:textAllCaps="false"
+            android:textColor="@color/palette_white_silver"
+            android:textSize="@dimen/font_size_24sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_no_power_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/palette_grey_nero_transparent_10"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_no_power_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_yellow_warn" />
+
+        <TextView
+            style="@style/AppTheme.TextExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="@string/not_powered"
+            android:textColor="@color/palette_white_pure" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/widget_calibration_control_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/guide_calibration_black_bg">
+
+    <co.ceryle.segmentedbutton.SegmentedButtonGroup
+        android:id="@+id/sbg_control_steps"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:paddingStart="6dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sbg_backgroundColor="@color/palette_black_snapmaker"
+        app:sbg_borderColor="@color/palette_black_snapmaker"
+        app:sbg_borderSize="1px"
+        app:sbg_position="0"
+        app:sbg_radius="@dimen/margin_layout_16"
+        app:sbg_selectorColor="@color/default_theme_primary">
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            app:sb_text="0.02 mm"
+            app:sb_textColor="@color/palette_grey_dim"
+            app:sb_textColor_onSelection="@color/palette_white_pure"
+            app:sb_textSize="24sp" />
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:sb_text="0.1 mm"
+            app:sb_textColor="@color/palette_grey_dim"
+            app:sb_textColor_onSelection="@color/palette_white_pure"
+            app:sb_textSize="24sp" />
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:sb_text="1 mm"
+            app:sb_textColor="@color/palette_grey_dim"
+            app:sb_textColor_onSelection="@color/palette_white_pure"
+            app:sb_textSize="24sp" />
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:sb_text="5 mm"
+            app:sb_textColor="@color/palette_grey_dim"
+            app:sb_textColor_onSelection="@color/palette_white_pure"
+            app:sb_textSize="24sp" />
+
+    </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+
+    <!-- control panel: height expands to fill all height -->
+    <RelativeLayout
+        android:id="@+id/rl_calibration_control_panel"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/guide_cailbration_grey_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sbg_control_steps">
+
+        <RelativeLayout
+            android:layout_width="311dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/btn_calibration_move_up"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/control_btn_up_background" />
+
+            <TextView
+                android:id="@+id/tv_calibration_move_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_layout_5"
+                android:text="Z"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_h3" />
+
+            <Button
+                android:id="@+id/btn_calibration_move_down"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/control_btn_down_background" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

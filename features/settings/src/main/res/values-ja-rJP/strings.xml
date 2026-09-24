@@ -1,0 +1,90 @@
+<resources>
+    <string name="setting_language_simplified_chinese">中国語（簡体）</string>
+    <string name="setting_language_english">英語</string>
+    <string name="setting_language_german">ドイツ語</string>
+    <string name="setting_language_french">フランス語</string>
+    <string name="setting_language_japanese">日本語</string>
+    <string name="setting_center_language_simplified_chinese_native_spell">简体中文</string>
+    <string name="setting_center_language_english_native_spell">English</string>
+    <string name="setting_center_language_german_native_spell">Deutsch</string>
+    <string name="setting_center_language_french_native_spell">Français</string>
+    <string name="setting_center_language_japanese_native_spell">日本語</string>
+    <string name="j1_setting_about_machine_name">機器名</string>
+    <string name="j1_setting_about_machine_model">機器モデル</string>
+    <string name="j1_setting_about_ip_address">IP アドレス</string>
+    <string name="j1_setting_about_mac_address">MAC アドレス</string>
+    <string name="j1_setting_about_storage">容量</string>
+    <string name="j1_setting_sys_logs">システムログ</string>
+    <string name="j1_setting_about_build_volume">ビルドサイズ</string>
+    <string name="j1_setting_about_compliance_certification">コンプライアンス認証</string>
+    <string name="j1_setting_about_compliance_certification_content"><b>FCC Compliance</b>
+        \n\nThis device complies with part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation.
+        \n\n<b>Note</b>: This equipment has been tested and found to comply with the limits for a Class B digital device, pursuant to part 15 of the FCC Rules. These limits are designed to provide reasonable protection against harmful interference in a residential installation.
+        This equipment generates, uses and can radiate radio frequency energy and, if not installed and used in accordance with the instructions, may cause harmful interference to radio communications. However, there is no guarantee that interference will not occur in a particular installation.
+        \n\nIf this equipment does cause harmful interference to radio or television reception, which can be determined by turning the equipment off and on, the user is encouraged to try to correct the interference by one or more of the following measures:
+        \n- Reorient or relocate the receiving antenna.
+        \n- Increase the separation between the equipment and receiver.
+        \n- Connect the equipment into an outlet on a circuit different from that to which the receiver is connected.
+        \n- Consult the dealer or an experienced radio/TV technician for help.
+        \n\n<b>Caution</b>: Changes or Modifications not expressly approved by the party responsible for compliance could void the user’s authority to operate the equipment.
+        \n\n<b>FCC Radiation Exposure Statement</b>: This equipment complies with FCC radiation exposure limits set forth for an uncontrolled environment. This equipment should be installed and operated with a minimum distance of 20 cm between the radiator and your body.
+
+        \n\n<b>ISEDC Compliance</b>
+        \n\nThis device contains license-exempt transmitter(s)/receiver(s) that comply with Innovation, Science and Economic Development Canada’s license-exempt RSS(s). Operation is subject to the following two conditions:
+        \n(1) This device may not cause interference.
+        \n(2) This device must accept any interference, including interference that may cause undesired operation of the device.
+        \n\nThis device complies with RF exposure guidelines, users can obtain Canadian information on RF exposure and compliance. The minimum distance from the body to use the device is 20cm.
+        \n\nL’émetteur/récepteur exempt de licence contenu dans le présent appareil est conforme aux CNR d’Innovation, Sciences et Développement économique Canada applicables aux appareils radio exempts de licence. L’exploitation est autorisée aux deux conditions suivantes :
+        \n(1) L’appareil ne doit pas produire de brouillage
+        \n(2) L’appareil doit accepter tout brouillage radioélectrique subi, même si le brouillage est susceptible d’en compromettre le fonctionnement.
+        \n\nLe présent appareil est conforme. Après examen de ce matériel aux conformité ou aux limites d’intensité de champ RF, les utilisateurs peuvent sur l’exposition aux radiofréquences et la conformité and compliance d’acquérir les informations correspondantes. La distance minimale du corps à utiliser le dispositif est de 20cm.
+    </string>
+    <string name="j1_setting_about_clear_cache">タッチスクリーンデータを削除</string>
+    <string name="j1_settting_about_clean_cache">タッチスクリーンデータを削除しますか（メインボードデータは残します）？削除後、ウィザードプロセスを再度実行する必要があります。</string>
+    <string name="j1_setting_general_basic">ベーシック</string>
+    <string name="j1_setting_general_wizard">ウィザード</string>
+    <string name="j1_setting_general_advanced">高度</string>
+    <string name="j1_setting_general_extruder_left">フィラメント切れ検知 - 左プリントヘッド</string>
+    <string name="j1_setting_general_extruder_right">フィラメント切れ検知 - 右プリントヘッド</string>
+    <string name="j1_setting_general_light">照明</string>
+    <string name="j1_setting_general_home_stall_detection">ホーミングブロック検出</string>
+    <string name="j1_setting_general_factory_reset">初期設定に戻す</string>
+    <string name="j1_setting_general_factory_factory_reset_content">すべてのデータとローカルファイルを削除して、工場出荷時設定にリセットしてもよろしいですか？</string>
+    <string name="j1_setting_about_usb_flash_drive">USB フラッシュドライブ</string>
+    <string name="j1_setting_machine_settings">マシン設定</string>
+    <string name="j1_settings_user_experience_program">ユーザーエクスペリエンス向上プログラム</string>
+    <string name="j1_settings_user_experience_program_content">Snapmaker ユーザーの皆様へ
+\nSnapmaker は、ユーザーの期待を超える製品とサービスを提供することに常に取り組んでいます。お客様のニーズをよりよく理解し、製品の品質とサービスを向上させるために、 Snapmaker はユーザーエクスペリエンス向上プログラムへの参加をお願いしています。ユーザーエクスペリエンス向上プログラムへの参加に同意される場合は、この規約をよく読み、完全に同意したことを意味します（未成年者は保護者同伴で読む必要があります）。 Snapmaker は、製品の改善に伴いこの規約を随時更新する場合があります。変更がある場合は製品または関連ページにてお知らせします。そのような変更を受け入れない場合、いつでも本プログラムを解約できます。また、引き続き参加される方は変更に同意したことになります。
+
+ \n\n<b>情報収集</b>
+ \nユーザーエクスペリエンス向上プログラムへの参加に同意すると、Snapmaker は製品とサービス改善のため、匿名化されたデバイス情報と使用情報を定期的に収集します。
+ \nユーザーエクスペリエンス向上プログラムでは、Snapmaker はユーザーに関する下記の情報のみを収集します。
+  \n1. 機器のオペレーティングシステムとファームウェアのバージョン
+ \n2. 環境設定
+  \n3. Gコードファイルの内容の詳細と印刷パラメーター
+ \n4. 操作時の特定の行動データ（クリック、スライド、追加、削除など）
+
+ \n\n<b>情報の使用</b>
+ \nSnapmaker は、関連する法令を遵守することを約束し、製品やサービスを改善の目的においてのみ情報を収集します。当社はお客様のプライバシーを十分に尊重し、ユーザーエクスペリエンス向上プログラムで提供された情報をプライバシー規約に厳密に従って処理します。 Google アナリティクスを使用します（Google アナリティクスは『一般データ保護規則』に準拠しています）。 IP 匿名化の制限に従い、お客様の IP アドレス、データ、およびその他の情報を独自に取得または追跡することはありません。
+
+ \n\n<b>プログラムの解約</b>
+ \nSnapmaker ユーザーエクスペリエンス向上プログラムへの参加または解約は、<b>設定</b> > <b>利用規約</b>からいつでも行うことができます。解約後は、【情報収集】に記載された情報は一切収集いたしません。</string>
+    <string name="j1_setting_update_network_abnormal">ネットワーク異常</string>
+    <string name="j1_setting_update_firmware_downloaded">最新バージョンです</string>
+    <string name="j1_setting_update_already_latest">ファームウェアがダウンロード済</string>
+    <string name="j1_setting_update_unable_t_check_for_update">アップデートを確認できません</string>
+    <string name="j1_setting_update_unable_t_check_for_update_content">プリンターがインターネットに接続されていないため、ファームウェアのアップデートを確認できません。</string>
+    <string name="j1_usb_flash_drive_first_msg">先に USB メモリを挿入してください。</string>
+    <string name="j1_delete">削除</string>
+    <string name="j1_log_exported">エクスポート済</string>
+    <string name="j1_usb_exporting">エクスポート中...</string>
+    <string name="s30_logs_export">エクスポート</string>
+    <string name="all_vibration_compensation">振動補償</string>
+    <string name="all_compensation_frequency">補償頻度</string>
+    <string name="j1_settings_vibration_compensation_desc">この機能を有効にすると、プリント時に本体から発生する振動を抑えプリント品質を向上させることができます。</string>
+    <string name="all_freq_hz_value">%d Hz</string>
+    <string name="j1_set_vibration_compensation_value_alert_content">補正頻度を変更してもよろしいですか？</string>
+    <string name="j1_vibration_compensation_enabled">有効</string>
+    <string name="j1_vibration_compensation_disabled">無効</string>
+    <string name="j1_settings_vibration_freq_value_invalid_altert">[%1$d–%2$d] 範囲内の整数を入力してください。</string>
+</resources>

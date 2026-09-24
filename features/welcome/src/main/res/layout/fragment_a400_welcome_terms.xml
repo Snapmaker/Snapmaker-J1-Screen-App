@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_welcome_terms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_welcome_terms_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_48"
+        android:text="@string/j1_user_experience_improvement_program_title"
+        android:textColor="@color/palette_white_silver"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/sl_welcome_terms"
+        android:layout_width="930dp"
+        android:layout_height="496dp"
+        android:layout_marginTop="@dimen/margin_layout_32"
+        android:background="@drawable/a400_shape_bg_terms_and_conditions_print"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome_terms_title">
+
+        <TextView
+            android:id="@+id/tv_welcome_terms_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_layout_5"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="@dimen/margin_layout_48"
+            android:text="@string/settings_terms_content"
+            android:textAlignment="textStart"
+            android:textColor="@color/default_theme_title"
+            android:textSize="24sp" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_welcome_terms_agree"
+        style="@style/AppTheme.PrimaryButton"
+        android:layout_width="292dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="@dimen/margin_layout_48"
+        android:background="@drawable/a400_select_shape_welcome_hello_btn"
+        android:text="@string/j1_user_experience_improvement_program_confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sl_welcome_terms" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

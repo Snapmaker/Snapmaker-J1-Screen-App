@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<resources>
+    <string name="home_content">Bildschirm berühren, um eine Datei auszuwählen</string>
+    <string name="all_j1_can_not_connect">Das System konnte keine Daten vom Mainboard empfangen. Bitte kontaktiere unseren Support unter support@snapmaker.com.</string>
+    <string name="j1_home_tip">Tippe auf den Bildschirm, um eine Datei auszuwählen</string>
+    <string name="j1_home_control">Steuerung</string>
+    <string name="j1_home_calibration">Kalibrierung</string>
+    <string name="j1_home_settings">Einstellungen</string>
+</resources>

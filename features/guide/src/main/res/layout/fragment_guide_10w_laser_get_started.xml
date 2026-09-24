@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_theme_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="115dp"
+        android:src="@drawable/ic_guide_10w_setup_completed" />
+
+    <TextView
+        android:id="@+id/tv_guide_a400_10w_laser_title"
+        style="@style/AppTheme.TextTitlePrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_32"
+        android:text="Setup Completed"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_guide_a400_10w_laser_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_16"
+        android:text="Next, you need to proceed with the following processes to initialize the 10W Laser Module."
+        android:textColor="@color/palette_grey_dim"
+        android:textSize="@dimen/font_size_24sp" />
+
+    <RelativeLayout
+        android:layout_width="437dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="@dimen/margin_layout_32"
+        android:background="@drawable/fg_black_round_bg"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_guide_a400_10w_laser_thickness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_layout_24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view_guide_a400_10w_laser_thickness"
+                android:layout_width="@dimen/margin_layout_12"
+                android:layout_height="@dimen/margin_layout_12"
+                android:layout_marginRight="@dimen/margin_layout_12"
+                android:background="@drawable/selector_guide_procedure_indicator" />
+
+            <TextView
+                android:id="@+id/tv_guide_a400_10w_laser_thickness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thickness M. Calibration"
+                android:textColor="@color/selector_guide_procedure_text_color"
+                android:textSize="@dimen/font_size_24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_guide_a400_10w_laser_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin_guide_a400_10w_laser_thickness"
+            android:layout_marginTop="@dimen/margin_layout_16"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view_guide_a400_10w_laser_camera"
+                android:layout_width="@dimen/margin_layout_12"
+                android:layout_height="@dimen/margin_layout_12"
+                android:layout_marginRight="@dimen/margin_layout_12"
+                android:background="@drawable/selector_guide_procedure_indicator" />
+
+            <TextView
+                android:id="@+id/tv_guide_a400_10w_laser_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera Calibration"
+                android:textColor="@color/selector_guide_procedure_text_color"
+                android:textSize="@dimen/font_size_24sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_guide_10w_laser_get_started_next"
+        style="@style/AppTheme.Button.BlueButton"
+        android:layout_width="292dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="@dimen/margin_layout_48"
+        android:text="Start"
+        android:textColor="@color/palette_white_pure"
+        android:textSize="@dimen/font_size_28sp" />
+
+</LinearLayout>

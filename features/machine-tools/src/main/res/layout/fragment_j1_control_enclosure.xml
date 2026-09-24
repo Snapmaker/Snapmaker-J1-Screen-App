@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_more_settings"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="@dimen/margin_layout_32"
+        android:layout_marginEnd="@dimen/margin_layout_48"
+        android:background="@drawable/ic_a400_control_setting_136x136"
+        android:paddingTop="@dimen/margin_layout_32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_enclosure"
+        android:layout_width="532dp"
+        android:layout_height="472dp"
+        android:layout_marginTop="@dimen/margin_layout_64"
+        android:background="@drawable/pic_enclosure_1064x944"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_door_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="外罩门状态:开启" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+    <!--    select_control_fan-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_layout_40"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gl_vertical">
+
+        <Button
+            android:id="@+id/btn_led_strip"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/select_control_led" />
+
+        <TextView
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_led_strip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_12"
+            android:text="@string/enclosure_led_strip" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_40"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gl_vertical">
+
+        <Button
+            android:id="@+id/btn_fan"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/select_control_fan" />
+
+        <TextView
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_fan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_12"
+            android:text="@string/enclosure_cooling_fan" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

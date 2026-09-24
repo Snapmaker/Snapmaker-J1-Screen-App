@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingDefaultResource">
+    <item android:color="@color/palette_grey_mid" android:state_enabled="false"></item>
+    <item android:color="@color/palette_grey_storm" android:state_pressed="true"></item>
+    <item android:color="@color/palette_grey_french" />
+</selector>

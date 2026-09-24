@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_print_model"
+        android:layout_width="352dp"
+        android:layout_height="352dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/v_bottom_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/demo_print_model1" />
+
+    <View
+        android:id="@+id/v_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:background="@drawable/shape_bg_home_print_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/cpi_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:indeterminate="false"
+        app:indicatorColor="#62C864"
+        app:indicatorInset="0dp"
+        app:indicatorSize="102dp"
+        app:layout_constraintBottom_toBottomOf="@id/v_bottom_container"
+        app:layout_constraintStart_toStartOf="@id/v_bottom_container"
+        app:layout_constraintTop_toTopOf="@id/v_bottom_container"
+        app:trackColor="#6e6e6e"
+        app:trackCornerRadius="3dp"
+        app:trackThickness="6dp"
+        tools:progress="90" />
+
+    <TextView
+        android:id="@+id/tv_progress"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/cpi_progress"
+        app:layout_constraintEnd_toEndOf="@id/cpi_progress"
+        app:layout_constraintStart_toStartOf="@id/cpi_progress"
+        app:layout_constraintTop_toTopOf="@id/cpi_progress"
+        tools:text="90%" />
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        style="@style/AppTheme.TextTitleSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_remain_time"
+        app:layout_constraintStart_toEndOf="@id/cpi_progress"
+        app:layout_constraintTop_toTopOf="@id/cpi_progress"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Rabbit.gcode" />
+
+
+    <TextView
+        android:id="@+id/tv_remain_time"
+        style="@style/AppTheme.TextExplain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="?attr/theme_color_body_secondary1"
+        app:layout_constraintBottom_toBottomOf="@id/cpi_progress"
+        app:layout_constraintStart_toStartOf="@id/tv_file_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_file_name"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="距离打印完成还剩34分钟" />
+
+    <ImageView
+        android:id="@+id/iv_arrow_right"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/icon_a400_arrow_right"
+        app:layout_constraintBottom_toBottomOf="@id/v_bottom_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/v_bottom_container" />
+
+    <TextView
+        style="@style/AppTheme.TextBody2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"
+        android:textColor="?attr/theme_color_title_primary"
+        app:layout_constraintBottom_toBottomOf="@id/v_bottom_container"
+        app:layout_constraintEnd_toStartOf="@id/iv_arrow_right"
+        app:layout_constraintTop_toTopOf="@id/v_bottom_container" />
+
+    <ImageButton
+        android:id="@+id/ib_stop"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/selector_bg_a400_home_print_stop"
+        android:src="@drawable/icon_a400_stop"
+        android:tint="@color/selector_print_stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseAppTint" />
+
+    <ImageButton
+        android:id="@+id/ib_pause"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="@drawable/selector_a400_pause_resume"
+        android:padding="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_a400_pause"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/ib_stop"
+        app:layout_constraintEnd_toEndOf="@id/ib_stop"
+        app:layout_constraintStart_toStartOf="@id/ib_stop"
+        app:layout_constraintTop_toTopOf="@id/ib_stop" />
+
+    <ImageButton
+        android:id="@+id/ib_resume"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/selector_a400_pause_resume"
+        android:padding="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_a400_resume"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/ib_stop"
+        app:layout_constraintEnd_toStartOf="@id/ib_stop"
+        app:layout_constraintTop_toTopOf="@id/ib_stop" />
+</androidx.constraintlayout.widget.ConstraintLayout>

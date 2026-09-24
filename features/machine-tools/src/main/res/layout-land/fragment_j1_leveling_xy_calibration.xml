@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/widget_top_bar_j1_back_only"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/fg_bg_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/preparation"
+            android:textAppearance="@style/preparation" />
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:text="确保 PEI 玻璃平台已安装在热床之上。"
+            android:textAppearance="@style/remove_the_" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_below="@id/iv_1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:text="进行 Z 轴偏移校准。"
+            android:textAppearance="@style/remove_the_" />
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_below="@id/iv_2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:text="清洁喷嘴，确保无残留物。"
+            android:textAppearance="@style/remove_the_" />
+
+        <ImageView
+            android:id="@+id/iv_4"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_below="@id/iv_3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:text="在左、右打印头中装载颜色对比明显的耗材（建议使用白色和红色耗材）。"
+            android:textAppearance="@style/remove_the_" />
+
+        <TextView
+            android:id="@+id/bt_leveling_xy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_4"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:text="装料              >"
+            android:textAppearance="@style/remove_the_"
+            android:textColor="#FF8A00" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/shape_bg_section_detail_normal" />
+
+        <CheckBox
+            android:id="@+id/cb_check_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="20dp"
+            android:text="所有准备已完成。"
+            android:textColor="#C4C5CC"
+            android:theme="@style/MyCheckBox" />
+
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/AppTheme.Button.BlueButton"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="501dp"
+            android:layout_marginTop="258dp"
+            android:text="Next"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

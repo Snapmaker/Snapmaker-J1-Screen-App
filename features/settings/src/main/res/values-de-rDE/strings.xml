@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<resources>
+    <string name="setting_language_simplified_chinese">Chinesisch\n(vereinfacht)</string>
+    <string name="setting_language_english">Englisch</string>
+    <string name="setting_language_german">Deutsch</string>
+    <string name="setting_language_french">Französisch</string>
+    <string name="setting_language_japanese">Japanisch</string>
+    <string name="setting_center_language_simplified_chinese_native_spell">简体中文</string>
+    <string name="setting_center_language_english_native_spell">English</string>
+    <string name="setting_center_language_german_native_spell">Deutsch</string>
+    <string name="setting_center_language_french_native_spell">Français</string>
+    <string name="setting_center_language_japanese_native_spell">日本語</string>
+    <string name="j1_setting_about_machine_name">Gerätename</string>
+    <string name="j1_setting_about_machine_model">Gerätemodell</string>
+    <string name="j1_setting_about_ip_address">IP-Adresse</string>
+    <string name="j1_setting_about_mac_address">MAC-Adresse</string>
+    <string name="j1_setting_about_storage">Speicher</string>
+    <string name="j1_setting_sys_logs">System-Logdateien</string>
+    <string name="j1_setting_about_build_volume">Druckvolumen</string>
+    <string name="j1_setting_about_compliance_certification">Konformitätserklärung</string>
+    <string name="j1_setting_about_compliance_certification_content"><b>FCC-Konformität</b>
+\n\nDieses Gerät entspricht Teil 15 der FCC-Bestimmungen. Der Betrieb unterliegt den folgenden zwei Bedingungen: (1) Dieses Gerät darf keine schädlichen Störungen verursachen, und (2) dieses Gerät muss alle empfangenen Störungen tolerieren, einschließlich etwaiger Störungen die einen unerwünschten Betrieb verursachen.
+\n\n<b>Hinweis</b>: Dieses Gerät wurde getestet und entspricht den Grenzwerten für ein digitales Gerät der Klasse B gemäß Teil 15 der FCC-Bestimmungen. Diese Grenzwerte sollen einen angemessenen Schutz gegen schädliche Interferenz in einer Wohnanlage bieten.
+Dieses Gerät erzeugt, verwendet und kann Hochfrequenzenergie ausstrahlen und kann, wenn es nicht gemäß den Anweisungen installiert und verwendet wird, schädliche Störungen des Funkverkehrs verursachen. Es gibt jedoch keine Garantie dafür, dass bei einer bestimmten Installation keine Störungen auftreten.
+\n\nWenn dieses Gerät schädliche Interferenzen beim Radio- oder Fernsehempfang verursacht, was durch Ein- und Ausschalten des Geräts festgestellt werden kann, wird dem Benutzer empfohlen zu versuchen, die Interferenz durch eine oder mehrere der folgenden Maßnahmen zu beheben:
+\n- Richten Sie die Empfangsantenne neu aus oder positionieren Sie sie neu.
+\n- Erhöhen Sie den Abstand zwischen dem Gerät und dem Empfänger.
+\n- Verbinden Sie das Gerät mit einer Steckdose in einem anderen Stromkreis als dem, an den der Empfänger angeschlossen ist.
+\n- Wenden Sie sich an den Händler oder einen erfahrenen Radio-/Fernsehtechniker, um Hilfe zu erhalten.
+\n\n<b>Achtung</b>: Änderungen oder Modifikationen, die nicht ausdrücklich von der für die Konformität verantwortlichen Partei genehmigt wurden, können die Berechtigung des Benutzers zum Betrieb des Geräts aufheben.
+\n\n<b>FCC-Erklärung zur Strahlenbelastung</b>: Dieses Gerät entspricht den FCC-Grenzwerten zur Strahlenbelastung, die für eine unkontrollierte Umgebung festgelegt wurden. Dieses Gerät sollte mit einem Mindestabstand von 20cm zwischen dem Strahler und Ihrem Körper installiert und betrieben werden.
+
+\n\n<b>ISEDC-Konformität</b>
+\n\nDieses Gerät enthält lizenzfreie Sender/Empfänger, die der Innovation, Science and Economic Development Canada Lizenzbefreiung RSS(s) entsprechen. Der Betrieb unterliegt den folgenden zwei Bedingungen:
+\n(1) Dieses Gerät darf keine Störungen verursachen.
+\n(2) Dieses Gerät muss alle Interferenzen tolerieren, einschließlich Interferenzen, die einen unerwünschten Betrieb des Geräts verursachen können.
+\n\nDieses Gerät entspricht den Richtlinien zur HF-Belastung, Benutzer können kanadische Informationen zur HF-Belastung und deren Einhaltung erhalten. Der Mindestabstand zum Körper zur Verwendung des Geräts beträgt 20 cm.
+\n\nL’émetteur/récepteur exempt de licence contenu dans le présent appareil est conforme aux CNR d’Innovation, Sciences et Développement économique Canada applicables aux appareils radio exempts de licence. L’exploitation est autorisée aux deux conditions suivantes :
+\n(1) L’appareil ne doit pas produire de brouillage
+\n(2) L’appareil doit accepter tout brouillage radioélectrique subi, même si le brouillage est susceptible d’en compromettre le fonctionnement.
+\n\nLe présent appareil est conforme. Après examen de ce matériel aux conformité ou aux limites d’intensité de champ RF, les utilisateurs peuvent sur l’exposition aux radiofréquences et la conformité and compliance d’acquérir les informations correspondantes. La distance minimale du corps à utiliser le dispositif est de 20cm.
+    </string>
+    <string name="j1_setting_about_clear_cache">Touchscreen-Daten löschen</string>
+    <string name="j1_settting_about_clean_cache">Willst du die Touchscreen-Daten löschen? Die Mainboard-Daten bleiben dabei erhalten. Du musst den Konfigurations-Assistenten nach dem Löschen erneut ausführen.</string>
+    <string name="j1_setting_general_basic">Wesentlich</string>
+    <string name="j1_setting_general_wizard">Konfigurations-Assistent</string>
+    <string name="j1_setting_general_advanced">Erweitert</string>
+    <string name="j1_setting_general_extruder_left">Filament-Auslauf-Erkennung—Extruder L</string>
+    <string name="j1_setting_general_extruder_right">Filament-Auslauf-Erkennung—Extruder R</string>
+    <string name="j1_setting_general_light">Beleuchtung</string>
+    <string name="j1_setting_general_home_stall_detection">Kollisionserkennung</string>
+    <string name="j1_setting_general_factory_reset">Zurücksetzen auf Werkseinstellungen</string>
+    <string name="j1_setting_general_factory_factory_reset_content">Willst du wirklich alle Daten und lokalen Dateien löschen und die Werkseinstellungen wiederherstellen?</string>
+    <string name="j1_setting_about_usb_flash_drive">USB-Stick</string>
+    <string name="j1_setting_machine_settings">Geräteeinstellungen</string>
+    <string name="j1_settings_user_experience_program">Programm zur Verbesserung der Benutzererfahrung</string>
+    <string name="j1_settings_user_experience_program_content">Liebe Nutzer von Snapmaker,
+\nProdukte bereitzustellen, welche die Erwartungen der Benutzer übertreffen, war schon immer das Ziel von Snapmaker. Um uns dabei zu unterstützen, Ihre Bedürfnisse optimal zu erfüllen und die Produktqualität und Dienstleistungen zu verbessern, lädt Snapmaker Sie herzlich dazu ein, an unserem Programm zur Verbesserung der Benutzererfahrung (kurz UEIP) teilzunehmen, und bittet Sie, die folgende Erklärung zu lesen. Die Zustimmung zur Teilnahme an unserem UEIP bedeutet, dass Sie diese Erklärung sorgfältig gelesen haben und ihr vollständig zustimmen (Minderjährige sollten diese im Beisein ihrer Erziehungsberechtigten lesen). Snapmaker weist sie darauf hin, dass diese Erklärung im Zuge der Produktverbesserung von Zeit zu Zeit geändert werden kann. Bei Änderungen werden wir diese an prominenter Stelle auf den Produkten oder relevanten Seiten anzeigen, um Sie darüber zu informieren. Wenn Sie die Änderungen nicht akzeptieren, haben Sie das Recht, sich jederzeit vom UEIP abzumelden; ein Verbleib im Programm wird als Zustimmung zu solchen Änderungen angesehen.
+
+\n\n<b>Informationserfassung</b>
+\nSobald Sie Ihre Zustimmung zur Teilnahme am Programm gegeben haben, werden Informationen über Ihr Gerät und darüber wie Sie es verwenden, anonym und regelmäßig gesammelt und an Snapmaker gesendet, und dazu verwendet, unsere Produkte und Dienstleistungen zu verbessern.
+Die am Programm teilnehmenden Nutzer übermitteln lediglich folgende Daten an Snapmaker:
+\n1. Das Betriebssystem und die Firmware-Version des Geräts
+\n2. Einstellungspräferenzen
+\n3. Details zu G-Code-Dateien und Druckparametern
+\n4. Spezifische Verhaltensdaten bei Interaktionen mit dem Gerät (wie Tippen, Wischen, Hinzufügen, Löschen usw.)
+
+\n\nDie gesammelten Informationen im Programm beziehen sich nicht auf Ihre persönliche Identität, einschließlich Name, Geschlecht, Alter, Adresse, Telefonnummer, Benutzername, Passwort etc.
+
+\n\n<b>Informationsnutzung</b>
+\nSnapmaker verspricht hiermit, dass wir uns an die einschlägigen Gesetze und Vorschriften halten und die gesammelten Informationen nur zur Verbesserung von Produkten und Dienstleistungen verwenden werden. Wir respektieren Ihre Privatsphäre voll und ganz und die vom Snapmaker-Programm zur Verbesserung der Benutzerfreundlichkeit gesammelten Informationen werden in Übereinstimmung mit unserer Datenschutzrichtlinie behandelt. Wir verwenden Google Analytics (Google Analytics entspricht der Datenschutz-Grundverordnung). Aufgrund der IP-Anonymisierungsfunktion werden und können wir Ihre IP-Adresse, Daten usw. nicht unabhängig erfassen oder verfolgen.
+
+\n\n<b>Abmeldung vom Programm</b>
+\nSie können dem Programm zur Verbesserung der Benutzerfreundlichkeit von Snapmaker jederzeit im Menü <b>Einstellungen</b> > <b>Nutzungsbedingungen</b> beitreten oder die Teilnahme beenden. Nachdem Sie sich von diesem Programm abgemeldet haben, erfassen wir keine Daten mehr, die im Abschnitt „Informationserfassung“ erwähnt werden.</string>
+    <string name="j1_setting_update_network_abnormal">Netzwerkfehler</string>
+    <string name="j1_setting_update_firmware_downloaded">Firmware heruntergeladen</string>
+    <string name="j1_setting_update_already_latest">Bereits aktuell</string>
+    <string name="j1_setting_update_unable_t_check_for_update">Suche nach Update nicht möglich</string>
+    <string name="j1_setting_update_unable_t_check_for_update_content">Eine Suche nach Firmware-Updates war nicht möglich, da das Gerät nicht mit dem Internet verbunden ist.</string>
+    <string name="j1_usb_flash_drive_first_msg">Bitte stecke zuerst einen USB-Stick ein.</string>
+    <string name="j1_about_lava_can_not_connect_msg"></string>
+    <string name="j1_delete">Löschen</string>
+    <string name="j1_log_exported">Exportiert</string>
+    <string name="j1_usb_exporting">Exportiere...</string>
+    <string name="s30_logs_export">Export</string>
+    <string name="all_vibration_compensation">Vibrationskompensation</string>
+    <string name="all_compensation_frequency">Kompensationsfrequenz</string>
+    <string name="j1_settings_vibration_compensation_desc">Die Vibrationskompensation kann die Vibrationen und Erschütterungen des Geräts reduzieren und somit die Druckqualität verbessern.</string>
+    <string name="all_freq_hz_value">%d Hz</string>
+    <string name="j1_set_vibration_compensation_value_alert_content">Möchtest du die Kompensationsfrequenz wirklich ändern?</string>
+    <string name="j1_vibration_compensation_enabled">Aktiviert</string>
+    <string name="j1_vibration_compensation_disabled">Deaktiviert</string>
+    <string name="j1_settings_vibration_freq_value_invalid_altert">Du musst eine ganze Zahl im Bereich [%1$d–%2$d] eingeben.</string>
+</resources>

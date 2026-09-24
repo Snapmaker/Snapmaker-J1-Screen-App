@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">J1</string>
+
+    <!--A400-->
+    <string name="file_detail_dialog_inconsistent_tool_head_title">执行头不一致</string>
+    <string name="file_detail_dialog_inconsistent_tool_head_3dp_warm_tip">文件：双挤出模组/单挤出模组\n机器：单挤出模组/双挤出模组</string>
+    <string name="file_detail_dialog_inconsistent_tool_head_cnc_warm_tip">文件：200W CNC 模组/50W CNC 模组\n机器：50W CNC 模组/200W CNC 模组</string>
+    <string name="file_detail_dialog_inconsistent_tool_head_laser_warm_tip">文件：1600mW 激光模组/10W 激光模组\n机器：10W 激光模组/1600mW 激光模组</string>
+    <string name="file_detail_dialog_inconsistent_tool_head_message">G 代码文件中的执行头类型与机器装配的不一致，可能会造成异常，是否要继续打印？</string>
+    <string name="file_detail_dialog_inconsistent_nozzle_diameter_title">喷嘴直径不一致</string>
+    <string name="file_detail_dialog_inconsistent_nozzle_diameter_warm_tip">文件：左喷嘴-{喷嘴直径}   右喷嘴-{喷嘴直径}\n机器：左喷嘴-{喷嘴直径}   右喷嘴-{喷嘴直径}</string>
+    <string name="file_detail_dialog_inconsistent_nozzle_diameter_message">G 代码文件中的喷嘴直径与机器装配的不一致，可能会造成异常，是否要继续打印？</string>
+
+    <string name="a440_file_return_to_previous_menu">返回上一级</string>
+    <string name="file_manager_a400_procedure_start_confirm_dialog_title">%s即将开始</string>
+    <string name="file_manager_a400_procedure_start_confirm_dialog_content_3dp">请清理打印平台和喷嘴，然后点击<b>下一步</b>。</string>
+    <string name="A400_copy_success">已复制</string>
+    <string name="a400_browse_copy_error">复制失败</string>
+    <string name="a400_browse_delete_error">删除失败</string>
+    <string name="a400_delete_success">已删除</string>
+
+    <!--  J1-->
+    <!-- file management-->
+    <string name="j1_file_usb_flash_drive_not_recognized_title">无法识别 U 盘</string>
+    <string name="j1_file_empty">暂无文件</string>
+    <string name="j1_file_usb_flash_drive_not_recognized_content">请重新插入或更换 U 盘。\n可能原因：\n1. U 盘的文件系统不是 FAT32。\n2. U 盘异常。</string>
+    <string name="j1_file_date_ascending">按时间升序</string>
+    <string name="j1_file_date_descending">按时间降序</string>
+    <string name="j1_file_name_ascending">按文件名升序</string>
+    <string name="j1_file_name_descending">按文件名降序</string>
+
+    <!-- file detail-->
+    <string name="file_detail_standard_mode_name">默认模式</string>
+    <string name="file_detail_standard_mode_name_content">机器将按照你在切片时设置的参数和打印模式进行打印。</string>
+    <string name="file_detail_copy_mode_name">复制模式</string>
+    <string name="file_detail_copy_mode_name_content">左、右打印头同时工作，以同样的参数打印完全相同的模型。</string>
+    <string name="file_detail_mirror_mode_name">镜像模式</string>
+    <string name="file_detail_mirror_mode_name_content">左、右打印头同时工作，以同样的参数打印左右反转的相同模型。</string>
+    <string name="file_detail_backup_mode_name">备用模式</string>
+    <string name="file_detail_backup_mode_name_content">当工作打印头断料时，机器将使用备用打印头继续打印。</string>
+    <string name="j1_file_details_filament">耗材</string>
+    <string name="j1_file_details_nozzle_temp">喷嘴温度</string>
+    <string name="j1_file_details_nozzle_diameter">喷嘴口径</string>
+    <string name="j1_file_details_heated_bed_temp">热床温度</string>
+    <string name="j1_file_details_estimated_time">预估时间</string>
+    <string name="j1_file_details_disable_dual_extrusion">双挤出模型无法使用复制或镜像模式。</string>
+    <string name="j1_file_details_disable_dual_extrusion_for_back_up">双挤出模型无法使用备用模式。</string>
+    <string name="j1_file_details_error_out_of_rang">模型的打印区域（包含预挤出区域）过大，无法使用复制或镜像模式。</string>
+    <string name="j1_file_details_i_know">我知道了</string>
+    <string name="j1_file_details_failed_copy_title">复制失败</string>
+    <string name="j1_file_details_failed_copy_content">请检查 U 盘是否正确插入，以及能否正常工作。</string>
+    <string name="j1_deldete_success">删除成功</string>
+    <string name="j1_copy_success">复制成功</string>
+    <string name="all_browse_deleting">刪除中...</string>
+    <string name="all_browse_copying_to_usb">复制文件至 U 盘中...</string>
+    <string name="all_browse_copying_to_local">复制文件至本地中...</string>
+    <string name="all_browse_copy_to_usb">复制至 USB</string>
+    <string name="all_browse_copy_to_local">复制至本地</string>
+    <string name="all_browse_usb_not_recognized">无法识别 U 盘</string>
+    <string name="all_browse_usb_not_recognized_content">请重新插入或更换 U 盘。\n
+可能原因：\n
+1. U 盘的文件系统不是 FAT32。\n
+2. U 盘异常。
+</string>
+    <string name="all_browse_empty">暂无文件</string>
+    <string name="j1_copying_file_msg">%s\n%.2fMB/%.2fMB</string>
+    <string name="j1_update_firmware_mag">你想要更新固件吗？</string>
+    <string name="j1_Failed_to_Parse_File_title">无法解析文件</string>
+    <string name="j1_Failed_to_Parse_File_msg">请检查文件格式或内容是否有误。</string>
+
+    <string name="j1_file_detail_dialog_low_system_storage_title">存储空间预警</string>
+    <string name="j1_file_detail_dialog_low_system_storage_desc">当前的系统存储空间余量低。建议尽快整理本地文件，释放部分存储空间，否则可能会影响系统的正常运行。</string>
+    <string name="j1_file_detail_dialog_insufficient_system_storage_title">存储空间不足</string>
+    <string name="j1_file_detail_dialog_insufficient_system_storage_desc">当前的系统存储空间不足，无法对此文件进行操作。你需要移除部分本地文件以释放足够的存储空间。</string>
+
+    <string name="j1_file_detail_dialog_inappropriate_retraction_distance_title">回抽距离过大</string>
+    <string name="j1_file_detail_dialog_inappropriate_retraction_distance_message">本次打印设置的回抽距离超出了推荐范围（0&#8211;2 毫米），可能会在打印过程中导致喷嘴堵塞。我们建议你在切片软件中调整此参数，再开始打印。</string>
+</resources>

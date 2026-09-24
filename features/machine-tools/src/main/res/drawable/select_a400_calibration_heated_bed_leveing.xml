@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/icon_a400_calibration_heated_bed_leveing_press" android:state_selected="true" />
+    <item android:drawable="@drawable/icon_a400_calibration_heated_bed_leveing_normal" android:state_selected="false" />
+
+</selector>

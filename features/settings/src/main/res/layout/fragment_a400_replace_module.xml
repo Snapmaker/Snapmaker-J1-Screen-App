@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/a400_one_mid_title_top_bar_with_back" />
+
+    <ImageView
+        android:id="@+id/iv_replace_module_pic"
+        android:layout_width="578dp"
+        android:layout_height="434dp"
+        android:layout_marginStart="@dimen/margin_48dp"
+        android:layout_marginTop="@dimen/margin_layout_64"
+        android:contentDescription="@string/placeholder"
+        tools:src="@drawable/pic_a400_replace_modules_intro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar_area" />
+
+    <TextView
+        android:id="@+id/tv_intro_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_48dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="@dimen/margin_layout_48"
+        android:text="@string/a400_replace_module_intro_main_desc"
+        android:textColor="#6E6E6E"
+        android:textSize="@dimen/font_size_24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_replace_module_pic"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar_area" />
+
+    <TextView
+        android:id="@+id/tv_switch_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/a400_replace_module_switch_mode"
+        android:textColor="#C9C9C9"
+        android:textSize="@dimen/font_size_28sp"
+        app:layout_constraintStart_toStartOf="@id/tv_intro_desc"
+        app:layout_constraintTop_toBottomOf="@id/tv_intro_desc" />
+
+    <fabscreen.platform.core.ui.common.A400SwitchCompat
+        android:id="@+id/sw_work_mode"
+        style="@style/AppTheme.SwitchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="@id/tv_switch_mode"
+        app:layout_constraintEnd_toEndOf="@id/tv_intro_desc"
+        app:layout_constraintTop_toTopOf="@id/tv_switch_mode" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/a400_replace_module_switch_mode_desc"
+        android:textColor="#6E6E6E"
+        android:textSize="@dimen/font_size_20sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_intro_desc"
+        app:layout_constraintStart_toStartOf="@id/tv_intro_desc"
+        app:layout_constraintTop_toBottomOf="@id/tv_switch_mode" />
+
+    <Button
+        android:id="@+id/btn_start"
+        style="@style/AppTheme.PrimaryButton"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="@dimen/margin_48dp"
+        android:layout_marginBottom="@dimen/margin_48dp"
+        android:text="@string/all_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

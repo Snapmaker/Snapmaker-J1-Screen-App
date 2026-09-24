@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/demo_print_bg"
+    android:clickable="true"
+    android:focusable="true"
+    tools:ignore="MissingDefaultResource">
+
+    <include
+        layout="@layout/widget_top_bar_a400_calibration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/v_model_container"
+        android:layout_width="600dp"
+        android:layout_height="408dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/pb_print_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:indeterminate="false"
+        app:indicatorColor="#62C864"
+        app:indicatorInset="0dp"
+        app:indicatorSize="102dp"
+        app:layout_constraintEnd_toStartOf="@id/ll_model_info"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/v_model_container"
+        app:layout_constraintTop_toBottomOf="@id/v_model_container"
+        app:trackColor="#6e6e6e"
+        app:trackCornerRadius="3dp"
+        app:trackThickness="6dp"
+        tools:progress="90" />
+
+    <TextView
+        android:id="@+id/tv_a400_print_progress"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/pb_print_progress"
+        app:layout_constraintEnd_toEndOf="@id/pb_print_progress"
+        app:layout_constraintStart_toStartOf="@id/pb_print_progress"
+        app:layout_constraintTop_toTopOf="@id/pb_print_progress"
+        tools:text="90%" />
+
+    <LinearLayout
+        android:id="@+id/ll_model_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/pb_print_progress"
+        app:layout_constraintEnd_toEndOf="@id/v_model_container"
+        app:layout_constraintStart_toEndOf="@id/pb_print_progress"
+        app:layout_constraintTop_toTopOf="@id/pb_print_progress">
+
+        <TextView
+            android:id="@+id/tv_a400_print_filename"
+            style="@style/AppTheme.TextTitleSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxWidth="392dp"
+            android:maxLines="1"
+            android:textStyle="bold"
+            tools:text="Rabbit.gcode" />
+
+        <TextView
+            android:id="@+id/tv_print_remaining_time"
+            style="@style/AppTheme.TextExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#6E6E6E"
+            tools:text="剩余时间：20 d 13h 20m" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_print_base_show"
+        android:layout_width="600dp"
+        android:layout_height="408dp"
+        android:background="@drawable/pic_a400_print_base_show_fdm"
+        app:layout_constraintBottom_toBottomOf="@id/v_model_container"
+        app:layout_constraintEnd_toEndOf="@id/v_model_container"
+        app:layout_constraintStart_toStartOf="@id/v_model_container"
+        app:layout_constraintTop_toTopOf="@id/v_model_container" />
+
+    <ImageView
+        android:id="@+id/iv_print_file_diagram"
+        android:layout_width="378dp"
+        android:layout_height="378dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/demo_print_model1"
+        app:layout_constraintBottom_toBottomOf="@id/v_model_container"
+        app:layout_constraintEnd_toEndOf="@id/v_model_container"
+        app:layout_constraintStart_toStartOf="@id/v_model_container"
+        app:layout_constraintTop_toTopOf="@id/v_model_container" />
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/view_print_model"-->
+    <!--        android:layout_width="600dp"-->
+    <!--        android:layout_height="570dp"-->
+    <!--        android:layout_marginTop="60dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/top_bar">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:id="@+id/rl_print_base_show"-->
+    <!--            android:layout_width="600dp"-->
+    <!--            android:layout_height="408dp">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/iv_print_base_show"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:scaleType="fitCenter"-->
+    <!--                android:src="@drawable/pic_a400_print_base_show_fdm" />-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/iv_print_file_diagram"-->
+    <!--                android:layout_width="378dp"-->
+    <!--                android:layout_height="378dp"-->
+    <!--                android:layout_centerInParent="true"-->
+    <!--                android:scaleType="fitCenter" />-->
+
+    <!--        </RelativeLayout>-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:id="@+id/view_print_file_desc"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@+id/rl_print_base_show"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="30dp"-->
+    <!--            android:gravity="center_vertical">-->
+
+    <!--            <com.google.android.material.progressindicator.CircularProgressIndicator-->
+    <!--                android:id="@+id/pb_print_progress"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_alignParentStart="true"-->
+    <!--                android:indeterminate="false"-->
+    <!--                app:indicatorColor="#62C864"-->
+    <!--                app:indicatorInset="0dp"-->
+    <!--                app:indicatorSize="102dp"-->
+    <!--                app:layout_constraintHorizontal_chainStyle="packed"-->
+    <!--                app:trackColor="#6e6e6e"-->
+    <!--                app:trackCornerRadius="3dp"-->
+    <!--                app:trackThickness="6dp"-->
+    <!--                tools:progress="90" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_a400_print_progress"-->
+    <!--                style="@style/AppTheme.TextBody1"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_alignStart="@+id/pb_print_progress"-->
+    <!--                android:layout_alignTop="@+id/pb_print_progress"-->
+    <!--                android:layout_alignEnd="@+id/pb_print_progress"-->
+    <!--                android:layout_alignBottom="@+id/pb_print_progress"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textSize="28sp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_a400_print_filename"-->
+    <!--                style="@style/AppTheme.TextTitleSecondary"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="@dimen/margin_layout_16"-->
+    <!--                android:layout_toRightOf="@+id/tv_a400_print_progress"-->
+    <!--                android:ellipsize="end"-->
+    <!--                android:maxWidth="392dp"-->
+    <!--                android:maxLines="1"-->
+    <!--                android:textStyle="bold"-->
+    <!--                tools:text="Rabbit.gcode" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_print_remaining_time"-->
+    <!--                style="@style/AppTheme.TextExplain"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_below="@+id/tv_a400_print_filename"-->
+    <!--                android:layout_alignLeft="@+id/tv_a400_print_filename"-->
+    <!--                android:layout_marginTop="4dp"-->
+    <!--                android:textColor="#6E6E6E"-->
+    <!--                tools:text="剩余时间：20 d 13h 20m" />-->
+
+    <!--        </RelativeLayout>-->
+
+    <!--    </RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/li_print_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="310dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/v_model_container"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar"
+        tools:minWidth="500dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_print_base_show">
+
+        <ImageView
+            android:id="@+id/btn_a400_print_setting"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@drawable/img_setting_round_black"
+            android:src="@drawable/icon_setting_68x68" />
+
+        <ImageView
+            android:id="@+id/btn_a400_print_stop"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginLeft="@dimen/margin_layout_32"
+            android:layout_toRightOf="@+id/btn_a400_print_setting"
+            android:background="@drawable/img_setting_round_black"
+            android:src="@drawable/icon_a400_stop" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

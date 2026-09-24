@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="#090909">
+
+    <include layout="@layout/a400_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="12dp"
+        android:scrollbarThumbVertical="@drawable/shape_a400_scroll_bar_thumb">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="48dp">
+
+            <LinearLayout
+                android:id="@+id/ll_module_dual_extrusion"
+                android:layout_width="match_parent"
+                android:layout_height="348dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/shape_a400_bg_machine_info"
+                android:orientation="vertical"
+                android:paddingVertical="48dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="48dp"
+                    android:drawableStart="@drawable/shape_a400_module_indicator"
+                    android:drawablePadding="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Dual Extrusion Module"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    tools:ignore="UseCompatTextViewDrawableXml" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="76dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_dual_nozzle_temp_l"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_dual_nozzle_temp_r"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_filament_detect_l"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_filament_detect_r"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="76dp"
+                    android:layout_marginTop="32dp"
+                    android:orientation="horizontal">
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_cooling_l"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_cooling_r"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_heat_dissipation_dual"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_module_single_extrusion"
+                android:layout_width="match_parent"
+                android:layout_height="348dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/shape_a400_bg_machine_info"
+                android:orientation="vertical"
+                android:paddingVertical="48dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="48dp"
+                    android:drawableStart="@drawable/shape_a400_module_indicator"
+                    android:drawablePadding="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Single Extrusion Module"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    tools:ignore="UseCompatTextViewDrawableXml" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="76dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_single_nozzle_temp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_filament_detect"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="76dp"
+                    android:layout_marginTop="32dp"
+                    android:orientation="horizontal">
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_cooling"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_dissipation_single"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_module_laser"
+                android:layout_width="match_parent"
+                android:layout_height="348dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/shape_a400_bg_machine_info"
+                android:orientation="vertical"
+                android:paddingVertical="48dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_laser_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="48dp"
+                    android:drawableStart="@drawable/shape_a400_module_indicator"
+                    android:drawablePadding="16dp"
+                    android:gravity="center_vertical"
+                    android:text="10W Laser Module "
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    tools:ignore="UseCompatTextViewDrawableXml" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="76dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_laser_power"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_orientation_detect"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="76dp"
+                    android:layout_marginTop="32dp"
+                    android:orientation="horizontal">
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_laser_emitter_temp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_camera_connection"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_module_dryer"
+                android:layout_width="match_parent"
+                android:layout_height="348dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/shape_a400_bg_machine_info"
+                android:orientation="vertical"
+                android:paddingVertical="48dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="48dp"
+                    android:drawableStart="@drawable/shape_a400_module_indicator"
+                    android:drawablePadding="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Filament Dryer"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    tools:ignore="UseCompatTextViewDrawableXml" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="76dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_dryer_temp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_dryer_rh"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="76dp"
+                    android:layout_marginTop="32dp"
+                    android:orientation="horizontal">
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_dryer_fan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_dryer_power"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_module_cnc"
+                android:layout_width="match_parent"
+                android:layout_height="348dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/shape_a400_bg_machine_info"
+                android:orientation="vertical"
+                android:paddingVertical="48dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_cnc_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="48dp"
+                    android:drawableStart="@drawable/shape_a400_module_indicator"
+                    android:drawablePadding="16dp"
+                    android:gravity="center_vertical"
+                    android:text="200W CNC Module"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    tools:ignore="UseCompatTextViewDrawableXml" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="76dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_cnc_speed"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="76dp"
+                    android:layout_marginTop="32dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_module_enclosure"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/shape_a400_bg_machine_info"
+                android:orientation="vertical"
+                android:paddingVertical="48dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="48dp"
+                    android:drawableStart="@drawable/shape_a400_module_indicator"
+                    android:drawablePadding="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Enclosure"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    tools:ignore="UseCompatTextViewDrawableXml" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="76dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_enclosure_led"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_enclosure_fan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_enclosure_door"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_module_purifier"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/shape_a400_bg_machine_info"
+                android:orientation="vertical"
+                android:paddingVertical="48dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="48dp"
+                    android:drawableStart="@drawable/shape_a400_module_indicator"
+                    android:drawablePadding="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Air Purifier"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    tools:ignore="UseCompatTextViewDrawableXml" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="76dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_purifier_fan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_purifier_cover"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <fabscreen.features.settings.a400.maintenance.machineinfo.MachineInfoItemView
+                        android:id="@+id/miiv_purifier_filter_detection"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <fabscreen.features.settings.a400.maintenance.machineinfo.LinearInfoView
+                android:id="@+id/liv_module_x"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginBottom="24dp"
+                android:visibility="gone" />
+
+            <fabscreen.features.settings.a400.maintenance.machineinfo.LinearInfoView
+                android:id="@+id/liv_module_y1"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="240dp"
+                android:layout_marginBottom="24dp" />
+
+            <fabscreen.features.settings.a400.maintenance.machineinfo.LinearInfoView
+                android:id="@+id/liv_module_y2"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="240dp"
+                android:layout_marginBottom="24dp" />
+
+            <fabscreen.features.settings.a400.maintenance.machineinfo.LinearInfoView
+                android:id="@+id/liv_module_z1"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:visibility="gone"
+                android:layout_marginBottom="24dp" />
+
+            <fabscreen.features.settings.a400.maintenance.machineinfo.LinearInfoView
+                android:id="@+id/liv_module_z2"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:visibility="gone"
+                android:layout_marginBottom="24dp" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_module_rotary"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/shape_a400_bg_machine_info"
+                android:orientation="vertical"
+                android:paddingVertical="48dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="48dp"
+                    android:drawableStart="@drawable/shape_a400_module_indicator"
+                    android:drawablePadding="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Rotary Module"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    tools:ignore="UseCompatTextViewDrawableXml" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

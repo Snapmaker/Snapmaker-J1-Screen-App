@@ -1,0 +1,40 @@
+plugins {
+    id 'com.android.library'
+    id 'com.jakewharton.butterknife'
+}
+
+dependencies {
+    // Projects
+
+    implementation project(":platform:core")
+    implementation project(':platform:lib')
+    implementation project(":platform:base")
+
+    // Official support libraries
+    implementation Libs.INSTANCE.appCompat
+    implementation Libs.INSTANCE.material
+
+    // 3rd party libs
+
+    // Rxjava
+    implementation Libs.INSTANCE.rxjava
+    implementation Libs.INSTANCE.rxAndroid
+    implementation Libs.INSTANCE.autoDispose
+    implementation Libs.INSTANCE.autoDisposeLifecycle
+    implementation Libs.INSTANCE.autoDisposeArchComponents
+    implementation Libs.INSTANCE.lifecycleJava8
+
+    // Router
+    implementation Libs.INSTANCE.ARouter
+    annotationProcessor Libs.INSTANCE.ARouterAnnotation
+
+    // Logger
+    implementation Libs.INSTANCE.logger
+
+    // ButterKnife
+    implementation Libs.INSTANCE.butterknife
+    annotationProcessor Libs.INSTANCE.butterknifeAnnotation
+
+    testImplementation Libs.INSTANCE.junit
+    implementation Libs.INSTANCE.localization
+}

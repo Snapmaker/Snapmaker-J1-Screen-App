@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="166dp"
+    android:background="@drawable/all_dialog_round_background"
+    android:gravity="center"
+    android:maxWidth="640dp"
+    android:minWidth="180dp"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_layout_28"
+    tools:ignore="MissingDefaultResource">
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressbar"
+        android:layout_width="@dimen/margin_layout_40"
+        android:layout_height="@dimen/margin_layout_40"
+        android:indeterminate="true"
+        app:indicatorColor="@color/white"
+        app:indicatorSize="40dp"
+        app:trackColor="@color/transparent"
+        app:trackThickness="4dp" />
+
+    <TextView
+        android:id="@+id/tv_dialog_loading_tv"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_12"
+        android:gravity="center"
+        android:textColor="@color/palette_grey_french" />
+
+</LinearLayout>

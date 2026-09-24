@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fabscreen.platform.core.ui.view.CustomSteeringView
+        android:id="@+id/csv_control_panel_xy"
+        android:layout_width="282dp"
+        android:layout_height="282dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_control_panel_z_plus"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/csv_control_panel_xy"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/control_btn_up_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/AppTheme.TextBody2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z"
+        android:textColor="@color/palette_white_pure"
+        app:layout_constraintBottom_toTopOf="@id/btn_control_panel_z_minus"
+        app:layout_constraintEnd_toEndOf="@id/btn_control_panel_z_plus"
+        app:layout_constraintStart_toStartOf="@id/btn_control_panel_z_plus"
+        app:layout_constraintTop_toBottomOf="@id/btn_control_panel_z_plus" />
+
+    <Button
+        android:id="@+id/btn_control_panel_z_minus"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/control_btn_down_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/v_top"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_wifi_title"
+        style="@style/AppTheme.TextTitlePrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:text="Wi-Fi"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/v_top"
+        app:layout_constraintStart_toStartOf="@id/v_top"
+        app:layout_constraintTop_toTopOf="@id/v_top" />
+
+    <View
+        android:id="@+id/v_top_divider"
+        style="@style/AppTheme.LineDropShadow"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/v_top" />
+
+    <fabscreen.platform.core.ui.common.A400SwitchCompat
+        android:id="@+id/switch_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:thumb="@drawable/shape_a400_switch_thumb"
+        app:layout_constraintBottom_toBottomOf="@id/tv_wifi_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_wifi_title"
+        app:track="@drawable/selector_a400_switch_track" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_ap_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_top_divider"
+        tools:listitem="@layout/item_a400_wifi_ap" />
+</androidx.constraintlayout.widget.ConstraintLayout>

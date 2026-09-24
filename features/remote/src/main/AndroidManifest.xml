@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fabscreen.features.remote">
+
+    <application>
+        <activity
+            android:name=".s30.S30RemoteHomeActivity"
+            android:theme="@style/AppTheme.Activity" />
+    </application>
+</manifest>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">J1</string>
+    <string name="home_content">Tap the screen to select a file</string>
+    <string name="all_j1_can_not_connect">The system failed to obtain the mainboard data. Please contact our Support at support@snapmaker.com.</string>
+    <string name="j1_home_start_printing">Start Printing</string>
+    <string name="j1_home_tip">Tap the screen to select a file</string>
+    <string name="j1_home_control">Control</string>
+    <string name="j1_home_calibration">Calibration</string>
+    <string name="j1_home_settings">Settings</string>
+
+</resources>

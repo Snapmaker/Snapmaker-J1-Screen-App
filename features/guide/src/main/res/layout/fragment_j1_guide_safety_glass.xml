@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingTop="48dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp">
+
+    <View
+        android:id="@+id/v_content_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/file_detail_gradient_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_show_image"
+        android:layout_width="180dp"
+        android:layout_height="204dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/v_content_bg"
+        app:layout_constraintTop_toTopOf="@id/v_content_bg" />
+
+    <TextView
+        android:id="@+id/tv_btn_j1_guide_safety_glass_title"
+        style="@style/AppTheme.TextTitlePrimary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/j1_guide_safety_glass_title"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/v_content_bg"
+        app:layout_constraintStart_toEndOf="@+id/iv_show_image"
+        app:layout_constraintTop_toTopOf="@id/v_content_bg" />
+
+    <RelativeLayout
+        android:id="@+id/tv_btn_j1_guide_safety_glass_lin1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/margin_layout_8"
+        android:layout_marginEnd="@dimen/margin_24dp"
+        app:layout_constraintEnd_toEndOf="@id/v_content_bg"
+        app:layout_constraintStart_toEndOf="@+id/iv_show_image"
+        app:layout_constraintTop_toBottomOf="@+id/tv_btn_j1_guide_safety_glass_title">
+
+        <ImageView
+            android:id="@+id/tv_btn_j1_guide_safety_glass_lin1_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/icon_glass_plate_normal_64x64" />
+
+        <TextView
+            android:id="@+id/tv_btn_j1_guide_safety_glass_lin1_content"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="@dimen/margin_layout_8"
+            android:layout_toEndOf="@+id/tv_btn_j1_guide_safety_glass_lin1_icon"
+            android:gravity="center_vertical"
+            android:text="@string/j1_guide_safety_glass_one"
+            android:textColor="?attr/theme_color_body_secondary1" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tv_btn_j1_guide_safety_glass_lin2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/margin_layout_8"
+        android:layout_marginEnd="@dimen/margin_24dp"
+        app:layout_constraintEnd_toEndOf="@id/v_content_bg"
+        app:layout_constraintStart_toEndOf="@+id/iv_show_image"
+        app:layout_constraintTop_toBottomOf="@+id/tv_btn_j1_guide_safety_glass_lin1">
+
+        <ImageView
+            android:id="@+id/tv_btn_j1_guide_safety_glass_lin2_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/icon_high_temperature_warning_normal_64x64" />
+
+        <TextView
+            android:id="@+id/tv_btn_j1_guide_safety_glass_lin2_content"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="@dimen/margin_layout_8"
+            android:layout_toEndOf="@+id/tv_btn_j1_guide_safety_glass_lin2_icon"
+            android:gravity="center_vertical"
+            android:text="@string/j1_guide_safety_glass_two"
+            android:textColor="?attr/theme_color_body_secondary1" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        android:paddingStart="12dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="@id/v_content_bg"
+        app:layout_constraintEnd_toEndOf="@id/v_content_bg"
+        app:layout_constraintStart_toStartOf="@id/v_content_bg">
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/AppTheme.PrimaryButton"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:text="@string/guide_got_it" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

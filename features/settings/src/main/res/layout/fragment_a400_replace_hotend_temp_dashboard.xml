@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121">
+
+    <fabscreen.platform.core.ui.view.RotateButtonView
+        android:id="@+id/rbv_left"
+        android:layout_width="480dp"
+        android:layout_height="480dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@id/rbv_right"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srv_textUnitType="℃" />
+
+    <TextView
+        android:id="@+id/tv_temp_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="#FFFFFF"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/rbv_left"
+        app:layout_constraintEnd_toStartOf="@+id/tv_degree_symbol_l"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/rbv_left"
+        app:layout_constraintTop_toTopOf="@id/rbv_left"
+        tools:text="260" />
+
+    <TextView
+        android:id="@+id/tv_degree_symbol_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="14dp"
+        android:text="℃"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/rbv_left"
+        app:layout_constraintStart_toEndOf="@id/tv_temp_l"
+        app:layout_constraintTop_toTopOf="@id/tv_temp_l" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left Nozzle"
+        android:textColor="#6E6E6E"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_temp_l"
+        app:layout_constraintEnd_toEndOf="@id/rbv_left"
+        app:layout_constraintStart_toStartOf="@id/rbv_left" />
+
+    <fabscreen.platform.core.ui.view.RotateButtonView
+        android:id="@+id/rbv_right"
+        android:layout_width="480dp"
+        android:layout_height="480dp"
+        android:layout_marginEnd="105dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/rbv_left"
+        app:layout_constraintTop_toTopOf="@id/rbv_left"
+        app:srv_textUnitType="℃" />
+
+    <TextView
+        android:id="@+id/tv_temp_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="#FFFFFF"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/rbv_right"
+        app:layout_constraintEnd_toStartOf="@+id/tv_degree_symbol_r"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/rbv_right"
+        app:layout_constraintTop_toTopOf="@id/rbv_right"
+        tools:text="260" />
+
+    <TextView
+        android:id="@+id/tv_degree_symbol_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="14dp"
+        android:text="℃"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/rbv_right"
+        app:layout_constraintStart_toEndOf="@id/tv_temp_r"
+        app:layout_constraintTop_toTopOf="@id/tv_temp_r" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right Nozzle"
+        android:textColor="#6E6E6E"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_temp_r"
+        app:layout_constraintEnd_toEndOf="@id/rbv_right"
+        app:layout_constraintStart_toStartOf="@id/rbv_right" />
+
+    <View
+        android:id="@+id/v_divider"
+        style="@style/AppTheme.LineDropShadow"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="176dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/AppTheme.PrimaryButton"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_margin="48dp"
+        android:text="@string/all_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cooling_down_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="The nozzle is cooling down..."
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_view_for_set_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="v_divider,btn_next"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

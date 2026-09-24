@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/theme_color_page_background">
+
+    <ImageView
+        android:id="@+id/iv_setup_intro"
+        android:layout_width="578dp"
+        android:layout_height="434dp"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginTop="94dp"
+        android:src="@drawable/pic_guide_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_setup_intro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.TextBody2"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginEnd="@dimen/margin_layout_48"
+        android:text="再接下来的步骤中，屏幕将会引导你进行热床调平"
+        app:layout_constraintBottom_toBottomOf="@id/iv_setup_intro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_setup_intro"
+        app:layout_constraintTop_toTopOf="@id/iv_setup_intro" />
+
+    <Button
+        android:id="@+id/btn_start"
+        style="@style/AppTheme.PrimaryButton"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="@dimen/margin_layout_48"
+        android:layout_marginBottom="@dimen/margin_layout_48"
+        android:text="开始"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

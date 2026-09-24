@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="extruder_temperature">%d/%d°C</string>
+    <string name="wizard">向导</string>
+    <string name="introduce">本向导将指引你完成机器打印前的基本准备（约 20 至 30 分钟），主要包括以下四个步骤：</string>
+    <string name="heating_check">热床调平</string>
+    <string name="z_offset_calibration">Z 轴偏移校准</string>
+    <string name="xy_Offset_calibration">XY 轴偏移校准</string>
+    <string name="offset_calibration_check">偏移校准验证</string>
+    <string name="heating_tips">当你看到此图标时，请小心高温表面。</string>
+    <string name="guide_success_content">开始你的造物之旅吧！</string>
+    <string name="guide_success_title">向导完成</string>
+    <string name="guide_a400_thickness_m_calibration">材料厚度测量校准</string>
+    <string name="guide_a400_camera_calibration">摄像头捕捉校准</string>
+    <string name="guide_a400_setup_completed">机器设置完成</string>
+    <string name="guide_a400_10w_laser_msg">接下来，你需要进行以下流程，以完成 10W 激光模组的初始化。</string>
+    <string name="guide_a400_thickness_measurement_calibration_msg">接下来，屏幕将会引导你进行材料厚度测量校准。</string>
+    <string name="guide_a400_camera_calibration_msg">接下来，屏幕将会引导你进行摄像头校准。</string>
+    <string name="guide_a400_safety_goggles">护目镜</string>
+    <string name="guide_a400_fix_material">固定材料</string>
+    <string name="guide_a400_attach_bit">固定刀具</string>
+    <string name="guide_a400_tools_screen">工具页</string>
+    <string name="guide_a400_cnc_msg">接下来，你将通过以下指引来熟悉 CNC 作业的初始设置。</string>
+    <string name="guide_a400_setup_guidance_completed">初始设置指引完成</string>
+    <string name="guide_a400_laser_10w_success_title">校准成功</string>
+    <string name="guide_a400_laser_10w_success_msg">恭喜！你已完成所有的初始化流程。</string>
+    <string name="guide_a400_start_creating">开始创造</string>
+    <string name="a400_guide_step_1">装料</string>
+    <string name="a400_guide_step_2"><![CDATA[Z 轴偏移校准 & 热床调平]]></string>
+    <string name="a400_guide_step_3">XY轴偏移校准</string>
+    <string name="guide_a400_double_extruder_msg">接下来，你需要进行以下流程，以完成双挤出模组的初始化。</string>
+    <string name="guide_a400_double_extruder_suc_msg">恭喜！你已完成所有的初始化流程。</string>
+    <string name="guide_a400_double_extruder_step_1_suc_title">装料完成</string>
+    <string name="guide_a400_double_extruder_step_1_suc_msg"><![CDATA[接下来，请点击继续以进入 Z 轴偏移校准及热床调平流程。]]></string>
+    <string name="guide_a400_double_extruder_step_2_suc_title"><![CDATA[校准 & 调平成功]]></string>
+    <string name="guide_a400_double_extruder_step_2_suc_msg">接下来，请点击继续以进入 XY 轴偏移校准流程。</string>
+    <string name="guide_a400_laser_10w_step_1_suc_title">校准成功</string>
+    <string name="guide_a400_laser_10w_step_1_suc_msg">接下来，请点击继续以进入摄像头校准流程。</string>
+
+    <string name="j1_guide_safety_glass_title">安全须知</string>
+    <string name="j1_guide_safety_glass_one">移动 PEI 玻璃平台时，请轻拿轻放。</string>
+    <string name="j1_guide_safety_glass_two">当热床升温至 40℃ 以上时，避免直接触碰 PEI 玻璃平台和热床。</string>
+
+    <string name="j1_guide_install_fan_instructions_intro_title">加固模型冷却风扇</string>
+    <string name="j1_guide_install_fan_instructions_intro_content">点击<b>去安装</b>，安装螺丝以进一步固定模型冷却风扇。
+若已安装螺丝或未购买模型冷却升级组件，请点击<b>跳过</b>。</string>
+    <string name="j1_guide_install_fan_instructions_intro_go_to_install">去安装</string>
+    <string name="j1_guide_install_fan_instructions_install_screws_title">安装螺丝</string>
+    <string name="j1_guide_install_fan_instructions_install_screws_step1">1. 使用粉色 H2.0 L 型扳手，将两颗 M3 ×10 螺丝安装至图示位置。</string>
+    <string name="j1_guide_install_fan_instructions_install_screws_step2">2. 点击<b>下一步</b>。</string>
+    <string name="j1_guide_install_fan_instructions_install_screws_note"><b>注意</b>：电机已暂时断电。</string>
+    <string name="j1_guide_install_fan_instructions_prepare_for_homing_title">准备返回原位</string>
+    <string name="j1_guide_install_fan_instructions_prepare_for_homing_content">
+        1. 清理机器内的外部物品，并使身体与机器保持一定距离。
+        \n2. 点击<b>下一步</b>。机器将开始返回原位。
+    </string>
+</resources>

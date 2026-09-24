@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/view_print_model"
+        android:layout_width="600dp"
+        android:layout_height="408dp"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_print_base_show"
+            android:layout_width="600dp"
+            android:layout_height="408dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/demo_print_platform" />
+
+        <ImageView
+            android:id="@+id/iv_print_file_diagram"
+            android:layout_width="3378dp"
+            android:layout_height="378dp"
+            android:layout_alignBottom="@+id/iv_print_base_show"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/demo_print_model1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_print_file_desc"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="@dimen/margin_layout_60"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/view_success_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view_print_model"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_print_print_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="98dp"
+            android:background="@drawable/img_print_success_background"
+            android:drawableLeft="@drawable/icon_success"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="打印完成！"
+            android:textColor="?attr/theme_color_accent_success"
+            android:textSize="@dimen/font_size_h3" />
+
+        <TextView
+            android:id="@+id/tv_print_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_print_print_complete"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="20 d 13h 20m"
+            android:textColor="?attr/theme_color_title_primary"
+            android:textSize="@dimen/font_size_40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_print_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_20"
+            android:gravity="center_vertical"
+            android:text="@string/print_elapsed_time"
+            android:textColor="?attr/theme_color_body_primary"
+            android:textSize="?attr/theme_font_size_body1" />
+
+        <TextView
+            android:id="@+id/tv_print_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_print_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Rabbit.gcode"
+            android:textColor="?attr/theme_color_title_secondary"
+            android:textSize="@dimen/font_size_28sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_print_complete_buttons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="74dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_goneMarginBottom="74dp">
+
+        <Button
+            android:id="@+id/btn_print_continue"
+            style="@style/AppTheme.PrimaryButton"
+            android:layout_width="230dp"
+            android:layout_height="92dp"
+            android:layout_marginEnd="@dimen/margin_layout_24"
+            android:background="@drawable/img_next_job_background"
+            android:text="@string/all_next_job" />
+
+        <Button
+            android:id="@+id/btn_print_complete"
+            style="@style/AppTheme.PrimaryButton"
+            android:layout_width="230dp"
+            android:layout_height="92dp"
+            android:layout_toRightOf="@+id/btn_print_continue"
+            android:background="@drawable/img_complete"
+            android:text="@string/all_complete" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

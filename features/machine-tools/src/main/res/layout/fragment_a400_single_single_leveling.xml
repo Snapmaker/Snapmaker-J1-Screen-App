@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view_cali_points"
+        android:layout_width="479dp"
+        android:layout_height="485dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_button_area"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:background="#212121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view_cali_points"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_tune_area"
+        android:layout_width="609dp"
+        android:layout_height="423dp"
+        android:layout_marginTop="32dp"
+        android:background="#161617"
+        app:layout_constraintEnd_toEndOf="@id/view_button_area"
+        app:layout_constraintStart_toStartOf="@id/view_button_area"
+        app:layout_constraintTop_toTopOf="@id/view_button_area" />
+
+    <co.ceryle.segmentedbutton.SegmentedButtonGroup
+        android:gravity="center_vertical"
+        android:id="@+id/sbg_step_width"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        app:layout_constraintEnd_toEndOf="@id/view_tune_area"
+        app:layout_constraintStart_toStartOf="@id/view_tune_area"
+        app:layout_constraintTop_toTopOf="@id/view_tune_area">
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            app:sb_text="0.1 mm" />
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            app:sb_text="1 mm" />
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            app:sb_text="10 mm" />
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            app:sb_text="100 mm" />
+    </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+
+    <View
+        android:id="@+id/view_up_down_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        android:background="#212121"
+        app:layout_constraintBottom_toBottomOf="@id/view_tune_area"
+        app:layout_constraintEnd_toEndOf="@id/view_tune_area"
+        app:layout_constraintStart_toStartOf="@id/view_tune_area"
+        app:layout_constraintTop_toBottomOf="@id/sbg_step_width" />
+
+    <Button
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="149dp"
+        android:text="UP"
+        app:layout_constraintBottom_toBottomOf="@id/view_up_down_bg"
+        app:layout_constraintStart_toStartOf="@id/view_up_down_bg"
+        app:layout_constraintTop_toTopOf="@id/view_up_down_bg" />
+
+    <Button
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginEnd="149dp"
+        android:text="DOWN"
+        app:layout_constraintBottom_toBottomOf="@id/view_up_down_bg"
+        app:layout_constraintEnd_toEndOf="@id/view_up_down_bg"
+        app:layout_constraintTop_toTopOf="@id/view_up_down_bg" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="@id/view_button_area"
+        app:layout_constraintStart_toStartOf="@id/view_button_area"
+        app:layout_constraintTop_toBottomOf="@id/view_tune_area" />
+
+    <Button
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="48dp"
+        android:id="@+id/btn_next_submit"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:text="下一点/提交"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

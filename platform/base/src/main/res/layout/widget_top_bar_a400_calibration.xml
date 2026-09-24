@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="132dp"
+    android:background="?attr/theme_color_page_background">
+
+    <Button
+        android:id="@+id/top_bar_back"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_close"
+        android:contentDescription="@string/todo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_h3" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/top_bar_title"
+            style="@style/AppTheme.TextTitleSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="calibration 校准"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/top_bar_content"
+            style="@style/AppTheme.TextExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_bar_title"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="calibration 校准"
+            android:textColor="@color/palette_white_pure" />
+
+        <ImageView
+            android:id="@+id/top_bar_ico"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/top_bar_title"
+            android:layout_alignTop="@+id/top_bar_content"
+            android:layout_toEndOf="@+id/top_bar_content"
+            android:src="@drawable/pic_detailed_description"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/view_guide_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:progress="1"
+        app:indicatorColor="@color/palette_white_silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:trackThickness="2dp"
+        app:trackColor="@color/palette_grey_nero" />
+
+</RelativeLayout>

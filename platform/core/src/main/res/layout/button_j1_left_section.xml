@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="112dp"
+    android:layout_height="56dp"
+    android:layout_marginStart="16dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:lineSpacingExtra="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        tools:text="Firmware Update" />
+
+    <View
+        android:id="@+id/v_badge"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:background="@drawable/shape_red_badge" />
+
+    <View
+        android:id="@+id/v_indicator"
+        android:layout_width="3dp"
+        android:layout_height="36dp"
+        android:background="@drawable/shape_section_indicator" />
+</LinearLayout>

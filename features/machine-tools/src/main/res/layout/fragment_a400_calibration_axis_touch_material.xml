@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/theme_color_page_background">
+
+    <include
+        layout="@layout/widget_top_bar_a400_calibration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_calibration"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/margin_layout_48"
+        android:paddingRight="@dimen/margin_layout_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_a400_leveling_z_calibration_move"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+
+        <ImageView
+            android:id="@+id/iv_calibration_desc"
+            android:layout_width="match_parent"
+            android:layout_height="359dp"
+            android:layout_marginTop="@dimen/margin_layout_32"
+            android:background="@drawable/pic_guide_normal" />
+
+        <TextView
+            android:id="@+id/tv_calibration_desc_title"
+            style="@style/AppTheme.TextBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_calibration_desc"
+            android:layout_marginTop="@dimen/margin_layout_24"
+            android:text="@string/a400_calibration_axis_touch_material_title"
+            android:textColor="@color/palette_white_pure" />
+
+        <TextView
+            android:id="@+id/tv_calibration_desc_content"
+            style="@style/AppTheme.TextExplain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_calibration_desc_title"
+            android:layout_marginTop="@dimen/margin_layout_12"
+            android:text="@string/a400_calibration_axis_touch_material_content"
+            android:textColor="@color/palette_grey_dim" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/iv_a400_leveling_z_calibration_move"
+        android:layout_width="705dp"
+        android:layout_height="0dp"
+        android:background="@color/palette_grey_nero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+        <fabscreen.platform.core.ui.view.A400XYZBControlPanel
+            android:id="@+id/cp_a400_leveling_z_calibration_move"
+            android:layout_width="609dp"
+            android:layout_height="423dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_layout_32"
+            android:layout_marginEnd="48dp" />
+
+        <View
+            style="@style/AppTheme.LineDropShadow"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/btn_next"
+            android:layout_marginBottom="@dimen/margin_layout_48" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/AppTheme.PrimaryButton"
+            android:layout_width="230dp"
+            android:layout_height="92dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="36dp"
+            android:text="@string/all_next" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

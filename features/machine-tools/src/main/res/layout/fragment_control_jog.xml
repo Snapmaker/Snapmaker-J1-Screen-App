@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vp_controls"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- view will be inflate dynamically in fragment -->
+    <!-- <include layout="@layout/widget_coordinate_xyzb_panel" />-->
+
+    <include layout="@layout/view_control_jog_common" />
+
+</LinearLayout>

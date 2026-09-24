@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        tools:text="左喷嘴初始打印高度" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textColor="#6E6E6E"
+        android:textSize="@dimen/font_size_24sp"
+        tools:text="0.10" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:background="@color/transparent"
+        android:text="Edit"
+        android:textColor="#6E6E6E"
+        android:textSize="@dimen/font_size_24sp" />
+</merge>

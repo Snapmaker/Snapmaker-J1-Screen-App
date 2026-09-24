@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.snapmaker.j1">
+
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--WIFI permission-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Bluetooth permission   -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+
+    <!--Scan Network need location permission in Android 6.0 or upper-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!--u disk permission-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.hardware.usb.host"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+
+    <!--Install package permission-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.DELETE_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        tools:ignore="ProtectedPermissions" />
+
+    <!--Factory permission-->
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".J1Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:sharedUserId="android.uid.system"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme">
+
+        <activity
+            android:name=".modules.home.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.home.HomeActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <!-- Guide -->
+        <activity
+            android:name="fabscreen.features.welcome.s20.WelcomeActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.guide.s20._3dp.Guide3DPActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.guide.s20.laser.GuideLaserActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.guide.s20.cnc.GuideCNCActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name="fabscreen.features.guide.s20.laser._10w.Guide10wLaserActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name="fabscreen.features.guide.s20.rotary.laser.GuideRotaryLaserActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name="fabscreen.features.guide.s20.rotary.cnc.GuideRotaryCNCActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <!-- File & Print -->
+        <activity
+            android:name="fabscreen.features.filemanager.s20Platform.BrowseActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.print.s20.preview.PreviewActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.print.settings.PrintSettingsActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <!-- 3DP -->
+        <activity
+            android:name="fabscreen.features.machinetools.calibration.s20._3dp.Calibration3DPActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <!-- Laser -->
+        <activity
+            android:name="fabscreen.features.machinetools.calibration.s20.laser.CalibrationLaserActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <!-- CNC -->
+        <activity
+            android:name="fabscreen.features.machinetools.cncassist.origin.CNCOriginAssistantActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name="fabscreen.features.machinetools.cncassist.bit.CNCBitAssistantActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <!-- Control -->
+        <activity
+            android:name="fabscreen.features.machinetools.control.J1ControlActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <!--  Settings -->
+        <activity
+            android:name="fabscreen.features.settings.a350.about.AboutActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.settings.a350.index.SettingsActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.settings.a350.firmware.SettingsFirmwareActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.print.print.PrintActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.remote.a350.RemoteActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.addons.emergencystop.EmergencyStopActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.settings.a350.factory.FactoryToolsActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.settings.a350.experiment.ExperimentActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.settings.a350.firmware.update.UpdateActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <!--    Add-on    -->
+        <activity
+            android:name="fabscreen.features.addons.enclosure.EnclosureActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.addons.airpurifier.AirPurifierActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.print.prepare.laser.PrepareLaserActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity
+            android:name="fabscreen.features.print.s20.prepare.cnc.PrepareCNCActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.platform.base.view.debugtool.MockMachineActivity"
+            android:theme="@style/AppTheme.Activity" />
+        <activity
+            android:name="fabscreen.features.settings.a400.experiment.GreenScreenActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.Activity" />
+        <receiver
+            android:name="fabscreen.platform.base.receiver.DeviceOwnerReceiver"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+        </receiver>
+        <receiver
+            android:name="fabscreen.platform.base.receiver.InstallProcessReceiver">
+            <intent-filter>
+                <action android:name="com.snapmaker.updateApkBroadcast" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

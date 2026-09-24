@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="220dp"
+    android:maxHeight="220dp">
+
+    <ImageView
+        android:id="@+id/iv_browse_a400_item_thumbnail"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17.5dp" />
+
+    <View
+        android:id="@+id/view_browse_a400_item_file"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:background="#2D2F40" />
+
+    <CheckBox
+        android:id="@+id/cb_browse_a400_item_file_select"
+        style="@style/AppTheme.CheckBox.DefaultCheckBox"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignEnd="@id/view_browse_a400_item_file"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/tv_browse_a400_item_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_browse_a400_item_file"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/placeholder_multiline"
+        android:textAlignment="center"
+        android:textColor="#C4C5CC"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_browse_a400_item_file_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_browse_a400_item_file_name"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/placeholder_long"
+        android:textAlignment="center"
+        android:textColor="#737480"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="all_choose_a_mode">Choose a Mode</string>
+    <string name="all_spindle_speed_unit">rpm</string>
+    <string name="all_0_0_2mm">0.02mm</string>
+    <string name="all_0_0_5mm">0.05mm</string>
+    <string name="all_0_0_1mm">0.01mm</string>
+    <string name="j1_how_to_load_filament_title">How to Load Filament</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fabscreen.features.welcome">
+
+    <application>
+        <activity
+            android:name=".a400.A400WelcomeActivity"
+            android:theme="@style/AppTheme.Activity" />
+
+        <activity android:name=".j1.WelcomeJ1Activity"
+            android:theme="@style/AppTheme.Activity" />
+    </application>
+</manifest>

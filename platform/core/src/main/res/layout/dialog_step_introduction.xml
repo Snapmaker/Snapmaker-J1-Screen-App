@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1184dp"
+    android:layout_height="640dp"
+    android:background="@drawable/all_dialog_round_background">
+
+    <ImageView
+        android:id="@+id/iv_step_introduction_back"
+        android:layout_width="@dimen/icon_size_68"
+        android:layout_height="@dimen/icon_size_68"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="@dimen/height_button_64"
+        android:src="@drawable/ic_a400_close" />
+
+    <TextView
+        android:id="@+id/tv_step_introduction_title"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/margin_layout_64"
+        android:layout_marginTop="@dimen/margin_layout_48"
+        android:textColor="?attr/theme_color_title_primary" />
+
+
+    <TextView
+        android:id="@+id/tv_step_introduction_content"
+        style="@style/AppTheme.TextTitleHeadLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_step_introduction_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_layout_64"
+        android:layout_marginTop="@dimen/margin_layout_24"
+        android:textColor="?attr/theme_color_body_secondary2" />
+
+    <ImageView
+        android:id="@+id/iv_step_introduction"
+        android:layout_width="1056dp"
+        android:layout_height="388dp"
+        android:layout_below="@id/tv_step_introduction_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_layout_24"
+        android:paddingBottom="@dimen/margin_48dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_j1_home_top_status"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <fabscreen.platform.core.ui.view.ShowState
+        android:id="@+id/ss_j1_home_top_status_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <fabscreen.platform.core.ui.view.ShowState
+        android:id="@+id/ss_j1_home_top_status_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <fabscreen.platform.core.ui.view.ShowState
+        android:id="@+id/ss_j1_home_top_status_heated_bed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/iv_j1_home_top_status_height"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:padding="@dimen/margin_layout_5"
+        android:src="@drawable/ic_j1_home_top_state_height" />
+
+    <TextView
+        android:id="@+id/tv_j1_home_top_status_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="@dimen/margin_layout_5"
+        android:text="000.0nmm" />
+
+    <ImageView
+        android:id="@+id/iv_j1_home_top_status_wifi"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:padding="@dimen/margin_layout_5"
+        android:src="@drawable/ic_home_wifi_15x15" />
+
+    <ImageView
+        android:id="@+id/iv_j1_home_top_status_light"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:padding="@dimen/margin_layout_5"
+        android:src="@drawable/ic_j1_home_top_state_light" />
+
+    <ImageView
+        android:id="@+id/iv_j1_home_top_status_usb"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:padding="@dimen/margin_layout_5"
+        android:src="@drawable/iv_j1_home_top_status_usb" />
+
+
+</LinearLayout>

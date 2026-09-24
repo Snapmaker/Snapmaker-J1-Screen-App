@@ -1,0 +1,158 @@
+
+<resources>
+    <string name="font_roboto_condensed">sans-serif-black</string>
+    <string name="font_roboto_condensed_light">sans-serif-light</string>
+    <string name="all_about">情報</string>
+    <string name="all_calculating">算出中</string>
+    <string name="all_cancel">キャンセル</string>
+    <string name="all_complete">完了</string>
+    <string name="all_confirm">確認</string>
+    <string name="all_connect">接続</string>
+    <string name="all_control">コントロール</string>
+    <string name="all_delete">削除する</string>
+    <string name="all_disconnect">接続を切断する</string>
+    <string name="all_done">終了</string>
+    <string name="all_failed">失敗</string>
+    <string name="all_language">言語</string>
+    <string name="all_load">ロード</string>
+    <string name="all_next">次へ</string>
+    <string name="all_on">オン</string>
+    <string name="all_off">オフ</string>
+    <string name="all_ok">OK</string>
+    <string name="all_pause">一時停止</string>
+    <string name="all_print">プリント</string>
+    <string name="all_resume">再開</string>
+    <string name="all_save">保存</string>
+    <string name="all_skip">スキップ</string>
+    <string name="all_start">開始</string>
+    <string name="all_stop">停止</string>
+    <string name="all_unload">アンロード</string>
+    <string name="all_update">アップデート</string>
+    <string name="all_warning">警告</string>
+    <string name="all_yes">はい</string>
+    <string name="all_quit">終了</string>
+    <string name="all_3d_printing">3D プリント</string>
+    <string name="all_file_loading_tip">ファイルを解析中…</string>
+    <string name="j1_warning_power_outage_content">プリント中に電源が遮断されました。プリントを再開しますか？</string>
+    <string name="all_settings_user_experience_program">  <u>ユーザーエクスペリエンス向上プログラム</u></string>
+    <string name="work_origin_center">中心</string>
+    <string name="work_origin_top_left">上部左側</string>
+    <string name="work_origin_top_right">上部右側</string>
+    <string name="work_origin_bottom_left">底部左側</string>
+    <string name="work_origin_bottom_right">底部右側</string>
+    <string name="all_connection_verification">接続検証</string>
+    <string name="all_refuse">拒否</string>
+    <string name="all_close">閉じる</string>
+    <string name="all_connection_verification_content">新しいデバイスが接続しようとしています。接続しますか？</string>
+    <string name="all_connect_syccess">Snapmaker Luban は接続済です</string>
+    <string name="all_status_connected">ステータス: 接続済</string>
+    <string name="error_abnormal_x_motor_drive"><b>X軸</b>モータードライブは異常です。support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_abnormal_y_motor_drive"><b>Y軸</b>モータードライブは異常です。support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_abnormal_z_motor_drive"><b>Z軸</b>モータードライブは異常です。support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_abnormal_left_motor_drive"><b>左プリントヘッド</b>の押出機モータードライブは異常です。support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_abnormal_right_motor_drive"><b>右プリントヘッド</b>の押出機モータードライブは異常です。support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_abnormal_double_motor_drive"><b>デュアルプリントヘッド</b>の押出機モータードライブは異常です。support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_left_extruder_abnormal_temperature"><b>左プリントヘッド</b>の温度制御は異常です。support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_right_extruder_abnormal_temperature"><b>右プリントヘッド</b>の温度制御は異常です。support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_double_extruder_abnormal_temperature"><b>デュアルプリントヘッド</b>の温度制御は異常です。support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_hot_bed_not_connected"><b>ヒートベッド</b>が接続されていません。</string>
+    <string name="error_hot_bed_abnormal_temperature_title">ヒートベッド温度制御異常</string>
+    <string name="error_hot_bed_abnormal_temperature">このポップアップが繰り返し表示される場合は、support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_left_extruder_unable_discharge"><b>左ノズル</b>に詰まりやフィラメント切れが生じていないかを確認してください。</string>
+    <string name="error_right_extruder_unable_discharge"><b>右ノズル</b>に詰まりやフィラメント切れが生じていないかを確認してください。</string>
+    <string name="error_double_extruder_unable_discharge">両側ノズルに詰まりやフィラメント切れが生じていないかを確認してください。</string>
+    <string name="error_motor_lose_step">軸の移動に制限があるかどうかをご確認ください。</string>
+    <string name="error_motor_lose_step_title">ステップロス検出</string>
+    <string name="error_unable_identify_left_extruder">認識できない<b>左ホットエンド</b>。</string>
+    <string name="error_unable_identify_right_extruder">認識できない<b>右ホットエンド</b>。</string>
+    <string name="error_unable_identify_double_extruder">認識できない<b>両方のホットエンド</b>。</string>
+    <string name="error_no_feedback_during_heating_left_extruder">危険な可能性があるため、加熱を停止しました。 support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_no_feedback_during_heating_left_extruder_title">加熱の危険性-左プリントヘッド</string>
+    <string name="error_bed_self_detection_failed_title">ヒートベッドの自己検出に失敗しました</string>
+    <string name="error_bed_self_detection_failed_msg">support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_motor_drive_is_abnormal">モータードライブは異常です。support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_no_feedback_during_heating_right_extruder">危険な可能性があるため、加熱を停止しました。 support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_no_feedback_during_heating_right_extruder_title">加熱の危険性-右プリントヘッド</string>
+    <string name="error_no_feedback_during_heating_double_extruder">危険な可能性があるため、加熱を停止しました。 support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_no_feedback_during_heating_double_extruder_title">加熱の危険性-デュアルプリントヘッド</string>
+    <string name="error_all_aware_danger">危険を承知しました</string>
+    <string name="error_no_feedback_during_heating_hot_bed">危険な可能性があるため、加熱を停止しました。 support@snapmaker.com にお問い合わせください。</string>
+    <string name="error_no_feedback_during_heating_hot_bed_title">ヒートベッド加熱の危険性</string>
+    <string name="all_j1_i_know">OK</string>
+    <string name="all_terms_and_conditions">利用規約</string>
+    <string name="all_download">ダウンロード</string>
+    <string name="all_local_update">ローカルアップデート</string>
+    <string name="all_update_Firmware_Version">ファームウェアバージョン</string>
+    <string name="all_update_current_version">現行バージョン：</string>
+    <string name="all_update_already_latest">現行バージョン：</string>
+    <string name="all_local">ローカル</string>
+    <string name="all_heat">加熱</string>
+    <string name="all_unit_m">%sMB</string>
+    <string name="all_unit_m_has_diagonal">%sMB/</string>
+    <string name="all_unit_mm_s">%smm/s</string>
+    <string name="all_networks">ネットワーク</string>
+    <string name="all_checking_for_update">アップデートを確認中...</string>
+    <string name="all_change">変更</string>
+    <string name="j1_calibration_vibration_calibration">振動補正キャリブレーション</string>
+    <string name="j1_failed_to_enable_feature">機能をオンにできません</string>
+    <string name="j1_failed_to_disable_feature">機能をオフにできません</string>
+    <string name="j1_failed_to_toggle_function_alert">再起動後、もう一度お試しください。 それでもオンにできない場合は、support@snapmaker.com にお問い合わせください。</string>
+    <string name="j1_print_remaining_time">残り時間</string>
+    <string name="j1_print_time_cost">プリント時間</string>
+    <string name="all_print_pausing">一時停止中...</string>
+    <string name="all_print_resuming">再開中…</string>
+    <string name="all_open_developer_mode_msg">Developer Modeに入りますか？</string>
+    <string name="all_close_developer_mode_msg">Developer Modeを終了してもよろしいですか？</string>
+    <string name="all_Enter">入る</string>
+    <string name="j1_updating_title">アップデート中...</string>
+    <string name="j1_updating_msg">アップデート中は、電源を入れたままにしてください</string>
+    <string name="j1_update_new">今すぐアップデート</string>
+    <string name="j1_update_success">アップデートが正常にインストールされました</string>
+    <string name="j1_fail_to_delete_title">削除に失敗しました</string>
+    <string name="j1_fail_to_delete_msg">ソースファイルが見つからないまたは異常です。もう一度お試しください。</string>
+    <string name="j1_remote_state_title">リモート状態: 接続済</string>
+    <string name="j1_toast_connect_success">%s(%s) 接続済</string>
+    <string name="j1_dialog_remote_file_receiving_content">%s(%s) 受信中...</string>
+    <string name="j1_toast_remote_connection_unavailable">接続が無効になっています。</string>
+    <string name="j1_settings_terms_content"><b>プライバシーポリシー</b>
+    \n\nShenzhen Snapmaker Technologies Co, Ltd.（深圳快造科技有限公司）（以下「当社」といいます）の製品・サービスをお選びいただき、ありがとうございます。
+     \n当社は、お客様のプライバシーを極めて重要なものと考えています。当社のプライバシーポリシーは、透明性を高めるとともに、読みやすく閲覧しやすい形式で当社のプライバシー保護策をご理解いただくことを意図して策定されています。以下では、お客様にシームレスな製品体験を提供するために、当社がお客様の情報を取得、処理、共有、保護する方法について説明しています。お客様は、このプライバシーポリシーに同意する必要はありません。しかし、お客様がこのプライバシー方針に同意しないことを選択した場合、当社は、お客様に当社の製品またはサービスを完全な形で提供することができなくなります。
+    \n\n<b>当社が収集する情報</b>
+        \n \n <b>1. デバイスの基本情報</b>
+        \n    • 情報の収集方法
+        \n       デバイスの基本情報（機器名、モデル名、ファームウェアのバージョン情報、接続状況（ハードウェア通信の接続状況やSnapmaker Lubanとの通信状況）、画面操作情報、ファームウェアのログやエラーメッセージ）は、お客様が使用するデバイス上のログファイルにローカルで保存されます。<b>お客様が任意で提供しない限り、当社はこれらの情報にアクセスすることはできません。</b>場合によって、当社から適切なサポートを提供できるようにするために、お客様は、電子メールまたはその他の方法で、ログファイルを当社に送信する必要があります。
+        \n    • 情報の種類と目的
+        \n      機器の正常な動作と優れたサービス体験を確保するために、当社はお客様から提供されたログファイルから以下の情報を取得することがあります。
+        \n       1. 通信の確立やファームウェアのアップデートなどを目的として、機器名、モデル名、ファームウェアのバージョン情報。
+        \n       2. 機器の接続状況を確認し、例外があれば速やかに報告することを目的として、接続状況（ハードウェア通信の接続状況やSnapmaker Lubanとの通信状況）。
+        \n       3. ページ上の現在位置やステータスを記録し、例外発生時には迅速に正常動作への復帰ができるようにすることを目的として、画面操作情報。
+        \n       4. 故障検出条件がない場合に問題を特定する目的で、ファームウェアのログとエラーメッセージ。
+        \n\n<b>2. パーソナライズされたデバイス情報</b>
+        \nお客様がユーザーエクスペリエンス向上プログラムへの参加を選択し、参加について明示的に同意した後に当社が取得する情報については、<b>ユーザーエクスペリエンス向上プログラム</b>をご参照ください。
+        \n \n <b>取得した情報の処理方法</b>
+        \n \n• 利用
+        \n  当社は、適用される法律および行政規則に従い、取得した情報を以下の目的で利用することがあります。
+        \n  • 機器の動作状況を分析すること。
+        \n  • お客様との間で締結した契約（当社の利用規約またはその他の契約）を履行し、製品の正常な使用を確保し、万全のアフターサービスを提供すること。
+        \n  • 製品・サービスの改善、障害解析、問題診断など、当社サービスに関するサポートを提供すること。
+        \n \n• 保管
+        \n  当社は、お客様および他のユーザーによりよいサービスを提供するために、お客様の情報を保管します。当社の目標は、お客様から提供された情報を、明記された目的を達成するために必要な期間に限定して、かつ、法律および行政規則で定められた保管期間内において保管することです。保管期間を決定する際、当社は、データ収集の必要性、収集データの種類、関連する法的枠組み、および行動の制限について慎重な評価を行います。
+        \n\n <b>お客様からご提供いただいた情報をお客様が管理する方法</b>
+        \n\n当社は、お客様が提供された情報に関するお客様の権利を尊重し、保護します。お客様は、お客様が提供された情報について、アクセス、修正、更新、または削除を行う権利、およびお客様の具体的な状況に関連性を有する理由によって、その情報の処理に異議を唱える権利を保有します。当社がお客様の同意を得た上で情報の処理を行う場合、お客様は、承認もしくは同意の範囲を変更し、または同意を撤回することができます。お客様が承認もしくは同意の範囲を変更した場合、または同意を撤回した場合でも、その変更または撤回の時点までに当社が行った承認済み情報の処理は、引き続き正当なものであるとみなされます。
+        \n\nただし、お客様が削除権もしくは情報処理に異議を唱える権利を行使した場合、承認もしくは同意の範囲を変更した場合、または同意を撤回した場合においては、当社の製品またはサービスの特性および機能の全部または一部をお客様に提供できなくなる可能性があることにご留意ください。
+        \n\nこのセクションに記載された権利、または適用法に定める権利の行使を希望される場合は、<b>support@snapmaker.com</b>までご連絡ください。
+        \n\n <b>取得した情報の共有・保護方法</b>
+        \n\n• 共有
+        \n  当社は、お客様から明示的な同意を取得しない限り、お客様の情報を、他の企業、組織、または個人と自発的に共有することはありません。当社は、法令によって要求された場合、訴訟紛争の解決に必要な場合、または行政当局もしくは司法当局の要請を受けた場合、お客様の情報を第三者と共有することがあります。当社は、お客様の情報を、第三者によるマーケティングの目的で、第三者と共有することはありません。
+        \n\n• 保護
+        \n  当社は、お客様の情報を保護するために、管理上、技術上、および物理上の保護手段を用います。しかし、こうした努力にもかかわらず、技術的な限界および悪意のある手法の可能性を原因として、当社は、セキュリティリスクが存在しないことの保証はできませんので、ご理解ください。当社は、これらのセキュリティ対策を継続的に改善し、お客様の個人情報を常に安全に維持できるよう最善を尽くしてまいります。
+        \n\n <b>未成年者のプライバシー</b>
+        \n\n当社は、18歳未満、または現地の法律で定められたその他の年齢の方を、未成年者として扱います。未成年者は、成人の立ち会いおよび監視のもとで当社製品を使用するものとします。取得する情報は機器に関する情報のみであり、当社が未成年者の個人情報を取得することはありません。
+         \n\n <b>本プライバシーポリシーの変更</b>
+        \n\n当社は、本プライバシーポリシーを修正または更新する権利を留保します。本プライバシーポリシーの変更については、このインターフェースを通じてお客様にお知らせします。
+        \n\n <b>当社の連絡先</b>
+        \n\n本プライバシーポリシーに関するご質問、ご意見、ご提案がございましたら、<u>support@snapmaker.com</u>までご連絡ください。
+        \n\n最終更新：2022年12月
+        \n
+    </string>
+</resources>

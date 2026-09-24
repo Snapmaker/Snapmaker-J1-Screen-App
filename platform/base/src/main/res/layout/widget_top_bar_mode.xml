@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_top_bar"
+    android:background="@color/top_bar_background">
+
+    <Button
+        android:id="@+id/top_bar_back"
+        android:layout_width="@dimen/height_top_bar"
+        android:layout_height="@dimen/height_top_bar"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/top_bar_back_background"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/top_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/top_bar_back"
+        android:gravity="center"
+        android:text="calibration 校准"
+        android:textColor="@color/top_bar_title"
+        android:textSize="@dimen/font_size_h4" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/top_bar_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/top_bar_model_"
+            android:gravity="center"
+            android:text="自动模式"
+            android:textColor="@color/top_bar_title" />
+
+
+        <ImageButton
+            android:id="@+id/top_bar_model_"
+            android:layout_width="@dimen/height_top_bar"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/top_bar_info_background"
+            android:contentDescription="@string/placeholder"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_top_bar_info_48x48" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

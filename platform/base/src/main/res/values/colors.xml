@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Neutral Colors -->
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+
+    <!-- Color System -->
+    <color name="grey_50">#fafafa</color>
+    <color name="grey_100">#f5f5f5</color>
+    <color name="grey_200">#eeeeee</color>
+    <color name="grey_300">#e0e0e0</color>
+    <color name="grey_400">#bdbdbd</color>
+    <color name="grey_500">#9e9e9e</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_900">#212121</color>
+
+    <color name="light_blue_50">#eaf5fe</color>
+    <color name="light_blue_100">#b3e5fc</color>
+    <color name="light_blue_200">#81d4fa</color>
+    <color name="light_blue_300">#4fc3f7</color>
+    <color name="light_blue_400">#29b6f6</color>
+    <color name="light_blue_500">#03a9f4</color>
+    <color name="light_blue_600">#039be5</color>
+    <color name="light_blue_700">#0288d1</color>
+    <color name="light_blue_800">#0277bd</color>
+    <color name="light_blue_900">#01579b</color>
+
+    <!-- TODO: use standard color system -->
+    <color name="custom_grey_0">#FFFFFF</color>
+    <color name="custom_grey_200">#e9e9e9</color>
+    <color name="custom_grey_300">#ABBAD0</color>
+    <color name="custom_grey_400">#c3c4c6</color>
+    <color name="custom_grey_500">#9B9B9B</color>
+    <color name="custom_grey_600">#656A6E</color>
+    <color name="custom_grey_700">#434242</color>
+    <color name="custom_grey_800">#323232</color>
+    <color name="custom_grey_900">#10111c</color>
+    <color name="custom_grey_900_cc">#cc10111c</color>
+
+    <color name="custom_blue_200">#89DDFF</color>
+    <color name="custom_blue_400">#40CBFF</color>
+    <color name="custom_blue_600">#29b3f2</color>
+
+    <color name="custom_red_300">#F85A98</color>
+    <color name="custom_red_700">#C62262</color>
+
+    <color name="custom_orange_100">#F5853D</color>
+    <color name="custom_orange_300">#F5853D</color>
+
+    <!-- App Theme -->
+    <color name="default_theme_background">@color/custom_grey_900</color>
+    <color name="default_theme_primary">@color/custom_grey_800</color>
+    <color name="default_theme_title">@color/custom_grey_0</color>
+    <color name="default_theme_desc1">@color/custom_grey_400</color>
+    <color name="default_theme_desc2">@color/grey_500</color>
+    <color name="default_theme_secondary">@color/custom_blue_400</color>
+    <color name="default_theme_dark_mask">#A0000000</color>
+    <color name="default_theme_click_mask">#50000000</color>
+    <color name="default_theme_separator">@color/custom_grey_600</color>
+    <color name="default_theme_text_warning">@color/custom_red_700</color>
+
+    <!-- Gradient   -->
+    <color name="gradient_blue_start">#3cc1ea</color>
+    <color name="gradient_blue_end">#2f83ff</color>
+
+    <color name="gradient_blue_start_pressed">#78EDFD</color>
+    <color name="gradient_blue_end_pressed">#3396FF</color>
+
+    <color name="gradient_green_start">#00e234</color>
+    <color name="gradient_green_end">#44d7f6</color>
+
+    <color name="gradient_yellow_start">#f1903d</color>
+    <color name="gradient_yellow_end">#f7d000</color>
+
+    <color name="gradient_orange_start">#ee843c</color>
+    <color name="gradient_orange_end">#f9c500</color>
+
+    <color name="gradient_red_start">#f2155b</color>
+    <color name="gradient_red_end">#863df5</color>
+
+    <color name="gradient_purple_start">#a25aff</color>
+    <color name="gradient_purple_end">#6060ff</color>
+
+    <!-- All -->
+    <color name="item_title">@color/custom_grey_200</color>
+    <color name="item_desc">@color/custom_grey_500</color>
+
+    <color name="top_bar_background">@color/default_theme_primary</color>
+    <color name="top_bar_title">@color/custom_grey_0</color>
+
+    <color name="bottom_bar_background">@color/default_theme_primary</color>
+    <color name="switch_background">@color/default_theme_primary</color>
+
+    <!-- Page -->
+    <color name="control_normal">@color/default_theme_primary</color>
+    <color name="control_selected">@color/grey_900</color>
+    <color name="control_activated">@color/default_theme_secondary</color>
+    <color name="control_pressed">@color/grey_900</color>
+
+    <!-- TODO: refactor -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_security_reminder">#FA6400</color>
+    <color name="test_color">#FFFFFFFF</color>
+
+    <color name="a400_color">#FF6E6E6E</color>
+
+
+    <!--  Universal Color Palette -->
+    <!--  we don't name specific place #6E6E6Eor items for color,
+    keep pure color term desc in palette, and define specific description in themes or styles.  -->
+
+    <!--  Search "name that color" for those don't know what color term is.  -->
+
+    <color name="palette_red_sunset">#FC5244</color>
+    <color name="palette_red_monza">#D0021B</color>
+
+    <color name="palette_orange_web">#FFAB00</color>
+    <color name="palette_orange_pizazz">#FF8A00</color>
+    <color name="palette_orange_pizazz_dark">#FF9500</color>
+    <color name="palette_orange_safety">#F56A00</color>
+    <color name="palette_orange_safety_deep">#FF6B00</color>
+    <color name="palette_orange_international">#FF5500</color>
+
+
+    <color name="palette_yellow_gold">#FFD600</color>
+
+    <color name="palette_blue_dodger">#226BFF</color>
+    <color name="palette_blue_ribbon">#1A41F5</color>
+    <color name="palette_light_blue_ribbon">#1A8CF5</color>
+    <color name="palette_blue_tie">#0F278A</color>
+    <color name="palette_light_blue_tie">#153AC4</color>
+    <color name="palette_light_blue_dark">#331A41F5</color>
+
+    <color name="palette_green_solid">#00FF00</color>
+    <color name="palette_green_mantis">#62C864</color>
+    <color name="palette_green_mountain_meadow">#18B65B</color>
+
+    <!--  neutral color -->
+    <color name="palette_black_snapmaker">#090909</color>
+    <color name="palette_grey_nero">#212121</color>
+    <color name="palette_grey_nero_transparent_00">#21212100</color>
+    <color name="palette_grey_nero_transparent_10">#CC212121</color>
+    <color name="palette_grey_mine_shaft">#2E2E2E</color>
+    <color name="palette_grey_mine_shaft_transparency_96">#F52E2E2E</color>
+    <color name="palette_grey_dim">#6E6E6E</color>
+    <color name="palette_white_silver">#C9C9C9</color>
+    <color name="palette_white_pure">#FFFFFF</color>
+    <color name="palette_white_transparent_10">#1AE9EBF7</color>
+
+    <color name="palette_black_pearl">#191B27</color>
+    <color name="palette_black_rock">#2D2F40</color>
+    <color name="palette_black_transparent_90">#E6131315</color>
+    <color name="palette_grey_dark">#3D3F4C</color>
+    <color name="palette_grey_payne">#3D3F4D</color>
+    <color name="palette_grey_mid">#595A66</color>
+    <color name="palette_grey_storm">#737480</color>
+    <color name="palette_grey_santa">#9B9CA6</color>
+    <color name="palette_grey_start">#F0F0F0</color>
+    <color name="palette_grey_french">#C4C5CC</color>
+    <color name="palette_grey_transparent_10">#1ACCD5DF</color>
+    <color name="palette_white_solitude">#EDEEF2</color>
+    <color name="palette_white_athens">#F7F8FA</color>
+    <color name="palette_grey_lucency">#525466CC</color>
+    <color name="palette_grey_light">#333340</color>
+    <color name="palette_grey_tint">#333440</color>
+    <color name="palette_grey_center">#3D3D3D</color>
+    <color name="palette_grey_tint_transparency_00">#00333340</color>
+    <color name="palette_grey_tint_transparent_20">#33344000</color>
+
+    <color name="palette_green">#18B65B</color>
+</resources>

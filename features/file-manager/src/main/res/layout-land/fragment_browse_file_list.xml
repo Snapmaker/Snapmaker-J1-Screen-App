@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/palette_black_pearl"
+    tools:ignore="MissingDefaultResource">
+
+    <!--  top bar for browse  -->
+    <RelativeLayout
+        android:id="@+id/rl_browse_file_list_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/theme_file_manege_bar_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_top_bar_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/icon_back_normal_80x80" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tl_browse_file_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btn_top_bar_back"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="?attr/theme_file_manege_item_txt_select_color"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="?attr/theme_file_manege_item_txt_select_color"
+            app:tabTextAppearance="@style/TabLayTheme"
+            app:tabTextColor="?attr/theme_file_manege_item_txt_color" />
+
+        <TextView
+            android:id="@+id/btn_browse_file_list_top_folder"
+            style="@style/TabLayTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/btn_top_bar_back"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_browse_file_list_sort_option"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/btn_browse_file_list_edit_mode"
+            android:background="@drawable/browse_j1_sort_background" />
+
+        <Button
+            android:id="@+id/btn_browse_file_list_edit_mode"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/browse_j1_edit_background" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_browse_file_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/theme_file_manege_item_line_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_browse_file_list_top_bar" />
+
+    <!--  Local File List  -->
+    <RelativeLayout
+        android:id="@+id/rl_browse_file_local_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_browse_file_line">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_browse_local_file_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="?attr/theme_file_manege_item_name_left"
+            android:layout_marginEnd="?attr/theme_file_manege_item_name_left"
+            tools:listitem="@layout/item_j1_browse_file" />
+
+        <!--   File List Empty view   -->
+        <LinearLayout
+            android:id="@+id/ll_browse_external_file_list_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_layout_16"
+            android:layout_marginTop="@dimen/margin_layout_12"
+            android:layout_marginRight="@dimen/margin_layout_16"
+            android:layout_marginBottom="@dimen/margin_layout_16"
+            android:background="?attr/theme_file_manege_empty_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_browse_external_file_list_empty"
+                android:layout_width="?attr/theme_file_manege_empty_pic_width"
+                android:layout_height="?attr/theme_file_manege_empty_pic_width"
+                android:layout_marginBottom="?attr/theme_file_manege_empty_logo_margin"
+                android:src="@drawable/pic_file_normal_160x160" />
+
+            <TextView
+                android:id="@+id/tv_browse_external_file_list_empty_title"
+                style="@style/AppTheme.TextTitleSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_browse_external_file_list_empty"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="?attr/theme_file_manege_empty_title_margin"
+                android:text="@string/j1_file_usb_flash_drive_not_recognized_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_browse_external_file_list_empty_content"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6dp"
+                android:textAlignment="center"
+                android:textColor="?attr/theme_file_manege_item_tip_content_color" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_browse_bottom_operation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="@dimen/margin_layout_16"
+        android:layout_marginEnd="@dimen/margin_layout_16"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_browse_move"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/view_dividing_line"
+            android:gravity="center"
+            android:text="Copy to USB"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@drawable/btn_print_operation"
+            android:textSize="?attr/theme_font_size_body1"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/select_j1_move" />
+
+        <View
+            android:id="@+id/view_dividing_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="@dimen/margin_layout_12"
+            android:background="?attr/theme_dialog_line_color" />
+
+        <TextView
+            android:id="@+id/tv_browse_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/view_dividing_line"
+            android:gravity="center"
+            android:text="@string/all_delete"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@drawable/btn_print_operation"
+            android:textSize="?attr/theme_font_size_body1"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/select_j1_delete" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="?attr/theme_spacing3"
+    android:layout_marginBottom="?attr/theme_spacing3"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/iv_model"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/file_detail_problem_icon_background"/>
+
+    <TextView
+        android:id="@+id/tv_model"
+        style="@style/AppTheme.TextBody6"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/iv_model"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="standmode"/>
+
+    <TextView
+        android:id="@+id/tv_model2"
+        style="@style/AppTheme.TextBody4"
+        android:layout_toRightOf="@+id/iv_model"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/tv_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="standmode"/>
+
+</RelativeLayout>

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/theme_color_page_background"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_bg_section_detail_normal">
+
+        <ImageView
+            android:id="@+id/iv_j1_print_remote"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/rl_j1_print_progress_view"
+            android:layout_width="188dp"
+            android:layout_height="188dp"
+            android:layout_marginStart="44dp"
+            app:layout_constraintBottom_toTopOf="@id/view_j1_print_control_buttons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <fabscreen.platform.base.view.CircularProgressView
+                android:id="@+id/cpv_j1_print_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:cpv_backgroundColor="#2D2F40"
+                app:cpv_fillInColor="#00000000"
+                app:cpv_frameColor="#00000000"
+                app:cpv_outer_strokeWidth="0dp"
+                app:cpv_progressCircleColor="@color/palette_orange_web"
+                app:cpv_progressColor="@color/palette_orange_safety"
+                app:cpv_strokeWidth="6dp"
+                tools:cpv_percentage="30" />
+
+            <RelativeLayout
+                android:id="@+id/view_j1_print_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp">
+
+                <TextView
+                    android:id="@+id/tv_j1_print_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/all_0"
+                    android:textColor="#F7F8FA"
+                    android:textSize="52dp" />
+
+                <TextView
+                    android:id="@+id/tv_j1_print_percent_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_j1_print_progress"
+                    android:layout_toEndOf="@id/tv_j1_print_progress"
+                    android:text="@string/all_unit_percentage"
+                    android:textAlignment="textEnd"
+                    android:textColor="#F7F8FA"
+                    android:textSize="52dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_j1_print_remaining_time_label"
+                style="@style/AppTheme.TextExplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_j1_print_progress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_layout_8"
+                android:text="@string/j1_print_remaining_time"
+                android:textColor="?attr/theme_color_body_explain" />
+
+            <TextView
+                android:id="@+id/tv_j1_print_remaining_time_value"
+                style="@style/AppTheme.TextBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_j1_print_remaining_time_label"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_layout_4"
+                android:text="@string/all_calculating"
+                android:textAlignment="center"
+                android:textColor="?attr/theme_color_body_secondary1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_j1_print_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toTopOf="@id/view_j1_print_control_buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rl_j1_print_progress_view"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_j1_print_filename"
+                style="@style/AppTheme.TextBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:maxWidth="200dp"
+                android:maxLines="1"
+                android:text="@string/placeholder"
+                android:textAlignment="textStart"
+                android:textColor="?attr/theme_color_body_secondary1" />
+
+            <TextView
+                android:id="@+id/tv_j1_print_current_mode"
+                style="@style/AppTheme.TextExplain"
+                android:layout_width="112dp"
+                android:layout_height="28dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/tv_j1_print_filename"
+                android:background="@drawable/shape_print_current_mode"
+                android:gravity="center"
+                android:text="@string/placeholder"
+                android:textAlignment="center"
+                android:textColor="?attr/theme_color_explain_text" />
+
+            <!--     TODO: refactor these print details layout      -->
+            <RelativeLayout
+                android:id="@+id/rl_j1_print_details_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_j1_print_filename"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_j1_print_details_left_extruder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignParentTop="true"
+                    android:minWidth="165dp">
+
+                    <ImageView
+                        android:id="@+id/iv_j1_print_left_extruder_temp"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_nozzle_left_normal_64x64" />
+
+                    <TextView
+                        android:id="@+id/tv_j1_print_left_extruder_temp"
+                        style="@style/AppTheme.TextBody5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_layout_8"
+                        android:layout_toEndOf="@id/iv_j1_print_left_extruder_temp"
+                        android:textAlignment="textStart" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_j1_print_details_heated_bed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_below="@id/rl_j1_print_details_left_extruder"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_j1_print_heat_bed_temp"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_heated_bed_normal_64x64" />
+
+                    <TextView
+                        android:id="@+id/tv_j1_print_heated_bed_temp"
+                        style="@style/AppTheme.TextBody5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_layout_8"
+                        android:layout_toEndOf="@id/iv_j1_print_heat_bed_temp"
+                        android:textAlignment="textStart" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_j1_print_details_fan_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_below="@id/rl_j1_print_details_heated_bed"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_j1_print_fan_speed"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_wind_normal_64x64" />
+
+                    <TextView
+                        android:id="@+id/tv_j1_print_fan_speed_l"
+                        style="@style/AppTheme.TextBody5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_layout_8"
+                        android:layout_toEndOf="@id/iv_j1_print_fan_speed"
+                        android:text="L:—%"
+
+                        android:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/tv_j1_print_fan_speed_r"
+                        style="@style/AppTheme.TextBody5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_layout_8"
+                        android:layout_toEndOf="@id/tv_j1_print_fan_speed_l"
+                        android:text="R:—%"
+                        android:textAlignment="textStart" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_j1_print_details_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_j1_print_filename"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/rl_j1_print_details_1">
+
+                <RelativeLayout
+                    android:id="@+id/rl_j1_print_details_right_extruder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignParentTop="true">
+
+                    <ImageView
+                        android:id="@+id/iv_j1_print_right_extruder_temp"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_nozzle_right_normal_64x64" />
+
+                    <TextView
+                        android:id="@+id/tv_j1_print_right_extruder_temp"
+                        style="@style/AppTheme.TextBody5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_layout_8"
+                        android:layout_toEndOf="@id/iv_j1_print_right_extruder_temp"
+                        android:textAlignment="textStart" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_j1_print_details_work_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_below="@id/rl_j1_print_details_right_extruder"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_j1_print_right_work_speed"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_work_speed_normal_64x64" />
+
+                    <TextView
+                        android:id="@+id/tv_j1_print_work_speed"
+                        style="@style/AppTheme.TextBody5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_layout_8"
+                        android:layout_toEndOf="@id/iv_j1_print_right_work_speed"
+                        android:textAlignment="textStart" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_j1_print_details_adjustment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_below="@id/rl_j1_print_details_work_speed"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_j1_print_adjustment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/j1_print_adjust"
+                        android:textAlignment="textStart"
+                        android:textColor="#FF8A00"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_j1_print_adjustment"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/tv_j1_print_adjustment"
+                        android:src="@drawable/icon_arrow_right_normal_64x64" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_j1_print_notice_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginBottom="@dimen/margin_layout_4"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/view_j1_print_control_buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_j1_print_notice_temperature_logo"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tv_j1_print_notice_temperature_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/palette_orange_safety_deep"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/view_j1_print_control_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_bg_section_detail_normal"
+            android:divider="?attr/theme_dialog_line_color"
+            android:dividerPadding="@dimen/margin_layout_12"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/btn_j1_print_pause"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/print_pause"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/btn_print_operation"
+                android:textSize="?attr/theme_font_size_body1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_j1_print_resume"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/print_resume"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/btn_print_operation"
+                android:textSize="?attr/theme_font_size_body1"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_j1_print_stop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/print_stop"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/btn_print_operation"
+                android:textSize="?attr/theme_font_size_body1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_j1_print_stop_one_extruder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/print_stop_one_extruder"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/btn_print_operation"
+                android:textSize="?attr/theme_font_size_body1"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_j1_print_print_again"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_section_detail_normal"
+                android:gravity="center"
+                android:text="@string/print_print_again"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/btn_print_operation"
+                android:textSize="?attr/theme_font_size_body1"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_j1_print_complete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_section_detail_normal"
+                android:gravity="center"
+                android:text="@string/print_complete"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/btn_print_operation"
+                android:textSize="?attr/theme_font_size_body1"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

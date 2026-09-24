@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/j1_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_layout_16"
+        android:layout_marginEnd="@dimen/margin_layout_16"
+        android:layout_marginBottom="@dimen/margin_layout_16"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_welcome_j1_complete"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/margin_layout_40"
+        android:src="@drawable/pic_welcome_complete"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        app:layout_constraintStart_toStartOf="@id/view_container"
+        app:layout_constraintTop_toTopOf="@id/view_container" />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/AppTheme.TextTitleSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_20"
+        android:text="@string/j1_setup_completed_title"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        app:layout_constraintStart_toStartOf="@id/view_container"
+        app:layout_constraintTop_toBottomOf="@id/iv_welcome_j1_complete" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/AppTheme.TextBody2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_8"
+        android:text="@string/j1_setup_completed_content"
+        android:textColor="@color/palette_grey_french"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        app:layout_constraintStart_toStartOf="@id/view_container"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+
+    <View
+        android:id="@+id/view_bottom_container"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        app:layout_constraintBottom_toBottomOf="@id/view_container"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        app:layout_constraintStart_toStartOf="@id/view_container" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/AppTheme.PrimaryButton"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="@dimen/margin_12dp"
+        android:text="@string/all_next"
+        app:layout_constraintBottom_toBottomOf="@id/view_bottom_container"
+        app:layout_constraintEnd_toEndOf="@id/view_bottom_container"
+        app:layout_constraintTop_toTopOf="@id/view_bottom_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

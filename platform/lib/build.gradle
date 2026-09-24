@@ -1,0 +1,42 @@
+plugins {
+    id 'com.android.library'
+    id 'com.jakewharton.butterknife'
+}
+
+android {
+    defaultConfig {
+        ndk {
+            moduleName "serial_port"
+            abiFilters "armeabi-v7a", "x86"
+            ldLibs "log"
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path 'CMakeLists.txt'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation Libs.INSTANCE.appCompat
+    implementation Libs.INSTANCE.material
+    implementation Libs.INSTANCE.rxjava
+    implementation Libs.INSTANCE.autoDispose
+    implementation Libs.INSTANCE.autoDisposeLifecycle
+    implementation Libs.INSTANCE.autoDisposeArchComponents
+    implementation Libs.INSTANCE.lifecycleJava8
+    implementation Libs.INSTANCE.butterknife
+    annotationProcessor Libs.INSTANCE.butterknifeAnnotation
+    implementation Libs.INSTANCE.rxAndroid
+    implementation Libs.INSTANCE.segmentedButton
+    implementation Libs.INSTANCE.logger
+}

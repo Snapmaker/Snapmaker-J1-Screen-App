@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/theme_spacing9">
+
+    <Button
+        android:id="@+id/top_bar_back"
+        style="@style/AppTheme.Button"
+        android:layout_width="?attr/theme_icon_tools_button"
+        android:layout_height="?attr/theme_icon_tools_button"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="?attr/theme_spacing5"
+        android:background="@drawable/top_bar_j1_back_background"
+        android:contentDescription="@string/todo" />
+
+</FrameLayout>
+

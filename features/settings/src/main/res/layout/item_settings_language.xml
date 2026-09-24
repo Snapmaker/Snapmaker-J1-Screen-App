@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/selector_bg_language_item"
+    android:layout_height="?attr/theme_list_item_height">
+
+    <TextView
+        android:id="@+id/tv_settings_language"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_bg_language_item" />
+
+    <Button
+        android:id="@+id/btn_settings_language_name"
+        style="@style/AppTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_5"
+        android:paddingStart="@dimen/margin_layout_48"
+        android:paddingEnd="0dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/palette_white_pure"
+        android:textSize="?attr/theme_font_size_body1" />
+
+    <TextView
+        android:id="@+id/tv_center_settings_language_name"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/iv_settings_language_selected"
+        android:layout_width="?attr/theme_icon_tools_decorate"
+        android:layout_height="?attr/theme_icon_tools_decorate"
+        android:layout_alignEnd="@id/btn_settings_language_name"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_layout_10"
+        android:layout_marginRight="@dimen/margin_layout_60"
+        android:clickable="false"
+        android:contentDescription="@string/placeholder"
+        android:paddingStart="@dimen/margin_layout_10"
+        android:paddingTop="@dimen/margin_layout_16"
+        android:paddingEnd="@dimen/margin_layout_10"
+        android:paddingBottom="@dimen/margin_layout_16"
+        android:src="?attr/theme_file_manege_menu_check_icon" />
+
+</RelativeLayout>
+

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/widget_top_bar_back_only"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_leveling_xy_calibration"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_layout_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+        <ImageView
+            android:id="@+id/iv_leveling_xy_calibration"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/pic_laser_toolhead_focus_calibration_10" />
+
+        <TextView
+            android:id="@+id/iv_leveling_xy_calibration_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_leveling_xy_calibration"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="XY方向校准准备"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/iv_leveling_xy_calibration_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_leveling_xy_calibration_info_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="待校准模型打印完成后，选择X方向与Y方向上，顶部小线条最位于底板中央的线"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btn_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rl_leveling_xy_calibration"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+        <TextView
+            android:id="@+id/tv_x_pick_ruler"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="X方向：" />
+
+        <fabscreen.platform.core.ui.view.RulerView
+            android:id="@+id/rv_x_pick_ruler"
+            style="@style/AppTheme.RulerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_x_pick_ruler"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            app:rv_currentValue="0"
+            app:rv_maxValue="5"
+            app:rv_minValue="-5"
+            app:rv_unit="1"
+            app:rv_unitCountPerDivision="1"
+            app:rv_unitSpacing="40dp" />
+
+
+        <TextView
+            android:id="@+id/tv_y_pick_ruler"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rv_x_pick_ruler"
+            android:layout_alignParentStart="true"
+            android:text="Y方向：" />
+
+        <fabscreen.platform.core.ui.view.RulerView
+            android:id="@+id/rv_y_pick_ruler"
+            style="@style/AppTheme.RulerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_y_pick_ruler"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            app:rv_currentValue="0"
+            app:rv_maxValue="5"
+            app:rv_minValue="-5"
+            app:rv_unit="1"
+            app:rv_unitCountPerDivision="1"
+            app:rv_unitSpacing="40dp" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/AppTheme.Button.BlueButton"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/size_button_45"
+        android:layout_margin="@dimen/margin_layout_20"
+        android:text="确认"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rl_leveling_xy_calibration" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

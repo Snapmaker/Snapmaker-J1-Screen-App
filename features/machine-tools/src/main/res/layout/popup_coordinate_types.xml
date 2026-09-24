@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="218dp"
+    android:background="@drawable/shape_bg_a400_popup"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_work"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:background="@drawable/selector_bg_popup_top_half"
+        android:gravity="center_vertical"
+        android:paddingStart="73dp"
+        android:text="@string/work_coordinates"
+        android:textColor="@color/selector_a400_bg_popup_item"
+        android:textSize="28sp"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tv_machine"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:background="@drawable/selector_bg_popup_bottom_half"
+        android:gravity="center_vertical"
+        android:paddingStart="73dp"
+        android:text="@string/machine_coordinates"
+        android:textColor="@color/selector_a400_bg_popup_item"
+        android:textSize="28sp"
+        tools:ignore="RtlSymmetry" />
+</LinearLayout>

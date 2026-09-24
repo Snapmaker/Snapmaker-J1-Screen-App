@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#090909">
+
+    <include layout="@layout/a400_progress_top_bar" />
+
+    <ImageView
+        android:id="@+id/iv_replace_module_pic"
+        android:layout_width="578dp"
+        android:layout_height="434dp"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginTop="@dimen/margin_layout_64"
+        android:contentDescription="@string/placeholder"
+        android:src="@drawable/pic_a400_replace_module_power_off"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress" />
+
+    <TextView
+        android:id="@+id/tv_all_except_enclosure_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="120dp"
+        android:drawableStart="@drawable/ic_a400_caution"
+        android:drawablePadding="8dp"
+        android:text="@string/a400_replace_module_instruction_warning_1"
+        android:textColor="#FFAB00"
+        android:textSize="@dimen/font_size_20sp"
+        app:layout_constraintStart_toEndOf="@id/iv_replace_module_pic"
+        app:layout_constraintTop_toTopOf="@id/iv_replace_module_pic"
+        tools:ignore="UseCompatTextViewDrawableXml" />
+
+    <TextView
+        android:id="@+id/tv_enclosure_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_a400_caution"
+        android:drawablePadding="8dp"
+        android:text="@string/a400_replace_module_instruction_warning_2"
+        android:textColor="#FFAB00"
+        android:textSize="@dimen/font_size_20sp"
+        app:layout_constraintStart_toStartOf="@id/tv_all_except_enclosure_off"
+        app:layout_constraintTop_toBottomOf="@id/tv_all_except_enclosure_off"
+        tools:ignore="UseCompatTextViewDrawableXml" />
+
+    <TextView
+        android:id="@+id/tv_mode_on_number_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="1."
+        android:textColor="#6E6E6E"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/tv_enclosure_warning"
+        app:layout_constraintTop_toBottomOf="@id/tv_enclosure_warning"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_mode_on_number_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="2."
+        android:textColor="#6E6E6E"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/tv_mode_on_number_1"
+        app:layout_constraintTop_toBottomOf="@id/tv_mode_on_number_1"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_mode_on_1st_tip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="48dp"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/a400_replace_module_instruction_tip_1"
+        android:textColor="#6E6E6E"
+        android:textSize="@dimen/font_size_20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_mode_on_number_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_mode_on_number_1" />
+
+    <TextView
+        android:id="@+id/tv_mode_on_2nd_tip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="48dp"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/a400_replace_module_instruction_tip_2"
+        android:textColor="#6E6E6E"
+        android:textSize="@dimen/font_size_20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_mode_on_number_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_mode_on_number_2"
+        app:layout_constraintTop_toBottomOf="@id/tv_mode_on_number_1" />
+
+    <ScrollView
+        android:id="@+id/sv_instruction"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="9dp"
+        android:scrollbarThumbVertical="@drawable/shape_a400_scroll_bar_thumb"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/iv_replace_module_pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_replace_module_pic"
+        app:layout_constraintTop_toTopOf="@id/iv_replace_module_pic">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_a400_caution"
+                android:drawablePadding="8dp"
+                android:text="@string/a400_replace_module_all_modules_power_off"
+                android:textColor="#ffab00"
+                android:textSize="@dimen/font_size_20sp"
+                tools:ignore="UseCompatTextViewDrawableXml" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_layout_32"
+                android:text="@string/a400_replace_module_mode_off_tip_1_title"
+                android:textColor="#c9c9c9"
+                android:textSize="@dimen/font_size_20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/a400_replace_module_mode_off_tip_1"
+                android:textColor="#6e6e6e"
+                android:textSize="@dimen/font_size_20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/a400_replace_module_mode_off_tip_2_title"
+                android:textColor="#c9c9c9"
+                android:textSize="@dimen/font_size_20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/a400_replace_module_mode_off_tip_2"
+                android:textColor="#6e6e6e"
+                android:textSize="@dimen/font_size_20sp" />
+
+
+            <TextView
+                android:id="@+id/tv_tap_help_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textColor="#6e6e6e"
+                android:textSize="@dimen/font_size_20sp"
+                tools:text="For more detailed instruction, tap [icon]." />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/AppTheme.PrimaryButton"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="@dimen/margin_48dp"
+        android:layout_marginBottom="@dimen/margin_48dp"
+        android:text="@string/all_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_4pin_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="tv_all_except_enclosure_off,tv_enclosure_warning,tv_mode_on_number_1,tv_mode_on_number_2,tv_mode_on_1st_tip,tv_mode_on_2nd_tip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

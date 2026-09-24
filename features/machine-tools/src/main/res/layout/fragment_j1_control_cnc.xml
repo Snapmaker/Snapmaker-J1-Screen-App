@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/palette_grey_nero">
+
+    <fabscreen.platform.core.ui.view.RotateButtonView
+        android:id="@+id/rbv_cnc_control"
+        android:layout_width="570dp"
+        android:layout_height="526dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srv_padding="20dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_cnc_control_tip"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Spindle Speed" />
+
+        <RelativeLayout
+            android:id="@+id/ll_cnc_control_rpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cnc_control_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_layout_4"
+            android:layout_marginBottom="110dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cnc_control_rpm"
+                style="@style/AppTheme.TextLargeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_cnc_control_company"
+                style="@style/AppTheme.TextTitleSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_cnc_control_rpm"
+                android:layout_marginTop="10dp"
+                android:text="rpm"
+                android:layout_toRightOf="@+id/tv_cnc_control_rpm"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_cnc_control_switch"
+            android:layout_width="228dp"
+            android:layout_height="117dp"
+            android:layout_below="@+id/ll_cnc_control_rpm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="139dp"
+            android:background="@drawable/pic_a400_cnc_off_bg"
+            android:text="Turn On"
+            android:textAllCaps="false"
+            android:textColor="@color/palette_white_silver"
+            android:textSize="@dimen/font_size_24sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="302dp"
+    android:layout_height="100dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    android:background="@drawable/selector_bg_section_round_rect"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:contentDescription="@string/placeholder"
+        app:tint="@color/selector_a400_left_section_ic_and_text_color"
+        tools:src="@drawable/ic_a400_jog" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_12"
+        android:text="Heated Bed"
+        android:textColor="@color/selector_a400_left_section_ic_and_text_color"
+        android:textSize="@dimen/font_size_24sp" />
+</LinearLayout>

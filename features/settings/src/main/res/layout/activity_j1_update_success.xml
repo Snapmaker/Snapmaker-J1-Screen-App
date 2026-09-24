@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/v_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:background="@drawable/shape_bg_section_detail_normal" />
+
+    <ImageView
+        android:layout_width="188dp"
+        android:layout_height="188dp"
+        android:src="@drawable/pic_j1_progress_bg"
+        app:layout_constraintBottom_toBottomOf="@id/gcpb_progress"
+        app:layout_constraintEnd_toEndOf="@id/gcpb_progress"
+        app:layout_constraintStart_toStartOf="@id/gcpb_progress"
+        app:layout_constraintTop_toTopOf="@id/gcpb_progress" />
+
+    <fabscreen.platform.core.ui.view.GradientCircularProgressBar
+        android:id="@+id/gcpb_progress"
+        android:layout_width="188dp"
+        android:layout_height="188dp"
+        app:gcpb_end_color="#F56A00"
+        app:gcpb_indicator_width="6dp"
+        app:gcpb_max_progress="100"
+        app:gcpb_progress="100"
+        app:gcpb_start_color="#FFAB00"
+        app:layout_constraintBottom_toTopOf="@id/tv_update_tips"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/v_container"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100%"
+        android:textColor="@color/palette_white_pure"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/gcpb_progress"
+        app:layout_constraintEnd_toEndOf="@id/gcpb_progress"
+        app:layout_constraintStart_toStartOf="@id/gcpb_progress"
+        app:layout_constraintTop_toTopOf="@id/gcpb_progress"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_update_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/j1_update_success"
+        android:textColor="#C4C5CC"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/v_bottom_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gcpb_progress" />
+
+    <View
+        android:id="@+id/v_bottom_bg"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        app:layout_constraintBottom_toBottomOf="@id/v_container"
+        app:layout_constraintEnd_toEndOf="@id/v_container"
+        app:layout_constraintStart_toStartOf="@id/v_container" />
+
+    <Button
+        android:id="@+id/btn_complete"
+        style="@style/AppTheme.PrimaryButton"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/all_complete"
+        app:layout_constraintBottom_toBottomOf="@id/v_bottom_bg"
+        app:layout_constraintEnd_toEndOf="@id/v_bottom_bg"
+        app:layout_constraintTop_toTopOf="@id/v_bottom_bg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

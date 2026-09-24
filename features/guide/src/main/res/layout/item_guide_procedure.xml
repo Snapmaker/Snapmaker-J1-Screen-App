@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_layout_48"
+    android:layout_marginEnd="@dimen/margin_layout_48"
+    android:layout_marginBottom="@dimen/margin_layout_16"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/selector_guide_procedure_indicator" />
+
+    <TextView
+        android:id="@+id/tv_procedure_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/selector_guide_procedure_text_color"
+        android:textSize="24sp"
+        tools:text="装载物料" />
+</LinearLayout>

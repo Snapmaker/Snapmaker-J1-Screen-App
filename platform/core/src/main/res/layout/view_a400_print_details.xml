@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="192dp"
+    android:layout_height="309dp"
+    android:background="@drawable/selector_bg_a400_print_info">
+
+    <ImageView
+        android:id="@+id/iv_print_details_card_icon"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_print_details_card_name"
+        style="@style/AppTheme.TextExplain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_12dp"
+        android:textColor="#C9C9C9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_print_details_card_icon" />
+
+    <fabscreen.platform.core.ui.view.CircleProgressView
+        android:id="@+id/pb_print_details_card"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        app:cpv_backgroundColor="#2e2e2e"
+        app:cpv_progressCircleColor="#1a41f5"
+        app:cpv_progressColor="#1a41f5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/pb_print_details_card"
+        app:layout_constraintEnd_toEndOf="@+id/pb_print_details_card"
+        app:layout_constraintStart_toStartOf="@+id/pb_print_details_card"
+        app:layout_constraintTop_toTopOf="@+id/pb_print_details_card">
+
+        <TextView
+            android:id="@+id/tv_print_details_current_value"
+            style="@style/AppTheme.TextTitleHeadLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_print_details_target_value"
+            android:layout_width="@dimen/margin_48dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/tv_print_details_current_value"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="?attr/theme_color_primary"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_print_details_target_value"
+            style="@style/AppTheme.TextExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_print_details_current_value"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:textColor="?attr/theme_color_primary"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_print_details_current_unit"
+            style="@style/AppTheme.TextExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_print_details_current_value"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/palette_grey_dim"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

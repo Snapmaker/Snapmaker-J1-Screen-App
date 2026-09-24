@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_intro"
+        android:layout_width="578dp"
+        android:layout_height="434dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/shape_a400_bg_intro_main_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_intro_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/tv_intro_content"
+        app:layout_constraintEnd_toEndOf="@id/tv_intro_content"
+        app:layout_constraintStart_toStartOf="@id/tv_intro_content"
+        app:layout_constraintTop_toTopOf="@id/iv_intro"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Replace the Hot End" />
+
+    <TextView
+        android:id="@+id/tv_intro_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="48dp"
+        android:lineSpacingExtra="4dp"
+        android:textColor="#6E6E6E"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_intro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_intro"
+        app:layout_constraintTop_toBottomOf="@id/tv_intro_title"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="The screen will guide you to replace the hot end. After the replacement, the mainboard will restart automatically." />
+
+    <Button
+        android:id="@+id/btn_start"
+        style="@style/AppTheme.PrimaryButton"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_margin="48dp"
+        android:text="@string/all_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

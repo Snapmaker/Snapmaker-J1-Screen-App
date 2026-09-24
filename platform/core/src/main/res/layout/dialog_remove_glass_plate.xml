@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_fragile"
+        android:layout_width="?attr/theme_icon_tools_decorate"
+        android:layout_height="?attr/theme_icon_tools_decorate"
+        android:layout_marginTop="26dp"
+        android:contentDescription="@string/placeholder"
+        android:src="@drawable/icon_glass_plate_normal_64x64"
+        app:layout_constraintEnd_toStartOf="@id/tv_title"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/AppTheme.TextTitleSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_8"
+        android:text="Remove the Glass Plate"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/iv_fragile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/iv_fragile"
+        app:layout_constraintTop_toTopOf="@id/iv_fragile" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_28"
+        android:layout_marginEnd="@dimen/margin_layout_28"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_fragile"
+        tools:text="Later, the machine will start to heat the bed and nozzles." />
+
+    <ImageView
+        android:id="@+id/iv_heated_bed"
+        android:layout_width="?attr/theme_icon_tools_decorate"
+        android:layout_height="?attr/theme_icon_tools_decorate"
+        android:src="@drawable/ic_heated_bed_white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/tv_temperature"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_content"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_temperature"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/iv_heated_bed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/iv_heated_bed"
+        app:layout_constraintTop_toTopOf="@id/iv_heated_bed"
+        tools:text="50℃"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/v_divider"
+        style="@style/AppTheme.SectionDivider"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_heated_bed" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="I’ve removed it"
+        android:textColor="?attr/theme_color_primary"
+        android:textSize="?attr/theme_font_size_body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

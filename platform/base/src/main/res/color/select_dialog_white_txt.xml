@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingDefaultResource">
+    <item android:color="#33FFFFFF" android:state_pressed="true" />
+    <item android:color="@color/palette_grey_mine_shaft" android:state_enabled="false" />
+    <item android:color="@color/palette_white_pure" />
+</selector>

@@ -1,0 +1,47 @@
+<resources>
+    <!--  deprecated  -->
+<!--    <string name="setting_language_chinese">Chinese</string>-->
+<!--    <string name="setting_language_english">English</string>-->
+<!--    <string name="setting_language_deutsch">German</string>-->
+<!--    <string name="setting_language_Français">French</string>-->
+<!--    <string name="setting_language_japanese">Japanese</string>-->
+
+<!--    <string name="setting_center_clanguage_chinese">中文</string>-->
+<!--    <string name="setting_center_clanguage_english">English</string>-->
+<!--    <string name="setting_center_clanguage_deutsch">Deutsch</string>-->
+<!--    <string name="setting_center_clanguage_Français">Français</string>-->
+<!--    <string name="setting_center_clanguage_japanese">日本語</string>-->
+
+    <string name="j1_terms_and_conditions_tip">I have read and accept all the terms and conditions.</string>
+    <string name="j1_user_experience_improvement_program_title">User Experience Improvement Program</string>
+    <string name="j1_user_experience_improvement_program_confirm">Yes, I’m in!</string>
+    <string name="j1_welcome_set_name_title">Name Your Snapmaker</string>
+    <string name="j1_welcome_dailog_skip_wifi_content">Skipping the Wi-Fi connection might limit some functions, yet you could set it in <b>Settings</b> later. Are you sure to skip?</string>
+    <string name="j1_setup_completed_title">Setup Completed</string>
+    <string name="j1_setup_completed_content">You have completed the initial setup successfully.</string>
+    <string name="j1_settings_user_experience_program_content">Dear users of Snapmaker,
+\nProviding products beyond user expectations has always been the goal pursued by Snapmaker. To help us optimally meet your needs and improve product quality and services, Snapmaker sincerely invites you to participate in our User Experience Improvement Program (in short, UEIP) and kindly asks you to read the following statement. Giving consent to participate in our UEIP means that you have carefully read and completely agree to this statement (minors should read in the company with their guardians). Snapmaker reminds you, as the products improve, that this statement may be subject to changes from time to time. Upon any changes, we shall display them in a prominent position on the products or relevant pages to inform you. If you do not accept the changes, you have the right to opt out of the UEIP at any time, and remaining in the program will be seen as consent to such changes.
+
+\n\n<b>Information Collection</b>
+\nOnce you provide your consent to join the program, information regarding your device and how you use it will be anonymously and periodically collected and sent to Snapmaker, which we will use to improve our products and services.
+Users participating in the program only send the following data to Snapmaker:
+	     \n1. The operating system and the firmware version of the device
+		\n2. Settings preferences
+		\n3. Details of G code files and printing parameters
+		\n4. Specific behavioral data in interactions with the device (such as taps, swipes, additions, deletions, etc.)
+
+\n\nThe collected information in the program will not relate to your personal identity, including your name, gender, age, address, phone number, username, password, etc.
+
+\n\n<b>Information Usage</b>
+\nSnapmaker hereby promises that we abide by relevant laws and regulations, and will only use the collected information for the improvement of products and services. We fully respect your privacy, and the information collected by the Snapmaker User Experience Improvement Program is handled in accordance with our Privacy Policy. We will use Google Analytics (Google Analytics complies with the General Data Protection Regulation). Due to the IP anonymization function, we will not and cannot independently obtain or track your IP address, data, etc.
+
+\n\n<b>Opting Out of the Program</b>
+\nYou can join or end participation in the Snapmaker User Experience Improvement Program at any time on the <b>Settings</b> > <b>Terms and Conditions</b> screen. After you opt out of this program, we will no longer collect any data mentioned in the Information Collection section.  </string>
+
+    <!--A400-->
+    <string name="a400_hello_read_and_agree">I have read and agree to the</string>
+    <string name="a400_hello_terms_and_conditions">&#160;<u>Terms and Conditions</u></string>
+    <string name="a400_welcome_name_title">Name Your Artisan</string>
+    <string name="a400_welcome_wifi_chose_a_network">Choose a Network</string>
+    <string name="a400_welcome_choose_language">Choose a Language</string>
+</resources>

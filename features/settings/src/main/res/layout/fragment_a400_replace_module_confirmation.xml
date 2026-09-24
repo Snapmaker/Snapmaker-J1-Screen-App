@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#090909">
+
+    <include layout="@layout/a400_progress_top_bar" />
+
+    <TextView
+        android:id="@+id/tv_init_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_48"
+        android:drawableStart="@drawable/ic_a400_success"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/a400_replace_module_success_tips"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/font_size_28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress"
+        tools:ignore="UseCompatTextViewDrawableXml" />
+
+    <Button
+        android:id="@+id/btn_fail"
+        style="@style/AppTheme.SecondaryButtonRed"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="@dimen/margin_48dp"
+        android:layout_marginBottom="@dimen/margin_48dp"
+        android:text="@string/all_failed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_done"
+        style="@style/AppTheme.PrimaryButton"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="@dimen/margin_48dp"
+        android:layout_marginBottom="@dimen/margin_48dp"
+        android:text="@string/all_done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <ScrollView
+        android:id="@+id/sv_removed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/shape_a400_bg_removed_modules"
+        android:scrollbarThumbVertical="@drawable/shape_a400_scroll_bar_thumb"
+        app:layout_constraintBottom_toTopOf="@id/btn_fail"
+        app:layout_constraintEnd_toEndOf="@id/gl_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_init_success">
+
+        <LinearLayout
+            android:id="@+id/ll_removed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/margin_48dp"
+            android:paddingTop="@dimen/margin_24dp"
+            android:paddingEnd="@dimen/margin_48dp"
+            android:paddingBottom="@dimen/margin_24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/a400_replace_module_confirm_removed_title"
+                android:textColor="#C9C9C9"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sv_added"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/shape_a400_bg_added_modules"
+        android:scrollbarThumbVertical="@drawable/shape_a400_scroll_bar_thumb"
+        app:layout_constraintBottom_toBottomOf="@id/sv_removed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical"
+        app:layout_constraintTop_toTopOf="@id/sv_removed">
+
+        <LinearLayout
+            android:id="@+id/ll_added"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/margin_48dp"
+            android:paddingTop="@dimen/margin_24dp"
+            android:paddingEnd="@dimen/margin_48dp"
+            android:paddingBottom="@dimen/margin_24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/a400_replace_module_confirm_added_title"
+                android:textColor="#C9C9C9"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

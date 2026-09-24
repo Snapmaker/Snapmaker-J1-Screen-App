@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/all_dialog_round_background">
+
+    <Button
+        android:id="@+id/iv_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin_layout_8"
+        android:layout_marginRight="@dimen/margin_layout_8"
+        android:background="@drawable/icon_close_normal_80x80" />
+
+    <TextView
+        android:id="@+id/tv_update_title"
+        style="@style/AppTheme.TextTitleSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_layout_24"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/sv_update"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_update_title"
+        android:layout_marginTop="@dimen/margin_layout_8">
+
+        <LinearLayout
+            android:id="@+id/ll_update_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_layout_16"
+            android:layout_marginEnd="@dimen/margin_layout_16"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/sv_update"
+        android:layout_marginTop="@dimen/margin_layout_8"
+        android:background="@color/palette_grey_mid" />
+
+    <Button
+        android:id="@+id/btn_update_new"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@+id/v_line"
+        android:background="@color/transparent"
+        android:text="@string/j1_update_new"
+        android:textAllCaps="false"
+        android:textColor="@color/palette_orange_pizazz" />
+
+</RelativeLayout>

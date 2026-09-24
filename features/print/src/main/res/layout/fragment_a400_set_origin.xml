@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/palette_grey_nero">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/widget_top_bar_a400_calibration" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fcv_jog_mode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar" />
+
+   <View
+       android:id="@+id/view_empty"
+       android:layout_width="1dp"
+       android:layout_height="1dp"
+       app:layout_constraintEnd_toStartOf="@+id/btn_next"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginRight="379dp"/>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        style="@style/AppTheme.TextExplain"
+        android:layout_width="539dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_layout_48"
+        android:layout_marginTop="674dp"
+        android:textColor="@color/palette_grey_dim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/AppTheme.PrimaryButton"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="@dimen/margin_layout_48"
+        android:layout_marginBottom="@dimen/margin_layout_48"
+        android:text="@string/all_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_run_boundary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_layout_10"
+        android:text="@string/all_run_boundary"
+        android:textColor="@color/palette_blue_ribbon"
+        android:textSize="@dimen/font_size_28sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_next"
+        app:layout_constraintTop_toTopOf="@id/btn_next"
+        app:layout_constraintStart_toEndOf="@+id/view_empty"/>
+
+    <TextView
+        android:id="@+id/tv_model_type"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="@dimen/margin_layout_48"
+        android:background="@drawable/btn_origin_cnc_bg"
+        android:drawableRight="@drawable/ic_select_model_logo"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/margin_layout_32"
+        android:textColor="@color/palette_white_pure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

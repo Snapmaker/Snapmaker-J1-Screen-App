@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_20"
+        android:hint="msg to send"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColor="@color/grey_200"
+        android:textSize="@dimen/font_size_h3"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/btn_send"
+        style="@style/AppTheme.Button.BlueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/grey_200"
+        android:textSize="@dimen/font_size_h2" />
+</LinearLayout>

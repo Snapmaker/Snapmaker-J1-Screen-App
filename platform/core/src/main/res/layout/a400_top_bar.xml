@@ -1,0 +1,36 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="132dp"
+    android:gravity="center_vertical"
+    android:id="@+id/ll_top_bar_container"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/top_bar_back"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="26dp"
+        android:contentDescription="@string/placeholder"
+        android:src="@drawable/ic_top_bar_back_50x50" />
+
+    <TextView
+        android:id="@+id/top_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:text="Control" />
+
+    <Button
+        android:id="@+id/tap_bar_developer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:visibility="gone" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

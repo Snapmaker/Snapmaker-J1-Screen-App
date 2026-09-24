@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/top_bar_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/ic_j1_back" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_top_bar_help"
+        style="@style/AppTheme.TextBody2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/j1_how_to_load_filament_title"
+        android:textColor="?attr/theme_color_body_secondary1"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_top_bar_help"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="@dimen/margin_layout_16"
+        android:background="@drawable/icon_help1_normal_80x80"
+        android:clickable="true"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="217.5dp"
+        android:layout_height="32dp"
+        android:layout_margin="60dp"
+        android:contentDescription="@string/content_desc_snapmaker_j1_logo"
+        android:src="@drawable/ic_j1_saver_logo_snapmaker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_normal_progress_bg"
+        android:layout_width="188dp"
+        android:layout_height="188dp"
+        android:contentDescription="@string/content_desc_progress_track"
+        android:src="@drawable/pic_j1_progress_bg_with_inner_shadow"
+        app:layout_constraintBottom_toBottomOf="@id/gcpb_printing"
+        app:layout_constraintEnd_toEndOf="@id/gcpb_printing"
+        app:layout_constraintStart_toStartOf="@id/gcpb_printing"
+        app:layout_constraintTop_toTopOf="@id/gcpb_printing" />
+
+    <fabscreen.platform.base.view.GradientCircularProgressBar
+        android:id="@+id/gcpb_printing"
+        android:layout_width="188dp"
+        android:layout_height="188dp"
+        android:layout_margin="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:gcpb_progress="25" />
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F7F8FA"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_time_label"
+        app:layout_constraintEnd_toEndOf="@id/gcpb_printing"
+        app:layout_constraintStart_toStartOf="@id/gcpb_printing"
+        app:layout_constraintTop_toTopOf="@id/gcpb_printing"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="25%" />
+
+    <TextView
+        android:id="@+id/tv_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/j1_print_remaining_time"
+        android:textColor="#737480"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_time_display"
+        app:layout_constraintEnd_toEndOf="@id/tv_progress"
+        app:layout_constraintStart_toStartOf="@id/tv_progress"
+        app:layout_constraintTop_toBottomOf="@id/tv_progress" />
+
+    <TextView
+        android:id="@+id/tv_time_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#C4C5CC"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/gcpb_printing"
+        app:layout_constraintEnd_toEndOf="@id/tv_time_label"
+        app:layout_constraintStart_toStartOf="@id/tv_time_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_time_label"
+        tools:text="18h 20min" />
+
+    <ImageView
+        android:id="@+id/iv_error_progress_bg"
+        android:layout_width="188dp"
+        android:layout_height="188dp"
+        android:src="@drawable/pic_j1_progress_bg_with_inner_shadow"
+        app:layout_constraintEnd_toEndOf="@id/cpi_error"
+        app:layout_constraintStart_toStartOf="@id/cpi_error"
+        app:layout_constraintTop_toTopOf="@id/cpi_error" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/cpi_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:progress="25"
+        app:indicatorColor="@color/white"
+        app:indicatorInset="0dp"
+        app:indicatorSize="188dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackCornerRadius="3dp"
+        app:trackThickness="6dp"
+        tools:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_filament_run_out"
+        android:layout_width="49dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_j1_filament_runout"
+        app:layout_constraintBottom_toBottomOf="@id/cpi_error"
+        app:layout_constraintEnd_toEndOf="@id/cpi_error"
+        app:layout_constraintStart_toStartOf="@id/cpi_error"
+        app:layout_constraintTop_toTopOf="@id/cpi_error" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_progress_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="iv_normal_progress_bg,gcpb_printing,tv_progress,tv_time_label,tv_time_display"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_progress_abnormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="iv_error_progress_bg,cpi_error,iv_filament_run_out"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

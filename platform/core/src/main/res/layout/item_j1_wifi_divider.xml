@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="44.5dp"
+    android:layout_marginTop="@dimen/margin_layout_8"
+    android:orientation="vertical">
+
+    <View style="@style/AppTheme.SectionDivider" />
+
+    <LinearLayout
+        android:id="@+id/ll_networks_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_16"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/AppTheme.TextBody3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_networks" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_layout_8"
+            android:indeterminate="true"
+            app:indicatorColor="@color/palette_grey_french"
+            app:indicatorSize="16dp"
+            app:trackColor="#2D2F40"
+            app:trackCornerRadius="1dp"
+            app:trackThickness="2dp" />
+    </LinearLayout>
+</LinearLayout>

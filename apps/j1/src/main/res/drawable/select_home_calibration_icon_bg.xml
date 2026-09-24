@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_calibration_press_64x64" android:state_pressed="true" />
+    <item android:drawable="@drawable/ic_calibration_disable_64x64" android:state_enabled="false" />
+    <item android:drawable="@drawable/ic_calibration_normal_64x64" />
+
+</selector>

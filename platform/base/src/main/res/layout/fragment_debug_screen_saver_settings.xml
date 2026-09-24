@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_top_bar_j1_back_only" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/sw_enable_screen_saver"
+        style="@style/AppTheme.SwitchButton"
+        android:layout_margin="20dp"
+        android:checked="true"
+        android:text="开启/关闭屏保功能"
+        app:switchPadding="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="无触摸后多久进入屏保？"
+        android:textColor="@color/palette_white_silver" />
+
+    <RadioGroup
+        android:id="@+id/rg_screen_saver_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/sw_enable_screen_saver"
+        app:layout_constraintTop_toBottomOf="@id/sw_enable_screen_saver">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5秒" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10秒" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15分钟（默认）" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="离开本页面后设置生效"
+        android:textColor="@color/gradient_orange_end" />
+</LinearLayout>

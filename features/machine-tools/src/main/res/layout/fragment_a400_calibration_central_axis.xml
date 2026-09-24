@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/theme_color_page_background">
+
+    <include
+        layout="@layout/widget_top_bar_a400_calibration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_calibration"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/margin_layout_48"
+        android:paddingRight="@dimen/margin_layout_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_a400_leveling_z_calibration_move"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+
+        <ImageView
+            android:id="@+id/iv_calibration_desc"
+            android:layout_width="match_parent"
+            android:layout_height="359dp"
+            android:layout_marginTop="@dimen/margin_layout_32"
+            android:background="@drawable/pic_guide_normal" />
+
+        <TextView
+            android:id="@+id/tv_calibration_desc_title"
+            style="@style/AppTheme.TextBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_calibration_desc"
+            android:layout_marginTop="@dimen/margin_layout_24"
+            android:text="@string/a400_calibration_central_axis_title"
+            android:textColor="@color/palette_white_pure" />
+
+        <TextView
+            android:id="@+id/tv_calibration_desc_content"
+            style="@style/AppTheme.TextExplain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_calibration_desc_title"
+            android:layout_marginTop="@dimen/margin_layout_12"
+            android:text="@string/a400_calibration_central_axis_content"
+            android:textColor="@color/palette_grey_dim" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/iv_a400_leveling_z_calibration_move"
+        android:layout_width="705dp"
+        android:layout_height="0dp"
+        android:background="@color/palette_grey_nero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+
+        <TextView
+            android:id="@+id/tv_diameter_title"
+            style="@style/AppTheme.TextBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="68dp"
+            android:text="@string/all_material_diameter" />
+
+        <EditText
+            android:id="@+id/et_diameter"
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="416dp"
+            android:layout_height="84dp"
+            android:layout_below="@+id/tv_diameter_title"
+            android:layout_alignStart="@+id/tv_diameter_title"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/a400_bg_rounded_rectangle_background_m"
+            android:gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:paddingStart="32dp"
+            android:text="42.0"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            style="@style/AppTheme.TextBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/et_diameter"
+            android:layout_alignEnd="@+id/et_diameter"
+            android:layout_alignBottom="@+id/et_diameter"
+            android:layout_marginEnd="27dp"
+            android:gravity="center"
+            android:text="mm" />
+
+        <View
+            style="@style/AppTheme.LineDropShadow"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/btn_next"
+            android:layout_marginBottom="@dimen/font_line_height_36sp" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/AppTheme.PrimaryButton"
+            android:layout_width="230dp"
+            android:layout_height="92dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/margin_layout_48"
+            android:layout_marginBottom="@dimen/margin_layout_48"
+            android:text="@string/all_next" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

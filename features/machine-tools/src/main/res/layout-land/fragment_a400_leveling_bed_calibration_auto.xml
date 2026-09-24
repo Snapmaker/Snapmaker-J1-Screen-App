@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/theme_color_page_background">
+
+    <include
+        layout="@layout/widget_top_bar_a400_calibration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <fabscreen.platform.core.ui.view.ChessboardView
+        android:id="@+id/cv_a400_leveling_bed_calibration_grid"
+        android:layout_width="479dp"
+        android:layout_height="479dp"
+        android:layout_marginTop="@dimen/margin_layout_32"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        app:cv_chessboard_line_color="?attr/theme_color_page_background"
+        app:cv_processed_line_color="?attr/theme_color_tab_uncheck"
+        app:cv_processing_pieces_end_color="?attr/theme_color_normal_button_gradient_end"
+        app:cv_processing_pieces_start_color="?attr/theme_color_normal_button_gradient_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar" />
+
+    <TextView
+        android:id="@+id/tv_a400_leveling_bed_calibration_auto_title"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_a400_leveling_bed_calibration_grid" />
+
+    <TextView
+        android:id="@+id/tv_a400_leveling_bed_calibration_auto_content"
+        style="@style/AppTheme.TextExplain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_a400_leveling_bed_calibration_auto_title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

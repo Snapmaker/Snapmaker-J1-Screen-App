@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_layout_20">
+
+
+    <ImageView
+        android:id="@+id/iv_purifier"
+        android:layout_width="363dp"
+        android:layout_height="404dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic_air_purifier_360x250"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fabscreen.platform.core.ui.view.ActionButton
+        android:id="@+id/ab_purifier_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:ab_foreground="@drawable/control_btn_air_purifier_power"
+        app:ab_title="@string/air_purifier_fan_power"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_purifier"
+        app:layout_constraintTop_toTopOf="@id/iv_purifier" />
+
+    <TextView
+        android:id="@+id/tv_fan_speed_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/air_purifier_fan_speed"
+        android:textSize="@dimen/font_size_h3"
+        app:layout_constraintStart_toEndOf="@id/iv_purifier"
+        app:layout_constraintTop_toBottomOf="@id/ab_purifier_power" />
+
+    <co.ceryle.segmentedbutton.SegmentedButtonGroup
+        android:id="@+id/sbg_fan_speed"
+        style="@style/AppTheme.SegmentedButtonGroup"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_segmented_button"
+        android:layout_marginTop="@dimen/margin_layout_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_fan_speed_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_fan_speed_title"
+        app:sbg_position="1">
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_segmented_button"
+            android:layout_weight="1"
+            app:sb_text="@string/all_low"
+            app:sb_textSize="@dimen/font_size_h3" />
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:sb_text="@string/all_medium"
+            app:sb_textSize="@dimen/font_size_h3" />
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:sb_text="@string/all_High"
+            app:sb_textSize="@dimen/font_size_h3" />
+    </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+
+    <TextView
+        android:id="@+id/tv_filter_life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_10"
+        android:text="@string/air_purifier_filter_life"
+        android:textSize="@dimen/font_size_h3"
+        app:layout_constraintStart_toStartOf="@id/sbg_fan_speed"
+        app:layout_constraintTop_toBottomOf="@id/sbg_fan_speed" />
+
+    <fabscreen.platform.core.ui.view.RectEnergyBar.RectEnergyBar
+        android:id="@+id/reb_lifetime"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/margin_layout_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_filter_life"
+        app:layout_constraintTop_toBottomOf="@id/tv_filter_life" />
+</androidx.constraintlayout.widget.ConstraintLayout>

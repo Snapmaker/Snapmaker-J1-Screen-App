@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_theme_background"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_browse_j1_file_detail_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/theme_spacing9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_j1_top_bar_back"
+            android:layout_width="?attr/theme_icon_functions_large"
+            android:layout_height="?attr/theme_icon_functions_large"
+            android:layout_marginLeft="?attr/theme_spacing4"
+            android:background="@drawable/icon_back_normal_80x80"
+            android:paddingLeft="?attr/theme_spacing4"
+            android:paddingRight="?attr/theme_spacing4" />
+    </RelativeLayout>
+
+    <!--  detail content  -->
+    <!--   TODO: gradient background  -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rl_browse_j1_file_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_bg_section_detail_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_browse_j1_file_detail_top_bar">
+
+        <RelativeLayout
+            android:id="@+id/rl_browse_j1_file_detail_info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/rl_browse_j1_file_detail_option"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_browse_j1_file_detail_img"
+                android:layout_width="188dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_layout_16"
+                android:layout_marginTop="@dimen/margin_layout_16"
+                android:layout_marginBottom="@dimen/margin_layout_16"
+                android:background="@drawable/shape_bg_j1_input_round_12">
+
+                <!--        TODO: preview file thumbnail        -->
+                <ImageView
+                    android:id="@+id/tv_browse_j1_file_detail_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="131dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/margin_layout_24"
+                    android:layout_marginTop="@dimen/margin_layout_16"
+                    android:layout_marginRight="@dimen/margin_layout_24" />
+
+                <TextView
+                    android:id="@+id/tv_browse_j1_file_detail_filename"
+                    style="@style/AppTheme.TextBody1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/margin_layout_8"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxHeight="40dp"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/margin_layout_12"
+                    android:paddingRight="@dimen/margin_layout_12"
+                    android:text="@string/placeholder"
+                    android:textColor="@color/palette_grey_storm"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <GridLayout
+                android:id="@+id/gl_browse_j1_file_detail_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="23dp"
+                android:layout_toRightOf="@+id/rl_browse_j1_file_detail_img" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_browse_j1_file_detail_option"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/theme_spacing16"
+            android:background="@drawable/shape_bg_section_detail_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/btn_browse_j1_file_detail_print_mode_help"
+                android:layout_width="?attr/theme_spacing17"
+                android:layout_height="?attr/theme_spacing17"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="?attr/theme_spacing3"
+                android:background="@drawable/detail_round_problem"
+                android:src="@drawable/ic_help2_normal_64x64" />
+
+            <!--        Temporary widget for testing        -->
+
+            <LinearLayout
+                android:id="@+id/ll_browse_j1_file_detail_mode_select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="?attr/theme_spacing4"
+                android:layout_toEndOf="@id/btn_browse_j1_file_detail_print_mode_help"
+                android:orientation="horizontal">
+
+                <!--                <Spinner-->
+                <!--                    android:id="@+id/sp_browse_j1_print_mode"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:layout_marginStart="?attr/theme_spacing4"-->
+                <!--                    android:layout_toEndOf="@id/btn_browse_j1_file_list_partition_usb"-->
+                <!--                    android:entries="@array/peripheral_print_mode"-->
+                <!--                    android:maxWidth="180dp"-->
+                <!--                    android:textColor="?attr/theme_color_body_secondary1" />-->
+
+                <TextView
+                    android:id="@+id/tv_browse_j1_print_mode_selected"
+                    style="@style/AppTheme.TextBody2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/file_detail_standard_mode_name"
+                    android:textColor="@color/palette_grey_french" />
+
+                <ImageView
+                    android:id="@+id/iv_browse_j1_print_mode_selected"
+                    android:layout_width="?attr/theme_icon_tools_decorate"
+                    android:layout_height="?attr/theme_icon_tools_decorate"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icon_arrow_down_normal_64x64" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_browse_j1_file_detail_start"
+                style="@style/AppTheme.PrimaryButton"
+                android:layout_width="?attr/theme_spacing18"
+                android:layout_height="?attr/theme_spacing9"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="?attr/theme_spacing4"
+                android:text="@string/all_start" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

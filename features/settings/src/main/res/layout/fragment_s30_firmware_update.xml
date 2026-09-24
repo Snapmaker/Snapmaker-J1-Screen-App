@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/view_setting_bar"
+        layout="@layout/widget_a400_setting_top_bar" />
+
+
+    <TextView
+        android:id="@+id/tv_new_version_tip"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginTop="@dimen/margin_layout_50"
+        android:textColor="@color/palette_orange_web"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_setting_bar"
+        tools:text="发现新版本" />
+
+    <TextView
+        android:id="@+id/tv_new_version"
+        style="@style/AppTheme.TextTitleSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginTop="@dimen/margin_layout_12"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_new_version_tip"
+        tools:text="Firmware V1.14.2" />
+
+    <TextView
+        android:id="@+id/tv_version_size"
+        style="@style/AppTheme.TextBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_8"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/tv_new_version"
+        app:layout_constraintTop_toBottomOf="@id/tv_new_version"
+        tools:text="300MB  |  01-27-2022" />
+
+    <View
+        android:id="@+id/tv_setting_update_line"
+        style="@style/AppTheme.LineDropShadow"
+        android:layout_width="0dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_update"
+        app:layout_constraintStart_toStartOf="@id/tv_version_size"
+        app:layout_constraintTop_toBottomOf="@+id/tv_version_size" />
+
+    <fabscreen.platform.core.ui.view.A400ProgressButton
+        android:id="@+id/btn_update"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="@dimen/margin_layout_48"
+        android:text="Update Now"
+        app:layout_constraintBottom_toBottomOf="@id/tv_version_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_new_version" />
+
+    <ScrollView
+        android:id="@+id/sv_change_log"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="48dp"
+        android:clipToPadding="false"
+        android:paddingVertical="48dp"
+        android:scrollbarSize="6dp"
+        android:scrollbarThumbVertical="@drawable/shape_a400_scroll_bar_thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_setting_update_line">
+
+        <LinearLayout
+            android:id="@+id/ll_change_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/margin_layout_12"
+            android:paddingEnd="@dimen/margin_layout_12" />
+    </ScrollView>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/pb_checking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:indicatorColor="@color/white"
+        app:indicatorInset="11dp"
+        app:indicatorSize="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="#33FFFFFF"
+        app:trackCornerRadius="2dp"
+        app:trackThickness="4dp" />
+
+    <TextView
+        android:id="@+id/tv_checking"
+        style="@style/AppTheme.TextTitleHeadLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Checking update..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pb_checking" />
+
+    <ImageView
+        android:id="@+id/iv_latest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_a400_firmware_check_latest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_latest"
+        style="@style/AppTheme.TextTitleHeadLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/firmware_already_newest_version"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_latest" />
+
+    <ImageView
+        android:id="@+id/iv_check_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_a400_firmware_check_fail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_check_fail"
+        style="@style/AppTheme.TextTitleHeadLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/settings_firmware_unstable_network_connection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_check_fail" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_new_version_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="tv_new_version_tip,tv_new_version,tv_version_size,btn_update,tv_setting_update_line,sv_change_log"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_checking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="pb_checking,tv_checking" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_latest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="iv_latest,tv_latest" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_check_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="iv_check_fail,tv_check_fail" />
+</androidx.constraintlayout.widget.ConstraintLayout>

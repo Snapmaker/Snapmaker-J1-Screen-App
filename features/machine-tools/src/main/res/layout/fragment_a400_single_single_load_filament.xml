@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="68dp"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="更换模组" />
+
+    <TextView
+        android:id="@+id/tv_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="左挡块安装(1/3)" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:progress="1"
+        app:indicatorColor="#C9C9C9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_title"
+        app:trackColor="#212121"
+        tools:max="3" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:background="@drawable/ic_close"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@id/progress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_filament_intro"
+        android:layout_width="578dp"
+        android:layout_height="434dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="64dp"
+        android:background="#00FF00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress" />
+
+    <TextView
+        android:id="@+id/tv_filament_intro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="再接下来的步骤中，屏幕将会引导你进行装载物料"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_filament_intro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_filament_intro"
+        app:layout_constraintTop_toTopOf="@id/iv_filament_intro" />
+
+    <ImageView
+        android:id="@+id/iv_filament_load"
+        android:layout_width="479dp"
+        android:layout_height="359dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:background="#4CAF50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/progress" />
+
+    <TextView
+        android:id="@+id/tv_filament_load"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="请设置装载耗材对应的温度，等待喷嘴加热至对应温度后，插入物料，点击 Load 按钮完成物料装载"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/iv_filament_load"
+        app:layout_constraintStart_toStartOf="@id/iv_filament_load"
+        app:layout_constraintTop_toBottomOf="@id/iv_filament_load" />
+
+    <View
+        android:id="@+id/v_tune_area"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:background="#212121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_filament_load"
+        app:layout_constraintTop_toBottomOf="@id/progress" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/sb_temperature"
+        android:layout_width="450dp"
+        android:layout_height="442dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@id/v_tune_area"
+        app:layout_constraintTop_toTopOf="@id/v_tune_area" />
+
+    <Button
+        android:id="@+id/btn_unload"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="38dp"
+        android:text="unload"
+        app:layout_constraintStart_toEndOf="@id/sb_temperature"
+        app:layout_constraintTop_toTopOf="@id/sb_temperature" />
+
+    <Button
+        android:id="@+id/btn_load"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="38dp"
+        android:text="unload"
+        app:layout_constraintBottom_toBottomOf="@id/sb_temperature"
+        app:layout_constraintStart_toEndOf="@id/sb_temperature" />
+
+    <Button
+        android:id="@+id/btn_start_or_complete"
+        android:layout_width="230dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="开始"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

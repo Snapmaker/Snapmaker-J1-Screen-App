@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/a400_top_bar" />
+
+    <fabscreen.features.settings.a400.maintenance.configparams.ConfigParamView
+        android:id="@+id/cv_single_single_initial_z"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginEnd="@dimen/margin_layout_28"
+        android:layout_marginBottom="@dimen/margin_layout_32"
+        android:visibility="gone" />
+
+    <fabscreen.features.settings.a400.maintenance.configparams.ConfigParamView
+        android:id="@+id/cv_single_dual_left_z"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginEnd="@dimen/margin_layout_28"
+        android:layout_marginBottom="@dimen/margin_layout_32"
+        android:visibility="gone" />
+
+    <fabscreen.features.settings.a400.maintenance.configparams.ConfigParamView
+        android:id="@+id/cv_single_dual_right_z"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginEnd="@dimen/margin_layout_28"
+        android:layout_marginBottom="@dimen/margin_layout_32"
+        android:visibility="gone" />
+
+    <fabscreen.features.settings.a400.maintenance.configparams.ConfigParamView
+        android:id="@+id/cv_single_dual_x_offset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginEnd="@dimen/margin_layout_28"
+        android:layout_marginBottom="@dimen/margin_layout_32"
+        android:visibility="gone" />
+
+    <fabscreen.features.settings.a400.maintenance.configparams.ConfigParamView
+        android:id="@+id/cv_single_dual_y_offset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginEnd="@dimen/margin_layout_28"
+        android:layout_marginBottom="@dimen/margin_layout_32"
+        android:visibility="gone" />
+
+    <fabscreen.features.settings.a400.maintenance.configparams.ConfigParamView
+        android:id="@+id/cv_laser_focal_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginEnd="@dimen/margin_layout_28"
+        android:layout_marginBottom="@dimen/margin_layout_32"
+        android:visibility="gone" />
+
+    <fabscreen.features.settings.a400.maintenance.configparams.ConfigParamView
+        android:id="@+id/cv_laser_platform_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginEnd="@dimen/margin_layout_28"
+        android:layout_marginBottom="@dimen/margin_layout_32"
+        android:visibility="gone" />
+
+    <fabscreen.features.settings.a400.maintenance.configparams.ConfigParamView
+        android:id="@+id/cv_laser_4axis_center_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_layout_48"
+        android:layout_marginEnd="@dimen/margin_layout_28"
+        android:layout_marginBottom="@dimen/margin_layout_32"
+        android:visibility="gone" />
+</LinearLayout>
